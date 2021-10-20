@@ -1,0 +1,23 @@
+version: "3.9"
+
+services:
+  xtlab-mssql:
+    image: "mcr.microsoft.com/mssql/server:latest"
+    container_name: mssqlserver        
+    restart: always
+    hostname: mssql
+    environment:
+      SA_PASSWORD: P@55work         
+      ACCEPT_EULA: Y
+    volumes:
+      - ./Queries:/home
+      - /hdd/backup/mssql/data:/var/opt/mssql/backup     
+    ports:
+      - "1433:1433"                    
+    # command: /opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "P@55work" -i /home/db-init.sql
+# volumes:
+#     mssqlvolume:
+#         driver_opts:
+#             type: none
+#             device: /hdd/backup/mssql/data
+#             o: bind
