@@ -12,10 +12,7 @@ dotnet new xunit <Project>.Tests
 dotnet new sln <solution>
 
 dotnet sln add ./<project>/<project>.csproj
-dotnet sln add ./<project>/<project>.csproj
-# 
 dotnet sln add ./<project>.Tests/<project>.Tests.csproj
-dotnet sln add ./<project>/<project>.Tests.csproj
 
 dotnet add ./<project>.Tests/<project>.Tests.csproj reference ./<project>/<project>.Tests.csproj
 ```
