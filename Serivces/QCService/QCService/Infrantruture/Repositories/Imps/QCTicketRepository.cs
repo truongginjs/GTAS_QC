@@ -8,6 +8,7 @@ namespace QCService.Infrantruture.Repositories.Imps
     {
         public QCTicketRepository(QCContext context) : base(context)
         {
+            
         }
     }
 }

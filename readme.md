@@ -51,8 +51,20 @@ dotnet test
 debug  press "F5" to create .vscode and debug
 
 ## migration and seeddata
-
+```sh
+dotnet-ef migrations add <Name>
+dotnet-ef datate update
+# down
+dotnet-ef update <previous-mrg-name>
+# to turn back database
+dotnet-ef update 0 
+dotnet-ef migrations remove #--force to force warning 
+```
 ## envaironment
+
+## architecture
+
+
 
 ## Docker
 

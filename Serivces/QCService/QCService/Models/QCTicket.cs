@@ -2,12 +2,16 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Microsoft.EntityFrameworkCore;
 
 namespace QCService.Models
 {
-
+    [Index(nameof(Code),nameof(Name))]
     public class QCTicket : BaseModel
     {
+        [Required]
+        [MaxLength(500)]
+        public string Code { get; set; }
 
         [Required]
         [MaxLength(500)]
@@ -18,7 +22,7 @@ namespace QCService.Models
         public Buyer Buyer { get; set; }
         public Guid ZoneTypeId { get; set; }
         [NotMapped]
-        public ZoneType ZoneType { get; set; }
+        public QCZoneType ZoneType { get; set; }
         public DateTime InputDate { get; set; }
         public DateTime CheckDate { get; set; }
         public int TesterCheckId { get; set; }
