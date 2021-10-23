@@ -15,8 +15,6 @@ namespace QCService
         public static void Main(string[] args)
         {
             var secret = Assembly.GetExecutingAssembly().FullName.Split(',')[0];
-            Console.WriteLine("----------");
-            Console.WriteLine(secret);
             CreateHostBuilder(args).Build().Run();
         }
 
