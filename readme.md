@@ -1,6 +1,5 @@
 # GTAS-QC
-## Author
-NMT, PPJ
+
 
 ## Create solution 
 script to create
@@ -60,6 +59,30 @@ dotnet-ef update <previous-mrg-name>
 dotnet-ef update 0 
 dotnet-ef migrations remove #--force to force warning 
 ```
+
+## tools
+```sh
+#install local tool
+dotnet tool install <directory> <command> [--version <version>]
+#uninstall
+dotnet tool uninstall <command> 
+# call
+dotnet <command> [args]
+```
+
+example: 
+cipher tool
+```sh
+#install
+dotnet tool install --add-source ..\..\..\BuildingBlocks\SINNIKA.Cipher\nupkg sinnika.cipher
+#uninstall
+dotnet tool uninstall sinnika.cipher
+#encrypt
+dotnet sinnika.cipher -e -t 'hello' -p 'salt'
+#decrypt
+dotnet sinnika.cipher -d -t '7H7lCXt6RqSyo86nMKCIvIH2dJzG3/UV0J7uJQz0StJ+2GEL5y56u1XErgP4kzbZ' -p 'salt'
+
+```
 ## envaironment
 
 ## architecture
@@ -67,6 +90,7 @@ dotnet-ef migrations remove #--force to force warning
 
 
 ## Docker
-
+## Author
+NMT, PPJ
 ## License
 Empty
