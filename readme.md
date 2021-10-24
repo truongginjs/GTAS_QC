@@ -1,6 +1,4 @@
 # GTAS-QC
-## Author
-NMT, PPJ
 
 ## Create solution 
 script to create
@@ -67,6 +65,7 @@ dotnet-ef migrations remove #--force to force warning
 
 
 ## Docker
-
+## Author
+NMT, PPJ
 ## License
 Empty
