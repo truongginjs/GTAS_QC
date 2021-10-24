@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -13,6 +14,7 @@ namespace QCService
     {
         public static void Main(string[] args)
         {
+            var secret = Assembly.GetExecutingAssembly().FullName.Split(',')[0];
             CreateHostBuilder(args).Build().Run();
         }
 

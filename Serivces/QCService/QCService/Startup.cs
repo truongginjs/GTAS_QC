@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -15,6 +16,7 @@ using Microsoft.OpenApi.Models;
 using QCService.Infrantruture;
 using QCService.Infrantruture.Repositories;
 using QCService.Infrantruture.Repositories.Imps;
+using SINNIKA.Cipher;
 
 namespace QCService
 {
@@ -36,8 +38,6 @@ namespace QCService
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "QCService", Version = "v1" });
             });
-            // services.AddDbContext<QCContext>(option => option.UseInMemoryDatabase("InMemory"));
-            services.AddDbContext<QCContext>(option => option.UseSqlServer(Configuration.GetConnectionString("QCContext")));
             AddServices(services);
 
         }
@@ -69,6 +69,11 @@ namespace QCService
 
         private IServiceCollection AddServices(IServiceCollection services)
         {
+            var secret = Assembly.GetExecutingAssembly().FullName.Split(',')[0];
+            // services.AddDbContext<QCContext>(option => option.UseInMemoryDatabase("InMemory"));
+            services.AddDbContext<QCContext>(option => option.UseSqlServer(Configuration.GetConnectionString("QCContext").Decrypt(secret)));
+            
+
             services.AddAutoMapper(typeof(MapperProfile).Assembly);
             services.AddScoped<IQCTicketRepository,QCTicketRepository>();
 
