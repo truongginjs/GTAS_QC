@@ -6,9 +6,9 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using LibraryService.DTOs;
-using LibraryService.Infrantruture.Repositories;
+using LibraryService.Infrastructure.Repositories;
 using LibraryService.Models;
-using LibraryService.Infrantruture.Repositories.Imps;
+using LibraryService.Infrastructure.Repositories.Imps;
 
 namespace LibraryService.Controllers
 {

@@ -13,9 +13,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
-using QCService.Infrantruture;
-using QCService.Infrantruture.Repositories;
-using QCService.Infrantruture.Repositories.Imps;
+using QCService.Infrastructure;
+using QCService.Infrastructure.Repositories;
+using QCService.Infrastructure.Repositories.Imps;
 using SINNIKA.Cipher;
 
 namespace QCService

@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using QCService.DTOs.Requests;
 using QCService.DTOs.Responses;
-using QCService.Infrantruture.Repositories;
+using QCService.Infrastructure.Repositories;
 using QCService.Models;
 
 namespace QCService.Controllers
