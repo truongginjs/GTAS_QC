@@ -1,0 +1,18 @@
+{
+    "Routes": [
+      {
+        "DownstreamPathTemplate": "/api/zonetype",
+        "DownstreamScheme": "https",
+        "DownstreamHostAndPorts": [
+          {
+            "Host": "locahost",
+            "Port": 5011
+          }
+        ],
+        "UpstreamPathTemplate": "/api/zonetype",
+        "UpstreamHttpMethod": [ "GET" ]
+      }
+      
+    
+]
+}
