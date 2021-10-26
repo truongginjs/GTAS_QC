@@ -84,9 +84,11 @@ dotnet sinnika.cipher -d -t '7H7lCXt6RqSyo86nMKCIvIH2dJzG3/UV0J7uJQz0StJ+2GEL5y5
 ```
 ## envaironment
 
-## architecture
+## architecture & Diagram
 
-
+- QC Service Classdiagram: [QC-Class-Diagram](https://drive.google.com/file/d/1K94qTuKHKrDHDywIw9APaLpHeTHf-YAe/view?usp=sharing)
+- QCApp Architecture: [QC-App-Arch](https://drive.google.com/file/d/1QwGQJ9Lrs_HuDoA6GjGdC_c4yKVjLs_P/view?usp=sharing)
+- Microservice architecture: [MS-Arch](https://drive.google.com/file/d/1KTeB6w2x79cIf6x9pQRtaL6MjfCTnq68/view?usp=sharing)
 
 ## Docker
 ## Author
