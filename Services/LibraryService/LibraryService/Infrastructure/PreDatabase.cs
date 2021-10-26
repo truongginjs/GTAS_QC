@@ -45,9 +45,9 @@ namespace LibraryService.Infrastructure
             {
                 Console.WriteLine("====> Seeding fake data ...");
                 context.AddRange(
-                    new ZoneType { Id = Guid.NewGuid(), Name = "QCTicket 1", Description = "Des QCTicket 1" },
-                    new ZoneType { Id = Guid.NewGuid(), Name = "QCTicket 2", Description = "Des QCTicket 2" },
-                    new ZoneType { Id = Guid.NewGuid(), Name = "QCTicket 3", Description = "Des QCTicket 3" }
+                    new ZoneType { Id = Guid.NewGuid(), Name = "ZoneType 1", Description = "Des ZoneType 1" },
+                    new ZoneType { Id = Guid.NewGuid(), Name = "ZoneType 2", Description = "Des ZoneType 2" },
+                    new ZoneType { Id = Guid.NewGuid(), Name = "ZoneType 3", Description = "Des ZoneType 3" }
                 );
                 context.SaveChanges();
             }

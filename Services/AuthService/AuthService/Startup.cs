@@ -49,7 +49,7 @@ namespace AuthService
             })
                 .AddInMemoryIdentityResources(Config.IdentityResources)
                 .AddInMemoryApiResources(Config.GetApis())
-                .AddInMemoryApiScopes(Config.ApiScopes)
+                // .AddInMemoryApiScopes(Config.ApiScopes)
                 .AddInMemoryClients(Config.Clients)
                 .AddAspNetIdentity<ApplicationUser>();
 
@@ -74,7 +74,7 @@ namespace AuthService
             if (Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
+                // app.UseDatabaseErrorPage();
             }
 
             app.UseStaticFiles();

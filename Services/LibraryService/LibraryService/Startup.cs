@@ -30,6 +30,13 @@ namespace LibraryService
         {
 
             services.AddControllers();
+
+            services.AddAuthentication()
+            .AddJwtBearer("Bearer", config=>{
+                config.Authority="https://localhost:5001";
+                config.Audience="library.api";
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "LibraryService", Version = "v1" });
@@ -56,6 +63,7 @@ namespace LibraryService
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

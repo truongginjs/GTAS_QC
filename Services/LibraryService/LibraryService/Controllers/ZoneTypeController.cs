@@ -9,9 +9,11 @@ using LibraryService.DTOs;
 using LibraryService.Infrastructure.Repositories;
 using LibraryService.Models;
 using LibraryService.Infrastructure.Repositories.Imps;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LibraryService.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ZoneTypeController : ControllerBase
