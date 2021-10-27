@@ -1,8 +1,9 @@
 using System;
 using System.Reflection;
-using SINNIKA.Cipher.Types;
+using SINNIKA.Cipher.Tool.Types;
+using SINNIKA.Cipher;
 
-namespace SINNIKA.Cipher
+namespace SINNIKA.Cipher.Tool
 {
     public static class Program
     {

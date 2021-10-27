@@ -2,6 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>d65cc8c6-910c-4790-8cf0-164f65592b76</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>..\..\..</DockerfileContext>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,12 +16,13 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Inmemory" Version="5.0.11" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.11" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\SINNIKA.Cipher\SINNIKA.Cipher\SINNIKA.Cipher.csproj" />
     <ProjectReference Include="..\..\..\BuildingBlocks\SINNIKA.EFCore.Initialize\SINNIKA.EFCore.Initialize\SINNIKA.EFCore.Initialize.csproj" />
-    <ProjectReference Include="..\..\..\BuildingBlocks\SINNIKA.Cipher\SINNIKA.Cipher.csproj" />
   </ItemGroup>
 
 </Project>

@@ -18,8 +18,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\SINNIKA.Cipher\SINNIKA.Cipher\SINNIKA.Cipher.csproj" />
     <ProjectReference Include="..\..\..\BuildingBlocks\SINNIKA.EFCore.Initialize\SINNIKA.EFCore.Initialize\SINNIKA.EFCore.Initialize.csproj" />
-    <ProjectReference Include="..\..\..\BuildingBlocks\SINNIKA.Cipher\SINNIKA.Cipher.csproj" />
   </ItemGroup>
 
 </Project>
