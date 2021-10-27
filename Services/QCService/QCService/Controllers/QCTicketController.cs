@@ -9,6 +9,7 @@ using QCService.DTOs.Requests;
 using QCService.DTOs.Responses;
 using QCService.Infrastructure.Repositories;
 using QCService.Models;
+using QCService.Models.C02;
 
 namespace QCService.Controllers
 {

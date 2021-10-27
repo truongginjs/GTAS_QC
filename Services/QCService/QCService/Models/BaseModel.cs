@@ -7,18 +7,18 @@ namespace QCService.Models
     public abstract class BaseModel
     {
         [Key]
-        public Guid Id{get;set;}
+        public virtual Guid Id{get;set;}
         [MaxLength(500)]
-        public string Description {get;set;}
-        public int CreateUserId {get;set;}
+        public virtual string Description {get;set;}
+        public virtual int CreateUserId {get;set;}
         // [NotMapped]
-        // public User CreateUser {get;set;}
-        public DateTime CreateDate {get;set;}
-        public int UpdateUserId {get;set;}
+        // public virtual User CreateUser {get;set;}
+        public virtual DateTime CreateDate {get;set;}
+        public virtual int UpdateUserId {get;set;}
         // [NotMapped]
-        // public User UpdateUser {get;set;}
+        // public virtual User UpdateUser {get;set;}
 
-        public DateTime UpdateDate {get;set;}
+        public virtual DateTime UpdateDate {get;set;}
 
     }
 }
