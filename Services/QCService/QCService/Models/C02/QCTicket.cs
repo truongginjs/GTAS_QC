@@ -3,42 +3,37 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
+using QCService.Models.DTOs;
 
-namespace QCService.Models
+namespace QCService.Models.C02
 {
+    [Table("C02_QCTicket")]
+
     [Index(nameof(Code),nameof(Name))]
-    public class QCTicket : BaseModel
+    public class QCTicket
     {
+        [Key] 
+        [ForeignKey("QCRequest")]
+        public Guid Id { get; set; }
+        public QCRequest QCRequest { get; set; }
+        
         [Required]
-        [MaxLength(500)]
+        [MaxLength(255)]
         public string Code { get; set; }
 
         [Required]
         [MaxLength(500)]
         public string Name { get; set; }
-        [NotMapped]
-        public Factory Factory { get; set; }
-        [NotMapped]
-        public Buyer Buyer { get; set; }
-        public Guid ZoneTypeId { get; set; }
-        [NotMapped]
-        public QCZoneType ZoneType { get; set; }
-        public DateTime InputDate { get; set; }
-        public DateTime CheckDate { get; set; }
-        public int TesterCheckId { get; set; }
-        [NotMapped]
-        public Tester TesterCheck { get; set; }
         public string ProductLine { get; set; }
-        public double Quantity { get; set; }
         [NotMapped]
-        public List<Defect> Defects { get; set; }
+        public List<DefectDTO> Defects { get; set; }
 
         public string DefectsJson { get; set; }
         [NotMapped]
-        public DefectSizeBreakDown DefectSizeBreakDown { get; set; }
+        public DefectSizeBreakDownDTO DefectSizeBreakDown { get; set; }
         public string DefectSizeBreakDownJson { get; set; }
         [NotMapped]
-        public List<SolutionDefactive> DefectRepairs { get; set; }
+        public List<DefectTypeDTO> DefectRepairs { get; set; }
         public string DefectRepairsJson { get; set; }
         [NotMapped]
         public object PrivateDetail { get; set; }

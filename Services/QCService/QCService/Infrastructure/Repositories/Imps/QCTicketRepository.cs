@@ -1,5 +1,4 @@
-using Microsoft.EntityFrameworkCore;
-using QCService.Models;
+using QCService.Models.C02;
 using SINNIKA.EFCore.Initialize;
 
 namespace QCService.Infrastructure.Repositories.Imps

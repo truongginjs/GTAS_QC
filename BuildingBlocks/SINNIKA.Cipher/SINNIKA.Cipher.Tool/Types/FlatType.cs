@@ -1,7 +1,7 @@
 using System;
 using System.Linq;
 
-namespace SINNIKA.Cipher.Types
+namespace SINNIKA.Cipher.Tool.Types
 {
     public enum FlatType
     {

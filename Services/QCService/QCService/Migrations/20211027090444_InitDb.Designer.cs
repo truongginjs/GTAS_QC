@@ -10,8 +10,8 @@ using QCService.Infrastructure;
 namespace QCService.Migrations
 {
     [DbContext(typeof(QCContext))]
-    [Migration("20211022095745_InitDB")]
-    partial class InitDB
+    [Migration("20211027090444_InitDb")]
+    partial class InitDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,19 +21,16 @@ namespace QCService.Migrations
                 .HasAnnotation("ProductVersion", "5.0.11")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("QCService.Models.AQLLibrary", b =>
+            modelBuilder.Entity("QCService.Models.C01.AQLLib", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("Accept")
-                        .HasColumnType("int");
-
                     b.Property<string>("Category")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
@@ -50,12 +47,6 @@ namespace QCService.Migrations
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
 
-                    b.Property<int>("Reject")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SampleSize")
-                        .HasColumnType("int");
-
                     b.Property<int>("SeqNo")
                         .HasColumnType("int");
 
@@ -65,182 +56,151 @@ namespace QCService.Migrations
                     b.Property<int>("UpdateUserId")
                         .HasColumnType("int");
 
+                    b.Property<Guid?>("ZoneTypeId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
 
-                    b.ToTable("AQLLibrary");
+                    b.HasIndex("ZoneTypeId");
+
+                    b.ToTable("C01_AQLLib");
 
                     b.HasData(
                         new
                         {
                             Id = new Guid("9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66"),
-                            Accept = 1,
                             Category = "AQL 2.5",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9043),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8353),
                             CreateUserId = 0,
                             LotSize = "51-90",
-                            Reject = 2,
-                            SampleSize = 13,
                             SeqNo = 2,
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9051),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8375),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("ac1c939d-2ef6-42c5-a953-d535af0a0475"),
-                            Accept = 1,
                             Category = "AQL 2.5",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9061),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8384),
                             CreateUserId = 0,
                             LotSize = "91-150",
-                            Reject = 2,
-                            SampleSize = 20,
                             SeqNo = 3,
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9063),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8386),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("3f11283f-d11b-4266-b658-16e82b01d991"),
-                            Accept = 2,
                             Category = "AQL 2.5",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9068),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8389),
                             CreateUserId = 0,
                             LotSize = "151-280",
-                            Reject = 3,
-                            SampleSize = 32,
                             SeqNo = 4,
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9069),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8390),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("02884a90-921e-44fe-a6f3-4d56bc660d98"),
-                            Accept = 3,
                             Category = "AQL 2.5",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9072),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8394),
                             CreateUserId = 0,
                             LotSize = "281-500",
-                            Reject = 4,
-                            SampleSize = 50,
                             SeqNo = 5,
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9073),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8395),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("2bf9a034-9773-4763-b45a-62cb64b4fe60"),
-                            Accept = 5,
                             Category = "AQL 2.5",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9076),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8398),
                             CreateUserId = 0,
                             LotSize = "501-1.200",
-                            Reject = 6,
-                            SampleSize = 80,
                             SeqNo = 6,
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9077),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8400),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("20307cd9-7775-437b-b56f-3decd98ba56e"),
-                            Accept = 7,
                             Category = "AQL 2.5",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9080),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8402),
                             CreateUserId = 0,
                             LotSize = "1.201-3.200",
-                            Reject = 8,
-                            SampleSize = 125,
                             SeqNo = 7,
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9081),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8403),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("c0619a96-4bc9-4036-8699-7f29ba9f035c"),
-                            Accept = 10,
                             Category = "AQL 2.5",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9084),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8406),
                             CreateUserId = 0,
                             LotSize = "3.201-10.000",
-                            Reject = 11,
-                            SampleSize = 200,
                             SeqNo = 8,
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9085),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8407),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("a008c1d5-bea1-4790-aa14-d37e300593f1"),
-                            Accept = 14,
                             Category = "AQL 2.5",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9088),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8410),
                             CreateUserId = 0,
                             LotSize = "15.001-500.000",
-                            Reject = 15,
-                            SampleSize = 315,
                             SeqNo = 9,
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9089),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8411),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("81c393a2-6188-4012-8f42-85fd197f273b"),
-                            Accept = 21,
                             Category = "AQL 2.5",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9092),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8414),
                             CreateUserId = 0,
                             LotSize = "500.000 over",
-                            Reject = 22,
-                            SampleSize = 500,
                             SeqNo = 10,
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9093),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8415),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("7680f05d-5794-454c-85b1-2291e4882828"),
-                            Accept = 1,
                             Category = "Sizeset-Pilot",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9096),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8418),
                             CreateUserId = 0,
                             LotSize = "10",
-                            Reject = 2,
-                            SampleSize = 10,
                             SeqNo = 1,
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9097),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8419),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("4facb93b-a39d-4941-858b-6955b5e90eca"),
-                            Accept = 1,
                             Category = "Sizeset-Pilot",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9100),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8422),
                             CreateUserId = 0,
                             LotSize = "20",
-                            Reject = 2,
-                            SampleSize = 20,
                             SeqNo = 2,
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9101),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8423),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("baf4f214-b6d4-4f59-ba03-c642d3806299"),
-                            Accept = 2,
                             Category = "Sizeset-Pilot",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9103),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8425),
                             CreateUserId = 0,
                             LotSize = "30",
-                            Reject = 3,
-                            SampleSize = 30,
                             SeqNo = 3,
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 347, DateTimeKind.Local).AddTicks(9104),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 487, DateTimeKind.Local).AddTicks(8427),
                             UpdateUserId = 0
                         });
                 });
 
-            modelBuilder.Entity("QCService.Models.Defect", b =>
+            modelBuilder.Entity("QCService.Models.C01.DefectLib", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -278,7 +238,7 @@ namespace QCService.Migrations
                     b.Property<int>("UpdateUserId")
                         .HasColumnType("int");
 
-                    b.Property<Guid>("ZoneTypeId")
+                    b.Property<Guid?>("ZoneTypeId")
                         .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
@@ -287,10 +247,10 @@ namespace QCService.Migrations
 
                     b.HasIndex("Code", "Name");
 
-                    b.ToTable("Defect");
+                    b.ToTable("C01_DefectLib");
                 });
 
-            modelBuilder.Entity("QCService.Models.DefectType", b =>
+            modelBuilder.Entity("QCService.Models.C01.DefectTypeLib", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
@@ -300,9 +260,6 @@ namespace QCService.Migrations
                         .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("CompletionTime")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
@@ -334,106 +291,108 @@ namespace QCService.Migrations
                     b.Property<int>("UpdateUserId")
                         .HasColumnType("int");
 
+                    b.Property<Guid?>("ZoneTypeId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("ZoneTypeId");
 
                     b.HasIndex("Code", "Name");
 
-                    b.ToTable("DefectType");
+                    b.ToTable("C01_DefectTypeLib");
 
                     b.HasData(
                         new
                         {
                             Id = new Guid("92e46adb-51cb-41d5-9252-f572e309399e"),
                             Code = "S01",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 362, DateTimeKind.Local).AddTicks(8077),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 503, DateTimeKind.Local).AddTicks(7210),
                             CreateUserId = 0,
                             HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             Name = "Proplem1",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 362, DateTimeKind.Local).AddTicks(8103),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 503, DateTimeKind.Local).AddTicks(7242),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("7da1e425-7ebb-40ef-a868-7a3ba7e38214"),
                             Code = "S01",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 362, DateTimeKind.Local).AddTicks(9858),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 503, DateTimeKind.Local).AddTicks(8821),
                             CreateUserId = 0,
                             HandlersJson = "[\"Proplem2 reason1 soluiton1 Handler1\",\"Proplem2 reason2 soluiton2 Handler2\",\"Proplem2 reason3 soluiton3 Handler3\",\"Proplem2 reason4 soluiton4 Handler4\",\"Proplem2 reason5 soluiton5 Handler5\"]",
                             Name = "Proplem2",
                             ReasonsJson = "[\"Proplem2 reason1\",\"Proplem2 reason2\",\"Proplem2 reason3\",\"Proplem2 reason4\",\"Proplem2 reason5\"]",
                             SolutionsJson = "[\"Proplem2 reason1 solution1\",\"Proplem2 reason2 solution2\",\"Proplem2 reason3 solution3\",\"Proplem2 reason4 solution4\",\"Proplem2 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 362, DateTimeKind.Local).AddTicks(9865),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 503, DateTimeKind.Local).AddTicks(8826),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("0063529e-81d9-4d53-bd4a-1fd21496dc97"),
                             Code = "S01",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 363, DateTimeKind.Local).AddTicks(1420),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 504, DateTimeKind.Local).AddTicks(643),
                             CreateUserId = 0,
                             HandlersJson = "[\"Proplem3 reason1 soluiton1 Handler1\",\"Proplem3 reason2 soluiton2 Handler2\",\"Proplem3 reason3 soluiton3 Handler3\",\"Proplem3 reason4 soluiton4 Handler4\",\"Proplem3 reason5 soluiton5 Handler5\"]",
                             Name = "Proplem3",
                             ReasonsJson = "[\"Proplem3 reason1\",\"Proplem3 reason2\",\"Proplem3 reason3\",\"Proplem3 reason4\",\"Proplem3 reason5\"]",
                             SolutionsJson = "[\"Proplem3 reason1 solution1\",\"Proplem3 reason2 solution2\",\"Proplem3 reason3 solution3\",\"Proplem3 reason4 solution4\",\"Proplem3 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 363, DateTimeKind.Local).AddTicks(1425),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 504, DateTimeKind.Local).AddTicks(652),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("e1bedd68-8c62-4320-bcd3-a2692398e0e8"),
                             Code = "S01",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 363, DateTimeKind.Local).AddTicks(4380),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 504, DateTimeKind.Local).AddTicks(2250),
                             CreateUserId = 0,
                             HandlersJson = "[\"Proplem4 reason1 soluiton1 Handler1\",\"Proplem4 reason2 soluiton2 Handler2\",\"Proplem4 reason3 soluiton3 Handler3\",\"Proplem4 reason4 soluiton4 Handler4\",\"Proplem4 reason5 soluiton5 Handler5\"]",
                             Name = "Proplem4",
                             ReasonsJson = "[\"Proplem4 reason1\",\"Proplem4 reason2\",\"Proplem4 reason3\",\"Proplem4 reason4\",\"Proplem4 reason5\"]",
                             SolutionsJson = "[\"Proplem4 reason1 solution1\",\"Proplem4 reason2 solution2\",\"Proplem4 reason3 solution3\",\"Proplem4 reason4 solution4\",\"Proplem4 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 363, DateTimeKind.Local).AddTicks(4388),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 504, DateTimeKind.Local).AddTicks(2255),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("b8f567f2-c62b-431e-acc8-79ca56dc9aa8"),
                             Code = "S01",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 363, DateTimeKind.Local).AddTicks(6148),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 504, DateTimeKind.Local).AddTicks(3771),
                             CreateUserId = 0,
                             HandlersJson = "[\"Proplem5 reason1 soluiton1 Handler1\",\"Proplem5 reason2 soluiton2 Handler2\",\"Proplem5 reason3 soluiton3 Handler3\",\"Proplem5 reason4 soluiton4 Handler4\",\"Proplem5 reason5 soluiton5 Handler5\"]",
                             Name = "Proplem5",
                             ReasonsJson = "[\"Proplem5 reason1\",\"Proplem5 reason2\",\"Proplem5 reason3\",\"Proplem5 reason4\",\"Proplem5 reason5\"]",
                             SolutionsJson = "[\"Proplem5 reason1 solution1\",\"Proplem5 reason2 solution2\",\"Proplem5 reason3 solution3\",\"Proplem5 reason4 solution4\",\"Proplem5 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 363, DateTimeKind.Local).AddTicks(6154),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 504, DateTimeKind.Local).AddTicks(3779),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("9c1d76c0-4e0a-4dae-b2ec-c06a906442b6"),
                             Code = "S01",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 363, DateTimeKind.Local).AddTicks(7830),
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 504, DateTimeKind.Local).AddTicks(5238),
                             CreateUserId = 0,
                             HandlersJson = "[\"Proplem6 reason1 soluiton1 Handler1\",\"Proplem6 reason2 soluiton2 Handler2\",\"Proplem6 reason3 soluiton3 Handler3\",\"Proplem6 reason4 soluiton4 Handler4\",\"Proplem6 reason5 soluiton5 Handler5\"]",
                             Name = "Proplem6",
                             ReasonsJson = "[\"Proplem6 reason1\",\"Proplem6 reason2\",\"Proplem6 reason3\",\"Proplem6 reason4\",\"Proplem6 reason5\"]",
                             SolutionsJson = "[\"Proplem6 reason1 solution1\",\"Proplem6 reason2 solution2\",\"Proplem6 reason3 solution3\",\"Proplem6 reason4 solution4\",\"Proplem6 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 363, DateTimeKind.Local).AddTicks(7837),
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 504, DateTimeKind.Local).AddTicks(5243),
                             UpdateUserId = 0
                         });
                 });
 
-            modelBuilder.Entity("QCService.Models.QCTicket", b =>
+            modelBuilder.Entity("QCService.Models.C01.QCZoneTypeLib", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("CheckDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<string>("Code")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
@@ -441,38 +400,259 @@ namespace QCService.Migrations
                     b.Property<int>("CreateUserId")
                         .HasColumnType("int");
 
-                    b.Property<string>("DefectRepairsJson")
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("FormsJson")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("DefectSizeBreakDownJson")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("GroupType")
+                        .HasColumnType("int");
 
-                    b.Property<string>("DefectsJson")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UpdateUserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Code", "Name");
+
+                    b.ToTable("C01_QCZoneTypeLib");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"),
+                            Code = "Fabric Storage Has Roll",
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 483, DateTimeKind.Local).AddTicks(84),
+                            CreateUserId = 0,
+                            Description = "kho vải có roll",
+                            GroupType = 1,
+                            Name = "Fabric Storage Has Roll",
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(6958),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4"),
+                            Code = "Fabric Storage Has no Roll",
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8261),
+                            CreateUserId = 0,
+                            Description = "kho vải không roll",
+                            GroupType = 2,
+                            Name = "Fabric Storage Has no Roll",
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8432),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358"),
+                            Code = "Operation",
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8437),
+                            CreateUserId = 0,
+                            Description = "kho nguyên phụ liệu",
+                            GroupType = 2,
+                            Name = "Operation",
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8439),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964"),
+                            Code = "Cut Operation",
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8443),
+                            CreateUserId = 0,
+                            Description = "công đoạn cắt (CUT)",
+                            GroupType = 3,
+                            Name = "Cut Operation",
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8444),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("93492f52-c22d-4224-8770-fcf410062e6a"),
+                            Code = "Print Operation",
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8448),
+                            CreateUserId = 0,
+                            Description = "công đoạn in (PRINT)",
+                            GroupType = 3,
+                            Name = "Print Operation",
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8450),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("de72a6a9-bd09-48e3-b48e-19494d3ddb43"),
+                            Code = "Emboidery Operation",
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8454),
+                            CreateUserId = 0,
+                            Description = "công đoạn thuê (EMBOIDERY)",
+                            GroupType = 3,
+                            Name = "Emboidery Operation",
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8456),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087"),
+                            Code = "Sew Operation",
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8460),
+                            CreateUserId = 0,
+                            Description = "công đoạn may (SEW)",
+                            GroupType = 3,
+                            Name = "Sew Operation",
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8461),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956"),
+                            Code = "Finish Operation",
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8465),
+                            CreateUserId = 0,
+                            Description = "công đoạn wash (SEND TO FINISH)",
+                            GroupType = 3,
+                            Name = "Finish Operation",
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8467),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229"),
+                            Code = "Packing Operation",
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8471),
+                            CreateUserId = 0,
+                            Description = "công đoạn hoàn tất (PACKING)",
+                            GroupType = 3,
+                            Name = "Packing Operation",
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8472),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"),
+                            Code = "Pre-Final",
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8476),
+                            CreateUserId = 0,
+                            Description = "Pre-Final",
+                            GroupType = 4,
+                            Name = "Pre-Final",
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8477),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
+                            Code = "Final",
+                            CreateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8481),
+                            CreateUserId = 0,
+                            Description = "Final",
+                            GroupType = 4,
+                            Name = "Final",
+                            UpdateDate = new DateTime(2021, 10, 27, 16, 4, 43, 485, DateTimeKind.Local).AddTicks(8482),
+                            UpdateUserId = 0
+                        });
+                });
+
+            modelBuilder.Entity("QCService.Models.C02.QCRequest", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("ArticleCode")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("ArticleName")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Category")
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<string>("ColorCode")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("ColorName")
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CreateUserId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Description")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<DateTime>("InputDate")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("GRNNumber")
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("PrivateDetailJson")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ProductLine")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<double>("Quantity")
+                    b.Property<double>("InspectionQty")
                         .HasColumnType("float");
 
-                    b.Property<int>("TesterCheckId")
+                    b.Property<string>("OCNumber")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("QCDefinition")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("QCNumber")
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<double>("QCQty")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime>("QCRequestDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("QCType")
+                        .HasMaxLength(15)
+                        .HasColumnType("nvarchar(15)");
+
+                    b.Property<int>("SamplePercentage")
                         .HasColumnType("int");
+
+                    b.Property<string>("SamplePlan")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Shade")
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("SizeCode")
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<string>("SizeName")
+                        .HasMaxLength(25)
+                        .HasColumnType("nvarchar(25)");
+
+                    b.Property<string>("StyleCode")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("StyleName")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
@@ -485,196 +665,95 @@ namespace QCService.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Code", "Name");
+                    b.HasIndex("ZoneTypeId", "QCNumber", "QCType");
 
-                    b.ToTable("QCTicket");
+                    b.ToTable("C02_QCRequest");
                 });
 
-            modelBuilder.Entity("QCService.Models.QCZoneType", b =>
+            modelBuilder.Entity("QCService.Models.C02.QCTicket", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Code")
                         .IsRequired()
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
-                    b.Property<DateTime>("CreateDate")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("DefectRepairsJson")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("CreateUserId")
-                        .HasColumnType("int");
+                    b.Property<string>("DefectSizeBreakDownJson")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Description")
-                        .HasMaxLength(500)
-                        .HasColumnType("nvarchar(500)");
-
-                    b.Property<int>("GroupType")
-                        .HasColumnType("int");
+                    b.Property<string>("DefectsJson")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
-                    b.Property<DateTime>("UpdateDate")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("PrivateDetailJson")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UpdateUserId")
-                        .HasColumnType("int");
+                    b.Property<string>("ProductLine")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
                     b.HasIndex("Code", "Name");
 
-                    b.ToTable("ZoneType");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"),
-                            Code = "Fabric Storage Has Roll",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 343, DateTimeKind.Local).AddTicks(2106),
-                            CreateUserId = 0,
-                            Description = "kho vải có roll",
-                            GroupType = 1,
-                            Name = "Fabric Storage Has Roll",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(6993),
-                            UpdateUserId = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4"),
-                            Code = "Fabric Storage Has no Roll",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7345),
-                            CreateUserId = 0,
-                            Description = "kho vải không roll",
-                            GroupType = 2,
-                            Name = "Fabric Storage Has no Roll",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7351),
-                            UpdateUserId = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358"),
-                            Code = "Operation",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7356),
-                            CreateUserId = 0,
-                            Description = "kho nguyên phụ liệu",
-                            GroupType = 2,
-                            Name = "Operation",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7357),
-                            UpdateUserId = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964"),
-                            Code = "Cut Operation",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7360),
-                            CreateUserId = 0,
-                            Description = "công đoạn cắt (CUT)",
-                            GroupType = 3,
-                            Name = "Cut Operation",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7361),
-                            UpdateUserId = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("93492f52-c22d-4224-8770-fcf410062e6a"),
-                            Code = "Print Operation",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7364),
-                            CreateUserId = 0,
-                            Description = "công đoạn in (PRINT)",
-                            GroupType = 3,
-                            Name = "Print Operation",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7365),
-                            UpdateUserId = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("de72a6a9-bd09-48e3-b48e-19494d3ddb43"),
-                            Code = "Emboidery Operation",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7426),
-                            CreateUserId = 0,
-                            Description = "công đoạn thuê (EMBOIDERY)",
-                            GroupType = 3,
-                            Name = "Emboidery Operation",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7427),
-                            UpdateUserId = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087"),
-                            Code = "Sew Operation",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7430),
-                            CreateUserId = 0,
-                            Description = "công đoạn may (SEW)",
-                            GroupType = 3,
-                            Name = "Sew Operation",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7431),
-                            UpdateUserId = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956"),
-                            Code = "Finish Operation",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7434),
-                            CreateUserId = 0,
-                            Description = "công đoạn wash (SEND TO FINISH)",
-                            GroupType = 3,
-                            Name = "Finish Operation",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7435),
-                            UpdateUserId = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229"),
-                            Code = "Packing Operation",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7437),
-                            CreateUserId = 0,
-                            Description = "công đoạn hoàn tất (PACKING)",
-                            GroupType = 3,
-                            Name = "Packing Operation",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7438),
-                            UpdateUserId = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"),
-                            Code = "Pre-Final",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7441),
-                            CreateUserId = 0,
-                            Description = "Pre-Final",
-                            GroupType = 4,
-                            Name = "Pre-Final",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7442),
-                            UpdateUserId = 0
-                        },
-                        new
-                        {
-                            Id = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
-                            Code = "Final",
-                            CreateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7445),
-                            CreateUserId = 0,
-                            Description = "Final",
-                            GroupType = 4,
-                            Name = "Final",
-                            UpdateDate = new DateTime(2021, 10, 22, 16, 57, 45, 346, DateTimeKind.Local).AddTicks(7446),
-                            UpdateUserId = 0
-                        });
+                    b.ToTable("C02_QCTicket");
                 });
 
-            modelBuilder.Entity("QCService.Models.Defect", b =>
+            modelBuilder.Entity("QCService.Models.C01.AQLLib", b =>
                 {
-                    b.HasOne("QCService.Models.QCZoneType", "ZoneType")
+                    b.HasOne("QCService.Models.C01.QCZoneTypeLib", "ZoneType")
+                        .WithMany()
+                        .HasForeignKey("ZoneTypeId");
+
+                    b.Navigation("ZoneType");
+                });
+
+            modelBuilder.Entity("QCService.Models.C01.DefectLib", b =>
+                {
+                    b.HasOne("QCService.Models.C01.QCZoneTypeLib", "ZoneType")
+                        .WithMany()
+                        .HasForeignKey("ZoneTypeId");
+
+                    b.Navigation("ZoneType");
+                });
+
+            modelBuilder.Entity("QCService.Models.C01.DefectTypeLib", b =>
+                {
+                    b.HasOne("QCService.Models.C01.QCZoneTypeLib", "ZoneType")
+                        .WithMany()
+                        .HasForeignKey("ZoneTypeId");
+
+                    b.Navigation("ZoneType");
+                });
+
+            modelBuilder.Entity("QCService.Models.C02.QCRequest", b =>
+                {
+                    b.HasOne("QCService.Models.C01.QCZoneTypeLib", "ZoneType")
                         .WithMany()
                         .HasForeignKey("ZoneTypeId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("ZoneType");
+                });
+
+            modelBuilder.Entity("QCService.Models.C02.QCTicket", b =>
+                {
+                    b.HasOne("QCService.Models.C02.QCRequest", "QCRequest")
+                        .WithMany()
+                        .HasForeignKey("Id")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("QCRequest");
                 });
 #pragma warning restore 612, 618
         }
