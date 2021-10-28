@@ -33,13 +33,10 @@ namespace LibraryService
             services.AddControllers();
 
             services.AddAuthentication()
-            .AddJwtBearer("Bearer", options=>{
-                options.Authority="https://localhost:5001";
-                options.Audience="library_api";
-                options.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateAudience = false
-                };
+            .AddJwtBearer("Bearer", options =>
+            {
+                options.Authority = "https://localhost:5001";
+                options.Audience = "library_api";
             });
 
             services.AddSwaggerGen(c =>
@@ -47,8 +44,8 @@ namespace LibraryService
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "LibraryService", Version = "v1" });
             });
 
-            // services.AddDbContext<LibraryContext>(option => option.UseInMemoryDatabase("InMemory"));
-            services.AddDbContext<LibraryContext>(option => option.UseSqlServer(Configuration.GetConnectionString("LibraryContext")));
+            services.AddDbContext<LibraryContext>(option => option.UseInMemoryDatabase("InMemory"));
+            // services.AddDbContext<LibraryContext>(option => option.UseSqlServer(Configuration.GetConnectionString("LibraryContext")));
 
             AddServices(services);
 
@@ -63,6 +60,12 @@ namespace LibraryService
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "LibraryService v1"));
             }
+            app.UseCors(config =>
+            {
+                config.AllowAnyOrigin();
+                config.AllowAnyMethod();
+                config.AllowAnyHeader();
+            });
 
             app.UseHttpsRedirection();
 

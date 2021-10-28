@@ -22,12 +22,12 @@ namespace AuthService
             new ApiResource("qc_api","qc api"),
         };
 
-        // public static IEnumerable<ApiScope> ApiScopes =>
-        //     new ApiScope[]
-        //     {
-        //         new ApiScope("library.api"),
-        //         new ApiScope("qc.api"),
-        //     };
+        public static IEnumerable<ApiScope> ApiScopes =>
+            new ApiScope[]
+            {
+                new ApiScope("library_api"),
+                new ApiScope("qc_api"),
+            };
 
         public static IEnumerable<Client> Clients =>
             new Client[]
@@ -37,9 +37,9 @@ namespace AuthService
                 {
                     ClientId = "qc_client_id",
                     ClientName = "QC Client balzor WASM (Code with PKCE)",
-                    ClientSecrets = { new Secret("qc_client_blazor_wasm_secret".Sha256()) },
+                    RequireClientSecret = false,
                     AllowedGrantTypes = GrantTypes.Code,
-                    AllowedScopes = { "openid", "profile" ,"email","library_api"},
+                    AllowedScopes = { "openid", "profile" ,"email", "library_api"},
                     RequirePkce = true,
                     AllowedCorsOrigins = { "https://localhost:6001" },
                     RedirectUris = { "https://localhost:6001/authentication/login-callback" },

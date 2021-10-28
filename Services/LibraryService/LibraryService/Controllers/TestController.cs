@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 namespace LibraryService.Controllers
 {
     [ApiController]
-    [Route("api/[controller]/[Action]")]
+    [Route("api/[controller]/{action=Index}")]
     public class TestController : ControllerBase
     {
+        [HttpGet]
+        public string Index() => "test";
         [HttpGet]
         public string Get() => "test";
 

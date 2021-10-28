@@ -1,4 +1,5 @@
 ﻿@page "/"
+@inject HttpClient client
 
 <h1>Hello, world!</h1>
 
@@ -6,6 +7,39 @@
     Before authentication will function correctly, you must configure your provider details in <code>Program.cs</code>
 </div>
 
-Welcome to your new app.
+<button @onclick="@click">api</button>
+<button @onclick="@clicksecret">secret</button>
+
+<p>
+    @apiresult
+</p>
+
+
 
 <SurveyPrompt Title="How is Blazor working for you?" />
+
+@code{
+    string apiresult;
+
+    public async void click(){
+        var rs =await client.GetAsync("api/test");
+        if(rs.IsSuccessStatusCode){
+            apiresult=await rs.Content.ReadAsStringAsync();
+        }else{
+            apiresult=$"error: {rs.StatusCode}";
+        }
+
+        StateHasChanged();
+    }
+
+    public async void clicksecret(){
+        var rs =await client.GetAsync("api/test/secret");
+        if(rs.IsSuccessStatusCode){
+            apiresult=await rs.Content.ReadAsStringAsync();
+        }else{
+            apiresult=$"error: {rs.StatusCode}";
+        }
+        StateHasChanged();
+
+    }
+}
