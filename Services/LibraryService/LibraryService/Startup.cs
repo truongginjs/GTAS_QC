@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using LibraryService.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 namespace LibraryService
 {
@@ -32,9 +33,13 @@ namespace LibraryService
             services.AddControllers();
 
             services.AddAuthentication()
-            .AddJwtBearer("Bearer", config=>{
-                config.Authority="https://localhost:5001";
-                config.Audience="library.api";
+            .AddJwtBearer("Bearer", options=>{
+                options.Authority="https://localhost:5001";
+                options.Audience="library_api";
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateAudience = false
+                };
             });
 
             services.AddSwaggerGen(c =>

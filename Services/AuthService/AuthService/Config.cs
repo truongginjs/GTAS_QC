@@ -10,15 +10,16 @@ namespace AuthService
     public static class Config
     {
         public static IEnumerable<IdentityResource> IdentityResources =>
-                   new IdentityResource[]
-                   {
+            new IdentityResource[]
+            {
                 new IdentityResources.OpenId(),
                 new IdentityResources.Profile(),
                 new IdentityResources.Email()
-                   };
+            };
 
         public static IEnumerable<ApiResource> GetApis() => new ApiResource[]{
-            new ApiResource("library.api","library Api")
+            new ApiResource("library_api","library api"),
+            new ApiResource("qc_api","qc api"),
         };
 
         // public static IEnumerable<ApiScope> ApiScopes =>
@@ -34,16 +35,16 @@ namespace AuthService
                 // qc client code flow client
                 new Client
                 {
-                    ClientId = "qc.client",
+                    ClientId = "qc_client_id",
+                    ClientName = "QC Client balzor WASM (Code with PKCE)",
                     ClientSecrets = { new Secret("qc_client_blazor_wasm_secret".Sha256()) },
                     AllowedGrantTypes = GrantTypes.Code,
-                    AllowedScopes = { "openid", "profile" ,"email","library.api"},
+                    AllowedScopes = { "openid", "profile" ,"email","library_api"},
                     RequirePkce = true,
-                    RequireClientSecret = false,
                     AllowedCorsOrigins = { "https://localhost:6001" },
                     RedirectUris = { "https://localhost:6001/authentication/login-callback" },
                     PostLogoutRedirectUris = { "https://localhost:6001/" },
-                    Enabled = true                
+                    RefreshTokenUsage = TokenUsage.ReUse,
                 }
             };
     }
