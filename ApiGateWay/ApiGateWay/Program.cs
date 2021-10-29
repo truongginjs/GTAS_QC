@@ -18,11 +18,14 @@ namespace ApiGateWay
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .ConfigureAppConfiguration((hostingContext, config) =>
+                 {
+                     var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+                     config.AddJsonFile($"ocelot.{env}.json");
+                 })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.ConfigureAppConfiguration(config=> config.AddJsonFile($"ocelot.{env}.json"));
                 });
     }
 }
