@@ -26,15 +26,15 @@ namespace QCService.Models.C02
         public string Name { get; set; }
         public string ProductLine { get; set; }
         [NotMapped]
-        public List<DefectDTO> Defects { get; set; }
+        public DefectAQLDTO DefectAQL { get; set; }
 
-        public string DefectsJson { get; set; }
+        public string DefectAQLJson { get; set; }
         [NotMapped]
         public DefectSizeBreakDownDTO DefectSizeBreakDown { get; set; }
         public string DefectSizeBreakDownJson { get; set; }
         [NotMapped]
-        public List<DefectTypeDTO> DefectRepairs { get; set; }
-        public string DefectRepairsJson { get; set; }
+        public List<DefectsReasonAndSolutionDTO> DefectsReasonAndSolutions { get; set; }
+        public string DefectsReasonAndSolutionsJson { get; set; }
         [NotMapped]
         public object PrivateDetail { get; set; }
         public string PrivateDetailJson { get; set; }
