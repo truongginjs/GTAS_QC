@@ -18,11 +18,14 @@ namespace QCService.Models.C01
         [StringLength(500)]
         public string Name { get; set; }
         [NotMapped]
-        public List<string> Defects { get; set; }
-        public string DefectsJson { get; set; }
+        public List<string> Reasons { get; set; }
+        public string ReasonsJson { get; set; }
         [NotMapped]
         public List<string> Solutions { get; set; }
         public string SolutionsJson { get; set; }
+         [NotMapped]
+        public List<string> Handlers { get; set; }
+        public string HandlersJson { get; set; }
         public Guid? ZoneTypeId { get; set; }
         public QCZoneTypeLib ZoneType { get; set; }
     }

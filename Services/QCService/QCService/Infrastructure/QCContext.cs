@@ -10,7 +10,6 @@ namespace QCService.Infrastructure
         public virtual DbSet<QCRequest> QCRequest { get; set; }
         public virtual DbSet<AQLLib> AQLLib { get; set; }
         public virtual DbSet<DefectLib> DefectLib { get; set; }
-        public virtual DbSet<DefectTypeLib> DefectTypeLib { get; set; }
         public virtual DbSet<QCZoneTypeLib> QCZoneTypeLib { get; set; }
         public QCContext(DbContextOptions<QCContext> options) : base(options)
         {

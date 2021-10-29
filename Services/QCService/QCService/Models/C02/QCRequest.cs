@@ -1,8 +1,11 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Microsoft.EntityFrameworkCore;
 using QCService.Models.C01;
+using QCService.Models.DTOs;
+using QCService.Models.Enums;
 
 namespace QCService.Models.C02
 {
@@ -42,16 +45,16 @@ namespace QCService.Models.C02
         public string ColorCode { get; set; }
         [StringLength(25)]
         public string ColorName { get; set; }
-        [StringLength(25)]
-        public string SizeCode { get; set; }
-        [StringLength(25)]
-        public string SizeName { get; set; }
-        [StringLength(10)]
-        public string Shade { get; set; }
-        public double QCQty { get; set; }
-        public double InspectionQty { get; set; }
+        
         [StringLength(15)]
         public string QCType { get; set; }
+        [NotMapped]
+        public List<SizeBreakDownDTO> SizeBreakDowns{get;set;}
+        public string SizeBreakDownsJson{get;set;}
+        [NotMapped]
+        public User UserApprove{get;set;}
+        public int UserApproveId{get;set;}
 
+        public QCRequestStatusEnum Status{get;set;}
     }
 }
