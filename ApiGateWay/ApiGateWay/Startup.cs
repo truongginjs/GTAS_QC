@@ -20,13 +20,23 @@ namespace ApiGateWay
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
-            // services.AddAuthentication(option=>{
-            //     option.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-            //     option.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-            // }).AddJwtBearer("IdentityApiKey",option=>{
-            //     option.RequireHttpsMetadata=false;
-            //     option.SaveToken=true;
-            // });
+            var authenticationProviderKey = "IdentityApiKey";
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+
+            })
+             .AddJwtBearer(authenticationProviderKey, x =>
+             {
+                 x.Authority = "https://localhost:5001"; // IDENTITY SERVER URL
+                 //x.RequireHttpsMetadata = false;
+                 x.TokenValidationParameters = new TokenValidationParameters
+                 {
+                     ValidateAudience = false
+                 };
+             });
 
             services.AddOcelot();
         }
@@ -41,7 +51,7 @@ namespace ApiGateWay
 
             app.UseRouting();
 
-            // app.UseAuthentication();
+            app.UseAuthentication();
 
             app.UseEndpoints(endpoints =>
             {
