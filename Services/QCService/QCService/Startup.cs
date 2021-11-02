@@ -63,7 +63,7 @@ namespace QCService
                 endpoints.MapControllers();
             });
 
-            app.SeedFakeDatabase();
+            //app.SeedFakeDatabase();
 
         }
 

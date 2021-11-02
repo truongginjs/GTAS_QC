@@ -72,10 +72,11 @@ dotnet <command> [args]
 example: 
 cipher tool
 ```sh
+dotnet new tool-manifest
 #install
-dotnet tool install --add-source ..\..\..\BuildingBlocks\SINNIKA.Cipher\nupkg sinnika.cipher
+dotnet tool install --add-source .\BuildingBlocks\SINNIKA.Cipher\SINNIKA.Cipher.Tool\nupkg sinnika.cipher.tool
 #uninstall
-dotnet tool uninstall sinnika.cipher
+dotnet tool uninstall sinnika.cipher.tool
 #encrypt
 dotnet sinnika.cipher -e -t 'hello' -p 'salt'
 #decrypt

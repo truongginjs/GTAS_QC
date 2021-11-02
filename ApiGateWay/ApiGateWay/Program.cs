@@ -20,8 +20,13 @@ namespace ApiGateWay
             Host.CreateDefaultBuilder(args)
                 .ConfigureAppConfiguration((hostingContext, config) =>
                  {
-                     var env = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-                     config.AddJsonFile($"ocelot.{env}.json");
+                     config
+                         .SetBasePath(hostingContext.HostingEnvironment.ContentRootPath)
+                         .AddJsonFile("appsettings.json", true, true)
+                         .AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", true, true)
+                         .AddJsonFile("ocelot.json")
+                         .AddJsonFile($"ocelot.{hostingContext.HostingEnvironment.EnvironmentName}.json")
+                         .AddEnvironmentVariables();
                  })
                 .ConfigureWebHostDefaults(webBuilder =>
                 {

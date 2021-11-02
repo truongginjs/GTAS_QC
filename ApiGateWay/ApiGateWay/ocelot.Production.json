@@ -2,11 +2,11 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": "5021"
+          "Host": "172.16.39.149",
+          "Port": 8081
         }
       ],
       "UpstreamPathTemplate": "/api/lib/{everything}",
@@ -19,17 +19,18 @@
       //"AuthenticationOptions": {
       //  "AuthenticationProviderKey": "IdentityApiKey",
       //  "AllowedScopes": []
-      //},
+      //}
+      //,
       "DangerousAcceptAnyServerCertificateValidator": true
     }
     ,
     {
       "DownstreamPathTemplate": "/api/{everything}",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "locahost",
-          "Port": 5011
+          "Host": "172.16.39.149",
+          "Port": 8080
         }
       ],
       "UpstreamPathTemplate": "/api/qc/{everything}",

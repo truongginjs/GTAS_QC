@@ -71,6 +71,7 @@ namespace AuthService
 
         public void Configure(IApplicationBuilder app)
         {
+            
             if (Environment.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -84,7 +85,7 @@ namespace AuthService
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapDefaultControllerRoute();
+                endpoints.MapControllers();
             });
         }
     }

@@ -50,7 +50,7 @@ TOOLS:
                         Console.WriteLine("=================================\n\n");
                         Console.WriteLine("-h,--help \thelp");
                         Console.WriteLine("-d,--decrypt \tto decrypt");
-                        Console.WriteLine("-d,--encrypt \tto encrypt");
+                        Console.WriteLine("-e,--encrypt \tto encrypt");
                         Console.WriteLine("-t,--text \tinput text");
                         Console.WriteLine("-p,--password \tsalt parth");
                         return;
