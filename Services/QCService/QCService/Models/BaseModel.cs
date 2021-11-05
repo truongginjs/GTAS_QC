@@ -17,8 +17,8 @@ namespace QCService.Models
         public virtual int UpdateUserId {get;set;}
         // [NotMapped]
         // public virtual User UpdateUser {get;set;}
-
         public virtual DateTime UpdateDate {get;set;}
+        public bool IsDeleted { get; set; } = false;
 
     }
 }

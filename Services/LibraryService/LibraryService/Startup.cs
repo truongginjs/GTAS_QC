@@ -14,6 +14,10 @@ using Microsoft.OpenApi.Models;
 using LibraryService.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using System.Reflection;
+using SINNIKA.Cipher;
+using LibraryService.Infrastructure.Repositories;
+using LibraryService.Infrastructure.Repositories.Imps;
 
 namespace LibraryService
 {
@@ -44,9 +48,6 @@ namespace LibraryService
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "LibraryService", Version = "v1" });
             });
 
-            services.AddDbContext<LibraryContext>(option => option.UseInMemoryDatabase("InMemory"));
-            // services.AddDbContext<LibraryContext>(option => option.UseSqlServer(Configuration.GetConnectionString("LibraryContext")));
-
             AddServices(services);
 
         }
@@ -54,7 +55,7 @@ namespace LibraryService
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (true || env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
@@ -79,14 +80,20 @@ namespace LibraryService
                 endpoints.MapControllers();
             });
 
-            app.SeedFakeDatabase();
-
+            //app.SeedFakeDatabase();
         }
 
         private IServiceCollection AddServices(IServiceCollection services)
         {
+            var secret = Assembly.GetExecutingAssembly().FullName.Split(',')[0];
+            //services.AddDbContext<LibraryContext>(option => option.UseInMemoryDatabase("InMemory"));
+            services.AddDbContext<LibraryContext>(option => option.UseSqlServer(Configuration.GetConnectionString("LibraryContext").Decrypt(secret)));
+
             services.AddAutoMapper(typeof(MapperProfile).Assembly);
-            // services.AddScoped<ITestRepository,TestRepository>();
+
+            services.AddScoped<IZoneTypeRepository, ZoneTypeRepository>();
+            services.AddScoped<IAQLRepository, AQLRepository>();
+            services.AddScoped<IDefectRepository, DefectRepository>();
 
             // services.AddGrapQLService(_env);
 
