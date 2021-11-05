@@ -10,10 +10,13 @@ using LibraryService.Infrastructure.Repositories;
 using LibraryService.Models;
 using LibraryService.Infrastructure.Repositories.Imps;
 using Microsoft.AspNetCore.Authorization;
+using LibraryService.DTOs.Responses;
+using LibraryService.DTOs.Requests;
+using LibraryService.Models.L01;
 
 namespace LibraryService.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class ZoneTypeController : ControllerBase
@@ -30,47 +33,47 @@ namespace LibraryService.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ZoneTypeResponseDTO>>> GetsAsync()
+        public async Task<ActionResult<IEnumerable<QCZoneTypeResDTO>>> GetsAsync()
         {
             var data = await _repo.GetsAsync();
-            var result = _mapper.Map<IEnumerable<ZoneTypeResponseDTO>>(data);
+            var result = _mapper.Map<IEnumerable<QCZoneTypeResDTO>>(data);
             return Ok(result);
         }
         [HttpGet("{id}")]
-        public async Task<ActionResult<ZoneTypeResponseDTO>> GetAsync(Guid id)
+        public async Task<ActionResult<QCZoneTypeResDTO>> GetAsync(Guid id)
         {
             var data = await _repo.GetAsync(id);
             if (data == null) return NotFound();
-            var result = _mapper.Map<ZoneTypeResponseDTO>(data);
+            var result = _mapper.Map<QCZoneTypeResDTO>(data);
             return Ok(result);
         }
 
         [HttpPost]
-        public async Task<ActionResult<ZoneTypeResponseDTO>> CreateAsync([FromBody] ZoneTypeRequestDTO test)
+        public async Task<ActionResult<QCZoneTypeResDTO>> CreateAsync([FromBody] QCZoneTypeReqDTO test)
         {
-            var input = _mapper.Map<ZoneType>(test);
+            var input = _mapper.Map<QCZoneTypeLib>(test);
             var data = await _repo.CreateAsync(input);
             if (data == null) return BadRequest();
-            var result = _mapper.Map<ZoneTypeResponseDTO>(data);
+            var result = _mapper.Map<QCZoneTypeResDTO>(data);
             return Ok(result);
         }
 
         [HttpPut("{id}")]
-        public async Task<ActionResult<ZoneTypeResponseDTO>> UpdateAsync(Guid id, [FromBody] ZoneTypeRequestDTO test)
+        public async Task<ActionResult<QCZoneTypeResDTO>> UpdateAsync(Guid id, [FromBody] QCZoneTypeReqDTO test)
         {
-            var input = _mapper.Map<ZoneType>(test);
+            var input = _mapper.Map<QCZoneTypeLib>(test);
             var data = await _repo.UpdateAsync(id, input);
             if (data == null) return BadRequest();
-            var result = _mapper.Map<ZoneTypeResponseDTO>(data);
+            var result = _mapper.Map<QCZoneTypeResDTO>(data);
             return Ok(result);
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<ZoneTypeResponseDTO>> UpdateAsync(Guid id)
+        public async Task<ActionResult<QCZoneTypeResDTO>> DeleteAsync(Guid id)
         {
             var data = await _repo.DeleteAsync(id);
             if (data == null) return BadRequest();
-            var result = _mapper.Map<ZoneTypeResponseDTO>(data);
+            var result = _mapper.Map<QCZoneTypeResDTO>(data);
             return Ok(result);
         }
 

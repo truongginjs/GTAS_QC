@@ -1,21 +1,18 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Threading.Tasks;
+using IED.Server.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using QCService.Infrastructure;
 using QCService.Infrastructure.Repositories;
 using QCService.Infrastructure.Repositories.Imps;
+using QCService.Infrastructure.Services;
+using QCService.Infrastructure.Services.Imps;
 using SINNIKA.Cipher;
 
 namespace QCService
@@ -45,7 +42,7 @@ namespace QCService
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
+            if (env.IsDevelopment()|| true)
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
@@ -72,10 +69,15 @@ namespace QCService
             var secret = Assembly.GetExecutingAssembly().FullName.Split(',')[0];
             // services.AddDbContext<QCContext>(option => option.UseInMemoryDatabase("InMemory"));
             services.AddDbContext<QCContext>(option => option.UseSqlServer(Configuration.GetConnectionString("QCContext").Decrypt(secret)));
-            
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 
             services.AddAutoMapper(typeof(MapperProfile).Assembly);
             services.AddScoped<IQCTicketRepository,QCTicketRepository>();
+            services.AddScoped<IJsonRepository, JsonRepository>();
+
+            services.AddScoped<IQCTicketService, QCTicketService>();
 
             // services.AddGrapQLService(_env);
 

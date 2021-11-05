@@ -6,7 +6,7 @@ namespace QCService.Models
     {
         [Key]
         public int UserId { get; set; }
-        public int FullName { get; set; }
-        public int UserLogin { get; set; }
+        public string FullName { get; set; }
+        public string UserLogin { get; set; }
     }
 }

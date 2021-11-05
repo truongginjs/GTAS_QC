@@ -1,7 +1,7 @@
 # GTAS-QC
 
 ## Create solution 
-script to create
+### script to create
 ```sh
 mkdir <solution>
 dotnet new webapi <Project>
@@ -29,8 +29,9 @@ dotnet add ./<project>.Tests/<project>.Tests.csproj reference ./<project>/<proje
 | GraphQL.Server.UI.GraphiQL | [nuget](https://www.nuget.org/packages/GraphQL.Server.UI.GraphiQL/) | graphql UI |
 | Grpc.AspNetCore | [nuget](https://www.nuget.org/packages/Grpc.AspNetCore/) | grpc |
 | Grpc.Tools | [nuget](https://www.nuget.org/packages/Grpc.Tools/) | grpc build proto |
-|Swashbuckle.AspNetCore|[nuget](https://www.nuget.org/packages/Grpc.Tools/)|API UI|
-script
+|Swashbuckle.AspNetCore|[nuget](https://www.nuget.org/packages/Grpc.Tools/)|API UI
+
+### script
 ```sh
 dotnet add package <package>
 ```
@@ -69,8 +70,8 @@ dotnet tool uninstall <command>
 dotnet <command> [args]
 ```
 
-example: 
-cipher tool
+### example: 
+#### cipher tool
 ```sh
 dotnet new tool-manifest
 #install
@@ -90,6 +91,7 @@ dotnet sinnika.cipher -d -t '7H7lCXt6RqSyo86nMKCIvIH2dJzG3/UV0J7uJQz0StJ+2GEL5y5
 - QC Service Classdiagram: [QC-Class-Diagram](https://drive.google.com/file/d/1K94qTuKHKrDHDywIw9APaLpHeTHf-YAe/view?usp=sharing)
 - QCApp Architecture: [QC-App-Arch](https://drive.google.com/file/d/1QwGQJ9Lrs_HuDoA6GjGdC_c4yKVjLs_P/view?usp=sharing)
 - Microservice architecture: [MS-Arch](https://drive.google.com/file/d/1KTeB6w2x79cIf6x9pQRtaL6MjfCTnq68/view?usp=sharing)
+- Design: [Design](https://www.figma.com/file/yIXplQ0RV3TGNrmwYDHyqc/QC-Application?node-id=0%3A1)
 
 ## Docker
 ## Author
