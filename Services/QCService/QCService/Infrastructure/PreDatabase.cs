@@ -22,17 +22,6 @@ namespace QCService.Infrastructure
             return app;
         }
 
-
-
-
-
-
-
-
-
-
-
-
         public static ModelBuilder SeedFakeData(this ModelBuilder builder)
         {
             builder.Entity<QCZoneTypeLib>().HasData(
