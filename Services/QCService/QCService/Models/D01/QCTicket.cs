@@ -33,13 +33,13 @@ namespace QCService.Models.D01
         {
             get
             {
-                defectAQL ??= JsonSerializer.Deserialize<DefectAQLDTO>(DefectAQLJson);
+                defectAQL ??= string.IsNullOrWhiteSpace(DefectAQLJson) ? null:JsonSerializer.Deserialize<DefectAQLDTO>(DefectAQLJson);
                 return defectAQL;
             }
             set
             {
                 defectAQL = value;
-                DefectAQLJson= JsonSerializer.Serialize(defectAQL);
+                DefectAQLJson= defectAQL==null? string.Empty: JsonSerializer.Serialize(defectAQL);
             }
         }
 
@@ -51,13 +51,13 @@ namespace QCService.Models.D01
         {
             get
             {
-                defectSizeBreakDown ??= JsonSerializer.Deserialize<DefectSizeBreakDownDTO>(DefectSizeBreakDownJson);
+                defectSizeBreakDown ??= string.IsNullOrWhiteSpace(DefectSizeBreakDownJson) ? null : JsonSerializer.Deserialize<DefectSizeBreakDownDTO>(DefectSizeBreakDownJson);
                 return defectSizeBreakDown;
             }
             set
             {
                 defectSizeBreakDown = value;
-                DefectAQLJson = JsonSerializer.Serialize(defectSizeBreakDown);
+                DefectAQLJson = defectSizeBreakDown == null ? string.Empty : JsonSerializer.Serialize(defectSizeBreakDown);
             }
         }
         public string DefectSizeBreakDownJson { get; set; }
@@ -68,13 +68,13 @@ namespace QCService.Models.D01
         {
             get
             {
-                defectsReasonAndSolutions ??= JsonSerializer.Deserialize<List<DefectsReasonAndSolutionDTO>>(DefectsReasonAndSolutionsJson);
+                defectsReasonAndSolutions ??= string.IsNullOrWhiteSpace(DefectsReasonAndSolutionsJson) ? null : JsonSerializer.Deserialize<List<DefectsReasonAndSolutionDTO>>(DefectsReasonAndSolutionsJson);
                 return defectsReasonAndSolutions;
             }
             set
             {
                 defectsReasonAndSolutions = value;
-                DefectsReasonAndSolutionsJson = JsonSerializer.Serialize(defectSizeBreakDown);
+                DefectsReasonAndSolutionsJson = defectsReasonAndSolutions == null ? string.Empty : JsonSerializer.Serialize(defectSizeBreakDown);
             }
         }
         public string DefectsReasonAndSolutionsJson { get; set; }
@@ -85,13 +85,13 @@ namespace QCService.Models.D01
         {
             get
             {
-                privateDetail ??= JsonSerializer.Deserialize<object>(PrivateDetailJson);
+                privateDetail ??= string.IsNullOrWhiteSpace(PrivateDetailJson) ? null : JsonSerializer.Deserialize<object>(PrivateDetailJson);
                 return privateDetail;
             }
             set
             {
                 privateDetail = value;
-                PrivateDetailJson = JsonSerializer.Serialize(privateDetail);
+                PrivateDetailJson = privateDetail == null ? string.Empty : JsonSerializer.Serialize(privateDetail);
             }
         }
         public string PrivateDetailJson { get; set; }

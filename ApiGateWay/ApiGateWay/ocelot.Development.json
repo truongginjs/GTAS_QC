@@ -1,6 +1,7 @@
 {
   "Routes": [
     {
+      "SwaggerKey": "LibraryService",
       "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -21,9 +22,9 @@
       //  "AllowedScopes": []
       //},
       "DangerousAcceptAnyServerCertificateValidator": true
-    }
-    ,
+    },
     {
+      "SwaggerKey": "QCService",
       "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
@@ -33,9 +34,31 @@
         }
       ],
       "UpstreamPathTemplate": "/api/qc/{everything}",
-      "UpstreamHttpMethod": [ "GET","POST","PUT","DELETE" ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "DangerousAcceptAnyServerCertificateValidator": true
 
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "LibraryService",
+      "Config": [
+        {
+          "Name": "LibraryService API",
+          "Version": "v1",
+          "Url": "https://localhost:5021/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "QCService",
+      "Config": [
+        {
+          "Name": "QCService API",
+          "Version": "v1",
+          "Url": "https://localhost:5011/swagger/v1/swagger.json"
+        }
+      ]
     }
   ]
 }

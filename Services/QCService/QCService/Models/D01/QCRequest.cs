@@ -56,7 +56,7 @@ namespace QCService.Models.D01
         {
             get
             {
-                sizeBreakDowns ??= JsonSerializer.Deserialize<List<SizeBreakDownDTO>>(SizeBreakDownsJson);
+                sizeBreakDowns ??= string.IsNullOrWhiteSpace(SizeBreakDownsJson) ?null: JsonSerializer.Deserialize<List<SizeBreakDownDTO>>(SizeBreakDownsJson);
                 return sizeBreakDowns;
             }
             set

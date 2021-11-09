@@ -89,7 +89,7 @@ TOOLS:
 
         private static void Test()
         {
-            var args = new string[] {"-d", "-t",  "dFLMFu/1oGybuSNKQJrY2UyVKOxnA71NbkH9SE7wauMLa0G58gygMqsernEpar78+StiABf82nQCh7trbGaUFQ==", "-p", "passwork" };
+            var args = new string[] {"-d", "-t", "gps49HC9/FhneLmy9zWgQ/PjgTvr2cgNl0E1B1HivJ3on0o246aAUBUoaSb1K+gMl4wxnDK8JCWwj65QARR7jQCc0GBFTn/332ha7MHDzL2SRHcqpm7mVgdLF9CdzRoqPNGNEaxoOyVLp7UKKyLAqw==", "-p", "LibrarySerivce" };
             Tools(args);
         }
 

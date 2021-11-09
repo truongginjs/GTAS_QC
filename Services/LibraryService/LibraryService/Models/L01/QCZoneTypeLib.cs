@@ -25,8 +25,17 @@ namespace LibraryService.Models.L01
         [NotMapped]
         public List<FormLibDTO> Forms
         {
-            get { forms ??= JsonSerializer.Deserialize<List<FormLibDTO>>(FormsJson); return forms; }
-            set { forms = value; FormsJson = JsonSerializer.Serialize(forms); }
+            get
+            {
+                forms ??= string.IsNullOrWhiteSpace(FormsJson) ? null : JsonSerializer.Deserialize<List<FormLibDTO>>(FormsJson);
+                return forms;
+            }
+            set
+            {
+                forms = value;
+
+                FormsJson = forms == null ? string.Empty : JsonSerializer.Serialize(forms);
+            }
         }
 
         public string FormsJson { get; set; }

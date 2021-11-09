@@ -19,14 +19,24 @@ namespace QCService.Models.L01
         [StringLength(255)]
         public string Name { get; set; }
         public QCZoneTypeGroupEnum GroupType { get; set; }
-        
+
         private List<FormLibDTO> forms;
         [NotMapped]
         public List<FormLibDTO> Forms
         {
-            get { forms ??= JsonSerializer.Deserialize<List<FormLibDTO>>(FormsJson); return forms; }
-            set { forms = value; FormsJson = JsonSerializer.Serialize(forms); }
+            get
+            {
+                forms ??= string.IsNullOrWhiteSpace(FormsJson) ? null : JsonSerializer.Deserialize<List<FormLibDTO>>(FormsJson);
+                return forms;
+            }
+            set
+            {
+                forms = value;
+
+                FormsJson = forms == null ? string.Empty : JsonSerializer.Serialize(forms);
+            }
         }
+
         public string FormsJson { get; set; }
     }
 }

@@ -16,7 +16,7 @@ namespace LibraryService.Infrastructure
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.SeedFakeData();
+            //modelBuilder.SeedFakeData();
         }
     }
 }
