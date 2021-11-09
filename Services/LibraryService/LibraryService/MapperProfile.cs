@@ -31,9 +31,22 @@ namespace LibraryService
             CreateMap<FormLibReqDTO, FormLibDTO>()
                .ForMember(des => des.FormType,
                act => act.MapFrom(src => src.FormType.ToEnum(FormEnum.Unknown)));
+
+            CreateMap<QCZoneTypeLib, QCZoneTypeResDTO>();
+            CreateMap<FormLibDTO, FormLibResDTO>();
             #endregion
-            // CreateMap<TestRequestDTO, Test>();
+
+            #region AQL
+            CreateMap<AQLLib, AQLResDTO>();
+            CreateMap<AQLReqDTO, AQLLib>();
+            #endregion
+
+            #region Defect
+            CreateMap<DefectLib, DefectResDTO>();
+            CreateMap<DefectReqDTO, DefectLib>();
+            #endregion
+
         }
-        
+
     }
 }
