@@ -9,6 +9,7 @@ namespace QCService.Helpers.Enums
     public enum StoreProcedureType
     {
         Unknown,
-        sp_WFXQCRequest
+        sp_WFXQCRequest,
+        sp_QCTicket
     }
 }

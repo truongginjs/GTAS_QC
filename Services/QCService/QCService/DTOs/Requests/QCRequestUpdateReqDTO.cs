@@ -5,10 +5,10 @@ using System.Collections.Generic;
 
 namespace QCService.DTOs.Requests
 {
-    public class QCRequestUpdateResDTO
+    public class QCRequestUpdateReqDTO
     {
         public Guid Id { get; set; }
-        public QCTicketResDTO QCTicket { get; set; }
+        public QCDetailResDTO QCTicket { get; set; }
 
         public Guid ZoneTypeId { get; set; }
         public string Description { get; set; }

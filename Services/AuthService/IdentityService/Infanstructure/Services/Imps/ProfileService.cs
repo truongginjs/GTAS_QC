@@ -20,13 +20,11 @@ public class ProfileService : IProfileService
         //>Processing
         var user = await _userManager.GetUserAsync(context.Subject);
 
-        var claims = new List<Claim>
-        {
-            new Claim("FullName", user.FullName),
-        };
+        var claims = GetClaims(user);
 
         context.IssuedClaims.AddRange(claims);
     }
+
 
     public async Task IsActiveAsync(IsActiveContext context)
     {
@@ -35,4 +33,13 @@ public class ProfileService : IProfileService
         
         context.IsActive = (user != null) && true;//user.IsActive;
     }
+    private List<Claim> GetClaims(TblUser user)
+        {
+            var claims = new List<Claim> {
+                            new Claim(ClaimTypes.NameIdentifier, user.UserId.ToString()),
+                            new Claim(ClaimTypes.Name, user.FullName??"null"),
+                            new Claim(ClaimTypes.Email, user.EmailAddress1??"null"),
+                        };
+            return claims;
+        }
 }

@@ -7,7 +7,7 @@ namespace QCService.Infrastructure
 {
     public class QCContext : DbContext
     {
-        public virtual DbSet<QCTicket> QCTicket { get; set; }
+        public virtual DbSet<QCDetail> QCTicket { get; set; }
         public virtual DbSet<QCRequest> QCRequest { get; set; }
         public virtual DbSet<AQLLib> AQLLib { get; set; }
         public virtual DbSet<DefectLib> DefectLib { get; set; }

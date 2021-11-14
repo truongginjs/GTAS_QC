@@ -17,12 +17,24 @@ namespace IdentityService
             };
 
         public static IEnumerable<ApiScope> ApiScopes =>
-            new ApiScope[]
-            { };
-
+         new List<ApiScope>
+         {
+            new ApiScope("library_api", "My API")
+         };
         public static IEnumerable<Client> Clients =>
             new Client[]
-            { 
+            {
+                new Client
+                {
+                    ClientId = "client",
+
+                    AllowedGrantTypes = GrantTypes.ClientCredentials,
+                    ClientSecrets =
+                    {
+                        new Secret("secret".Sha256())
+                    },
+                    AllowedScopes = { "library_api" }
+                },
                  // qc client code flow client
                 new Client
                 {
@@ -64,8 +76,7 @@ namespace IdentityService
                            "library_api"
                     },
                     RequirePkce = true,
-                    Enabled=true
-
+                    Enabled = true
                 }
 
             };

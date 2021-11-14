@@ -10,14 +10,14 @@ using System.Threading.Tasks;
 
 namespace QCService.Infrastructure.Repositories.Imps
 {
-    public class QCTicketRepository : GenericRepository<QCTicket>, IQCTicketRepository
+    public class QCRequestRepository : GenericRepository<QCDetail>, IQCRequestRepository
     {
         private readonly DbSet<QCRequest> _QCRequest;
-        private readonly DbSet<QCTicket> _QCTicket;
+        private readonly DbSet<QCDetail> _QCTicket;
         private readonly QCContext _context;
         private readonly IMapper _mapper;
 
-        public QCTicketRepository(QCContext context, IMapper mapper) : base(context)
+        public QCRequestRepository(QCContext context, IMapper mapper) : base(context)
         {
             _QCRequest = context.QCRequest;
             _QCTicket = context.QCTicket;
@@ -32,7 +32,7 @@ namespace QCService.Infrastructure.Repositories.Imps
             return result;
         }
 
-        public override Task<QCTicket> GetAsync(object Id)
+        public override Task<QCDetail> GetAsync(object Id)
         {
             return _QCTicket.Where(x => Id.Equals(x.Id)).Include(x => x.QCRequest).FirstOrDefaultAsync();
         }
@@ -42,7 +42,7 @@ namespace QCService.Infrastructure.Repositories.Imps
             var id = Guid.NewGuid();
             var qcRequest = _mapper.Map<QCRequest>(qc);
             qcRequest.Id = id;
-            var qcTicket = new QCTicket { Id = id };
+            var qcTicket = new QCDetail { Id = id };
 
             _QCRequest.Add(qcRequest);
             _QCTicket.Add(qcTicket);
@@ -52,7 +52,7 @@ namespace QCService.Infrastructure.Repositories.Imps
         }
 
 
-        public async Task<QCRequest> UpdateAsync(Guid id, QCRequestUpdateResDTO qc)
+        public async Task<QCRequest> UpdateAsync(Guid id, QCRequestUpdateReqDTO qc)
         {
             var qcRequest = _mapper.Map<QCRequest>(qc);
             _QCRequest.Update(qcRequest);
@@ -64,10 +64,10 @@ namespace QCService.Infrastructure.Repositories.Imps
 
         public async Task<QCRequest> DeleteQCRequestAsync(Guid id)
         {
-            var data = await _QCRequest.Include(x=>x.QCTicket).Where(x=>x.Id==id).FirstOrDefaultAsync();
+            var data = await _QCRequest.Include(x=>x.QCDetail).Where(x=>x.Id==id).FirstOrDefaultAsync();
             data.IsDeleted = true;
-            if(data.QCTicket!=null)
-                data.QCTicket.IsDeleted = true;
+            if(data.QCDetail != null)
+                data.QCDetail.IsDeleted = true;
             
             await _context.SaveChangesAsync();
 

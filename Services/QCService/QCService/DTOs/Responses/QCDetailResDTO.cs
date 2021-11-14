@@ -1,4 +1,3 @@
-﻿using QCService.Models.D01;
 using QCService.Models.DTOs;
 using QCService.Models.L01;
 using System;
@@ -6,7 +5,8 @@ using System.Collections.Generic;
 
 namespace QCService.DTOs.Responses
 {
-    public class QCRequestResDTO
+
+    public class QCDetailResDTO
     {
         public Guid Id { get; set; }
         public string Description { get; set; }
@@ -29,5 +29,12 @@ namespace QCService.DTOs.Responses
         public string QCType { get; set; }
         public int UserApproveId { get; set; }
         public string Status { get; set; }
+
+        public List<InspectionBySizeDTO> InspectionBySizes { get; set; }
+        public DefectDetailDTO DefectDetail { get; set; }
+
+
+        public object PrivateDetail { get; set; }
     }
+
 }

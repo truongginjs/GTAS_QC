@@ -43,6 +43,15 @@ namespace LibraryService
                 options.Audience = "library_api";
             });
 
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("ApiScope", policy =>
+                {
+                    policy.RequireAuthenticatedUser();
+                    policy.RequireClaim("scope", "library_api");
+                });
+            });
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "LibraryService", Version = "v1" });
@@ -77,7 +86,8 @@ namespace LibraryService
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers();
+                endpoints.MapControllers()
+                .RequireAuthorization("ApiScope");
             });
 
             //app.SeedFakeDatabase();

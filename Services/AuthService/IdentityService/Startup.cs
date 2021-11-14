@@ -1,8 +1,4 @@
-﻿// Copyright (c) Brock Allen & Dominick Baier. All rights reserved.
-// Licensed under the Apache License, Version 2.0. See LICENSE in the project root for license information.
-
-
-using IdentityService.Infanstructure;
+﻿using IdentityService.Infanstructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +9,7 @@ using System.Reflection;
 using SINNIKA.Cipher;
 using Microsoft.OpenApi.Models;
 using IdentityService.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace IdentityService
 {
@@ -37,13 +34,14 @@ namespace IdentityService
                 // see https://identityserver4.readthedocs.io/en/latest/topics/resources.html
                 options.EmitStaticAudienceClaim = true;
             })
+                // .AddProfileService<ProfileService>()
                 .AddInMemoryIdentityResources(Config.IdentityResources)
                 .AddInMemoryApiScopes(Config.ApiScopes)
-                .AddInMemoryClients(Config.Clients)
-                .AddProfileService<ProfileService>();
+                .AddInMemoryClients(Config.Clients);
 
             // not recommended for production - you need to store your key material somewhere secure
-            //builder.AddDeveloperSigningCredential();
+            builder.AddDeveloperSigningCredential();
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "IdentityService", Version = "v1" });

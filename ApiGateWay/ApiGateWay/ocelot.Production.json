@@ -33,9 +33,65 @@
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
       "DangerousAcceptAnyServerCertificateValidator": true
 
+    },
+
+    //-------------------------------------------------
+    {
+      "SwaggerKey": "LibraryServiceTest",
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "172.16.39.145",
+          "Port": 8081
+        }
+      ],
+      "UpstreamPathTemplate": "/test/api/lib/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    {
+      "SwaggerKey": "QCServiceTest",
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "172.16.39.145",
+          "Port": 8080
+        }
+      ],
+      "UpstreamPathTemplate": "/test/api/qc/{everything}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+
     }
   ],
   "SwaggerEndPoints": [
+    {
+      "Key": "LibraryServiceTest",
+      "Config": [
+        {
+          "Name": "LibraryService API - TEST",
+          "Version": "v1",
+          "Url": "http://172.16.39.145:8081/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "QCServiceTest",
+      "Config": [
+        {
+          "Name": "QCService API - TEST",
+          "Version": "v1",
+          "Url": "http://172.16.39.145:8080/swagger/v1/swagger.json"
+        }
+      ]
+    },
     {
       "Key": "LibraryService",
       "Config": [

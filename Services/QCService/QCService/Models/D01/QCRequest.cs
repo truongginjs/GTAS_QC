@@ -18,7 +18,7 @@ namespace QCService.Models.D01
         public Guid ZoneTypeId { get; set; }
         public QCZoneTypeLib ZoneType { get; set; }
         [NotMapped]
-        public QCTicket QCTicket { get; set; }
+        public QCDetail QCDetail { get; set; }
 
         [StringLength(25)]
         public string QCNumber { get; set; }
@@ -69,7 +69,6 @@ namespace QCService.Models.D01
         [NotMapped]
         public User UserApprove { get; set; }
         public int UserApproveId { get; set; }
-
         public QCRequestStatusEnum Status { get; set; }
     }
 }

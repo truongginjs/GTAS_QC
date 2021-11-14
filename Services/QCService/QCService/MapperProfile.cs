@@ -12,11 +12,11 @@ namespace QCService
             // CreateMap<TestRequestDTO, Test>();
 
             CreateMap<QCRequestCreateResDTO, QCRequest>();
-            CreateMap<QCRequestUpdateResDTO, QCRequest>();
+            CreateMap<QCRequestUpdateReqDTO, QCRequest>();
             CreateMap<QCRequest, QCRequestResDTO>();
 
-            CreateMap<QCTicketResDTO, QCTicket>()
-                .ForMember(x => x.Id, act => act.MapFrom(des => des.QCTicketId));
+            CreateMap<QCRequest, QCDetailResDTO>();//.ForMember(des=>des.DefectSizeBreakDown);
+
         }
     }
 }

@@ -282,9 +282,9 @@ new DefectLib { ZoneTypeId = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
             {
                 Console.WriteLine("====> Seeding fake data ...");
                 context.AddRange(
-                    new QCTicket { Id = Guid.NewGuid(), Code = "Code_1", Name = "QCTicket Name 1" },
-                    new QCTicket { Id = Guid.NewGuid(), Code = "Code_2", Name = "QCTicket Name 2" },
-                    new QCTicket { Id = Guid.NewGuid(), Code = "Code_3", Name = "QCTicket Name 3" }
+                    new QCDetail { Id = Guid.NewGuid(), Code = "Code_1", Name = "QCTicket Name 1" },
+                    new QCDetail { Id = Guid.NewGuid(), Code = "Code_2", Name = "QCTicket Name 2" },
+                    new QCDetail { Id = Guid.NewGuid(), Code = "Code_3", Name = "QCTicket Name 3" }
                 );
                 context.SaveChanges();
             }

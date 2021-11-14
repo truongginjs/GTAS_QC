@@ -9,6 +9,10 @@ namespace QCService.Helpers.Enums
     public enum ActiveType
     {
         Unknown,
-        Find
+        Find,
+        Get,
+        AddOrUpdate,
+        Delete,
+        Save
     }
 }

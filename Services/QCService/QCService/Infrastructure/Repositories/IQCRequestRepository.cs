@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace QCService.Infrastructure.Repositories
 {
-    public interface IQCTicketRepository : IRepository<QCTicket>
+    public interface IQCRequestRepository : IRepository<QCDetail>
     {
         public Task<List<QCRequest>> FindQCRequestInStorageAsync(QCRequestFilterReqDTO filter);
         //public QCRequest GetOne();
         public Task<QCRequest> CreateAsync(QCRequestCreateResDTO qc);
-        public Task<QCRequest> UpdateAsync(Guid id, QCRequestUpdateResDTO qc);
+        public Task<QCRequest> UpdateAsync(Guid id, QCRequestUpdateReqDTO qc);
         Task<QCRequest> DeleteQCRequestAsync(Guid id);
     }
 }

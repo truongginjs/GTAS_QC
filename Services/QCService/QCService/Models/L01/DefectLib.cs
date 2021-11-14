@@ -69,6 +69,23 @@ namespace QCService.Models.L01
             }
         }
         public string HandlersJson { get; set; }
+
+        //public List<string> defectType;
+        //[NotMapped]
+        //public List<string> DefectType {
+        //    get
+        //    {
+        //        defectType = string.IsNullOrWhiteSpace(DefectTypeJson) ? null : JsonSerializer.Deserialize<List<string>>(DefectTypeJson);
+        //        return defectType;
+        //    }
+        //    set
+        //    {
+        //        defectType = value;
+        //        HandlersJson = defectType == null ? string.Empty : JsonSerializer.Serialize(defectType);
+        //    }
+        //}
+        //public string DefectTypeJson { get; set; }
+
         public Guid? ZoneTypeId { get; set; }
         public QCZoneTypeLib ZoneType { get; set; }
     }

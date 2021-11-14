@@ -1,57 +1,59 @@
+﻿using QCService.Models.D01;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
 using System.Text.Json;
-using Microsoft.EntityFrameworkCore;
-using QCService.Models.DTOs;
+using System.Threading.Tasks;
 
-namespace QCService.Models.D01
+namespace QCService.Models.DTOs
 {
-    [Table("D01_QCTicket")]
-
-    [Index(nameof(Code), nameof(Name))]
-    public class QCTicket
+    public class QCTicketDTO
     {
-        [Key]
-        [ForeignKey("QCRequest")]
         public Guid Id { get; set; }
-        public QCRequest QCRequest { get; set; }
+        private QCRequest qCRequest { get; set; }
+        public QCRequest QCRequest
+        {
+            get
+            {
+                qCRequest ??= string.IsNullOrWhiteSpace(QCRequestJson) ? null : JsonSerializer.Deserialize<QCRequest>(QCRequestJson);
+                return qCRequest;
+            }
+            set
+            {
+                qCRequest = value;
+                QCRequestJson = qCRequest == null ? string.Empty : JsonSerializer.Serialize(qCRequest);
+            }
+        }
 
-        [Required]
-        [MaxLength(255)]
+        public string QCRequestJson { get; set; }
+
         public string Code { get; set; }
-
-        [Required]
-        [MaxLength(500)]
         public string Name { get; set; }
         public string ProductLine { get; set; }
 
         private DefectAQLDTO defectAQL;
-        [NotMapped]
-        public DefectAQLDTO DefectAQL 
+        public DefectAQLDTO DefectAQL
         {
             get
             {
-                defectAQL ??= string.IsNullOrWhiteSpace(DefectAQLJson) ? null:JsonSerializer.Deserialize<DefectAQLDTO>(DefectAQLJson);
+                defectAQL ??= string.IsNullOrWhiteSpace(DefectAQLJson) ? null : JsonSerializer.Deserialize<DefectAQLDTO>(DefectAQLJson);
                 return defectAQL;
             }
             set
             {
                 defectAQL = value;
-                DefectAQLJson= defectAQL==null? string.Empty: JsonSerializer.Serialize(defectAQL);
+                DefectAQLJson = defectAQL == null ? string.Empty : JsonSerializer.Serialize(defectAQL);
             }
         }
 
         public string DefectAQLJson { get; set; }
 
-        private DefectSizeBreakDownDTO defectSizeBreakDown;
-        [NotMapped]
-        public DefectSizeBreakDownDTO DefectSizeBreakDown
+        private InspectionBySizeDTO defectSizeBreakDown;
+        public InspectionBySizeDTO DefectSizeBreakDown
         {
             get
             {
-                defectSizeBreakDown ??= string.IsNullOrWhiteSpace(DefectSizeBreakDownJson) ? null : JsonSerializer.Deserialize<DefectSizeBreakDownDTO>(DefectSizeBreakDownJson);
+                defectSizeBreakDown ??= string.IsNullOrWhiteSpace(DefectSizeBreakDownJson) ? null : JsonSerializer.Deserialize<InspectionBySizeDTO>(DefectSizeBreakDownJson);
                 return defectSizeBreakDown;
             }
             set
@@ -63,8 +65,7 @@ namespace QCService.Models.D01
         public string DefectSizeBreakDownJson { get; set; }
 
         private List<DefectsReasonAndSolutionDTO> defectsReasonAndSolutions;
-        [NotMapped]
-        public List<DefectsReasonAndSolutionDTO> DefectsReasonAndSolutions 
+        public List<DefectsReasonAndSolutionDTO> DefectsReasonAndSolutions
         {
             get
             {
@@ -80,7 +81,6 @@ namespace QCService.Models.D01
         public string DefectsReasonAndSolutionsJson { get; set; }
 
         private object privateDetail;
-        [NotMapped]
         public object PrivateDetail
         {
             get

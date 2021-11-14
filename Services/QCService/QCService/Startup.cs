@@ -74,10 +74,10 @@ namespace QCService
 
 
             services.AddAutoMapper(typeof(MapperProfile).Assembly);
-            services.AddScoped<IQCTicketRepository,QCTicketRepository>();
+            services.AddScoped<Infrastructure.Repositories.IQCRequestRepository, Infrastructure.Repositories.Imps.QCRequestRepository>();
             services.AddScoped<IJsonRepository, JsonRepository>();
 
-            services.AddScoped<IQCTicketService, QCTicketService>();
+            services.AddScoped<Infrastructure.Services.IQCRequestService, Infrastructure.Services.Imps.QCRequestService>();
 
             // services.AddGrapQLService(_env);
 

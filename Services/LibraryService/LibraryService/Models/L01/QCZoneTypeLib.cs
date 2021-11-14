@@ -1,14 +1,13 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using LibraryService.Models;
-using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
 using LibraryService.Models.DTOs;
 using LibraryService.Models.Enums;
-using System.Text.Json;
+using Microsoft.EntityFrameworkCore;
 
 namespace LibraryService.Models.L01
-{
+{ 
     [Table("L01_QCZoneTypeLib")]
     [Index(nameof(Code), nameof(Name))]
     public class QCZoneTypeLib : BaseModel
