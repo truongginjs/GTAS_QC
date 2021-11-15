@@ -2,6 +2,6 @@
 {
     public class JsonBinaryResponse
     {
-            public byte[] JsbData { get; set; }
+            public byte[] jsbData { get; set; }
     }
 }

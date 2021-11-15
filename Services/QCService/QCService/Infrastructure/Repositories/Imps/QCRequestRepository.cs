@@ -20,7 +20,7 @@ namespace QCService.Infrastructure.Repositories.Imps
         public QCRequestRepository(QCContext context, IMapper mapper) : base(context)
         {
             _QCRequest = context.QCRequest;
-            _QCTicket = context.QCTicket;
+            _QCTicket = context.QCDetail;
             _context = context;
             _mapper = mapper;
         }

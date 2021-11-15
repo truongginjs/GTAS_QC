@@ -1,24 +1,36 @@
+using QCService.Models.DTOs;
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json;
 
 namespace QCService.Models.L01
 {
     [Table("L01_AQLLib")]
     public class AQLLib : BaseModel
     {
-        // [Required]
-        // [StringLength(500)]
-        // public string Name { get; set; }
-
         [Required]
-        [StringLength(255)]
-        public string Category { get; set; }
-        public int SeqNo { get; set; }
+        public int RatingMajor { get; set; }=1;
         [Required]
-        [StringLength(100)]
-        public string LotSize { get; set; }
+        public int RatingMinor { get; set; } = 1;
         public Guid? ZoneTypeId { get; set; }
         public QCZoneTypeLib ZoneType { get; set; }
+        private List<QCRageDTO> qCRages;
+        [NotMapped]
+        public List<QCRageDTO> QCRages {
+
+            get
+            {
+                qCRages = string.IsNullOrWhiteSpace(QCRagesJson) ? null : JsonSerializer.Deserialize<List<QCRageDTO>>(QCRagesJson);
+                return qCRages;
+            }
+            set
+            {
+                qCRages = value;
+                QCRagesJson = qCRages == null ? string.Empty : JsonSerializer.Serialize(qCRages);
+            }
+        }
+        public string QCRagesJson { get; set; }
     }
 }

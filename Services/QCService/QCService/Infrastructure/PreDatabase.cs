@@ -7,6 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using QCService.Models.L01;
 using QCService.Models.D01;
 using QCService.Models.Enums;
+using QCService.Models.DTOs;
+using System.Collections.Generic;
 
 namespace QCService.Infrastructure
 {
@@ -25,50 +27,200 @@ namespace QCService.Infrastructure
         public static ModelBuilder SeedFakeData(this ModelBuilder builder)
         {
             builder.Entity<QCZoneTypeLib>().HasData(
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group1, Id = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Code = "MATROLL", Name = "Fabric Storage Has Roll", Description = "kho vải có roll", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group2, Id = Guid.Parse("63892f60-c8cb-40de-b365-e52f66a04ec4"), Code = "MAT0", Name = "Fabric Storage Has no Roll", Description = "kho vải không roll", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group2, Id = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"), Code = "TEX", Name = "Material Storage", Description = "kho nguyên phụ liệu", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("5ea2209a-9782-4cda-a4ba-71a4f5a53964"), Code = "CUT", Name = "Cut Operation", Description = "công đoạn cắt (CUT)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("de72a6a9-bd09-48e3-b48e-19494d3ddb43"), Code = "EMB", Name = "Emboidery Operation", Description = "công đoạn thuê (EMBOIDERY)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("ca691bec-ae50-4884-9e5e-7e6f84b24087"), Code = "SEW", Name = "Sew Operation", Description = "công đoạn may (SEW)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Code = "WASH", Name = "Wash Operation", Description = "công đoạn may (WASH)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"), Code = "FNH", Name = "Finish Operation", Description = "công đoạn wash (SEND TO FINISH)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("3fe931f7-728b-48e6-b37c-828f683f9229"), Code = "PCK", Name = "Packing Operation", Description = "công đoạn hoàn tất (PACKING)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group4, Id = Guid.Parse("c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"), Code = "PRE-F", Name = "Pre-Final", Description = "Pre-Final", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group4, Id = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"), Code = "FINAL", Name = "Final", Description = "Final", CreateDate = DateTime.Now, UpdateDate = DateTime.Now }
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group1, Id = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Code = "MATROLL", Name = "Fabric Storage Has Roll", Description = "kho vải có roll", CreateDate = DateTime.Now, UpdateDate = DateTime.Now   ,
+                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                    {
+                        FilterForm = new Dictionary<string, bool> {
+                            {"QCReqNo", true},
+                            {"OCNo",    false},
+                            {"Buyer",   false},
+                            {"GRNNo",   true},
+                            {"PONo",    true}
+                        }
+                    })
+                },
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group2, Id = Guid.Parse("63892f60-c8cb-40de-b365-e52f66a04ec4"), Code = "MAT0", Name = "Fabric Storage Has no Roll", Description = "kho vải không roll", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                    {
+                        FilterForm = new Dictionary<string, bool> {
+                            {"QCReqNo",true},
+                            {"OCNo",    false},
+                            {"Buyer",   false},
+                            {"GRNNo",   true},
+                            {"PONo",    true}
+                        }
+                    }) },
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group2, Id = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"), Code = "TEX", Name = "Material Storage", Description = "kho nguyên phụ liệu", CreateDate = DateTime.Now, UpdateDate = DateTime.Now          ,FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                    {
+                        FilterForm = new Dictionary<string, bool> {
+                        {"QCReqNo",true},
+                            {"OCNo",    false},
+                            {"Buyer",   false},
+                            {"GRNNo",   true},
+                            {"PONo",    true}}
+                    })    },
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("5ea2209a-9782-4cda-a4ba-71a4f5a53964"), Code = "CUT", Name = "Cut Operation", Description = "công đoạn cắt (CUT)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now ,
+                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                    {
+                        FilterForm = new Dictionary<string, bool> {
+                            {"QCReqNo",true},
+                            {"OCNo",    true},
+                            {"Buyer",   true},
+                            {"GRNNo",   true},
+                            {"PONo",    false}
+                        }
+                    })
+                },
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("de72a6a9-bd09-48e3-b48e-19494d3ddb43"), Code = "EMB", Name = "Emboidery Operation", Description = "công đoạn thuê (EMBOIDERY)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,
+                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                    {
+                        FilterForm = new Dictionary<string, bool> {
+                            {"QCReqNo",true},
+                            {"OCNo",    true},
+                            {"Buyer",   true},
+                            {"GRNNo",   true},
+                            {"PONo",    false}
+                        }
+                    })
+                },
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("ca691bec-ae50-4884-9e5e-7e6f84b24087"), Code = "SEW", Name = "Sew Operation", Description = "công đoạn may (SEW)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,
+                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                    {
+                        FilterForm = new Dictionary<string, bool> {
+                            {"QCReqNo",true},
+                            {"OCNo",    true},
+                            {"Buyer",   true},
+                            {"GRNNo",   true},
+                            {"PONo",    false}
+                        }
+                    })
+                },
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Code = "WASH", Name = "Wash Operation", Description = "công đoạn may (WASH)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now ,
+                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                    {
+                        FilterForm = new Dictionary<string, bool> {
+                            {"QCReqNo",true},
+                            {"OCNo",    true},
+                            {"Buyer",   true},
+                            {"GRNNo",   true},
+                            {"PONo",    false}
+                        }
+                    })
+                },
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"), Code = "FNH", Name = "Finish Operation", Description = "công đoạn wash (SEND TO FINISH)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,
+                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                    {
+                        FilterForm = new Dictionary<string, bool> {
+                            {"QCReqNo",true},
+                            {"OCNo",    true},
+                            {"Buyer",   true},
+                            {"GRNNo",   true},
+                            {"PONo",    false}
+                        }
+                    })
+                },
+                new QCZoneTypeLib
+                {
+                    GroupType = QCZoneTypeGroupEnum.Group3,
+                    Id = Guid.Parse("3fe931f7-728b-48e6-b37c-828f683f9229"),
+                    Code = "PCK",
+                    Name = "Packing Operation",
+                    Description = "công đoạn hoàn tất (PACKING)",
+                    CreateDate = DateTime.Now,
+                    UpdateDate = DateTime.Now
+                ,
+                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                    {
+                        FilterForm = new Dictionary<string, bool> {
+                            {"QCReqNo",false},
+                            {"OCNo",    true},
+                            {"Buyer",   true},
+                            {"GRNNo",   false},
+                            {"PONo",    false}
+                        }
+                    })
+                },
+                new QCZoneTypeLib
+                {
+                    GroupType = QCZoneTypeGroupEnum.Group4,
+                    Id = Guid.Parse("c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"),
+                    Code = "PREF",
+                    Name = "Pre-Final",
+                    Description = "Pre-Final",
+                    CreateDate = DateTime.Now,
+                    UpdateDate = DateTime.Now,
+                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                    {
+                        FilterForm = new Dictionary<string, bool> {
+                            {"QCReqNo",false},
+                            {"OCNo",    true},
+                            {"Buyer",   true},
+                            {"GRNNo",   false},
+                            {"PONo",    false}
+                        }
+                    })
+                },
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group4, Id = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"), Code = "FINAL", Name = "Final", Description = "Final", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,
+                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                    {
+                        FilterForm = new Dictionary<string, bool> {
+                            {"QCReqNo",false},
+                            {"OCNo",    true},
+                            {"Buyer",   true},
+                            {"GRNNo",   false},
+                            {"PONo",    false}
+                        }
+                    })
+                }
+            );
+
+            builder.Entity<HandlerDefectLib>().HasData(
+                new HandlerDefectLib { Id = Guid.Parse("736f86d2-1393-4d4f-859e-6aed5a2c36c8"), Description = "Handler 1",CreateDate = DateTime.Now, UpdateDate = DateTime.Now},
+                new HandlerDefectLib { Id = Guid.Parse("f11c0b5d-b4f6-4d6a-9d6f-d5b5d1ba8b14"), Description = "Handler 2",CreateDate = DateTime.Now, UpdateDate = DateTime.Now}
+            );
+
+            builder.Entity<TimeDefectLib>().HasData(
+                new TimeDefectLib { Id = Guid.Parse("0aaa07a6-a33d-4e8b-a989-c6fd5cef712c"), Description = "10 minutes",CreateDate = DateTime.Now, UpdateDate = DateTime.Now},
+                new TimeDefectLib { Id = Guid.Parse("87c0fe92-c615-48f4-9113-d30bde1c1cf4"), Description = "2 seconds",CreateDate = DateTime.Now, UpdateDate = DateTime.Now}
             );
 
             builder.Entity<AQLLib>().HasData(
-                new AQLLib { Id = Guid.Parse("9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66"), Category = "AQL 2.5", SeqNo = 2, LotSize = "51-90", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new AQLLib { Id = Guid.Parse("ac1c939d-2ef6-42c5-a953-d535af0a0475"), Category = "AQL 2.5", SeqNo = 3, LotSize = "91-150", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new AQLLib { Id = Guid.Parse("3f11283f-d11b-4266-b658-16e82b01d991"), Category = "AQL 2.5", SeqNo = 4, LotSize = "151-280", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new AQLLib { Id = Guid.Parse("02884a90-921e-44fe-a6f3-4d56bc660d98"), Category = "AQL 2.5", SeqNo = 5, LotSize = "281-500", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new AQLLib { Id = Guid.Parse("2bf9a034-9773-4763-b45a-62cb64b4fe60"), Category = "AQL 2.5", SeqNo = 6, LotSize = "501-1.200", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new AQLLib { Id = Guid.Parse("20307cd9-7775-437b-b56f-3decd98ba56e"), Category = "AQL 2.5", SeqNo = 7, LotSize = "1.201-3.200", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new AQLLib { Id = Guid.Parse("c0619a96-4bc9-4036-8699-7f29ba9f035c"), Category = "AQL 2.5", SeqNo = 8, LotSize = "3.201-10.000", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new AQLLib { Id = Guid.Parse("a008c1d5-bea1-4790-aa14-d37e300593f1"), Category = "AQL 2.5", SeqNo = 9, LotSize = "15.001-500.000", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new AQLLib { Id = Guid.Parse("81c393a2-6188-4012-8f42-85fd197f273b"), Category = "AQL 2.5", SeqNo = 10, LotSize = "500.000 over", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new AQLLib { Id = Guid.Parse("7680f05d-5794-454c-85b1-2291e4882828"), Category = "Sizeset-Pilot", SeqNo = 1, LotSize = "10", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new AQLLib { Id = Guid.Parse("4facb93b-a39d-4941-858b-6955b5e90eca"), Category = "Sizeset-Pilot", SeqNo = 2, LotSize = "20", CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                new AQLLib { Id = Guid.Parse("baf4f214-b6d4-4f59-ba03-c642d3806299"), Category = "Sizeset-Pilot", SeqNo = 3, LotSize = "30", CreateDate = DateTime.Now, UpdateDate = DateTime.Now }
+                new AQLLib { Id = Guid.Parse("9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66"), Description = "AQL 2.5", RatingMajor = 1, RatingMinor = 1, CreateDate = DateTime.Now, UpdateDate = DateTime.Now , QCRagesJson = JsonSerializer.Serialize(new List<QCRageDTO> { 
+                    new QCRageDTO{ AllowMajorDefect=1,OfferedQtyFrom = 51, OfferedQtyTo = 90             ,SampleSize=1},
+                    new QCRageDTO{ AllowMajorDefect=1,OfferedQtyFrom = 91, OfferedQtyTo = 150,SampleSize=1},
+                    new QCRageDTO{ AllowMajorDefect=1,OfferedQtyFrom = 151, OfferedQtyTo = 280,SampleSize=1},
+                    new QCRageDTO{ AllowMajorDefect=1,OfferedQtyFrom = 281, OfferedQtyTo = 500,SampleSize=1},
+                    new QCRageDTO{ AllowMajorDefect=1,OfferedQtyFrom = 501, OfferedQtyTo = 1200,SampleSize=1},
+                    new QCRageDTO{ AllowMajorDefect=1,OfferedQtyFrom = 1201, OfferedQtyTo = 3200,SampleSize=1},
+                    new QCRageDTO{ AllowMajorDefect=1,OfferedQtyFrom = 3201, OfferedQtyTo = 10000,SampleSize=1},
+                    new QCRageDTO{ AllowMajorDefect=1,OfferedQtyFrom = 15001, OfferedQtyTo = 500000,SampleSize=1},
+                    new QCRageDTO{ AllowMajorDefect=1,OfferedQtyFrom = 500000, OfferedQtyTo = 1000000,SampleSize=1},
+
+                })},
+                new AQLLib { Id = Guid.Parse("7680f05d-5794-454c-85b1-2291e4882828"), Description = "Sizeset-Pilot", RatingMajor = 1, RatingMinor = 1, CreateDate = DateTime.Now, UpdateDate = DateTime.Now,
+                    QCRagesJson = JsonSerializer.Serialize(new List<QCRageDTO> {
+                    new QCRageDTO{ AllowMajorDefect=1,OfferedQtyFrom=10,OfferedQtyTo=20,SampleSize=1},
+                    new QCRageDTO{ AllowMajorDefect=1,OfferedQtyFrom=20,OfferedQtyTo=30,SampleSize=1},
+                    new QCRageDTO{ AllowMajorDefect=1,OfferedQtyFrom=30,OfferedQtyTo=1000000,SampleSize=1},
+                })
+                }
             );
 
             builder.Entity<DefectLib>().HasData(
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M01", Name = "ĐỨT SỢI DỌC", Description="BROKEN END", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M02", Name = "ĐỨT SỢI NGANG", Description="BROKEN PICK", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M01", Name = "ĐỨT SỢI DỌC", Description = "BROKEN END", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M02", Name = "ĐỨT SỢI NGANG", Description = "BROKEN PICK", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M03", Name = "SỢI THÔ DỌC", Description = "COARSE END ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M04", Name = "SỢI THÔ NGANG", Description = "COARSE PICK ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M05", Name = "SỢI TẠP", Description="FOREIGN FIBER ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M06", Name = "BIẾN MÀU /DƠ", Description="STAIN / DIRTY ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M07", Name = "ĐỐM MÀU", Description="COLOR / WHITE SPOT", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M08", Name = "NỐI SỢI , BÔNG TẠP", Description=" KNOT/NAP ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M09", Name = "LỎNG SỢI DỌC", Description="LOOSE WARP ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M10", Name = "MẤT SỢI NGANG", Description="MISPICK", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M11", Name = "DỪNG MÁY", Description="STOP MARK", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M12", Name = "GÃY MẶT VẢI", Description="CREASE MARK ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M13", Name = "THỦNG", Description=" HOLE ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M14", Name = "IN LÊCH KHUÔN", Description="Print off layout ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M15", Name = "IN LEM MÀU", Description=" PRINT COLOR SMEAR", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M05", Name = "SỢI TẠP", Description = "FOREIGN FIBER ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M06", Name = "BIẾN MÀU /DƠ", Description = "STAIN / DIRTY ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M07", Name = "ĐỐM MÀU", Description = "COLOR / WHITE SPOT", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M08", Name = "NỐI SỢI , BÔNG TẠP", Description = " KNOT/NAP ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M09", Name = "LỎNG SỢI DỌC", Description = "LOOSE WARP ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M10", Name = "MẤT SỢI NGANG", Description = "MISPICK", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M11", Name = "DỪNG MÁY", Description = "STOP MARK", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M12", Name = "GÃY MẶT VẢI", Description = "CREASE MARK ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M13", Name = "THỦNG", Description = " HOLE ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M14", Name = "IN LÊCH KHUÔN", Description = "Print off layout ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M15", Name = "IN LEM MÀU", Description = " PRINT COLOR SMEAR", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M16", Name = "Khác màu biên ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M17", Name = "khác màu đầu cuối", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Id = Guid.NewGuid(), Code = "M18", Name = "Sọc ngang, dọc, sọc nhuộm", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
@@ -107,7 +259,7 @@ new DefectLib { ZoneTypeId = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"),
 new DefectLib { ZoneTypeId = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"), Id = Guid.NewGuid(), Code = "T08", Name = "Phụ liệu gỉ sét, trầy xước bề mặt, tróc in, dơ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"), Id = Guid.NewGuid(), Code = "T09", Name = "Loang màu, đổi màu, không đồng màu trong lô", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"), Id = Guid.NewGuid(), Code = "T10", Name = "Đầu và răng khóa dây kéo không đạt", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"), Id = Guid.NewGuid(), Code = "T11", Name = "Độ trượt khóa kéo không đạt", Description="kéo trượt 10 lần", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"), Id = Guid.NewGuid(), Code = "T11", Name = "Độ trượt khóa kéo không đạt", Description = "kéo trượt 10 lần", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"), Id = Guid.NewGuid(), Code = "T12", Name = "Vặn, xoắn, có nhiều mối nối", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"), Id = Guid.NewGuid(), Code = "T13", Name = "Mối dán ép bao bì không bền chắc", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"), Id = Guid.NewGuid(), Code = "T14", Name = "0", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
@@ -120,7 +272,7 @@ new DefectLib { ZoneTypeId = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"),
 
 new DefectLib { ZoneTypeId = Guid.Parse("5ea2209a-9782-4cda-a4ba-71a4f5a53964"), Id = Guid.NewGuid(), Code = "C01", Name = "Lỗi hoặc sai sơ đồ cắt, rập cứng", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("5ea2209a-9782-4cda-a4ba-71a4f5a53964"), Id = Guid.NewGuid(), Code = "C02", Name = "Bán thành phẩm cắt lớn hoặc nhỏ hơn rập ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("5ea2209a-9782-4cda-a4ba-71a4f5a53964"), Id = Guid.NewGuid(), Code = "C03", Name = "Biến dạng, sai hình dáng, canh sợi, bề mặt", Description="vải chính, vải lót, keo,…", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("5ea2209a-9782-4cda-a4ba-71a4f5a53964"), Id = Guid.NewGuid(), Code = "C03", Name = "Biến dạng, sai hình dáng, canh sợi, bề mặt", Description = "vải chính, vải lót, keo,…", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("5ea2209a-9782-4cda-a4ba-71a4f5a53964"), Id = Guid.NewGuid(), Code = "C04", Name = "Thiếu dấu bấm, dấu bấm ", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("5ea2209a-9782-4cda-a4ba-71a4f5a53964"), Id = Guid.NewGuid(), Code = "C05", Name = "Lỗi đánh số", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("5ea2209a-9782-4cda-a4ba-71a4f5a53964"), Id = Guid.NewGuid(), Code = "C06", Name = "Loang màu chi tiết, dơ, ố", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
@@ -163,8 +315,8 @@ new DefectLib { ZoneTypeId = Guid.Parse("ca691bec-ae50-4884-9e5e-7e6f84b24087"),
 new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Id = Guid.NewGuid(), Code = "W01", Name = "Ánh màu không đạt", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Id = Guid.NewGuid(), Code = "W02", Name = "Khác màu, loang màu trong cùng sản phẩm", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Id = Guid.NewGuid(), Code = "W03", Name = "PP không đạt, đốm PP, cấn wash", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Id = Guid.NewGuid(), Code = "W04", Name = "Hiệu ứng thời trang không đạt", Description="whishkers, grinding,..", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Id = Guid.NewGuid(), Code = "W05", Name = "Hình dáng, kích thước, vị trí thời trang wash không đúng", Description=" handsands, destroys,..", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Id = Guid.NewGuid(), Code = "W04", Name = "Hiệu ứng thời trang không đạt", Description = "whishkers, grinding,..", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
+new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Id = Guid.NewGuid(), Code = "W05", Name = "Hình dáng, kích thước, vị trí thời trang wash không đúng", Description = " handsands, destroys,..", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Id = Guid.NewGuid(), Code = "W06", Name = "3D thiếu hoặc mạnh/yếu", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Id = Guid.NewGuid(), Code = "W07", Name = "Cấn wash, đốm", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Id = Guid.NewGuid(), Code = "W08", Name = "Độ mềm không đạt", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
@@ -181,7 +333,7 @@ new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"),
 new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Id = Guid.NewGuid(), Code = "W19", Name = "Lỗi thông số", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Id = Guid.NewGuid(), Code = "W20", Name = "Những lỗi khác", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 
-new DefectLib { ZoneTypeId = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"), Id = Guid.NewGuid(), Code = "F01", Name = "Vệ sinh công nghiệp, chỉ thừa không đạt", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now }, 
+new DefectLib { ZoneTypeId = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"), Id = Guid.NewGuid(), Code = "F01", Name = "Vệ sinh công nghiệp, chỉ thừa không đạt", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"), Id = Guid.NewGuid(), Code = "F02", Name = "Dính dầu máy, dơ, dấu phấn, dấu mực", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"), Id = Guid.NewGuid(), Code = "F03", Name = "Ủi (là) xấu, bị bóng, cháy nám, biến dạng Form", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"), Id = Guid.NewGuid(), Code = "F04", Name = "Đóng (đính) nút, rivet, phụ liệu,… không đạt bền chắc, không an toàn khi sử dụng", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
@@ -201,7 +353,7 @@ new DefectLib { ZoneTypeId = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"),
 new DefectLib { ZoneTypeId = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"), Id = Guid.NewGuid(), Code = "F18", Name = "0", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"), Id = Guid.NewGuid(), Code = "F19", Name = "Lỗi thông số", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"), Id = Guid.NewGuid(), Code = "F20", Name = "Những lỗi khác", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
-                                             
+
 new DefectLib { ZoneTypeId = Guid.Parse("3fe931f7-728b-48e6-b37c-828f683f9229"), Id = Guid.NewGuid(), Code = "PP01", Name = "Vệ sinh công nghiệp, chỉ thừa không đạt", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("3fe931f7-728b-48e6-b37c-828f683f9229"), Id = Guid.NewGuid(), Code = "PP02", Name = "Dính dầu máy, dơ, dấu phấn, dấu mực", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
 new DefectLib { ZoneTypeId = Guid.Parse("3fe931f7-728b-48e6-b37c-828f683f9229"), Id = Guid.NewGuid(), Code = "PP03", Name = "Ủi (là) xấu, bị bóng, cháy nám, biến dạng Form", ReasonsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1}")), SolutionsJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} solution{i + 1}")), HandlersJson = JsonSerializer.Serialize(Enumerable.Range(0, 5).Select(i => $"Proplem1 reason{i + 1} soluiton{i + 1} Handler{i + 1}")), CreateDate = DateTime.Now, UpdateDate = DateTime.Now },
@@ -252,7 +404,7 @@ new DefectLib { ZoneTypeId = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
             // builder.Entity<Defect>().HasData(GenFakeQCTicket(5));
             return builder;
         }
-        
+
 
 
         // private static QCTicket[] GenFakeQCTicket(int v = 1)
@@ -278,7 +430,7 @@ new DefectLib { ZoneTypeId = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
 
         public static void SeedFakeData(this QCContext context)
         {
-            if(!context.QCTicket.Any())
+            if (!context.QCDetail.Any())
             {
                 Console.WriteLine("====> Seeding fake data ...");
                 context.AddRange(

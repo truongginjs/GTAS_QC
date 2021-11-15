@@ -44,7 +44,7 @@ namespace IED.Server.Repositories
                 string script = $"exec [{storeProcedure}] @Active={{0}}, @jsParam={{1}}, @userId={{2}}, @ReturnMess={{3}} output";
                 byte[] jsParam = JSParam.Compress();
                 var Active = active.ToString();
-                var rs = _context.JsonResponse.FromSqlRaw(script, Active, jsParam, userId, outParam).AsEnumerable().FirstOrDefault();
+                var rs = _context.JsonBinaryResponse.FromSqlRaw(script, Active, jsParam, userId, outParam).AsEnumerable().FirstOrDefault();
                 if (rs == null)
                 {
                     Message_out = (string)(outParam.Value ?? "can't find");
@@ -71,7 +71,7 @@ namespace IED.Server.Repositories
         {
             try
             {
-                var rs = _context.JsonResponse.FromSqlRaw(script).AsEnumerable().FirstOrDefault();
+                var rs = _context.JsonBinaryResponse.FromSqlRaw(script).AsEnumerable().FirstOrDefault();
                 var json = rs.jsbData.Decompress();
                 var result = JsonSerializer.Deserialize<T>(json);
                 Message_out = json;
@@ -102,7 +102,7 @@ namespace IED.Server.Repositories
                 string script = $"exec [{storeProcedure}] @Active={{0}}, @jsParam={{1}}, @userId={{2}}, @ReturnMess={{3}} output";
                 byte[] jsParam = JSParam.Compress();
                 var Active = active.ToString();
-                var rs = _context.JsonResponse.FromSqlRaw(script, Active, jsParam, userId, outParam).AsEnumerable().FirstOrDefault();
+                var rs = _context.JsonBinaryResponse.FromSqlRaw(script, Active, jsParam, userId, outParam).AsEnumerable().FirstOrDefault();
                 if (outParam.Value == DBNull.Value)
                     Message_out = "success";
                 else

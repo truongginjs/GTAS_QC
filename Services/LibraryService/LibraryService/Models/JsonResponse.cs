@@ -1,4 +1,4 @@
-﻿namespace QCService.Models
+﻿namespace LibraryService.Models
 {
     public class JsonResponse
     {

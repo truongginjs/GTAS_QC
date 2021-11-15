@@ -104,6 +104,8 @@ namespace LibraryService
             services.AddScoped<IZoneTypeRepository, ZoneTypeRepository>();
             services.AddScoped<IAQLRepository, AQLRepository>();
             services.AddScoped<IDefectRepository, DefectRepository>();
+            services.AddScoped<IHandlerDefectRepository, HandlerDefectRepository>();
+            services.AddScoped<ITimeDefectRepository, TimeDefectRepository>();
 
             // services.AddGrapQLService(_env);
 
