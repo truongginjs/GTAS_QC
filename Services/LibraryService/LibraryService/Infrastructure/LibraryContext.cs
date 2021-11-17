@@ -13,6 +13,7 @@ namespace LibraryService.Infrastructure
         public virtual DbSet<QCZoneTypeLib> QCZoneTypeLib { get; set; }
         public virtual DbSet<HandlerDefectLib> HandlerDefectLib { get; set; }
         public virtual DbSet<TimeDefectLib> TimeDefectLib { get; set; }
+        public virtual DbSet<SiteLib> SiteLib { get; set; }
 
 
         public virtual DbSet<JsonResponse> JsonResponse { get; set; }

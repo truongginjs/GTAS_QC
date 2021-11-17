@@ -1,18 +1,17 @@
 ﻿using QCService.Models;
-using QCService.Models.D01;
-using QCService.Models.DTOs;
 using QCService.Models.Enums;
-using QCService.Models.L01;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace QCService.DTOs.Responses
 {
-    public class QCRequestResDTO : BaseModel
+    public class QCRequestResDBDTO : BaseModel
     {
         public Guid ZoneTypeId { get; set; }
-        public string TransferStatus { get; set; }
-        public string DocStatus { get; set; }
+        public TransferStatusEnum TransferStatus { get; set; }
+        public DocStatusEnum DocStatus { get; set; }
         public string Site { get; set; }
         public string Buyer { get; set; }
         public string Supplier { get; set; }

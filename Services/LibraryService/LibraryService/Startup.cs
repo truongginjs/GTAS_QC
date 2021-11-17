@@ -36,21 +36,21 @@ namespace LibraryService
 
             services.AddControllers();
 
-            services.AddAuthentication()
-            .AddJwtBearer("Bearer", options =>
-            {
-                options.Authority = "https://localhost:5001";
-                options.Audience = "library_api";
-            });
+            //services.AddAuthentication()
+            //.AddJwtBearer("Bearer", options =>
+            //{
+            //    options.Authority = "https://localhost:5001";
+            //    options.Audience = "library_api";
+            //});
 
-            services.AddAuthorization(options =>
-            {
-                options.AddPolicy("ApiScope", policy =>
-                {
-                    policy.RequireAuthenticatedUser();
-                    policy.RequireClaim("scope", "library_api");
-                });
-            });
+            //services.AddAuthorization(options =>
+            //{
+            //    options.AddPolicy("ApiScope", policy =>
+            //    {
+            //        policy.RequireAuthenticatedUser();
+            //        policy.RequireClaim("scope", "library_api");
+            //    });
+            //});
 
             services.AddSwaggerGen(c =>
             {
@@ -81,13 +81,13 @@ namespace LibraryService
 
             app.UseRouting();
 
-            app.UseAuthentication();
+            //app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllers()
-                .RequireAuthorization("ApiScope");
+                endpoints.MapControllers();
+                //.RequireAuthorization("ApiScope");
             });
 
             //app.SeedFakeDatabase();
@@ -106,6 +106,7 @@ namespace LibraryService
             services.AddScoped<IDefectRepository, DefectRepository>();
             services.AddScoped<IHandlerDefectRepository, HandlerDefectRepository>();
             services.AddScoped<ITimeDefectRepository, TimeDefectRepository>();
+            services.AddScoped<ISiteRepository, SiteRepository>();
 
             // services.AddGrapQLService(_env);
 

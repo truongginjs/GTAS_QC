@@ -17,5 +17,6 @@ namespace QCService.Models.DTOs
 
         public List<string> Handlers { get; set; }
         public List<string> Reasons { get; set; }
+        public string FixedTime { get; set; }
     }
 }

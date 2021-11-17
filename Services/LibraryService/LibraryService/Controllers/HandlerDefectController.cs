@@ -1,4 +1,6 @@
 using AutoMapper;
+using LibraryService.DTOs.Requests;
+using LibraryService.DTOs.Responses;
 using LibraryService.Infrastructure.Repositories;
 using LibraryService.Models.L01;
 using Microsoft.AspNetCore.Mvc;

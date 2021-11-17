@@ -2,6 +2,8 @@ using Microsoft.EntityFrameworkCore;
 using QCService.Models.L01;
 using QCService.Models.D01;
 using QCService.Models;
+using QCService.Helpers.Extensions;
+using QCService.Models.Enums;
 
 namespace QCService.Infrastructure
 {
@@ -27,6 +29,14 @@ namespace QCService.Infrastructure
         {
             modelBuilder.Entity<JsonResponse>().HasNoKey().ToView(null);
             modelBuilder.Entity<JsonBinaryResponse>().HasNoKey().ToView(null);
+
+            //     modelBuilder
+            //        .Entity<QCRequest>()
+            //        .Property(e => e.DocStatus)
+            //        .HasConversion(
+            //            v => v.ToString(),
+            //            v => v.ToEnum(DocStatusEnum.Inprogress))
+            //;
             modelBuilder.SeedFakeData();
         }
     }

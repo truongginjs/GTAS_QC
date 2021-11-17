@@ -5,10 +5,6 @@ using LibraryService.Heplers.Extensions;
 using LibraryService.Models.L01;
 using LibraryService.Models.DTOs;
 using LibraryService.Models.Enums;
-using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Text.Json;
 
 namespace LibraryService
 {
@@ -28,12 +24,10 @@ namespace LibraryService
             CreateMap<QCZoneTypeReqDTO, QCZoneTypeLib>()
                 .ForMember(des => des.GroupType,
                 act => act.MapFrom(src => src.GroupType.ToEnum(QCZoneTypeGroupEnum.Unknown)));
+
             CreateMap<FormLibReqDTO, FormLibDTO>()
                .ForMember(des => des.FormType,
                act => act.MapFrom(src => src.FormType.ToEnum(FormEnum.Unknown)));
-
-            CreateMap<QCZoneTypeLib, QCZoneTypeResDTO>();
-            CreateMap<FormLibDTO, FormLibResDTO>();
             #endregion
 
             #region AQL
@@ -46,6 +40,20 @@ namespace LibraryService
             CreateMap<DefectReqDTO, DefectLib>();
             #endregion
 
+            #region Handler
+            CreateMap<HandlerDefectLib, HandlerDefectResDTO>();
+            CreateMap<HandlerDefectReqDTO, HandlerDefectLib>();
+            #endregion
+
+            #region Time
+            CreateMap<TimeDefectLib, TimeDefectResDTO>();
+            CreateMap<TimeDefectReqDTO, TimeDefectLib>();
+            #endregion
+
+            #region Site
+            CreateMap<SiteLib, SiteResDTO>();
+            CreateMap<SiteReqDTO, SiteLib>();
+            #endregion
         }
 
     }

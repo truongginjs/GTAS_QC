@@ -10,6 +10,6 @@ namespace LibraryService.DTOs.Requests
         public string Code { get; set; }
         public string Name { get; set; }
         public string GroupType { get; set; }
-        public List<FormLibReqDTO> Forms { get; set; }
+        public FormLibReqDTO Forms { get; set; }
     }
 }

@@ -29,11 +29,8 @@ namespace QCService.DTOs.Responses
         public string QCType { get; set; }
         public int UserApproveId { get; set; }
         public string Status { get; set; }
-
         public List<InspectionBySizeDTO> InspectionBySizes { get; set; }
-        public DefectDetailDTO DefectDetail { get; set; }
-
-
+        public DefectDetailResDTO DefectDetail { get; set; }
         public object PrivateDetail { get; set; }
     }
 

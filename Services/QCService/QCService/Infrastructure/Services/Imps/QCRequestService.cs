@@ -1,4 +1,5 @@
 ﻿using QCService.DTOs.Requests;
+using QCService.DTOs.Responses;
 using QCService.Helpers.Enums;
 using QCService.Infrastructure.Repositories;
 using QCService.Models.D01;
@@ -34,39 +35,43 @@ namespace QCService.Infrastructure.Services.Imps
             return data;
         }
 
-        public Task<List<QCTicketDTO>> FindQCTicketAsync(QCRequestFilterReqDTO filter)
+        public Task<List<QCRequestResDBDTO>> FindQCRequestAsync(QCRequestListReqDTO filter)
         {
-            var sp = StoreProcedureType.sp_QCTicket;
+            var sp = StoreProcedureType.sp_QCRequest;
             var active = ActiveType.Find;
             var param = JsonSerializer.Serialize(filter);
-            var data = Task.Run(() => _jsonRepo.ExecuteData<List<QCTicketDTO>>(sp, active, out string message, param));
+            var data = Task.Run(() => _jsonRepo.ExecuteData<List<QCRequestResDBDTO>>(sp, active, out string message, param));
             return data;
         }
 
-        public Task<QCTicketDTO> GetQCTicketAsync(Guid Id)
+        public Task<QCRequestDetailResDBDTO> GetQCRequestAsync(Guid Id)
         {
-            var sp = StoreProcedureType.sp_QCTicket;
+            var sp = StoreProcedureType.sp_QCRequest;
             var active = ActiveType.Get;
             var param = Id.ToString();
-            var data = Task.Run(() => _jsonRepo.ExecuteData<QCTicketDTO>(sp, active, out string message, param));
+            var data = Task.Run(() => _jsonRepo.ExecuteData<QCRequestDetailResDBDTO>(sp, active, out string message, param));
             return data;
         }
 
-        public Task<QCTicketDTO> DeleteQCTicketAsync(Guid Id)
+        public Task<QCRequestDetailResDBDTO> DeleteQCRequestAsync(Guid Id)
         {
-            var sp = StoreProcedureType.sp_QCTicket;
+            var sp = StoreProcedureType.sp_QCRequest;
             var active = ActiveType.Delete;
             var param = Id.ToString();
-            var data = Task.Run(() => _jsonRepo.ExecuteData<QCTicketDTO>(sp, active, out string message, param));
+            var data = Task.Run(() => _jsonRepo.ExecuteData<QCRequestDetailResDBDTO>(sp, active, out string message, param));
             return data;
         }
 
-        public Task<QCTicketDTO> AddOrUpdateQCTicketAsync(QCTicketDTO qCTicket)
+        public Task<QCRequestDetailResDBDTO> AddOrUpdateQCRequestAsync(QCRequestDetailReqDBDTO qCRequestDetail)
         {
-            var sp = StoreProcedureType.sp_QCTicket;
+            if (qCRequestDetail.Id == Guid.Empty)
+            {
+                qCRequestDetail.Id = Guid.NewGuid();
+            }
+            var sp = StoreProcedureType.sp_QCRequest;
             var active = ActiveType.Save;
-            var param = JsonSerializer.Serialize(qCTicket); ;
-            var data = Task.Run(() => _jsonRepo.ExecuteData<QCTicketDTO>(sp, active, out string message, param));
+            var param = JsonSerializer.Serialize(qCRequestDetail); ;
+            var data = Task.Run(() => _jsonRepo.ExecuteData<QCRequestDetailResDBDTO>(sp, active, out string message, param));
             return data;
         }
 

@@ -13,6 +13,6 @@ namespace LibraryService.DTOs.Responses
         public string Code { get; set; }
         public string Name { get; set; }
         public string GroupType { get; set; }
-        public List<FormLibResDTO> Forms { get; set; }
+        public FormLibResDTO Forms { get; set; }
     }
 }

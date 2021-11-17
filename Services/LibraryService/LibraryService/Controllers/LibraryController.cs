@@ -4,12 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace QCService.Helpers.Enums
+namespace LibraryService.Controllers
 {
-    public enum StoreProcedureType
+    public class LibraryController
     {
-        Unknown,
-        sp_WFXQCRequest,
-        sp_QCRequest
+        
     }
 }

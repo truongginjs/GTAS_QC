@@ -11,9 +11,9 @@ namespace LibraryService.Controllers
     //[Authorize]
     [ApiController]
     [Route("api/[controller]")]
-    public class TimeDefectController : GenericController<TimeDefectLib, TimeDefectReqDTO, TimeDefectResDTO>
+    public class SiteController : GenericController<SiteLib, SiteReqDTO, SiteResDTO>
     {
-        public TimeDefectController(ITimeDefectRepository repo, IMapper mapper, ILogger<GenericController<TimeDefectLib, TimeDefectReqDTO, TimeDefectResDTO>> logger) : base(repo, mapper, logger)
+        public SiteController(ISiteRepository repo, IMapper mapper, ILogger<GenericController<SiteLib, SiteReqDTO, SiteResDTO>> logger) : base(repo, mapper, logger)
         {
         }
     }

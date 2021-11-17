@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -23,6 +24,21 @@ namespace QCService.Controllers
             _service = service;
             _mapper = mapper;
             _logger = logger;
+        }
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<QCRequestResDTO>>> FindFromStorage([FromQuery] QCRequestFilterReqDTO filter)
+        {
+            var data = await _service.FindQCRequestInStorageAsync(filter);
+            _logger.LogInformation("find from storage");
+            return Ok(data);
+        }
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<QCRequestResDTO>>> FindFromWfx([FromQuery] QCRequestFilterReqDTO filter)
+        {
+            var data = await _service.FindQCRequestFromWFXAsync(filter);
+            _logger.LogInformation("find from Wfx");
+            return Ok(data);
         }
 
         [HttpGet("{id}")]

@@ -54,6 +54,63 @@ namespace QCService.Migrations
                     b.HasIndex("Code", "Name");
 
                     b.ToTable("D01_QCDetail");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("a6d4458f-ef4e-44bf-80f4-2274a2875d97"),
+                            Code = "code",
+                            DefectDetailJson = "{\"CategoryAQL\":\"9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66\",\"Defects\":[{\"Code\":\"P01\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P02\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P03\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P04\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P05\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P06\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P07\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P08\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P09\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P10\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P11\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P12\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P13\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P14\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P15\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P16\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P17\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P18\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P19\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P20\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null}]}",
+                            InspectionBySizesJson = "[{\"ColorCode\":\"ColorCode-1\",\"SizeCode\":\"SizeCode-1\",\"Qty\":1,\"OkQty\":-1,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-1\",\"SizeCode\":\"SizeCode-2\",\"Qty\":2,\"OkQty\":0,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-1\",\"SizeCode\":\"SizeCode-3\",\"Qty\":3,\"OkQty\":1,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-1\",\"SizeCode\":\"SizeCode-4\",\"Qty\":4,\"OkQty\":2,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-1\",\"SizeCode\":\"SizeCode-5\",\"Qty\":5,\"OkQty\":3,\"BGroupQty\":1,\"RejectQty\":1}]",
+                            IsDeleted = false,
+                            Name = "name",
+                            PrivateDetailJson = "{\"Private1\":\"private1\",\"Private2\":\"private2\"}",
+                            ProductLine = "ProductLine"
+                        },
+                        new
+                        {
+                            Id = new Guid("fd9393ea-79a0-4d82-9c60-64dd298afd6b"),
+                            Code = "code",
+                            DefectDetailJson = "{\"CategoryAQL\":\"9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66\",\"Defects\":[{\"Code\":\"P01\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P02\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P03\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P04\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P05\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P06\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P07\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P08\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P09\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P10\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P11\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P12\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P13\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P14\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P15\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P16\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P17\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P18\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P19\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P20\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null}]}",
+                            InspectionBySizesJson = "[{\"ColorCode\":\"ColorCode-2\",\"SizeCode\":\"SizeCode-1\",\"Qty\":1,\"OkQty\":-1,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-2\",\"SizeCode\":\"SizeCode-2\",\"Qty\":2,\"OkQty\":0,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-2\",\"SizeCode\":\"SizeCode-3\",\"Qty\":3,\"OkQty\":1,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-2\",\"SizeCode\":\"SizeCode-4\",\"Qty\":4,\"OkQty\":2,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-2\",\"SizeCode\":\"SizeCode-5\",\"Qty\":5,\"OkQty\":3,\"BGroupQty\":1,\"RejectQty\":1}]",
+                            IsDeleted = false,
+                            Name = "name",
+                            PrivateDetailJson = "{\"Private1\":\"private1\",\"Private2\":\"private2\"}",
+                            ProductLine = "ProductLine"
+                        },
+                        new
+                        {
+                            Id = new Guid("92e4e51d-8df0-4645-95a4-a47d77ebbda9"),
+                            Code = "code",
+                            DefectDetailJson = "{\"CategoryAQL\":\"9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66\",\"Defects\":[{\"Code\":\"P01\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P02\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P03\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P04\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P05\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P06\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P07\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P08\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P09\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P10\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P11\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P12\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P13\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P14\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P15\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P16\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P17\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P18\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P19\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P20\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null}]}",
+                            InspectionBySizesJson = "[{\"ColorCode\":\"ColorCode-3\",\"SizeCode\":\"SizeCode-1\",\"Qty\":1,\"OkQty\":-1,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-3\",\"SizeCode\":\"SizeCode-2\",\"Qty\":2,\"OkQty\":0,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-3\",\"SizeCode\":\"SizeCode-3\",\"Qty\":3,\"OkQty\":1,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-3\",\"SizeCode\":\"SizeCode-4\",\"Qty\":4,\"OkQty\":2,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-3\",\"SizeCode\":\"SizeCode-5\",\"Qty\":5,\"OkQty\":3,\"BGroupQty\":1,\"RejectQty\":1}]",
+                            IsDeleted = false,
+                            Name = "name",
+                            PrivateDetailJson = "{\"Private1\":\"private1\",\"Private2\":\"private2\"}",
+                            ProductLine = "ProductLine"
+                        },
+                        new
+                        {
+                            Id = new Guid("de26d8b4-8651-4ac1-b26d-199e936c821f"),
+                            Code = "code",
+                            DefectDetailJson = "{\"CategoryAQL\":\"9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66\",\"Defects\":[{\"Code\":\"P01\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P02\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P03\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P04\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P05\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P06\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P07\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P08\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P09\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P10\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P11\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P12\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P13\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P14\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P15\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P16\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P17\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P18\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P19\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P20\",\"Description\":null,\"Minor\":0,\"Major\":0,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null}]}",
+                            InspectionBySizesJson = "[{\"ColorCode\":\"ColorCode-4\",\"SizeCode\":\"SizeCode-1\",\"Qty\":1,\"OkQty\":-1,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-4\",\"SizeCode\":\"SizeCode-2\",\"Qty\":2,\"OkQty\":0,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-4\",\"SizeCode\":\"SizeCode-3\",\"Qty\":3,\"OkQty\":1,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-4\",\"SizeCode\":\"SizeCode-4\",\"Qty\":4,\"OkQty\":2,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-4\",\"SizeCode\":\"SizeCode-5\",\"Qty\":5,\"OkQty\":3,\"BGroupQty\":1,\"RejectQty\":1}]",
+                            IsDeleted = false,
+                            Name = "name",
+                            PrivateDetailJson = "{\"Private1\":\"private1\",\"Private2\":\"private2\"}",
+                            ProductLine = "ProductLine"
+                        },
+                        new
+                        {
+                            Id = new Guid("7b065e91-fccd-4cbf-8843-43ef3d533b9b"),
+                            Code = "code",
+                            DefectDetailJson = "{\"CategoryAQL\":\"9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66\",\"Defects\":[{\"Code\":\"P01\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P02\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P03\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P04\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P05\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P06\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P07\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P08\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P09\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P10\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P11\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P12\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P13\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P14\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P15\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P16\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P17\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P18\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P19\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null},{\"Code\":\"P20\",\"Description\":null,\"Minor\":1,\"Major\":1,\"Critical\":0,\"Solutions\":null,\"DefectTypes\":null,\"Handlers\":null,\"Reasons\":null,\"FixedTime\":null}]}",
+                            InspectionBySizesJson = "[{\"ColorCode\":\"ColorCode-5\",\"SizeCode\":\"SizeCode-1\",\"Qty\":1,\"OkQty\":-1,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-5\",\"SizeCode\":\"SizeCode-2\",\"Qty\":2,\"OkQty\":0,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-5\",\"SizeCode\":\"SizeCode-3\",\"Qty\":3,\"OkQty\":1,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-5\",\"SizeCode\":\"SizeCode-4\",\"Qty\":4,\"OkQty\":2,\"BGroupQty\":1,\"RejectQty\":1},{\"ColorCode\":\"ColorCode-5\",\"SizeCode\":\"SizeCode-5\",\"Qty\":5,\"OkQty\":3,\"BGroupQty\":1,\"RejectQty\":1}]",
+                            IsDeleted = false,
+                            Name = "name",
+                            PrivateDetailJson = "{\"Private1\":\"private1\",\"Private2\":\"private2\"}",
+                            ProductLine = "ProductLine"
+                        });
                 });
 
             modelBuilder.Entity("QCService.Models.D01.QCRequest", b =>
@@ -70,9 +127,13 @@ namespace QCService.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<string>("Buyer")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
                     b.Property<string>("Category")
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("ColorCode")
                         .HasMaxLength(255)
@@ -88,13 +149,20 @@ namespace QCService.Migrations
                     b.Property<int>("CreateUserId")
                         .HasColumnType("int");
 
+                    b.Property<string>("DeliveryBuyerOrderRef")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
                     b.Property<string>("Description")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
 
+                    b.Property<int>("DocStatus")
+                        .HasColumnType("int");
+
                     b.Property<string>("GRNNumber")
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -103,13 +171,20 @@ namespace QCService.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<string>("PONo")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
                     b.Property<string>("QCDefinition")
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
                     b.Property<string>("QCNumber")
-                        .HasMaxLength(25)
-                        .HasColumnType("nvarchar(25)");
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<int>("QCQty")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("QCRequestDate")
                         .HasColumnType("datetime2");
@@ -118,18 +193,19 @@ namespace QCService.Migrations
                         .HasMaxLength(15)
                         .HasColumnType("nvarchar(15)");
 
-                    b.Property<int>("SamplePercentage")
-                        .HasColumnType("int");
+                    b.Property<double>("SamplePercentage")
+                        .HasColumnType("float");
 
                     b.Property<string>("SamplePlan")
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<string>("Site")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
                     b.Property<string>("SizeBreakDownsJson")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("Status")
-                        .HasColumnType("int");
 
                     b.Property<string>("StyleCode")
                         .HasMaxLength(255)
@@ -138,6 +214,13 @@ namespace QCService.Migrations
                     b.Property<string>("StyleName")
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
+
+                    b.Property<string>("Supplier")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<int>("TransferStatus")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("UpdateDate")
                         .HasColumnType("datetime2");
@@ -156,18 +239,200 @@ namespace QCService.Migrations
                     b.HasIndex("ZoneTypeId", "QCNumber", "QCType");
 
                     b.ToTable("D01_QCRequest");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("4c5ea240-1f82-42b8-882d-9a33afbb2527"),
+                            ArticleCode = "ArticleCode-1",
+                            ArticleName = "ArticleName-1",
+                            Buyer = "Buyer-1",
+                            Category = "Category-1",
+                            ColorCode = "ColorCode-1",
+                            ColorName = "ColorName-1",
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 187, DateTimeKind.Local).AddTicks(2042),
+                            CreateUserId = 0,
+                            DeliveryBuyerOrderRef = "DeliveryBuyerOrderRef-1",
+                            Description = "Description",
+                            DocStatus = 0,
+                            GRNNumber = "GRNNumber-1",
+                            IsDeleted = false,
+                            OCNumber = "OCNumber-1",
+                            PONo = "PONo-1",
+                            QCDefinition = "QCDefinition-1",
+                            QCNumber = "QCNumber-1",
+                            QCQty = 1,
+                            QCRequestDate = new DateTime(2021, 11, 17, 8, 48, 28, 187, DateTimeKind.Local).AddTicks(5676),
+                            QCType = "QCType-1",
+                            SamplePercentage = 10.0,
+                            SamplePlan = "SamplePlan-1",
+                            Site = "Site-1",
+                            SizeBreakDownsJson = "[{\"SizeCode\":\"SizeCode-1\",\"SizeName\":\"SizeName-1\",\"Shade\":\"Shade-1\",\"QCQty\":1,\"InspectionQty\":1},{\"SizeCode\":\"SizeCode-2\",\"SizeName\":\"SizeName-2\",\"Shade\":\"Shade-2\",\"QCQty\":2,\"InspectionQty\":2},{\"SizeCode\":\"SizeCode-3\",\"SizeName\":\"SizeName-3\",\"Shade\":\"Shade-3\",\"QCQty\":3,\"InspectionQty\":3},{\"SizeCode\":\"SizeCode-4\",\"SizeName\":\"SizeName-4\",\"Shade\":\"Shade-4\",\"QCQty\":4,\"InspectionQty\":4},{\"SizeCode\":\"SizeCode-5\",\"SizeName\":\"SizeName-5\",\"Shade\":\"Shade-5\",\"QCQty\":5,\"InspectionQty\":5}]",
+                            StyleCode = "StyleCode-1",
+                            StyleName = "StyleName-1",
+                            Supplier = "Supplier-1",
+                            TransferStatus = 0,
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 187, DateTimeKind.Local).AddTicks(2051),
+                            UpdateUserId = 0,
+                            UserApproveId = 0,
+                            ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
+                        },
+                        new
+                        {
+                            Id = new Guid("150e2f24-7ff3-46d5-93c5-876890a26cab"),
+                            ArticleCode = "ArticleCode-2",
+                            ArticleName = "ArticleName-2",
+                            Buyer = "Buyer-2",
+                            Category = "Category-2",
+                            ColorCode = "ColorCode-2",
+                            ColorName = "ColorName-2",
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 191, DateTimeKind.Local).AddTicks(5409),
+                            CreateUserId = 0,
+                            DeliveryBuyerOrderRef = "DeliveryBuyerOrderRef-2",
+                            Description = "Description",
+                            DocStatus = 0,
+                            GRNNumber = "GRNNumber-2",
+                            IsDeleted = false,
+                            OCNumber = "OCNumber-2",
+                            PONo = "PONo-2",
+                            QCDefinition = "QCDefinition-2",
+                            QCNumber = "QCNumber-2",
+                            QCQty = 2,
+                            QCRequestDate = new DateTime(2021, 11, 17, 8, 48, 28, 191, DateTimeKind.Local).AddTicks(5983),
+                            QCType = "QCType-2",
+                            SamplePercentage = 20.0,
+                            SamplePlan = "SamplePlan-2",
+                            Site = "Site-2",
+                            SizeBreakDownsJson = "[{\"SizeCode\":\"SizeCode-1\",\"SizeName\":\"SizeName-1\",\"Shade\":\"Shade-1\",\"QCQty\":1,\"InspectionQty\":1},{\"SizeCode\":\"SizeCode-2\",\"SizeName\":\"SizeName-2\",\"Shade\":\"Shade-2\",\"QCQty\":2,\"InspectionQty\":2},{\"SizeCode\":\"SizeCode-3\",\"SizeName\":\"SizeName-3\",\"Shade\":\"Shade-3\",\"QCQty\":3,\"InspectionQty\":3},{\"SizeCode\":\"SizeCode-4\",\"SizeName\":\"SizeName-4\",\"Shade\":\"Shade-4\",\"QCQty\":4,\"InspectionQty\":4},{\"SizeCode\":\"SizeCode-5\",\"SizeName\":\"SizeName-5\",\"Shade\":\"Shade-5\",\"QCQty\":5,\"InspectionQty\":5}]",
+                            StyleCode = "StyleCode-2",
+                            StyleName = "StyleName-2",
+                            Supplier = "Supplier-2",
+                            TransferStatus = 0,
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 191, DateTimeKind.Local).AddTicks(5438),
+                            UpdateUserId = 0,
+                            UserApproveId = 0,
+                            ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
+                        },
+                        new
+                        {
+                            Id = new Guid("4d489d3c-89ca-4aa7-ae53-ae74d8d268da"),
+                            ArticleCode = "ArticleCode-3",
+                            ArticleName = "ArticleName-3",
+                            Buyer = "Buyer-3",
+                            Category = "Category-3",
+                            ColorCode = "ColorCode-3",
+                            ColorName = "ColorName-3",
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 191, DateTimeKind.Local).AddTicks(6480),
+                            CreateUserId = 0,
+                            DeliveryBuyerOrderRef = "DeliveryBuyerOrderRef-3",
+                            Description = "Description",
+                            DocStatus = 0,
+                            GRNNumber = "GRNNumber-3",
+                            IsDeleted = false,
+                            OCNumber = "OCNumber-3",
+                            PONo = "PONo-3",
+                            QCDefinition = "QCDefinition-3",
+                            QCNumber = "QCNumber-3",
+                            QCQty = 3,
+                            QCRequestDate = new DateTime(2021, 11, 17, 8, 48, 28, 191, DateTimeKind.Local).AddTicks(6523),
+                            QCType = "QCType-3",
+                            SamplePercentage = 30.0,
+                            SamplePlan = "SamplePlan-3",
+                            Site = "Site-3",
+                            SizeBreakDownsJson = "[{\"SizeCode\":\"SizeCode-1\",\"SizeName\":\"SizeName-1\",\"Shade\":\"Shade-1\",\"QCQty\":1,\"InspectionQty\":1},{\"SizeCode\":\"SizeCode-2\",\"SizeName\":\"SizeName-2\",\"Shade\":\"Shade-2\",\"QCQty\":2,\"InspectionQty\":2},{\"SizeCode\":\"SizeCode-3\",\"SizeName\":\"SizeName-3\",\"Shade\":\"Shade-3\",\"QCQty\":3,\"InspectionQty\":3},{\"SizeCode\":\"SizeCode-4\",\"SizeName\":\"SizeName-4\",\"Shade\":\"Shade-4\",\"QCQty\":4,\"InspectionQty\":4},{\"SizeCode\":\"SizeCode-5\",\"SizeName\":\"SizeName-5\",\"Shade\":\"Shade-5\",\"QCQty\":5,\"InspectionQty\":5}]",
+                            StyleCode = "StyleCode-3",
+                            StyleName = "StyleName-3",
+                            Supplier = "Supplier-3",
+                            TransferStatus = 0,
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 191, DateTimeKind.Local).AddTicks(6483),
+                            UpdateUserId = 0,
+                            UserApproveId = 0,
+                            ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
+                        },
+                        new
+                        {
+                            Id = new Guid("dee0fd54-a452-4c3b-abfd-c76c4c700a3d"),
+                            ArticleCode = "ArticleCode-4",
+                            ArticleName = "ArticleName-4",
+                            Buyer = "Buyer-4",
+                            Category = "Category-4",
+                            ColorCode = "ColorCode-4",
+                            ColorName = "ColorName-4",
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 191, DateTimeKind.Local).AddTicks(6767),
+                            CreateUserId = 0,
+                            DeliveryBuyerOrderRef = "DeliveryBuyerOrderRef-4",
+                            Description = "Description",
+                            DocStatus = 0,
+                            GRNNumber = "GRNNumber-4",
+                            IsDeleted = false,
+                            OCNumber = "OCNumber-4",
+                            PONo = "PONo-4",
+                            QCDefinition = "QCDefinition-4",
+                            QCNumber = "QCNumber-4",
+                            QCQty = 4,
+                            QCRequestDate = new DateTime(2021, 11, 17, 8, 48, 28, 191, DateTimeKind.Local).AddTicks(6801),
+                            QCType = "QCType-4",
+                            SamplePercentage = 40.0,
+                            SamplePlan = "SamplePlan-4",
+                            Site = "Site-4",
+                            SizeBreakDownsJson = "[{\"SizeCode\":\"SizeCode-1\",\"SizeName\":\"SizeName-1\",\"Shade\":\"Shade-1\",\"QCQty\":1,\"InspectionQty\":1},{\"SizeCode\":\"SizeCode-2\",\"SizeName\":\"SizeName-2\",\"Shade\":\"Shade-2\",\"QCQty\":2,\"InspectionQty\":2},{\"SizeCode\":\"SizeCode-3\",\"SizeName\":\"SizeName-3\",\"Shade\":\"Shade-3\",\"QCQty\":3,\"InspectionQty\":3},{\"SizeCode\":\"SizeCode-4\",\"SizeName\":\"SizeName-4\",\"Shade\":\"Shade-4\",\"QCQty\":4,\"InspectionQty\":4},{\"SizeCode\":\"SizeCode-5\",\"SizeName\":\"SizeName-5\",\"Shade\":\"Shade-5\",\"QCQty\":5,\"InspectionQty\":5}]",
+                            StyleCode = "StyleCode-4",
+                            StyleName = "StyleName-4",
+                            Supplier = "Supplier-4",
+                            TransferStatus = 0,
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 191, DateTimeKind.Local).AddTicks(6770),
+                            UpdateUserId = 0,
+                            UserApproveId = 0,
+                            ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
+                        },
+                        new
+                        {
+                            Id = new Guid("ce8716ea-c60f-4154-8d21-1ed62784be42"),
+                            ArticleCode = "ArticleCode-5",
+                            ArticleName = "ArticleName-5",
+                            Buyer = "Buyer-5",
+                            Category = "Category-5",
+                            ColorCode = "ColorCode-5",
+                            ColorName = "ColorName-5",
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 191, DateTimeKind.Local).AddTicks(7004),
+                            CreateUserId = 0,
+                            DeliveryBuyerOrderRef = "DeliveryBuyerOrderRef-5",
+                            Description = "Description",
+                            DocStatus = 0,
+                            GRNNumber = "GRNNumber-5",
+                            IsDeleted = false,
+                            OCNumber = "OCNumber-5",
+                            PONo = "PONo-5",
+                            QCDefinition = "QCDefinition-5",
+                            QCNumber = "QCNumber-5",
+                            QCQty = 5,
+                            QCRequestDate = new DateTime(2021, 11, 17, 8, 48, 28, 191, DateTimeKind.Local).AddTicks(7036),
+                            QCType = "QCType-5",
+                            SamplePercentage = 50.0,
+                            SamplePlan = "SamplePlan-5",
+                            Site = "Site-5",
+                            SizeBreakDownsJson = "[{\"SizeCode\":\"SizeCode-1\",\"SizeName\":\"SizeName-1\",\"Shade\":\"Shade-1\",\"QCQty\":1,\"InspectionQty\":1},{\"SizeCode\":\"SizeCode-2\",\"SizeName\":\"SizeName-2\",\"Shade\":\"Shade-2\",\"QCQty\":2,\"InspectionQty\":2},{\"SizeCode\":\"SizeCode-3\",\"SizeName\":\"SizeName-3\",\"Shade\":\"Shade-3\",\"QCQty\":3,\"InspectionQty\":3},{\"SizeCode\":\"SizeCode-4\",\"SizeName\":\"SizeName-4\",\"Shade\":\"Shade-4\",\"QCQty\":4,\"InspectionQty\":4},{\"SizeCode\":\"SizeCode-5\",\"SizeName\":\"SizeName-5\",\"Shade\":\"Shade-5\",\"QCQty\":5,\"InspectionQty\":5}]",
+                            StyleCode = "StyleCode-5",
+                            StyleName = "StyleName-5",
+                            Supplier = "Supplier-5",
+                            TransferStatus = 0,
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 191, DateTimeKind.Local).AddTicks(7006),
+                            UpdateUserId = 0,
+                            UserApproveId = 0,
+                            ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
+                        });
                 });
 
             modelBuilder.Entity("QCService.Models.JsonBinaryResponse", b =>
                 {
-                    b.Property<byte[]>("JsbData")
+                    b.Property<byte[]>("jsbData")
                         .HasColumnType("varbinary(max)");
                 });
 
             modelBuilder.Entity("QCService.Models.JsonResponse", b =>
                 {
-                    b.Property<byte[]>("jsbData")
-                        .HasColumnType("varbinary(max)");
+                    b.Property<string>("jsbData")
+                        .HasColumnType("nvarchar(max)");
                 });
 
             modelBuilder.Entity("QCService.Models.L01.AQLLib", b =>
@@ -217,27 +482,27 @@ namespace QCService.Migrations
                         new
                         {
                             Id = new Guid("9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66"),
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 789, DateTimeKind.Local).AddTicks(6569),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 184, DateTimeKind.Local).AddTicks(506),
                             CreateUserId = 0,
-                            Description = "AQL 2.5",
+                            Description = "AQL 1.5 level II",
                             IsDeleted = false,
-                            QCRagesJson = "[{\"OfferedQtyFrom\":51,\"OfferedQtyTo\":90,\"SampleSize\":1,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":91,\"OfferedQtyTo\":150,\"SampleSize\":1,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":151,\"OfferedQtyTo\":280,\"SampleSize\":1,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":281,\"OfferedQtyTo\":500,\"SampleSize\":1,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":501,\"OfferedQtyTo\":1200,\"SampleSize\":1,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":1201,\"OfferedQtyTo\":3200,\"SampleSize\":1,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":3201,\"OfferedQtyTo\":10000,\"SampleSize\":1,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":15001,\"OfferedQtyTo\":500000,\"SampleSize\":1,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":500000,\"OfferedQtyTo\":1000000,\"SampleSize\":1,\"AllowMajorDefect\":1}]",
+                            QCRagesJson = "[{\"OfferedQtyFrom\":2,\"OfferedQtyTo\":8,\"SampleSize\":2,\"AllowMajorDefect\":0},{\"OfferedQtyFrom\":9,\"OfferedQtyTo\":15,\"SampleSize\":3,\"AllowMajorDefect\":0},{\"OfferedQtyFrom\":16,\"OfferedQtyTo\":25,\"SampleSize\":5,\"AllowMajorDefect\":0},{\"OfferedQtyFrom\":26,\"OfferedQtyTo\":50,\"SampleSize\":8,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":51,\"OfferedQtyTo\":90,\"SampleSize\":13,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":91,\"OfferedQtyTo\":150,\"SampleSize\":20,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":151,\"OfferedQtyTo\":280,\"SampleSize\":32,\"AllowMajorDefect\":2},{\"OfferedQtyFrom\":281,\"OfferedQtyTo\":500,\"SampleSize\":50,\"AllowMajorDefect\":3},{\"OfferedQtyFrom\":501,\"OfferedQtyTo\":1200,\"SampleSize\":80,\"AllowMajorDefect\":5},{\"OfferedQtyFrom\":1201,\"OfferedQtyTo\":3200,\"SampleSize\":125,\"AllowMajorDefect\":7},{\"OfferedQtyFrom\":3201,\"OfferedQtyTo\":10000,\"SampleSize\":200,\"AllowMajorDefect\":10},{\"OfferedQtyFrom\":10001,\"OfferedQtyTo\":35000,\"SampleSize\":315,\"AllowMajorDefect\":14},{\"OfferedQtyFrom\":35001,\"OfferedQtyTo\":150000,\"SampleSize\":500,\"AllowMajorDefect\":21},{\"OfferedQtyFrom\":150001,\"OfferedQtyTo\":500000,\"SampleSize\":800,\"AllowMajorDefect\":21},{\"OfferedQtyFrom\":500001,\"OfferedQtyTo\":99999999,\"SampleSize\":1250,\"AllowMajorDefect\":21}]",
                             RatingMajor = 1,
-                            RatingMinor = 1,
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 789, DateTimeKind.Local).AddTicks(6574),
+                            RatingMinor = 2,
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 184, DateTimeKind.Local).AddTicks(509),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("7680f05d-5794-454c-85b1-2291e4882828"),
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 792, DateTimeKind.Local).AddTicks(4609),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 186, DateTimeKind.Local).AddTicks(5390),
                             CreateUserId = 0,
-                            Description = "Sizeset-Pilot",
+                            Description = "AQL 2.5 level II",
                             IsDeleted = false,
-                            QCRagesJson = "[{\"OfferedQtyFrom\":10,\"OfferedQtyTo\":20,\"SampleSize\":1,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":20,\"OfferedQtyTo\":30,\"SampleSize\":1,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":30,\"OfferedQtyTo\":1000000,\"SampleSize\":1,\"AllowMajorDefect\":1}]",
+                            QCRagesJson = "[{\"OfferedQtyFrom\":2,\"OfferedQtyTo\":8,\"SampleSize\":2,\"AllowMajorDefect\":0},{\"OfferedQtyFrom\":9,\"OfferedQtyTo\":15,\"SampleSize\":3,\"AllowMajorDefect\":0},{\"OfferedQtyFrom\":16,\"OfferedQtyTo\":25,\"SampleSize\":5,\"AllowMajorDefect\":0},{\"OfferedQtyFrom\":26,\"OfferedQtyTo\":50,\"SampleSize\":8,\"AllowMajorDefect\":0},{\"OfferedQtyFrom\":51,\"OfferedQtyTo\":90,\"SampleSize\":13,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":91,\"OfferedQtyTo\":150,\"SampleSize\":20,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":151,\"OfferedQtyTo\":280,\"SampleSize\":32,\"AllowMajorDefect\":1},{\"OfferedQtyFrom\":281,\"OfferedQtyTo\":500,\"SampleSize\":50,\"AllowMajorDefect\":2},{\"OfferedQtyFrom\":501,\"OfferedQtyTo\":1200,\"SampleSize\":80,\"AllowMajorDefect\":3},{\"OfferedQtyFrom\":1201,\"OfferedQtyTo\":3200,\"SampleSize\":125,\"AllowMajorDefect\":5},{\"OfferedQtyFrom\":3201,\"OfferedQtyTo\":10000,\"SampleSize\":200,\"AllowMajorDefect\":7},{\"OfferedQtyFrom\":10001,\"OfferedQtyTo\":35000,\"SampleSize\":315,\"AllowMajorDefect\":10},{\"OfferedQtyFrom\":35001,\"OfferedQtyTo\":150000,\"SampleSize\":500,\"AllowMajorDefect\":14},{\"OfferedQtyFrom\":150001,\"OfferedQtyTo\":500000,\"SampleSize\":800,\"AllowMajorDefect\":21},{\"OfferedQtyFrom\":500001,\"OfferedQtyTo\":99999999,\"SampleSize\":1250,\"AllowMajorDefect\":21}]",
                             RatingMajor = 1,
-                            RatingMinor = 1,
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 792, DateTimeKind.Local).AddTicks(4633),
+                            RatingMinor = 2,
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 186, DateTimeKind.Local).AddTicks(5392),
                             UpdateUserId = 0
                         });
                 });
@@ -265,9 +530,6 @@ namespace QCService.Migrations
                     b.Property<string>("Description")
                         .HasMaxLength(500)
                         .HasColumnType("nvarchar(500)");
-
-                    b.Property<string>("HandlersJson")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -303,2735 +565,2555 @@ namespace QCService.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("07735405-8af0-4a4a-8ed3-8abedcaa8633"),
+                            Id = new Guid("7d3fbd98-e0db-4d93-aa1e-aeb100bf9d38"),
                             Code = "M01",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 795, DateTimeKind.Local).AddTicks(7683),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 155, DateTimeKind.Local).AddTicks(9637),
                             CreateUserId = 0,
                             Description = "BROKEN END",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "ĐỨT SỢI DỌC",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 795, DateTimeKind.Local).AddTicks(7719),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 155, DateTimeKind.Local).AddTicks(9639),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("7c42880a-46da-42a4-a99a-b25b49b9004b"),
+                            Id = new Guid("5862aa12-b4e8-4a87-9016-c7182524fd66"),
                             Code = "M02",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 795, DateTimeKind.Local).AddTicks(9466),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 155, DateTimeKind.Local).AddTicks(9701),
                             CreateUserId = 0,
                             Description = "BROKEN PICK",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "ĐỨT SỢI NGANG",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 795, DateTimeKind.Local).AddTicks(9471),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 155, DateTimeKind.Local).AddTicks(9703),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("9894e18a-de79-4e0f-a530-d0862358a125"),
+                            Id = new Guid("b6c65dec-4989-4374-a679-32a797aaabde"),
                             Code = "M03",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 796, DateTimeKind.Local).AddTicks(1040),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 155, DateTimeKind.Local).AddTicks(9758),
                             CreateUserId = 0,
                             Description = "COARSE END ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "SỢI THÔ DỌC",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 796, DateTimeKind.Local).AddTicks(1045),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 155, DateTimeKind.Local).AddTicks(9760),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("441ed47b-8cf7-454b-99f4-f2f0e9ef70f9"),
+                            Id = new Guid("a4c3efe2-d8ca-499a-8edc-f7872adb2947"),
                             Code = "M04",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 796, DateTimeKind.Local).AddTicks(2927),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 155, DateTimeKind.Local).AddTicks(9816),
                             CreateUserId = 0,
                             Description = "COARSE PICK ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "SỢI THÔ NGANG",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 796, DateTimeKind.Local).AddTicks(2933),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 155, DateTimeKind.Local).AddTicks(9818),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("0563990b-b903-41f0-9b4d-50ec37f762d5"),
+                            Id = new Guid("c93810a3-2f36-4ad7-972a-37f5744a88f5"),
                             Code = "M05",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 796, DateTimeKind.Local).AddTicks(4410),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 155, DateTimeKind.Local).AddTicks(9904),
                             CreateUserId = 0,
                             Description = "FOREIGN FIBER ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "SỢI TẠP",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 796, DateTimeKind.Local).AddTicks(4415),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 155, DateTimeKind.Local).AddTicks(9906),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("f0df1d2a-3314-481f-b96c-83861f7914bc"),
+                            Id = new Guid("49f3d163-f281-4677-9f5c-1416028d8e3a"),
                             Code = "M06",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 796, DateTimeKind.Local).AddTicks(5769),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 155, DateTimeKind.Local).AddTicks(9962),
                             CreateUserId = 0,
                             Description = "STAIN / DIRTY ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "BIẾN MÀU /DƠ",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 796, DateTimeKind.Local).AddTicks(5774),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 155, DateTimeKind.Local).AddTicks(9963),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("5c3d6edd-c285-4fdc-84df-e33a6eee9755"),
+                            Id = new Guid("1cda1dc6-5bf6-49cb-b2cb-3c3c2a3c7793"),
                             Code = "M07",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 796, DateTimeKind.Local).AddTicks(7194),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(22),
                             CreateUserId = 0,
                             Description = "COLOR / WHITE SPOT",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "ĐỐM MÀU",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 796, DateTimeKind.Local).AddTicks(7199),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(23),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("44d7260a-cdc9-4e87-a206-36ed769684d8"),
+                            Id = new Guid("61e0194c-f811-45e6-a7b6-0c11b799c350"),
                             Code = "M08",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 796, DateTimeKind.Local).AddTicks(8626),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(117),
                             CreateUserId = 0,
                             Description = " KNOT/NAP ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "NỐI SỢI , BÔNG TẠP",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 796, DateTimeKind.Local).AddTicks(8632),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(118),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("d62a17bc-3e15-4370-8d68-e807bda2396b"),
+                            Id = new Guid("11a05bec-281e-4139-ac19-8f9ca0a07e09"),
                             Code = "M09",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(53),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(177),
                             CreateUserId = 0,
                             Description = "LOOSE WARP ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "LỎNG SỢI DỌC",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(57),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(179),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("88139c44-b513-4397-b0ab-7877f3292981"),
+                            Id = new Guid("1bd14d00-d34f-40de-875d-53a432f844a4"),
                             Code = "M10",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(1408),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(235),
                             CreateUserId = 0,
                             Description = "MISPICK",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "MẤT SỢI NGANG",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(1412),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(237),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("49cb1c3e-9bd4-452c-aaa2-7cef9717a54d"),
+                            Id = new Guid("923f2ecb-8edd-4e1e-9534-e9135e648e15"),
                             Code = "M11",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(2895),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(294),
                             CreateUserId = 0,
                             Description = "STOP MARK",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "DỪNG MÁY",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(2900),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(295),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("943459d8-73cd-4ae7-90f1-574b92ae526e"),
+                            Id = new Guid("df0b4080-7f41-4826-afb7-c49586ff22fb"),
                             Code = "M12",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(4613),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(391),
                             CreateUserId = 0,
                             Description = "CREASE MARK ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "GÃY MẶT VẢI",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(4620),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(393),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("eea6c163-c222-4273-9e77-af7fcd8906d3"),
+                            Id = new Guid("f7bd16ce-1ca3-4008-8940-ece49f2de067"),
                             Code = "M13",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(6528),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(449),
                             CreateUserId = 0,
                             Description = " HOLE ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "THỦNG",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(6534),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(451),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("9eb97266-cf5b-49a8-84d2-e52141a6c118"),
+                            Id = new Guid("60bf2e11-256a-452d-95eb-914919952aee"),
                             Code = "M14",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(7944),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(507),
                             CreateUserId = 0,
                             Description = "Print off layout ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "IN LÊCH KHUÔN",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(7949),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(508),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("15169f40-984e-4202-a0a4-a0020a09c070"),
+                            Id = new Guid("99f50793-35ab-443b-ab46-deb9d89c64f5"),
                             Code = "M15",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(9355),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(564),
                             CreateUserId = 0,
                             Description = " PRINT COLOR SMEAR",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "IN LEM MÀU",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 797, DateTimeKind.Local).AddTicks(9361),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(565),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("04d87cc1-15a2-4a83-ab63-1be0405a0b10"),
+                            Id = new Guid("9fc88f7b-84cf-4e6e-b280-84d23ccb17a6"),
                             Code = "M16",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(732),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(672),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Khác màu biên ",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(737),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(674),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("6f346ca7-3e2a-4b04-aadc-8b21c9126f4f"),
+                            Id = new Guid("0adadab7-d4ad-490e-a5ac-635e74b30d71"),
                             Code = "M17",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(2148),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(739),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "khác màu đầu cuối",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(2154),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(740),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("17bc5239-6e1a-4e3f-8d61-c5beb1b78fde"),
+                            Id = new Guid("ba99f62c-4ad1-4023-a8d1-da553d94f9de"),
                             Code = "M18",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(3574),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(801),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Sọc ngang, dọc, sọc nhuộm",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(3578),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(802),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("b04f4ac9-6cfd-419e-bfe5-801e66c3f300"),
+                            Id = new Guid("439e4783-e511-4c47-b3c6-18436f973e1c"),
                             Code = "M19",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(5019),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(900),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(5024),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(902),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("da936143-aa96-42f3-9512-367db905111d"),
+                            Id = new Guid("2a2d90d1-3ac6-4d01-bdd8-822651c47597"),
                             Code = "M20",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(6757),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(960),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Những lỗi khác",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(6763),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(961),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3")
                         },
                         new
                         {
-                            Id = new Guid("33f56628-bda6-454c-bd94-945c27017cb5"),
+                            Id = new Guid("b21d3273-b765-420e-abcc-d2703ce54626"),
                             Code = "MO01",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(8345),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1017),
                             CreateUserId = 0,
                             Description = "BROKEN END",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "ĐỨT SỢI DỌC",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(8350),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1019),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("96cd284b-a67c-41ec-a389-9c260119967e"),
+                            Id = new Guid("f952a4b1-848c-46ef-8998-1e563c21eb71"),
                             Code = "MO02",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(9757),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1073),
                             CreateUserId = 0,
                             Description = "BROKEN PICK",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "ĐỨT SỢI NGANG",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 798, DateTimeKind.Local).AddTicks(9762),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1074),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("35b240f1-b117-4d16-b56e-9cb8864ce2ba"),
+                            Id = new Guid("2c1dc80e-81da-491a-b29e-d05e1540f944"),
                             Code = "MO03",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 799, DateTimeKind.Local).AddTicks(1122),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1164),
                             CreateUserId = 0,
                             Description = "COARSE END ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "SỢI THÔ DỌC",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 799, DateTimeKind.Local).AddTicks(1126),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1165),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("1e35c3a2-cf35-4f22-a5da-b1a010016d72"),
+                            Id = new Guid("9bb1339f-94b6-41b1-8e2f-9de87e3bea33"),
                             Code = "MO04",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 799, DateTimeKind.Local).AddTicks(2719),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1223),
                             CreateUserId = 0,
                             Description = "COARSE PICK ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "SỢI THÔ NGANG",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 799, DateTimeKind.Local).AddTicks(2724),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1225),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("a6c3875b-8d1e-42cd-bb7e-c895f0a0c644"),
+                            Id = new Guid("cb476ee4-e918-482d-b2f6-cb5f84295332"),
                             Code = "MO05",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 799, DateTimeKind.Local).AddTicks(5028),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1283),
                             CreateUserId = 0,
                             Description = "FOREIGN FIBER ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "SỢI TẠP",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 799, DateTimeKind.Local).AddTicks(5046),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1284),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("c6e2fe1b-e0d7-4b96-8fc1-5e455614c37c"),
+                            Id = new Guid("5582cec9-cbf7-4ac9-b0db-abed4d2e4e17"),
                             Code = "MO06",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 799, DateTimeKind.Local).AddTicks(8956),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1343),
                             CreateUserId = 0,
                             Description = "STAIN / DIRTY ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "BIẾN MÀU /DƠ",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 799, DateTimeKind.Local).AddTicks(8976),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1344),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("51e9472c-ae96-4f25-9732-f7fa102b621f"),
+                            Id = new Guid("d39e9341-e49f-48fd-b58b-72ec10e89c1b"),
                             Code = "MO07",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 800, DateTimeKind.Local).AddTicks(1600),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1451),
                             CreateUserId = 0,
                             Description = "COLOR / WHITE SPOT",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "ĐỐM MÀU",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 800, DateTimeKind.Local).AddTicks(1609),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1453),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("99249667-d3cc-4fe9-b174-878a095beef8"),
+                            Id = new Guid("d95b6dc5-02dd-4377-87a6-c4c7134856c3"),
                             Code = "MO08",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 800, DateTimeKind.Local).AddTicks(4743),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1510),
                             CreateUserId = 0,
                             Description = " KNOT/NAP ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "NỐI SỢI , BÔNG TẠP",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 800, DateTimeKind.Local).AddTicks(4754),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1511),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("5fe7561e-983d-48a1-9bb5-80e1068d6ea0"),
+                            Id = new Guid("bb9ffa4f-4646-4708-9c4b-c4b31331e959"),
                             Code = "MO09",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 800, DateTimeKind.Local).AddTicks(7465),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1565),
                             CreateUserId = 0,
                             Description = "LOOSE WARP ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "LỎNG SỢI DỌC",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 800, DateTimeKind.Local).AddTicks(7475),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1567),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("ade485a4-73e3-473b-9ca2-53be2bfcd87a"),
+                            Id = new Guid("b79b9150-2312-4be1-8b5d-c9dd20f3fd39"),
                             Code = "MO10",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 800, DateTimeKind.Local).AddTicks(9787),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1653),
                             CreateUserId = 0,
                             Description = "MISPICK",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "MẤT SỢI NGANG",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 800, DateTimeKind.Local).AddTicks(9795),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1655),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("e2d05018-1199-444d-be7d-e966bc9d2032"),
+                            Id = new Guid("a99bf96a-7d48-4920-af7f-c2d38352be6e"),
                             Code = "MO11",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 801, DateTimeKind.Local).AddTicks(2237),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1716),
                             CreateUserId = 0,
                             Description = "STOP MARK",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "DỪNG MÁY",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 801, DateTimeKind.Local).AddTicks(2246),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1717),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("244f0fda-08cd-4950-a68b-bfff2e1c3c2f"),
+                            Id = new Guid("6da1f6b5-d6a4-43f3-9685-852c18585941"),
                             Code = "MO12",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 801, DateTimeKind.Local).AddTicks(4520),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1772),
                             CreateUserId = 0,
                             Description = "CREASE MARK ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "GÃY MẶT VẢI",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 801, DateTimeKind.Local).AddTicks(4527),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1774),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("834afdc9-e498-43a2-bdcb-bff1105b5e01"),
+                            Id = new Guid("b5b4b4fe-cc43-4a9e-b1e4-8ffb7b8eb977"),
                             Code = "MO13",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 801, DateTimeKind.Local).AddTicks(6767),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1831),
                             CreateUserId = 0,
                             Description = " HOLE ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "THỦNG",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 801, DateTimeKind.Local).AddTicks(6774),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1832),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("a5fc0563-a36a-4529-8506-90411949a969"),
+                            Id = new Guid("f2eb46da-ca11-4140-8f9e-98583c860b49"),
                             Code = "MO14",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 801, DateTimeKind.Local).AddTicks(9133),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1915),
                             CreateUserId = 0,
                             Description = "Print off layout ",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "IN LÊCH KHUÔN",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 801, DateTimeKind.Local).AddTicks(9141),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1916),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("8f407ffc-4683-461d-947c-0a625769b2bb"),
+                            Id = new Guid("982819d0-a80d-4892-b0b4-6d8f13eafe38"),
                             Code = "MO15",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 802, DateTimeKind.Local).AddTicks(1488),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1972),
                             CreateUserId = 0,
                             Description = " PRINT COLOR SMEAR",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "IN LEM MÀU",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 802, DateTimeKind.Local).AddTicks(1497),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(1974),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("1a2f3e8d-874e-414d-accc-a0cb9d6cbc1b"),
+                            Id = new Guid("388d5567-5292-474e-86ae-b03ec45162a9"),
                             Code = "MO16",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 802, DateTimeKind.Local).AddTicks(4296),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2028),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Khác màu biên ",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 802, DateTimeKind.Local).AddTicks(4304),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2029),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("44b7cdbf-80bf-4fb8-9424-a7c6f282af71"),
+                            Id = new Guid("e87c920f-df6e-46e7-87e1-cc70d0e4aa3e"),
                             Code = "MO17",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 802, DateTimeKind.Local).AddTicks(6695),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2084),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "khác màu đầu cuối",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 802, DateTimeKind.Local).AddTicks(6703),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2085),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("00ff6388-44e2-4cd0-8687-f26607478d75"),
+                            Id = new Guid("c4d6d972-7dc7-4057-9713-190ed9bc545f"),
                             Code = "MO18",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 802, DateTimeKind.Local).AddTicks(8972),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2171),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Sọc ngang, dọc, sọc nhuộm",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 802, DateTimeKind.Local).AddTicks(8978),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2173),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("950c0258-293b-42ea-89b4-78acaba81d58"),
+                            Id = new Guid("d09dcb4c-4ac2-4d2d-ae2e-b64666d4a60f"),
                             Code = "MO19",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 803, DateTimeKind.Local).AddTicks(1180),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2233),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 803, DateTimeKind.Local).AddTicks(1188),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2234),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("2fb688c0-ca38-48b0-8b52-9131c33b0ad3"),
+                            Id = new Guid("c69ccf7f-6720-4999-813b-2af769e8f9b0"),
                             Code = "MO20",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 803, DateTimeKind.Local).AddTicks(3581),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2290),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Những lỗi khác",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 803, DateTimeKind.Local).AddTicks(3588),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2291),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4")
                         },
                         new
                         {
-                            Id = new Guid("186693c3-5d66-475b-a460-18e7632ccbd9"),
+                            Id = new Guid("444cb4e6-ed21-4fc0-8f87-b47762b309c5"),
                             Code = "T01",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 803, DateTimeKind.Local).AddTicks(5857),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2376),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Sai từ ngữ, ký hiệu, Logo,..",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 803, DateTimeKind.Local).AddTicks(5864),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2378),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("4d78a6db-3c8e-4a53-91f5-28c8ef8b32fa"),
+                            Id = new Guid("d3d237ad-1bf9-4da5-b717-bcb69747830e"),
                             Code = "T02",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 803, DateTimeKind.Local).AddTicks(8218),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2435),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Sai chủng loại, chất liệu, hình dạng, kích thước, màu sắc,..",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 803, DateTimeKind.Local).AddTicks(8225),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2436),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("0cea029e-3f21-4b08-bbcc-91a861740106"),
+                            Id = new Guid("db3d09ea-0c4a-4980-bb69-af165ab050e8"),
                             Code = "T03",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 804, DateTimeKind.Local).AddTicks(505),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2492),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Nét chữ trên phụ liệu không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 804, DateTimeKind.Local).AddTicks(513),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2494),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("3f24baa3-1f64-4a33-bfcf-646c94e66641"),
+                            Id = new Guid("6b83d756-8139-44af-96ba-98bab82f9020"),
                             Code = "T04",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 804, DateTimeKind.Local).AddTicks(3139),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2548),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Phụ liệu không an toàn khi sử dụng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 804, DateTimeKind.Local).AddTicks(3148),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2549),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("0e360d9e-8f2e-4c05-88ff-bcdc952eb868"),
+                            Id = new Guid("2ebb7316-c04f-4b18-ad98-830a16f292fb"),
                             Code = "T05",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 804, DateTimeKind.Local).AddTicks(5439),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2632),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Phụ liệu kim loại rà kim không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 804, DateTimeKind.Local).AddTicks(5445),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2635),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("aa204ae5-c569-41e6-b0cf-0d1158b8be80"),
+                            Id = new Guid("3b8fbc9b-f518-4dea-9581-f8251ff282f0"),
                             Code = "T06",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 804, DateTimeKind.Local).AddTicks(7667),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2692),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Phụ liệu  nứt, lủng rách, biến dạng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 804, DateTimeKind.Local).AddTicks(7673),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2694),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("a06a69c2-51da-4cfa-8815-c7c591a7722d"),
+                            Id = new Guid("4beea9c6-1088-445f-9b16-0ef3cc99008a"),
                             Code = "T07",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 804, DateTimeKind.Local).AddTicks(9977),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2750),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Độ mềm phụ liệu, ẩm/mốc, mùi hôi",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 804, DateTimeKind.Local).AddTicks(9984),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2752),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("5acf0105-fa3f-4b1d-ae62-47bdc6cbccb6"),
+                            Id = new Guid("b3926a52-a4f5-4a23-88c1-ae91a225849c"),
                             Code = "T08",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 805, DateTimeKind.Local).AddTicks(2336),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2810),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Phụ liệu gỉ sét, trầy xước bề mặt, tróc in, dơ",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 805, DateTimeKind.Local).AddTicks(2343),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2811),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("379bebf9-cb6e-444b-be0e-9bd231cc9c01"),
+                            Id = new Guid("0c7fabdf-b6a2-425b-9310-6d2f394647c1"),
                             Code = "T09",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 805, DateTimeKind.Local).AddTicks(4650),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2965),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Loang màu, đổi màu, không đồng màu trong lô",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 805, DateTimeKind.Local).AddTicks(4657),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(2966),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("12c75b66-3ca7-422c-8ada-7487b3d63927"),
+                            Id = new Guid("6216f644-3faa-47c5-ba31-eeeea628f371"),
                             Code = "T10",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 805, DateTimeKind.Local).AddTicks(6899),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3023),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Đầu và răng khóa dây kéo không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 805, DateTimeKind.Local).AddTicks(6906),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3024),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("16d0caef-bc4b-4d89-8e48-9f17e6149baf"),
+                            Id = new Guid("86cb8169-c1b1-4ffd-9487-d848cf6a3d08"),
                             Code = "T11",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 805, DateTimeKind.Local).AddTicks(9671),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3078),
                             CreateUserId = 0,
                             Description = "kéo trượt 10 lần",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Độ trượt khóa kéo không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 805, DateTimeKind.Local).AddTicks(9684),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3079),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("50733a63-01cc-424d-a54f-ac52821a1687"),
+                            Id = new Guid("076bbaca-1407-4d8f-81bf-6d6d7657dfc8"),
                             Code = "T12",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 806, DateTimeKind.Local).AddTicks(2129),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3164),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Vặn, xoắn, có nhiều mối nối",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 806, DateTimeKind.Local).AddTicks(2137),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3166),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("6cba3909-775a-4c46-b08c-e030c46a5afe"),
+                            Id = new Guid("5f89b88c-026f-43d0-a39f-b3bbde311e92"),
                             Code = "T13",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 806, DateTimeKind.Local).AddTicks(4687),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3222),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Mối dán ép bao bì không bền chắc",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 806, DateTimeKind.Local).AddTicks(4696),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3223),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("01f02fe7-3743-40a5-9dc4-dd52e4d677c1"),
+                            Id = new Guid("448cb4d5-3b37-483e-89bf-5da192e7a9f0"),
                             Code = "T14",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 806, DateTimeKind.Local).AddTicks(7101),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3277),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 806, DateTimeKind.Local).AddTicks(7108),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3278),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("100753a1-8a7f-4119-8c7d-e383fbbb886f"),
+                            Id = new Guid("d0abb049-2433-45cb-ae86-a0972138b655"),
                             Code = "T15",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 806, DateTimeKind.Local).AddTicks(9638),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3333),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 806, DateTimeKind.Local).AddTicks(9646),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3335),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("02d5148b-927a-4b6e-930f-4bda83a1aee3"),
+                            Id = new Guid("0d2d6e36-04c2-4c9a-ab61-1092288286af"),
                             Code = "T16",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 807, DateTimeKind.Local).AddTicks(2090),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3437),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 807, DateTimeKind.Local).AddTicks(2098),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3438),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("eb874dd3-d07a-4cc1-b839-8808591ad6bd"),
+                            Id = new Guid("659c04cc-56fd-4143-a005-0f6b42c5d962"),
                             Code = "T17",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 807, DateTimeKind.Local).AddTicks(4646),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3496),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 807, DateTimeKind.Local).AddTicks(4655),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3497),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("b6d2f086-b997-4540-8b13-ac3f97ef1da3"),
+                            Id = new Guid("1859ca8f-6079-42a8-a799-762bcd793d67"),
                             Code = "T18",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 807, DateTimeKind.Local).AddTicks(7220),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3555),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 807, DateTimeKind.Local).AddTicks(7229),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3556),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("920894fb-e98a-4fa2-a79e-18668b67bec9"),
+                            Id = new Guid("4be9e669-4551-497c-adfe-70fb2567c979"),
                             Code = "T19",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 807, DateTimeKind.Local).AddTicks(9810),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3612),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 807, DateTimeKind.Local).AddTicks(9818),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3614),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("3c7b255c-0847-4a40-89b0-3302404b7f7d"),
+                            Id = new Guid("2aa48f87-5a90-4188-af10-4446c03d6f5a"),
                             Code = "T20",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 808, DateTimeKind.Local).AddTicks(2264),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3697),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Những lỗi khác",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 808, DateTimeKind.Local).AddTicks(2272),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3698),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358")
                         },
                         new
                         {
-                            Id = new Guid("e7003fdf-d8a7-4e52-9b3b-17eacce4328e"),
+                            Id = new Guid("9040ccc4-d347-4c05-8ddd-28174d7765d2"),
                             Code = "C01",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 808, DateTimeKind.Local).AddTicks(5171),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3754),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi hoặc sai sơ đồ cắt, rập cứng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 808, DateTimeKind.Local).AddTicks(5179),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3755),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("3a9ab436-b117-4fd6-850b-35059d2548e1"),
+                            Id = new Guid("35f29aef-0825-4696-8c1c-1304e7d362ca"),
                             Code = "C02",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 808, DateTimeKind.Local).AddTicks(7799),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3809),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Bán thành phẩm cắt lớn hoặc nhỏ hơn rập ",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 808, DateTimeKind.Local).AddTicks(7809),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3810),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("cef7c83b-bdb2-4729-bfa5-552da7852c5f"),
+                            Id = new Guid("4274bc14-0e4d-4906-a8a6-116d9d0fb165"),
                             Code = "C03",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 809, DateTimeKind.Local).AddTicks(336),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3895),
                             CreateUserId = 0,
                             Description = "vải chính, vải lót, keo,…",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Biến dạng, sai hình dáng, canh sợi, bề mặt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 809, DateTimeKind.Local).AddTicks(344),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3896),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("f7bfc0f7-9bcd-4c36-ba74-a91b770bcc59"),
+                            Id = new Guid("30cd23f1-3b5e-473a-ad0a-29531465aa3c"),
                             Code = "C04",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 809, DateTimeKind.Local).AddTicks(2821),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3957),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Thiếu dấu bấm, dấu bấm ",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 809, DateTimeKind.Local).AddTicks(2828),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(3959),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("86df1a91-3ae8-4316-81a3-24644cede59d"),
+                            Id = new Guid("c13995c6-ea2a-4062-b92b-39b41f09ebdb"),
                             Code = "C05",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 809, DateTimeKind.Local).AddTicks(5477),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4013),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi đánh số",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 809, DateTimeKind.Local).AddTicks(5485),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4014),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("abd5c51c-e78e-499e-9079-bc408bec1d8c"),
+                            Id = new Guid("7a0b5fde-2b89-4a6c-ba6d-6bec01af9258"),
                             Code = "C06",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 809, DateTimeKind.Local).AddTicks(7993),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4071),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Loang màu chi tiết, dơ, ố",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 809, DateTimeKind.Local).AddTicks(8000),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4072),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("27728b03-4b2a-4e49-a335-cd0c43888471"),
+                            Id = new Guid("c372a10b-35e9-4ffc-9158-b06411b29853"),
                             Code = "C07",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 810, DateTimeKind.Local).AddTicks(1285),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4157),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Ép keo không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 810, DateTimeKind.Local).AddTicks(1314),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4158),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("87bde19b-68f1-464f-a8ec-7c5f2b877f08"),
+                            Id = new Guid("e182057c-743c-48c9-8de8-596d77e7fa79"),
                             Code = "C08",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 810, DateTimeKind.Local).AddTicks(3491),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4213),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Sai màu thêu, màu in",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 810, DateTimeKind.Local).AddTicks(3504),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4214),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("df51697f-b0c1-4bf0-859a-1ea2adf3ff87"),
+                            Id = new Guid("04938f62-ca89-43b8-8070-8442f3d193c5"),
                             Code = "C09",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 810, DateTimeKind.Local).AddTicks(5339),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4269),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "In, thêu thiếu nét, thiếu chữ",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 810, DateTimeKind.Local).AddTicks(5344),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4271),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("bcf00d91-1d32-4fde-97e8-e9b7ba70abf6"),
+                            Id = new Guid("99166839-e337-4383-883f-4a11fbd85f5c"),
                             Code = "C10",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 810, DateTimeKind.Local).AddTicks(6796),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4326),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "In, thêu sai vị trí",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 810, DateTimeKind.Local).AddTicks(6802),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4328),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("483110d1-ae6a-4986-b7d5-7983ca64d9e6"),
+                            Id = new Guid("57b60ed9-f53a-4b00-b314-29d77a19f2e9"),
                             Code = "C11",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 810, DateTimeKind.Local).AddTicks(8209),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4413),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Thêu bỏ mũi, đứt chỉ, không khóa mũi",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 810, DateTimeKind.Local).AddTicks(8214),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4415),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("bb7d8ad2-b3c0-4703-a309-c1bf22679427"),
+                            Id = new Guid("ac24ebc8-f01d-48c2-a9d5-f0e6f17987e7"),
                             Code = "C12",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 810, DateTimeKind.Local).AddTicks(9601),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4472),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lủng rách bán thành phẩm vải/ keo",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 810, DateTimeKind.Local).AddTicks(9606),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4473),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("c1062c8c-e0fe-4bc9-a33d-246c14628c8f"),
+                            Id = new Guid("e6bcdbce-8766-4877-b8b5-a1d220aabe75"),
                             Code = "C13",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 811, DateTimeKind.Local).AddTicks(982),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4527),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi vải",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 811, DateTimeKind.Local).AddTicks(987),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4529),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("c1ce0ef3-ee47-4334-85d4-ad92b9cb4bca"),
+                            Id = new Guid("002e5d18-7d02-44d0-ae46-e87b432b6c41"),
                             Code = "C14",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 811, DateTimeKind.Local).AddTicks(2568),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4614),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 811, DateTimeKind.Local).AddTicks(2572),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4615),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("01d547ad-8e3d-4f43-a9ed-f55c3836f798"),
+                            Id = new Guid("1b292269-434d-4d16-875e-b3cef952d880"),
                             Code = "C15",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 811, DateTimeKind.Local).AddTicks(3933),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4672),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 811, DateTimeKind.Local).AddTicks(3938),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4673),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("2d66069c-5d07-4a5f-a9fe-c2e0037934d5"),
+                            Id = new Guid("2061ec13-a607-4094-9a15-90e8e574da27"),
                             Code = "C16",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 811, DateTimeKind.Local).AddTicks(5369),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4728),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 811, DateTimeKind.Local).AddTicks(5374),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4729),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("a6b0e6fe-d795-49b8-8c42-71143e54ea51"),
+                            Id = new Guid("132e2d12-e27e-430a-b6e1-133c18caaa14"),
                             Code = "C17",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 811, DateTimeKind.Local).AddTicks(6984),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4784),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 811, DateTimeKind.Local).AddTicks(6990),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4786),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("4ecaefc1-038f-44dc-8568-f70de8f5bfbd"),
+                            Id = new Guid("fbbf3b25-027b-4a28-91d7-a83d0a67785a"),
                             Code = "C18",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 811, DateTimeKind.Local).AddTicks(8666),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4869),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 811, DateTimeKind.Local).AddTicks(8671),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4870),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("5a3b55e5-9c7d-4087-a5fe-eb7eea1c7b06"),
+                            Id = new Guid("3108f5f0-f4cb-4789-aeb3-93de724240e3"),
                             Code = "C19",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(36),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4925),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(41),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4927),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("4088cf1f-fb99-42eb-841c-e70c0fdccfbd"),
+                            Id = new Guid("25f366b3-629a-4a19-9d52-6f236dcda0c6"),
                             Code = "C20",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(1593),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4985),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Những lỗi khác",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(1597),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(4986),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964")
                         },
                         new
                         {
-                            Id = new Guid("eacd86f8-5179-4115-b27e-69210a47c210"),
+                            Id = new Guid("816b5723-7b39-4cca-9c76-4fdbbaebd51d"),
                             Code = "S01",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(3043),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5039),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Nối chỉ không trùng, chỉ thừa, lộ chỉ lược, vệ sinh công nghiệp không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(3047),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5041),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("a6ec331a-5cca-4a1e-90a6-057cccf3ec6a"),
+                            Id = new Guid("867908e0-b9bc-48f6-a84a-f6a3222b973c"),
                             Code = "S02",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(4484),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5131),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Bung chỉ, đứt chỉ, bỏ mũi, căng chỉ, lỏng chỉ",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(4489),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5133),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("f9d974e7-9f28-4f7a-b362-ecd7107b4614"),
+                            Id = new Guid("27f2ce06-13e2-4928-a935-a714fcdf5546"),
                             Code = "S03",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(5839),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5195),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Nhăn nhíu, vặn, gợn sóng, bai giãn, sụp mí, le mí, xì mép,xếp ly",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(5843),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5196),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("d6d4cdf2-5f5a-41ab-b1c2-8cc31bd80c64"),
+                            Id = new Guid("cc47c474-efa8-4a1d-8da4-ea370d7defb1"),
                             Code = "S04",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(7328),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5251),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Cao/thấp, không đồng đều đường may, không đối xứng, không đúng dấu/rập",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(7333),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5252),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("1a31c9ab-89e5-4698-8a7a-f41d5f69450a"),
+                            Id = new Guid("fa041874-08bc-46a1-aa17-90f1011ea6b5"),
                             Code = "S05",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(8890),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5347),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lủng, rách, lỗ kim",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 812, DateTimeKind.Local).AddTicks(8896),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5349),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("32fad5e3-30be-4b3c-8d2e-f93106dff985"),
+                            Id = new Guid("37674091-9fc6-4adf-8594-64f597319bf5"),
                             Code = "S06",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(384),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5406),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Dính gỉ-sét, dầu máy",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(389),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5408),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("9e68d631-ebf1-4510-a494-aedd267e94fb"),
+                            Id = new Guid("a4ace889-6e5b-4407-af52-9207e6424f38"),
                             Code = "S07",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(1868),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5463),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Dơ, dấu phấn, mực",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(1873),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5465),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("ebeabf87-db6c-429b-927b-a006360c0139"),
+                            Id = new Guid("4ac2c6e2-df45-4297-abf5-340f9a7728c7"),
                             Code = "S08",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(3310),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5521),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Khác màu chi tiết, ráp lộn số",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(3315),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5523),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("c2c0e29f-11ab-4891-b762-2e8ba6246579"),
+                            Id = new Guid("11530ee8-0b89-4edf-8fca-fa2d80eadd8d"),
                             Code = "S09",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(4680),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5619),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi ủi",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(4685),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5621),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("27df0eb2-ecad-4a05-8f20-a8cc985985be"),
+                            Id = new Guid("bb55e4fb-56dc-4a8c-baa3-856287d03a0d"),
                             Code = "S10",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(6078),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5679),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi kỹ thuật, biến dạng form, không phù hợp,..",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(6082),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5680),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("b263caf8-d0e6-491a-93e0-d734a50a1e78"),
+                            Id = new Guid("6d2f5b98-a448-46a9-92f0-50350896f9a2"),
                             Code = "S11",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(7463),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5738),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Thiếu/ Sai: Phụ liệu, nhãn, bán thành phẩm In, thêu",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(7468),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5739),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("4067089b-6c6d-43ee-a4bd-9eb1f8242804"),
+                            Id = new Guid("2232e1b8-e8ac-4972-97d7-dc4d4f68a9d3"),
                             Code = "S12",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(8961),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5794),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 813, DateTimeKind.Local).AddTicks(8966),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5796),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("2b3f7864-7a7f-4626-bd78-4f2c3562f871"),
+                            Id = new Guid("8b3103ad-e4d5-4c94-a2ab-db25ec70f11e"),
                             Code = "S13",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(537),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5884),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(542),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5886),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("07f6237e-d5b9-4464-8480-a39f794d0bee"),
+                            Id = new Guid("64957883-7c1e-44a8-b7d0-605506fa8439"),
                             Code = "S14",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(2202),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5941),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(2209),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(5943),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("9a845d86-d8c4-421f-b0a7-fac59d00480c"),
+                            Id = new Guid("52072380-e9eb-4130-ad52-f429d43922f2"),
                             Code = "S15",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(3654),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6057),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(3659),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6060),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("81e2efb4-75af-4ec4-9c99-f31c258e1342"),
+                            Id = new Guid("35ef9a37-7dc1-4211-bfe4-77a6abe7d5b6"),
                             Code = "S16",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(5072),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6176),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(5076),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6177),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("6b394d62-b6e8-4d2a-bac4-f9af3cf6099b"),
+                            Id = new Guid("3d302d64-456f-4508-b3ed-70a005760125"),
                             Code = "S17",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(6463),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6233),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(6467),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6235),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("0bf0eea4-9219-455b-b60c-0d3c2d130801"),
+                            Id = new Guid("05c8a42f-4d56-4b62-a734-608eb9d86f40"),
                             Code = "S18",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(7805),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6288),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(7810),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6289),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("bd2a1762-6b3e-4a70-acb9-d10b52d5b6cd"),
+                            Id = new Guid("d2d13421-57b7-420e-b5a5-4d5c79934c67"),
                             Code = "S19",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(9228),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6345),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi thông số",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 814, DateTimeKind.Local).AddTicks(9233),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6346),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("0cc7fa5c-2b56-4da0-a35f-a23668c91bbc"),
+                            Id = new Guid("3ba1f67d-d0d4-4baa-92e2-7047edd4b470"),
                             Code = "S20",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(590),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6431),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Những lỗi khác",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(595),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6432),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087")
                         },
                         new
                         {
-                            Id = new Guid("7ca4fd88-1c91-4103-a498-d844f0c192cd"),
+                            Id = new Guid("786cdf66-e6cb-45a9-8e5c-0a3ecca0fa04"),
                             Code = "W01",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(2385),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6488),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Ánh màu không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(2390),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6490),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("b465e15b-6e8a-4418-9a10-b95cc89dfbf2"),
+                            Id = new Guid("3f262512-a873-4b53-aad8-f8a6f3975b78"),
                             Code = "W02",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(3816),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6543),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Khác màu, loang màu trong cùng sản phẩm",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(3820),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6545),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("edd25dcc-9480-48a8-9cb1-5209ebfb9658"),
+                            Id = new Guid("ec4b6203-f0a0-49c0-8a16-40e33f584499"),
                             Code = "W03",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(5318),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6601),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "PP không đạt, đốm PP, cấn wash",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(5323),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6603),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("dbcb8539-f3d5-4685-8280-b632fb00850a"),
+                            Id = new Guid("f05d1363-27b1-4725-a21a-d5d0691088cb"),
                             Code = "W04",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(6686),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6695),
                             CreateUserId = 0,
                             Description = "whishkers, grinding,..",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Hiệu ứng thời trang không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(6691),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6696),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("aa0ff0eb-9eb3-437b-badb-4f4eef5cf4e6"),
+                            Id = new Guid("dfd60c92-bfd5-4e19-94b7-a3426778a2ac"),
                             Code = "W05",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(8129),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6754),
                             CreateUserId = 0,
                             Description = " handsands, destroys,..",
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Hình dáng, kích thước, vị trí thời trang wash không đúng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(8137),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6756),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("aaf56fde-0d0c-4780-9588-019d9666155a"),
+                            Id = new Guid("363535a2-232d-4fb9-9994-3eafd2ee3517"),
                             Code = "W06",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(9510),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6809),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "3D thiếu hoặc mạnh/yếu",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 815, DateTimeKind.Local).AddTicks(9515),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6811),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("4f84dee3-242a-42ef-9050-8b6fc3767d4c"),
+                            Id = new Guid("3e7402b9-53c0-4e01-80a8-142c5369a18b"),
                             Code = "W07",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 816, DateTimeKind.Local).AddTicks(1021),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6900),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Cấn wash, đốm",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 816, DateTimeKind.Local).AddTicks(1026),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6901),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("0b9e4d48-de16-45bf-af9e-b02aa87875fa"),
+                            Id = new Guid("f458a257-b49a-4fdc-8b3c-f8adb31f1fde"),
                             Code = "W08",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 816, DateTimeKind.Local).AddTicks(5104),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6957),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Độ mềm không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 816, DateTimeKind.Local).AddTicks(5124),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(6958),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("9039bc65-607e-483e-99cb-809b7400e0f9"),
+                            Id = new Guid("cbbdc86a-351a-4722-84b8-6e00dcd8b0d9"),
                             Code = "W09",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 816, DateTimeKind.Local).AddTicks(8380),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7011),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Hiệu ứng wash, nhuộm không đồng đều",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 816, DateTimeKind.Local).AddTicks(8388),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7012),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("8f4f886a-b56a-436f-a083-285be41dc566"),
+                            Id = new Guid("f12d6d39-e8f5-404a-a9cd-a72bcfe4ace7"),
                             Code = "W10",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 817, DateTimeKind.Local).AddTicks(881),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7065),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Mùi hôi, ẩm mốc, mục rách",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 817, DateTimeKind.Local).AddTicks(889),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7066),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("5f308849-814d-4d36-8575-aa57da6cd227"),
+                            Id = new Guid("202df742-b5f2-4f35-bbb5-3cd03fd48d9f"),
                             Code = "W11",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 817, DateTimeKind.Local).AddTicks(3508),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7147),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi Vải",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 817, DateTimeKind.Local).AddTicks(3516),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7149),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("d0dd1d1c-a93c-48dc-b9a2-b66e19ddf7ce"),
+                            Id = new Guid("b15c6574-1514-4935-930a-5f01cfd0f249"),
                             Code = "W12",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 817, DateTimeKind.Local).AddTicks(6004),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7205),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi May",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 817, DateTimeKind.Local).AddTicks(6012),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7206),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("4641ec4a-027f-48b0-9a3f-259cda1126f7"),
+                            Id = new Guid("17baa2f6-7ce4-417f-9746-26a02db5c268"),
                             Code = "W13",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 817, DateTimeKind.Local).AddTicks(8588),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7260),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi dơ",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 817, DateTimeKind.Local).AddTicks(8595),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7262),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("1afe43fa-2a04-40b8-9e94-878c83528af5"),
+                            Id = new Guid("13f0e8bd-4ec1-4397-a366-f583fceba704"),
                             Code = "W14",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 818, DateTimeKind.Local).AddTicks(1109),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7314),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Nhăn/ gãy, sờn hoặc cấn bóng bề mặt vải",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 818, DateTimeKind.Local).AddTicks(1116),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7316),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("932ef621-358b-4823-b224-1667117f8d9a"),
+                            Id = new Guid("7be522ff-962a-461c-8f01-3a05f7c1f772"),
                             Code = "W15",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 818, DateTimeKind.Local).AddTicks(3609),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7424),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 818, DateTimeKind.Local).AddTicks(3616),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7426),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("161352b6-e1c2-43e9-b637-058f9675f6cb"),
+                            Id = new Guid("fd4cb86c-9fd6-4fd7-a760-81fb58bdead0"),
                             Code = "W16",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 818, DateTimeKind.Local).AddTicks(6041),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7482),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 818, DateTimeKind.Local).AddTicks(6047),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7483),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("92199a63-5efe-421a-bc2f-f6e43003ab7a"),
+                            Id = new Guid("1953ea3a-2b17-4231-801b-4e5ae76ce61d"),
                             Code = "W17",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 818, DateTimeKind.Local).AddTicks(8874),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7538),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 818, DateTimeKind.Local).AddTicks(8885),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7540),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("edcf1e80-2fce-402a-be18-66eee222fc89"),
+                            Id = new Guid("c0d07f24-947c-4cb7-ba93-d2e85226af05"),
                             Code = "W18",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 819, DateTimeKind.Local).AddTicks(1341),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7627),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 819, DateTimeKind.Local).AddTicks(1348),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7628),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("8c711385-1519-42e1-a2d1-14693398486f"),
+                            Id = new Guid("8f269ce6-0e96-491d-a281-e93acf6341aa"),
                             Code = "W19",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 819, DateTimeKind.Local).AddTicks(3492),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7683),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi thông số",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 819, DateTimeKind.Local).AddTicks(3506),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7685),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("e10be0c1-0f8e-44aa-9938-c2256273aaaf"),
+                            Id = new Guid("dbfea816-3859-44b0-9907-8f834794c709"),
                             Code = "W20",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 819, DateTimeKind.Local).AddTicks(4989),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7743),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Những lỗi khác",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 819, DateTimeKind.Local).AddTicks(4993),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7745),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("1bc43632-e605-4489-8030-f7dad305f00c")
                         },
                         new
                         {
-                            Id = new Guid("55ef0692-c3f1-439f-be48-4027fcedd696"),
+                            Id = new Guid("d444eb3a-e582-4ae7-afee-6a98aebb558b"),
                             Code = "F01",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 819, DateTimeKind.Local).AddTicks(6387),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7801),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Vệ sinh công nghiệp, chỉ thừa không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 819, DateTimeKind.Local).AddTicks(6392),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7802),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("15325b15-6862-4763-9928-e18f81403b37"),
+                            Id = new Guid("b7c943e4-a734-4815-826a-784f9d76d24a"),
                             Code = "F02",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 819, DateTimeKind.Local).AddTicks(7778),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7890),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Dính dầu máy, dơ, dấu phấn, dấu mực",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 819, DateTimeKind.Local).AddTicks(7782),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7891),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("a2d1852d-7b04-442d-9aef-b0def25efe18"),
+                            Id = new Guid("a8ba0bd1-8104-4813-83bf-5366961e23f2"),
                             Code = "F03",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 819, DateTimeKind.Local).AddTicks(9152),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7946),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Ủi (là) xấu, bị bóng, cháy nám, biến dạng Form",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 819, DateTimeKind.Local).AddTicks(9156),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(7948),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("f6d3851e-4ae7-432e-a560-fa5b63d5c35c"),
+                            Id = new Guid("6231e518-62c0-42aa-9873-43a9646a267e"),
                             Code = "F04",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(588),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8002),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Đóng (đính) nút, rivet, phụ liệu,… không đạt bền chắc, không an toàn khi sử dụng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(593),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8003),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("0d54b217-da38-4b11-ab50-fd6f57e4ec90"),
+                            Id = new Guid("2db12831-a775-49e4-a209-a5d59acdcbb9"),
                             Code = "F05",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(2444),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8060),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Đóng (đính) nút, rivet,  ủi, gắn nhãn, gấp xếp,... sai quy cách; thiếu/ dư phụ liệu",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(2451),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8062),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("f015d6f5-7773-44d7-a8da-3ab7577f74af"),
+                            Id = new Guid("364b2d27-0bfe-4a4a-8679-5969f5221c56"),
                             Code = "F06",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(4175),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8152),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Sử dụng sai phụ liệu",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(4179),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8153),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("ab1024e8-8ea2-436b-9086-7dc0e7455ee4"),
+                            Id = new Guid("ff847a69-6065-42e1-b7ed-1754833036df"),
                             Code = "F07",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(5561),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8208),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lủng, rách, lỗ kim",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(5566),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8209),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("2ae96428-4761-4531-886e-6fa78a940e30"),
+                            Id = new Guid("5b307eba-a47d-459a-b58d-4b6d888971f1"),
                             Code = "F08",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(7019),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8267),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Bung chỉ, bung đường may, đứt chỉ, bỏ mũi, căng chỉ, lỏng chỉ, nối chỉ không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(7024),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8268),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("b62426e6-2407-4da8-895e-2034ba5654c3"),
+                            Id = new Guid("4e315804-1e7e-4df4-a214-218d4ab8e105"),
                             Code = "F09",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(8387),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8358),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Nhăn nhíu, xếp ly, sụp mí, gợn sóng, vặn đường may, văn canh vải, bai giãn",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(8392),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8360),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("2ac5aa11-f1eb-4bfa-9632-4dfe12a12750"),
+                            Id = new Guid("dbf4c1da-b0a2-4b26-9e38-296331e2864a"),
                             Code = "F10",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(9831),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8416),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Dò kim loại không đạt ",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 820, DateTimeKind.Local).AddTicks(9836),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8417),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("01e414ff-8d75-4fac-a1b0-31d266c2d9e6"),
+                            Id = new Guid("9d345062-0363-401c-8c65-066ef43d9835"),
                             Code = "F11",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 821, DateTimeKind.Local).AddTicks(1305),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8474),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Cấn wash, đốm wash",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 821, DateTimeKind.Local).AddTicks(1310),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8475),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("77840efd-2d51-4f54-b49d-5e23412d0229"),
+                            Id = new Guid("6a43cbf9-e432-4158-8161-a26d54089555"),
                             Code = "F12",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 821, DateTimeKind.Local).AddTicks(2825),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8532),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Hiệu ứng, thời trang wash ",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 821, DateTimeKind.Local).AddTicks(2830),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8533),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("3bde0681-2f63-4cc9-be84-a3fcf8709973"),
+                            Id = new Guid("e09fe2f6-45b9-483b-9375-9e5e4176c674"),
                             Code = "F13",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 821, DateTimeKind.Local).AddTicks(4380),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8622),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Gấp xếp, dán thùng, đai thùng không đạt chất lượng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 821, DateTimeKind.Local).AddTicks(4385),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8624),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("a623f633-facd-46fc-916c-75d637ce0cfe"),
+                            Id = new Guid("23c58625-8486-4fb0-9de2-8fc18ca7b3fe"),
                             Code = "F14",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 821, DateTimeKind.Local).AddTicks(5869),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8685),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Sai tỷ lệ và số lượng trong thùng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 821, DateTimeKind.Local).AddTicks(5875),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8687),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("dbc7f05f-c750-4abb-9db0-3ba91ee599a3"),
+                            Id = new Guid("e9d92d40-35ad-4937-b2c8-c0d97ae47fdb"),
                             Code = "F15",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 821, DateTimeKind.Local).AddTicks(7229),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8742),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Mùi hôi, ẩm mốc, mục vải, vật lạ trên sản phẩm",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 821, DateTimeKind.Local).AddTicks(7234),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8744),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("239ece38-d7f9-44fd-9044-43d78fc9802d"),
+                            Id = new Guid("755ff8c1-f37b-45f5-a5a2-27783b7758bb"),
                             Code = "F16",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 821, DateTimeKind.Local).AddTicks(8650),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8801),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Chất lượng phụ liệu không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 821, DateTimeKind.Local).AddTicks(8654),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8802),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("f62d9e8c-d717-4d58-8f7e-c5b404c7f744"),
+                            Id = new Guid("7a21b0be-b614-44f0-882c-98ca7497ff2f"),
                             Code = "F17",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(37),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8890),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(42),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8891),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("190de03b-260f-4c63-9dae-92e235b1cee6"),
+                            Id = new Guid("e05c1644-cec5-43d5-b169-a7985e4658b5"),
                             Code = "F18",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(1607),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8947),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "0",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(1612),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(8948),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("9ab0c092-2dba-4416-a7c6-7031424d7153"),
+                            Id = new Guid("1a4184b9-cc9d-48cd-b45d-15cbad2b9860"),
                             Code = "F19",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(3009),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9005),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi thông số",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(3013),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9006),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("246ef539-7bfc-494f-9a9a-52a08ace04eb"),
+                            Id = new Guid("b5d50f22-99fc-42ab-8cc3-70635a2cf2c9"),
                             Code = "F20",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(4408),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9096),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Những lỗi khác",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(4413),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9098),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956")
                         },
                         new
                         {
-                            Id = new Guid("73a88b77-503c-4327-bf48-a44e4b1558b9"),
+                            Id = new Guid("98e59176-7340-41ea-a9c7-ceab9e0c0f44"),
                             Code = "PP01",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(5992),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9156),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Vệ sinh công nghiệp, chỉ thừa không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(5997),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9158),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("1ace51cc-6031-43b6-8896-d30e76a458f3"),
+                            Id = new Guid("3c464c64-4c31-428a-a945-0dea6543c514"),
                             Code = "PP02",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(7462),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9212),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Dính dầu máy, dơ, dấu phấn, dấu mực",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(7468),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9213),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("85343497-d6fd-4c29-b63d-2b43cda83abc"),
+                            Id = new Guid("affbd725-68ec-4e91-99da-ecd3ee70fe7a"),
                             Code = "PP03",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(8839),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9266),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Ủi (là) xấu, bị bóng, cháy nám, biến dạng Form",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 822, DateTimeKind.Local).AddTicks(8844),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9268),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("6032547b-f12a-40e1-b61d-d3085e7fe1f3"),
+                            Id = new Guid("4bac7ec0-62b4-4a13-b61e-3a7b4586aac9"),
                             Code = "PP04",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(278),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9369),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Đóng (đính) nút, rivet, phụ liệu,… không đạt bền chắc, không an toàn khi sử dụng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(282),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9370),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("eb98ae3f-d017-493b-a3e9-c15bb9ad5d01"),
+                            Id = new Guid("893d07f4-a318-48d2-a0f4-723d1fec1857"),
                             Code = "PP05",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(1966),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9425),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Đóng (đính) nút, rivet,  ủi, gắn nhãn, gấp xếp,... sai quy cách; thiếu/ dư phụ liệu",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(1970),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9427),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("1fe7b94c-9a5c-4353-bdf0-f37124dc0701"),
+                            Id = new Guid("7a348a0c-024c-4150-9f43-8d654d36d5b2"),
                             Code = "PP06",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(3382),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9481),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Sử dụng sai phụ liệu",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(3386),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9482),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("e200e4a3-6413-4a14-863f-2935a3e10faa"),
+                            Id = new Guid("520e4a4b-c0b5-4809-9578-33cf4ab8217b"),
                             Code = "PP07",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(4743),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9538),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lủng, rách, lỗ kim",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(4747),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9540),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("6ad1365f-0835-4354-bd03-c0c096644930"),
+                            Id = new Guid("3c48685f-13f1-4ecc-ab37-455304083977"),
                             Code = "PP08",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(6120),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9625),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Bung chỉ, bung đường may, đứt chỉ, bỏ mũi, căng chỉ, lỏng chỉ, nối chỉ không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(6124),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9626),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("d57fe766-d6ae-4bf4-8b69-186af3909ef1"),
+                            Id = new Guid("10fb380c-4934-43df-a833-ded99a29f09e"),
                             Code = "PP09",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(7804),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9679),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Nhăn nhíu, xếp ly, sụp mí, gợn sóng, vặn đường may, văn canh vải, bai giãn",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(7808),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9681),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("7f3f6b83-2738-4da6-915b-5b7555ac978f"),
+                            Id = new Guid("adc9d0f5-9942-45b4-83d4-1fc11f728ded"),
                             Code = "PP10",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(9214),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9735),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Ánh màu không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 823, DateTimeKind.Local).AddTicks(9218),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9736),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("67b6d784-03e8-41ab-b6ec-92366706fe42"),
+                            Id = new Guid("eb5eb84e-38d8-41e7-aa4a-d601e7981d3d"),
                             Code = "PP11",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(697),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9823),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Cấn wash, đốm wash",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(701),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9824),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("af68e1bf-6369-4624-8df5-f7045cdaa1e5"),
+                            Id = new Guid("f7b1b5c6-1a56-4867-91b9-f947228d74dd"),
                             Code = "PP12",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(2241),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9880),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Hiệu ứng wash, nhuộm không đồng đều",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(2246),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9881),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("e6462682-fe29-4b70-94b9-916f4c684b17"),
+                            Id = new Guid("f3bf825d-f1f3-47a8-bd63-f4cb25749bf9"),
                             Code = "PP13",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(3677),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9936),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Hình dáng, kích thước, vị trí thời trang wash không đúng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(3682),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9937),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("c58a290a-7225-4b1b-9886-af230f74c383"),
+                            Id = new Guid("50ec371b-a123-416a-9bce-e605f4429045"),
                             Code = "PP14",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(5045),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9991),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Sai số lượng và tỷ lệ trong thùng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(5050),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 156, DateTimeKind.Local).AddTicks(9992),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("fa4722d6-3383-4545-b3eb-cdfd7d9cc4c6"),
+                            Id = new Guid("d53c7134-1375-497a-bdf7-ba2d45463b0c"),
                             Code = "PP15",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(6464),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(76),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Mùi hôi, ẩm mốc, mục vải, vật lạ trên sản phẩm",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(6469),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(77),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("0143db2d-dee0-44ac-b2d3-bd67b3b992a6"),
+                            Id = new Guid("29237bab-0cd5-4258-b499-a699cad3ff69"),
                             Code = "PP16",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(7806),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(131),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Mặc thử không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(7811),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(133),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("485ad8f8-3c6a-4679-b1a7-bba261caa6d3"),
+                            Id = new Guid("e003d004-fcd9-4ffa-8c69-1788d609ad56"),
                             Code = "PP17",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(9402),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(190),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Kỹ thuật may xấu, không phù hợp",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 824, DateTimeKind.Local).AddTicks(9407),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(191),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("29eb59b5-f102-491e-ae8a-e7ec90b0ca8b"),
+                            Id = new Guid("9aff7065-a6ed-4dfe-981d-426885918435"),
                             Code = "PP18",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 825, DateTimeKind.Local).AddTicks(836),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(249),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Chất lượng phụ liệu không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 825, DateTimeKind.Local).AddTicks(840),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(250),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("3a0eafc6-018c-49a7-9446-ac7579041901"),
+                            Id = new Guid("051572ad-662f-4a27-b56f-c51349585aab"),
                             Code = "PP19",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 825, DateTimeKind.Local).AddTicks(8270),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(339),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi Thông số",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 825, DateTimeKind.Local).AddTicks(8307),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(341),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("479884e1-4e64-4f5e-86a7-6841c5fa0f3e"),
+                            Id = new Guid("3d81ba1c-50ad-4081-8560-e7d901ed085e"),
                             Code = "PP20",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 826, DateTimeKind.Local).AddTicks(1296),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(398),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Những lỗi khác",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 826, DateTimeKind.Local).AddTicks(1312),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(400),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229")
                         },
                         new
                         {
-                            Id = new Guid("d09c20eb-7adc-46c0-bab6-665e8e24ec34"),
+                            Id = new Guid("676e96f1-5085-4d3b-9e33-29133000b26a"),
                             Code = "P01",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 826, DateTimeKind.Local).AddTicks(3884),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(454),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Vệ sinh công nghiệp, chỉ thừa không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 826, DateTimeKind.Local).AddTicks(3893),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(456),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("8f63a868-58e4-4ae5-899f-c8df7d21058a"),
+                            Id = new Guid("f2d02e27-d148-4d2f-9e5a-340ec977084f"),
                             Code = "P02",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 826, DateTimeKind.Local).AddTicks(6436),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(539),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Dính dầu máy, dơ, dấu phấn, dấu mực",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 826, DateTimeKind.Local).AddTicks(6444),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(540),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("ffa632c9-9205-444b-ae67-937bfcb94c0b"),
+                            Id = new Guid("7002409e-bc33-45ae-b663-86ff5cea5559"),
                             Code = "P03",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 826, DateTimeKind.Local).AddTicks(9050),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(598),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Ủi (là) xấu, bị bóng, cháy nám, biến dạng Form",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 826, DateTimeKind.Local).AddTicks(9059),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(599),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("45ca5812-06be-4c6d-9455-20e6d41a234c"),
+                            Id = new Guid("7415eea1-3dac-49ac-bd1b-cabd923f78be"),
                             Code = "P04",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 827, DateTimeKind.Local).AddTicks(1756),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(653),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Đóng (đính) nút, rivet, phụ liệu,… không đạt bền chắc, không an toàn khi sử dụng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 827, DateTimeKind.Local).AddTicks(1763),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(654),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("c855682b-83e1-4161-a273-570a480078e8"),
+                            Id = new Guid("05637975-02fe-47ad-bf0e-5fbfcda7535e"),
                             Code = "P05",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 827, DateTimeKind.Local).AddTicks(4816),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(710),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Đóng (đính) nút, rivet,  ủi, gắn nhãn, gấp xếp,... sai quy cách; thiếu/ dư phụ liệu",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 827, DateTimeKind.Local).AddTicks(4825),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(712),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("b312b8fc-b0bd-4963-9516-6ba61679bb2a"),
+                            Id = new Guid("4f9c9c7a-4eaa-4475-8e90-503139996f19"),
                             Code = "P06",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 827, DateTimeKind.Local).AddTicks(7319),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(801),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Sử dụng sai phụ liệu",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 827, DateTimeKind.Local).AddTicks(7327),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(803),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("70a269f9-0c2c-4ce4-be8e-4efe1fc52c4f"),
+                            Id = new Guid("86f8740f-18dc-4df6-9f84-dce7b424c52f"),
                             Code = "P07",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 827, DateTimeKind.Local).AddTicks(9948),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(858),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lủng, rách, lỗ kim",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 827, DateTimeKind.Local).AddTicks(9958),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(859),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("7b0fee36-3714-4b55-b770-2c514a5d256c"),
+                            Id = new Guid("127156a5-e0a7-44b4-831e-9f8d3d959dcb"),
                             Code = "P08",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 828, DateTimeKind.Local).AddTicks(2496),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(917),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Bung chỉ, bung đường may, đứt chỉ, bỏ mũi, căng chỉ, lỏng chỉ, nối chỉ không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 828, DateTimeKind.Local).AddTicks(2508),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(918),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("e72c22ca-5a3f-4733-9a10-f21ceba64a22"),
+                            Id = new Guid("ba3b5885-c521-4e6d-9b91-d7cbbfdde5ec"),
                             Code = "P09",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 828, DateTimeKind.Local).AddTicks(5071),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(973),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Nhăn nhíu, xếp ly, sụp mí, gợn sóng, vặn đường may, văn canh vải, bai giãn",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 828, DateTimeKind.Local).AddTicks(5084),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(975),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("99d0f199-2178-4ee5-8c4d-72d1b83ebc35"),
+                            Id = new Guid("71883de4-cb15-4500-bca1-a761dd4a4f71"),
                             Code = "P10",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 828, DateTimeKind.Local).AddTicks(7442),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1064),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Ánh màu không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 828, DateTimeKind.Local).AddTicks(7448),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1066),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("93bd391c-abc9-4930-908b-a93c69516495"),
+                            Id = new Guid("9a0f416c-7299-4004-908e-d4e02e84aed0"),
                             Code = "P11",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 829, DateTimeKind.Local).AddTicks(429),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1122),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Cấn wash, đốm wash",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 829, DateTimeKind.Local).AddTicks(437),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1124),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("bda353e8-c566-4961-b1b3-b78212b51b4c"),
+                            Id = new Guid("35ca940f-7107-4eb6-89af-ea4edcf18a6b"),
                             Code = "P12",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 829, DateTimeKind.Local).AddTicks(2922),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1179),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Hiệu ứng wash, nhuộm không đồng đều",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 829, DateTimeKind.Local).AddTicks(2929),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1180),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("646f6075-5307-4fe5-92e5-8465a5e43fa0"),
+                            Id = new Guid("29f7ea26-50e0-41bd-800a-a4dbd15d0c25"),
                             Code = "P13",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 829, DateTimeKind.Local).AddTicks(5691),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1236),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Hình dáng, kích thước, vị trí thời trang wash không đúng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 829, DateTimeKind.Local).AddTicks(5700),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1238),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("10c96cb9-75a5-42cb-a818-0c5b88d99c3d"),
+                            Id = new Guid("a78feda9-50d7-4049-8668-8bea8ffeef04"),
                             Code = "P14",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 829, DateTimeKind.Local).AddTicks(8205),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1333),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Sai số lượng và tỷ lệ trong thùng",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 829, DateTimeKind.Local).AddTicks(8213),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1335),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("d0842a86-8bfb-463c-9bff-3f3a2dde7e61"),
+                            Id = new Guid("9ebae7a8-2833-42bf-8db8-8852f8573da0"),
                             Code = "P15",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 830, DateTimeKind.Local).AddTicks(968),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1386),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Mùi hôi, ẩm mốc, mục vải, vật lạ trên sản phẩm",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 830, DateTimeKind.Local).AddTicks(977),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1388),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("3522f6b1-8ac0-4b95-8086-07141838337a"),
+                            Id = new Guid("6637c9b7-c6c0-4011-af87-7ba926a3d202"),
                             Code = "P16",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 830, DateTimeKind.Local).AddTicks(3539),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1449),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Mặc thử không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 830, DateTimeKind.Local).AddTicks(3548),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1450),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("0391e6cf-754c-47b5-97ff-1e3494065332"),
+                            Id = new Guid("e1fa6b15-f4de-4b15-9519-eaf35e203895"),
                             Code = "P17",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 830, DateTimeKind.Local).AddTicks(5977),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1535),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Kỹ thuật may xấu, không phù hợp",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 830, DateTimeKind.Local).AddTicks(5985),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1536),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("b1310065-3297-4f3f-9b19-e57128cd42b5"),
+                            Id = new Guid("3460da41-e915-482e-9661-0299bf1f3bc7"),
                             Code = "P18",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 830, DateTimeKind.Local).AddTicks(8572),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1589),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Chất lượng phụ liệu không đạt",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 830, DateTimeKind.Local).AddTicks(8579),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1590),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("0d575c25-e76b-4774-ac53-d500af214276"),
+                            Id = new Guid("9663bd10-b940-48fe-b3f9-6299a96834f4"),
                             Code = "P19",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 831, DateTimeKind.Local).AddTicks(1119),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1645),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Lỗi Thông số",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 831, DateTimeKind.Local).AddTicks(1128),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1647),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         },
                         new
                         {
-                            Id = new Guid("63c54a74-7ba6-4c38-a7ab-09db080b507c"),
+                            Id = new Guid("897f9f4f-46dc-4ab5-88d6-30d40e5594a2"),
                             Code = "P20",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 831, DateTimeKind.Local).AddTicks(3586),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1700),
                             CreateUserId = 0,
-                            HandlersJson = "[\"Proplem1 reason1 soluiton1 Handler1\",\"Proplem1 reason2 soluiton2 Handler2\",\"Proplem1 reason3 soluiton3 Handler3\",\"Proplem1 reason4 soluiton4 Handler4\",\"Proplem1 reason5 soluiton5 Handler5\"]",
                             IsDeleted = false,
                             Name = "Những lỗi khác",
                             ReasonsJson = "[\"Proplem1 reason1\",\"Proplem1 reason2\",\"Proplem1 reason3\",\"Proplem1 reason4\",\"Proplem1 reason5\"]",
                             SolutionsJson = "[\"Proplem1 reason1 solution1\",\"Proplem1 reason2 solution2\",\"Proplem1 reason3 solution3\",\"Proplem1 reason4 solution4\",\"Proplem1 reason5 solution5\"]",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 831, DateTimeKind.Local).AddTicks(3596),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 157, DateTimeKind.Local).AddTicks(1702),
                             UpdateUserId = 0,
                             ZoneTypeId = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24")
                         });
@@ -3070,21 +3152,21 @@ namespace QCService.Migrations
                         new
                         {
                             Id = new Guid("736f86d2-1393-4d4f-859e-6aed5a2c36c8"),
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 789, DateTimeKind.Local).AddTicks(4856),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(9174),
                             CreateUserId = 0,
                             Description = "Handler 1",
                             IsDeleted = false,
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 789, DateTimeKind.Local).AddTicks(4891),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(9176),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("f11c0b5d-b4f6-4d6a-9d6f-d5b5d1ba8b14"),
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 789, DateTimeKind.Local).AddTicks(4895),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(9183),
                             CreateUserId = 0,
                             Description = "Handler 2",
                             IsDeleted = false,
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 789, DateTimeKind.Local).AddTicks(4897),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(9184),
                             UpdateUserId = 0
                         });
                 });
@@ -3141,154 +3223,249 @@ namespace QCService.Migrations
                         {
                             Id = new Guid("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"),
                             Code = "MATROLL",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 752, DateTimeKind.Local).AddTicks(5766),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 158, DateTimeKind.Local).AddTicks(5660),
                             CreateUserId = 0,
                             Description = "kho vải có roll",
                             FormsJson = "{\"FormType\":0,\"FilterForm\":{\"QCReqNo\":true,\"OCNo\":false,\"Buyer\":false,\"GRNNo\":true,\"PONo\":true},\"Fields\":null}",
                             GroupType = 1,
                             IsDeleted = false,
                             Name = "Fabric Storage Has Roll",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 754, DateTimeKind.Local).AddTicks(2828),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 158, DateTimeKind.Local).AddTicks(5664),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("63892f60-c8cb-40de-b365-e52f66a04ec4"),
                             Code = "MAT0",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(3710),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3314),
                             CreateUserId = 0,
                             Description = "kho vải không roll",
                             FormsJson = "{\"FormType\":0,\"FilterForm\":{\"QCReqNo\":true,\"OCNo\":false,\"Buyer\":false,\"GRNNo\":true,\"PONo\":true},\"Fields\":null}",
                             GroupType = 2,
                             IsDeleted = false,
                             Name = "Fabric Storage Has no Roll",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(3747),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3316),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("f34e7928-c4f0-4f84-95f7-335d73196358"),
                             Code = "TEX",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(4812),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3605),
                             CreateUserId = 0,
                             Description = "kho nguyên phụ liệu",
                             FormsJson = "{\"FormType\":0,\"FilterForm\":{\"QCReqNo\":true,\"OCNo\":false,\"Buyer\":false,\"GRNNo\":true,\"PONo\":true},\"Fields\":null}",
                             GroupType = 2,
                             IsDeleted = false,
                             Name = "Material Storage",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(4818),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3607),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("5ea2209a-9782-4cda-a4ba-71a4f5a53964"),
                             Code = "CUT",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5086),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3777),
                             CreateUserId = 0,
                             Description = "công đoạn cắt (CUT)",
                             FormsJson = "{\"FormType\":0,\"FilterForm\":{\"QCReqNo\":true,\"OCNo\":true,\"Buyer\":true,\"GRNNo\":true,\"PONo\":false},\"Fields\":null}",
                             GroupType = 3,
                             IsDeleted = false,
                             Name = "Cut Operation",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5089),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3778),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("de72a6a9-bd09-48e3-b48e-19494d3ddb43"),
                             Code = "EMB",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5149),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3820),
                             CreateUserId = 0,
                             Description = "công đoạn thuê (EMBOIDERY)",
                             FormsJson = "{\"FormType\":0,\"FilterForm\":{\"QCReqNo\":true,\"OCNo\":true,\"Buyer\":true,\"GRNNo\":true,\"PONo\":false},\"Fields\":null}",
                             GroupType = 3,
                             IsDeleted = false,
                             Name = "Emboidery Operation",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5151),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3821),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("ca691bec-ae50-4884-9e5e-7e6f84b24087"),
                             Code = "SEW",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5202),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3863),
                             CreateUserId = 0,
                             Description = "công đoạn may (SEW)",
                             FormsJson = "{\"FormType\":0,\"FilterForm\":{\"QCReqNo\":true,\"OCNo\":true,\"Buyer\":true,\"GRNNo\":true,\"PONo\":false},\"Fields\":null}",
                             GroupType = 3,
                             IsDeleted = false,
                             Name = "Sew Operation",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5204),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3865),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("1bc43632-e605-4489-8030-f7dad305f00c"),
                             Code = "WASH",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5254),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3901),
                             CreateUserId = 0,
                             Description = "công đoạn may (WASH)",
                             FormsJson = "{\"FormType\":0,\"FilterForm\":{\"QCReqNo\":true,\"OCNo\":true,\"Buyer\":true,\"GRNNo\":true,\"PONo\":false},\"Fields\":null}",
                             GroupType = 3,
                             IsDeleted = false,
                             Name = "Wash Operation",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5256),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3903),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("cd6aac51-979f-499b-a9bc-55681caf2956"),
                             Code = "FNH",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5304),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3943),
                             CreateUserId = 0,
                             Description = "công đoạn wash (SEND TO FINISH)",
                             FormsJson = "{\"FormType\":0,\"FilterForm\":{\"QCReqNo\":true,\"OCNo\":true,\"Buyer\":true,\"GRNNo\":true,\"PONo\":false},\"Fields\":null}",
                             GroupType = 3,
                             IsDeleted = false,
                             Name = "Finish Operation",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5306),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(3945),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("3fe931f7-728b-48e6-b37c-828f683f9229"),
                             Code = "PCK",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5352),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(4049),
                             CreateUserId = 0,
                             Description = "công đoạn hoàn tất (PACKING)",
                             FormsJson = "{\"FormType\":0,\"FilterForm\":{\"QCReqNo\":false,\"OCNo\":true,\"Buyer\":true,\"GRNNo\":false,\"PONo\":false},\"Fields\":null}",
                             GroupType = 3,
                             IsDeleted = false,
                             Name = "Packing Operation",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5354),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(4050),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"),
                             Code = "PREF",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5448),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(4088),
                             CreateUserId = 0,
                             Description = "Pre-Final",
                             FormsJson = "{\"FormType\":0,\"FilterForm\":{\"QCReqNo\":false,\"OCNo\":true,\"Buyer\":true,\"GRNNo\":false,\"PONo\":false},\"Fields\":null}",
                             GroupType = 4,
                             IsDeleted = false,
                             Name = "Pre-Final",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5450),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(4089),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
                             Code = "FINAL",
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5502),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(4126),
                             CreateUserId = 0,
                             Description = "Final",
                             FormsJson = "{\"FormType\":0,\"FilterForm\":{\"QCReqNo\":false,\"OCNo\":true,\"Buyer\":true,\"GRNNo\":false,\"PONo\":false},\"Fields\":null}",
                             GroupType = 4,
                             IsDeleted = false,
                             Name = "Final",
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 787, DateTimeKind.Local).AddTicks(5504),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 181, DateTimeKind.Local).AddTicks(4127),
+                            UpdateUserId = 0
+                        });
+                });
+
+            modelBuilder.Entity("QCService.Models.L01.SiteLib", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Code")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CreateUserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
+
+                    b.Property<DateTime>("UpdateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UpdateUserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("L01_SiteLib");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("ebc0277c-403e-4971-8f09-1e890d4b1b7a"),
+                            Code = "Code_1",
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(7812),
+                            CreateUserId = 0,
+                            IsDeleted = false,
+                            Name = "Name_1",
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(7839),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("e5fa4bcf-04c8-4c09-be50-4580a4f6daee"),
+                            Code = "Code_2",
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(8436),
+                            CreateUserId = 0,
+                            IsDeleted = false,
+                            Name = "Name_2",
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(8439),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("4341f02d-f33f-4051-94df-0fd03c8db05b"),
+                            Code = "Code_3",
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(8450),
+                            CreateUserId = 0,
+                            IsDeleted = false,
+                            Name = "Name_3",
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(8451),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("b1ed735a-bb07-426d-965c-08d204810def"),
+                            Code = "Code_4",
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(8453),
+                            CreateUserId = 0,
+                            IsDeleted = false,
+                            Name = "Name_4",
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(8454),
+                            UpdateUserId = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("3198b48f-e904-4520-8643-26e9b4b13368"),
+                            Code = "Code_5",
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(8458),
+                            CreateUserId = 0,
+                            IsDeleted = false,
+                            Name = "Name_5",
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(8459),
                             UpdateUserId = 0
                         });
                 });
@@ -3326,21 +3503,21 @@ namespace QCService.Migrations
                         new
                         {
                             Id = new Guid("0aaa07a6-a33d-4e8b-a989-c6fd5cef712c"),
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 789, DateTimeKind.Local).AddTicks(5511),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(9605),
                             CreateUserId = 0,
                             Description = "10 minutes",
                             IsDeleted = false,
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 789, DateTimeKind.Local).AddTicks(5514),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(9606),
                             UpdateUserId = 0
                         },
                         new
                         {
                             Id = new Guid("87c0fe92-c615-48f4-9113-d30bde1c1cf4"),
-                            CreateDate = new DateTime(2021, 11, 15, 13, 50, 51, 789, DateTimeKind.Local).AddTicks(5518),
+                            CreateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(9612),
                             CreateUserId = 0,
                             Description = "2 seconds",
                             IsDeleted = false,
-                            UpdateDate = new DateTime(2021, 11, 15, 13, 50, 51, 789, DateTimeKind.Local).AddTicks(5520),
+                            UpdateDate = new DateTime(2021, 11, 17, 8, 48, 28, 183, DateTimeKind.Local).AddTicks(9614),
                             UpdateUserId = 0
                         });
                 });

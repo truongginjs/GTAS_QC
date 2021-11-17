@@ -20,28 +20,49 @@ namespace QCService.Models.D01
         [NotMapped]
         public QCDetail QCDetail { get; set; }
 
-        [StringLength(25)]
-        public string QCNumber { get; set; }
-        [StringLength(25)]
-        public string GRNNumber { get; set; }
-        [StringLength(25)]
-        public string Category { get; set; }
+        public TransferStatusEnum TransferStatus { get; set; }
+        public DocStatusEnum DocStatus { get; set; }
+
+
         [StringLength(255)]
-        public string ArticleCode { get; set; }
+        public string Site { get; set; }
+        [StringLength(255)]
+        public string Buyer { get; set; }
+        [StringLength(255)]
+        public string Supplier { get; set; }
+        [StringLength(255)]
+        public string QCNumber { get; set; }
+        [StringLength(255)]
+        public string GRNNumber { get; set; }
+        [StringLength(255)]
+        public string PONo { get; set; }
+        [StringLength(255)]
+        public string OCNumber { get; set; }
+        [StringLength(255)]
+        public string Category { get; set; }
         [StringLength(255)]
         public string ArticleName { get; set; }
         public DateTime QCRequestDate { get; set; }
         [StringLength(255)]
         public string StyleName { get; set; }
         [StringLength(255)]
-        public string StyleCode { get; set; }
-        [StringLength(255)]
-        public string OCNumber { get; set; }
-        [StringLength(255)]
         public string QCDefinition { get; set; }
         [StringLength(255)]
         public string SamplePlan { get; set; }
-        public int SamplePercentage { get; set; }
+        public int QCQty { get; set; }
+        [StringLength(255)]
+        public string DeliveryBuyerOrderRef { get; set; }
+
+
+
+
+        [StringLength(255)]
+        public string ArticleCode { get; set; }
+
+        [StringLength(255)]
+        public string StyleCode { get; set; }
+
+        public double SamplePercentage { get; set; }
         [StringLength(255)]
         public string ColorCode { get; set; }
         [StringLength(25)]
@@ -56,7 +77,7 @@ namespace QCService.Models.D01
         {
             get
             {
-                sizeBreakDowns ??= string.IsNullOrWhiteSpace(SizeBreakDownsJson) ?null: JsonSerializer.Deserialize<List<SizeBreakDownDTO>>(SizeBreakDownsJson);
+                sizeBreakDowns ??= string.IsNullOrWhiteSpace(SizeBreakDownsJson) ? null : JsonSerializer.Deserialize<List<SizeBreakDownDTO>>(SizeBreakDownsJson);
                 return sizeBreakDowns;
             }
             set
@@ -69,6 +90,7 @@ namespace QCService.Models.D01
         [NotMapped]
         public User UserApprove { get; set; }
         public int UserApproveId { get; set; }
-        public QCRequestStatusEnum Status { get; set; }
+
+
     }
 }

@@ -14,7 +14,6 @@ namespace LibraryService.DTOs.Requests
         public string Name { get; set; }
         public List<string> Reasons { get; set; }
         public List<string> solutions { get; set; }
-        public List<string> Handlers { get; set; }
         public Guid? ZoneTypeId { get; set; }
     }
 }

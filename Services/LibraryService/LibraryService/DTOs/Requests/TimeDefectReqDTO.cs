@@ -1,6 +1,6 @@
 using System;
 
-namespace LibraryService.Controllers
+namespace LibraryService.DTOs.Requests
 {
     public class TimeDefectReqDTO
     {

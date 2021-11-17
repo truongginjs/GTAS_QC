@@ -20,13 +20,13 @@ namespace LibraryService.Models.L01
         public string Name { get; set; }
         public QCZoneTypeGroupEnum GroupType { get; set; }
 
-        private List<FormLibDTO> forms;
+        private FormLibDTO forms;
         [NotMapped]
-        public List<FormLibDTO> Forms
+        public FormLibDTO Forms
         {
             get
             {
-                forms ??= string.IsNullOrWhiteSpace(FormsJson) ? null : JsonSerializer.Deserialize<List<FormLibDTO>>(FormsJson);
+                forms ??= string.IsNullOrWhiteSpace(FormsJson) ? null : JsonSerializer.Deserialize<FormLibDTO>(FormsJson);
                 return forms;
             }
             set
@@ -36,7 +36,6 @@ namespace LibraryService.Models.L01
                 FormsJson = forms == null ? string.Empty : JsonSerializer.Serialize(forms);
             }
         }
-
         public string FormsJson { get; set; }
     }
 }

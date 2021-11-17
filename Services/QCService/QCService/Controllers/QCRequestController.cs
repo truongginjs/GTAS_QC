@@ -4,6 +4,7 @@ using Microsoft.Extensions.Logging;
 using QCService.DTOs.Requests;
 using QCService.DTOs.Responses;
 using QCService.Infrastructure.Services;
+using QCService.Models.D01;
 using QCService.Models.DTOs;
 using System;
 using System.Collections.Generic;
@@ -28,13 +29,6 @@ namespace QCService.Controllers
             _mapper = mapper;
             _logger = logger;
         }
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<QCRequestResDTO>>> FindFromStorage([FromQuery] QCRequestFilterReqDTO filter)
-        {
-            var data = await _service.FindQCRequestInStorageAsync(filter);
-            _logger.LogInformation("find from storage");
-            return Ok(data);
-        }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<QCRequestResDTO>>> FindFromWfx([FromQuery] QCRequestFilterReqDTO filter)
@@ -45,32 +39,64 @@ namespace QCService.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<QCTicketDTO>>> FindQCTicket([FromQuery] QCRequestFilterReqDTO filter)
+        public async Task<ActionResult<IEnumerable<QCRequestResDTO>>> FindQCRequest([FromQuery] QCRequestListReqDTO filter)
         {
-            var data = await _service.FindQCTicketAsync(filter);
-            return Ok(data);
+            try
+            {
+                var data = await _service.FindQCRequestAsync(filter);
+                var result = _mapper.Map<QCRequestResDTO>(data);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<IEnumerable<QCTicketDTO>>> GetQCTicket(Guid id)
+        public async Task<ActionResult<QCRequestDetailResDTO>> GetQCRequest(Guid id)
         {
-            var data = await _service.GetQCTicketAsync(id);
-            return Ok(data);
+            try
+            {
+                var data = await _service.GetQCRequestAsync(id);
+                var result = _mapper.Map<QCRequestDetailResDTO>(data);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<IEnumerable<QCTicketDTO>>> DeleteQCTicket(Guid id)
+        public async Task<ActionResult<QCRequestDetailResDTO>> DeleteQCRequest(Guid id)
         {
-            var data = await _service.DeleteQCTicketAsync(id);
-            return Ok(data);
+            try
+            {
+                var data = await _service.DeleteQCRequestAsync(id);
+                var result = _mapper.Map<QCRequestDetailResDTO>(data);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
 
         [HttpPost]
-        public async Task<ActionResult<IEnumerable<QCTicketDTO>>> AddOrUpdateQCTicketAsync(QCTicketDTO qCTicket)
+        public async Task<ActionResult<QCRequestDetailResDTO>> AddOrUpdateQCRequestAsync(QCRequestDetailReqDTO qCRequestDetail)
         {
-            var data = await _service.AddOrUpdateQCTicketAsync(qCTicket);
-            return Ok(data);
+            try
+            {
+                var qCRequestDetailDB = _mapper.Map<QCRequestDetailReqDBDTO>(qCRequestDetail);
+                var data = await _service.AddOrUpdateQCRequestAsync(qCRequestDetailDB);
+                var result = _mapper.Map<QCRequestDetailResDTO>(data);
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
         }
-
     }
 }

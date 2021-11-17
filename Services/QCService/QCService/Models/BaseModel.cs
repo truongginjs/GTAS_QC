@@ -8,16 +8,16 @@ namespace QCService.Models
     {
         [Key]
         public virtual Guid Id{get;set;}
-        [MaxLength(500)]
+        [StringLength(500)]
         public virtual string Description {get;set;}
         public virtual int CreateUserId {get;set;}
         // [NotMapped]
         // public virtual User CreateUser {get;set;}
-        public virtual DateTime CreateDate {get;set;}
+        public virtual DateTime CreateDate { get; set; } = DateTime.Now;
         public virtual int UpdateUserId {get;set;}
         // [NotMapped]
         // public virtual User UpdateUser {get;set;}
-        public virtual DateTime UpdateDate {get;set;}
+        public virtual DateTime UpdateDate {get;set;} = DateTime.Now;
         public bool IsDeleted { get; set; } = false;
 
     }

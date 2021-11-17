@@ -4,9 +4,10 @@ using LibraryService.Models.Enums;
 
 namespace LibraryService.Models.DTOs
 {
-    public class FormLibDTO
+public class FormLibDTO
     {
         public FormEnum FormType { get; set; }
+        public Dictionary<string, bool> FilterForm { get; set; }
         public List<string> Fields { get; set; }
     }
 }

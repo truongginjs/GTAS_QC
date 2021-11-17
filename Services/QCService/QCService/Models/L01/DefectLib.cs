@@ -53,22 +53,22 @@ namespace QCService.Models.L01
             }
         }
         public string SolutionsJson { get; set; }
-        private List<string> handlers;
-        [NotMapped]
-        public List<string> Handlers
-        {
-            get
-            {
-                handlers = string.IsNullOrWhiteSpace(HandlersJson) ? null : JsonSerializer.Deserialize<List<string>>(HandlersJson);
-                return handlers;
-            }
-            set
-            {
-                handlers = value;
-                HandlersJson = handlers == null ? string.Empty : JsonSerializer.Serialize(handlers);
-            }
-        }
-        public string HandlersJson { get; set; }
+        //private List<string> handlers;
+        //[NotMapped]
+        //public List<string> Handlers
+        //{
+        //    get
+        //    {
+        //        handlers = string.IsNullOrWhiteSpace(HandlersJson) ? null : JsonSerializer.Deserialize<List<string>>(HandlersJson);
+        //        return handlers;
+        //    }
+        //    set
+        //    {
+        //        handlers = value;
+        //        HandlersJson = handlers == null ? string.Empty : JsonSerializer.Serialize(handlers);
+        //    }
+        //}
+        //public string HandlersJson { get; set; }
 
         public List<string> defectType;
         [NotMapped]
@@ -82,7 +82,7 @@ namespace QCService.Models.L01
             set
             {
                 defectType = value;
-                HandlersJson = defectType == null ? string.Empty : JsonSerializer.Serialize(defectType);
+                DefectTypeJson = defectType == null ? string.Empty : JsonSerializer.Serialize(defectType);
             }
         }
         public string DefectTypeJson { get; set; }

@@ -1,18 +1,18 @@
 ﻿using QCService.Models;
-using QCService.Models.D01;
 using QCService.Models.DTOs;
 using QCService.Models.Enums;
-using QCService.Models.L01;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace QCService.DTOs.Responses
 {
-    public class QCRequestResDTO : BaseModel
+    public class QCRequestDetailResDBDTO : BaseModel
     {
         public Guid ZoneTypeId { get; set; }
-        public string TransferStatus { get; set; }
-        public string DocStatus { get; set; }
+        public TransferStatusEnum TransferStatus { get; set; }
+        public DocStatusEnum DocStatus { get; set; }
         public string Site { get; set; }
         public string Buyer { get; set; }
         public string Supplier { get; set; }
@@ -36,5 +36,11 @@ namespace QCService.DTOs.Responses
         public string QCType { get; set; }
         public User UserApprove { get; set; }
         public int UserApproveId { get; set; }
+        public string Code { get; set; }
+        public string Name { get; set; }
+        public string ProductLine { get; set; }
+        public List<InspectionBySizeDTO> InspectionBySizes { get; set; }
+        public DefectDetailResDTO DefectDetail { get; set; }
+        public object PrivateDetail { get; set; }
     }
 }
