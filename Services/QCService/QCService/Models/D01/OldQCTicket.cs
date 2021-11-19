@@ -8,7 +8,6 @@ using QCService.Models.DTOs;
 
 namespace QCService.Models.D01
 {
-    [Table("D01_QCTicket")]
 
     [Index(nameof(Code), nameof(Name))]
     public class OldQCTicket

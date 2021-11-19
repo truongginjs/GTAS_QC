@@ -10,6 +10,7 @@ namespace QCService.Helpers.Enums
     {
         Unknown,
         sp_WFXQCRequest,
-        sp_QCRequest
+        sp_QCRequest,
+        sp_QCDetail
     }
 }

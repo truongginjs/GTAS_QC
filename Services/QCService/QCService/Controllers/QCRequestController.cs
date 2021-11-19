@@ -44,7 +44,7 @@ namespace QCService.Controllers
             try
             {
                 var data = await _service.FindQCRequestAsync(filter);
-                var result = _mapper.Map<QCRequestResDTO>(data);
+                var result = _mapper.Map<IEnumerable<QCRequestResDTO>>(data);
                 return Ok(result);
             }
             catch (Exception e)

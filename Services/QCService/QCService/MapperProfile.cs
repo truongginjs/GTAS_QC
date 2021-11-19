@@ -24,11 +24,11 @@ namespace QCService
                 .ForMember(des => des.DocStatus,
                 act => act.MapFrom(src => src.DocStatus.ToString()));
 
-            CreateMap<QCRequestDetailResDBDTO, QCRequestDetailResDTO>()
-                .ForMember(des => des.TransferStatus,
-                act => act.MapFrom(src => src.TransferStatus.ToString()))
-                .ForMember(des => des.DocStatus,
-                act => act.MapFrom(src => src.DocStatus.ToString()));
+            CreateMap<QCRequestDetailResDBDTO, QCRequestDetailResDTO>();
+                //.ForMember(des => des.TransferStatus,
+                //act => act.MapFrom(src => src.TransferStatus.ToString()))
+                //.ForMember(des => des.DocStatus,
+                //act => act.MapFrom(src => src.DocStatus.ToString()));
 
             CreateMap<QCRequestDetailReqDBDTO, QCRequestDetailReqDTO>()
                 .ForMember(des => des.TransferStatus,

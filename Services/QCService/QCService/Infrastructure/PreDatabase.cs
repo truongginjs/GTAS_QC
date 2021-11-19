@@ -23,13 +23,16 @@ namespace QCService.Infrastructure
             }
             return app;
         }
+        private static Guid[] Ids;
 
         public static ModelBuilder SeedFakeData(this ModelBuilder builder)
         {
-            var qcrequests = SeedQCRequest(5);
-            var qcdetails = SeedQCDetailWithZoneIsFinal(qcrequests);
+            var n = 200;
+            Ids = Enumerable.Range(0, n).Select(x => Guid.NewGuid()).ToArray();
             var defectLibs = SeedDefectLib();
             var zoneType = SeedZoneTypeLib();
+            var qcrequests = SeedQCRequest(zoneType, n);
+            var qcdetails = SeedQCDetailWithZoneIsFinal(qcrequests, zoneType);
             
 
 
@@ -102,6 +105,7 @@ namespace QCService.Infrastructure
             return builder;
         }
 
+        
         private static SiteLib[] SeedSiteLib(int num = 5)
         {
             return Enumerable.Range(0, 5).Select(i => new SiteLib { Id = Guid.NewGuid(), Code = $"Code_{i + 1}", Name = $"Name_{i + 1}" }).ToArray();
@@ -452,46 +456,18 @@ new DefectLib { ZoneTypeId = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
             };
         }
 
-        private static IEnumerable<QCDetail> SeedQCDetailWithZoneIsFinal(IEnumerable<QCRequest> qcrequests,int childNum=5)
-        {
-            var defects = SeedDefectLib().Where(x => x.ZoneTypeId == qcrequests.FirstOrDefault().ZoneTypeId);
-            var count = 0;
-            return qcrequests.Select(x => {
-                count++;
-                var d = new QCDetail
-                {
-                    Id = x.Id,
-                    Code = "code",
-                    Name = "name",
-                    ProductLine = "ProductLine",
-                    InspectionBySizesJson = JsonSerializer.Serialize(
-                        x.SizeBreakDowns.Select(sz => new InspectionBySizeDTO {
-                            ColorCode = x.ColorCode,
-                            SizeCode = sz.SizeCode,
-                            Qty = sz.QCQty,
-                            BGroupQty = 1,
-                            RejectQty = 1,
-                            OkQty = sz.QCQty - 1 - 1
-                        })),
-                    DefectDetailJson = JsonSerializer.Serialize(
-                        new DefectDetailDTO { CategoryAQL = "9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66",
-                            Defects = defects.Select(x => new DefectDTO { Code = x.Code,Description=x.Description, Critical = 0, Minor =count%2, Major = count % 2 }).ToList()
-                        }),
-                    PrivateDetailJson = JsonSerializer.Serialize(new { Private1 = "private1", Private2 = "private2" }),
-                };
-                return d;
-                });
-        }
 
-        private static IEnumerable<QCRequest> SeedQCRequest(int v=1)
+        private static IEnumerable<QCRequest> SeedQCRequest(QCZoneTypeLib[] zoneTypes, int v=1, int sizeNum = 5)
         {
             var n = v < 1 ? 1 : v;
             var result = Enumerable.Range(0, n).Select(i =>
             {
                 var e = i + 1;
+                var zoneType = zoneTypes[e % zoneTypes.Count()];
+                
                 var data = new QCRequest
                 {
-                    Id = Guid.NewGuid(),
+                    Id = Ids[i],
                     Description= "Description",
                     TransferStatus = TransferStatusEnum.NotTransfered,
                     DocStatus = DocStatusEnum.Inprogress,
@@ -516,7 +492,7 @@ new DefectLib { ZoneTypeId = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
                     QCRequestDate= DateTime.Now,
                     QCQty = e,
                     SamplePercentage = e*10,
-                    SizeBreakDownsJson = JsonSerializer.Serialize(Enumerable.Range(0, n).Select(j=> {
+                    SizeBreakDownsJson = JsonSerializer.Serialize(Enumerable.Range(0, sizeNum).Select(j=> {
                         var size = new SizeBreakDownDTO {
                             SizeCode = $"SizeCode-{j + 1}",
                             SizeName = $"SizeName-{j + 1}",
@@ -526,36 +502,57 @@ new DefectLib { ZoneTypeId = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
                         };
                         return size;
                     })),
-                    ZoneTypeId = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24")
+                    ZoneTypeId = zoneType.Id
                 };
                 return data;
             });
 
                 return result;
         }
-
-
-
-        // private static QCTicket[] GenFakeQCTicket(int v = 1)
-        // {
-        //     if", Description="v < 1) return null;
-        //     var result = Enumerable.Range(0, v).Select(i =>
-        //     {
-        //         return new QCTicket
-        //         {
-        //             Id = Guid.NewGuid(),
-        //             Name = $"QCTicket Name {i + 1}",
-        //             Buyer = new Buyer
-        //             {
-        //                 Id = Guid.NewGuid(),
-        //                 Description = $"QCTicket Buyer Description {i + 1}"
-        //             }
-
-        //         };
-
-        //     }).ToArray();
-        //     return result;
-        // }
+        private static IEnumerable<QCDetail> SeedQCDetailWithZoneIsFinal(IEnumerable<QCRequest> qcrequests, QCZoneTypeLib[] zoneTypes, int childNum=5)
+        {
+            var defects = SeedDefectLib().Where(x => x.ZoneTypeId == qcrequests.FirstOrDefault().ZoneTypeId);
+            var count = 0;
+            return qcrequests.Select(x => {
+                var id = Ids[count];
+                count++;
+                var zoneType = zoneTypes[count % zoneTypes.Count()];
+                bool isPreFinal = zoneType.Code == "PREF";
+                var d = new QCDetail
+                {
+                    Id = id,
+                    Code = "code",
+                    Name = "name",
+                    ProductLine = "ProductLine",
+                    InspectionBySizesJson = isPreFinal?string.Empty:JsonSerializer.Serialize(
+                        x.SizeBreakDowns.Select(sz => new InspectionBySizeDTO {
+                            ColorCode = x.ColorCode,
+                            SizeCode = sz.SizeCode,
+                            Qty = sz.QCQty,
+                            BGroupQty = 1,
+                            RejectQty = 1,
+                            OkQty = sz.QCQty - 1 - 1
+                        })),
+                    InspectionBySizesPerOCJson = !isPreFinal?string.Empty: JsonSerializer.Serialize(
+                        x.SizeBreakDowns.Select(sz => new InspectionBySizePerOCDTO
+                        {
+                            Styles = $"{sz.SizeCode}, {x.ColorCode}",
+                            Size = sz.SizeCode,
+                            Color = x.ColorCode,
+                            OrderQty = 2000,
+                            OfferedQty = 1000,
+                            InspectionQty = 300,
+                            AcceptedQty = 280
+                        })),
+                    DefectDetailJson = JsonSerializer.Serialize(
+                        new DefectDetailDTO { AQLId = Guid.Parse("9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66"),
+                            Defects = defects.Select(x => new DefectDTO { Code = x.Code,Description=x.Description, Critical = 0, Minor =count%2, Major = count % 2 }).ToList()
+                        }),
+                    PrivateDetailJson = JsonSerializer.Serialize(new { Private1 = "private1", Private2 = "private2" }),
+                };
+                return d;
+                });
+        }
 
         public static void SeedFakeData(this QCContext context)
         {

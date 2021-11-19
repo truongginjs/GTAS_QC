@@ -44,6 +44,24 @@ namespace QCService.Models.D01
             }
         }
         public string InspectionBySizesJson { get; set; }
+
+        private List<InspectionBySizePerOCDTO> inspectionBySizesPerOC;
+        [NotMapped]
+        public List<InspectionBySizePerOCDTO> InspectionBySizesPerOC
+        {
+            get
+            {
+                inspectionBySizesPerOC ??= string.IsNullOrWhiteSpace(InspectionBySizesPerOCJson) ? null : JsonSerializer.Deserialize<List<InspectionBySizePerOCDTO>>(InspectionBySizesPerOCJson);
+                return inspectionBySizesPerOC;
+            }
+            set
+            {
+                inspectionBySizesPerOC = value;
+                InspectionBySizesPerOCJson = inspectionBySizes == null ? string.Empty : JsonSerializer.Serialize(inspectionBySizesPerOC);
+            }
+        }
+        public string InspectionBySizesPerOCJson { get; set; }
+
         private DefectDetailDTO defectDetail;
         [NotMapped]
         public DefectDetailDTO DefectDetail 

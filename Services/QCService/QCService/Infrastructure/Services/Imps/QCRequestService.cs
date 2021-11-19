@@ -31,13 +31,13 @@ namespace QCService.Infrastructure.Services.Imps
             var sp = StoreProcedureType.sp_WFXQCRequest;
             var active = ActiveType.Find;
             var param = JsonSerializer.Serialize(filter);
-            var data = Task.Run(()=> _jsonRepo.ExecuteData<List<QCRequest>>(sp, active, out string message, param));
+            var data = Task.Run(() => _jsonRepo.ExecuteData<List<QCRequest>>(sp, active, out string message, param));
             return data;
         }
 
         public Task<List<QCRequestResDBDTO>> FindQCRequestAsync(QCRequestListReqDTO filter)
         {
-            var sp = StoreProcedureType.sp_QCRequest;
+            var sp = StoreProcedureType.sp_QCDetail;
             var active = ActiveType.Find;
             var param = JsonSerializer.Serialize(filter);
             var data = Task.Run(() => _jsonRepo.ExecuteData<List<QCRequestResDBDTO>>(sp, active, out string message, param));
@@ -46,18 +46,18 @@ namespace QCService.Infrastructure.Services.Imps
 
         public Task<QCRequestDetailResDBDTO> GetQCRequestAsync(Guid Id)
         {
-            var sp = StoreProcedureType.sp_QCRequest;
+            var sp = StoreProcedureType.sp_QCDetail;
             var active = ActiveType.Get;
-            var param = Id.ToString();
+            var param = JsonSerializer.Serialize(new { id = Id });
             var data = Task.Run(() => _jsonRepo.ExecuteData<QCRequestDetailResDBDTO>(sp, active, out string message, param));
             return data;
         }
 
         public Task<QCRequestDetailResDBDTO> DeleteQCRequestAsync(Guid Id)
         {
-            var sp = StoreProcedureType.sp_QCRequest;
+            var sp = StoreProcedureType.sp_QCDetail;
             var active = ActiveType.Delete;
-            var param = Id.ToString();
+            var param = JsonSerializer.Serialize(new { id = Id });
             var data = Task.Run(() => _jsonRepo.ExecuteData<QCRequestDetailResDBDTO>(sp, active, out string message, param));
             return data;
         }
@@ -68,7 +68,7 @@ namespace QCService.Infrastructure.Services.Imps
             {
                 qCRequestDetail.Id = Guid.NewGuid();
             }
-            var sp = StoreProcedureType.sp_QCRequest;
+            var sp = StoreProcedureType.sp_QCDetail;
             var active = ActiveType.Save;
             var param = JsonSerializer.Serialize(qCRequestDetail); ;
             var data = Task.Run(() => _jsonRepo.ExecuteData<QCRequestDetailResDBDTO>(sp, active, out string message, param));
@@ -76,7 +76,7 @@ namespace QCService.Infrastructure.Services.Imps
         }
 
         public Task<List<QCRequest>> FindQCRequestInStorageAsync(QCRequestFilterReqDTO filter) => _qcRepo.FindQCRequestInStorageAsync(filter);
-        
+
         public Task<QCRequest> CreateAsync(QCRequestCreateResDTO qc) => _qcRepo.CreateAsync(qc);
 
         public Task<QCRequest> UpdateAsync(QCRequestUpdateReqDTO qc) => _qcRepo.UpdateAsync(qc.Id, qc);

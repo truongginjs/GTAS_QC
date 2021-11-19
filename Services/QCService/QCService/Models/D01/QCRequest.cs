@@ -87,6 +87,8 @@ namespace QCService.Models.D01
             }
         }
         public string SizeBreakDownsJson { get; set; }
+
+        public string QCNumberRef { get; set; }
         [NotMapped]
         public User UserApprove { get; set; }
         public int UserApproveId { get; set; }

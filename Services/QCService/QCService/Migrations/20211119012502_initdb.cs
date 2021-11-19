@@ -92,6 +92,7 @@ namespace QCService.Migrations
                     ColorName = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: true),
                     QCType = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: true),
                     SizeBreakDownsJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    QCNumberRef = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserApproveId = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
                     CreateUserId = table.Column<int>(type: "int", nullable: false),
@@ -176,6 +177,7 @@ namespace QCService.Migrations
                     Name = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     ProductLine = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     InspectionBySizesJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    InspectionBySizesPerOCJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     DefectDetailJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     PrivateDetailJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false)

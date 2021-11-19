@@ -11,7 +11,7 @@ namespace QCService.Models.L01
     public class AQLLib : BaseModel
     {
         [Required]
-        public int RatingMajor { get; set; }=1;
+        public int RatingMajor { get; set; } = 1;
         [Required]
         public int RatingMinor { get; set; } = 1;
         public Guid? ZoneTypeId { get; set; }

@@ -10,7 +10,7 @@ using QCService.Infrastructure;
 namespace QCService.Migrations
 {
     [DbContext(typeof(QCContext))]
-    [Migration("20211117014805_initdb")]
+    [Migration("20211119012502_initdb")]
     partial class initdb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -35,6 +35,9 @@ namespace QCService.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("InspectionBySizesJson")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("InspectionBySizesPerOCJson")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("IsDeleted")
@@ -128,6 +131,9 @@ namespace QCService.Migrations
                         .HasMaxLength(255)
                         .HasColumnType("nvarchar(255)");
 
+                    b.Property<string>("QCNumberRef")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("QCQty")
                         .HasColumnType("int");
 
@@ -188,7 +194,7 @@ namespace QCService.Migrations
 
             modelBuilder.Entity("QCService.Models.JsonBinaryResponse", b =>
                 {
-                    b.Property<byte[]>("jsbData")
+                    b.Property<byte[]>("JsbData")
                         .HasColumnType("varbinary(max)");
                 });
 
