@@ -39,17 +39,17 @@ namespace LibraryService
             //services.AddAuthentication()
             //.AddJwtBearer("Bearer", options =>
             //{
-            //    options.Authority = "https://localhost:5001";
-            //    options.Audience = "library_api";
+            //   options.Authority = "https://localhost:5001";
+            //   options.Audience = "library_api";
             //});
 
             //services.AddAuthorization(options =>
             //{
-            //    options.AddPolicy("ApiScope", policy =>
-            //    {
-            //        policy.RequireAuthenticatedUser();
-            //        policy.RequireClaim("scope", "library_api");
-            //    });
+            //   options.AddPolicy("ApiScope", policy =>
+            //   {
+            //       policy.RequireAuthenticatedUser();
+            //       policy.RequireClaim("scope", "library_api");
+            //   });
             //});
 
             services.AddSwaggerGen(c =>
@@ -97,6 +97,7 @@ namespace LibraryService
         {
             var secret = Assembly.GetExecutingAssembly().FullName.Split(',')[0];
             //services.AddDbContext<LibraryContext>(option => option.UseInMemoryDatabase("InMemory"));
+            //services.AddDbContext<LibraryContext>(option => option.UseSqlServer(Configuration.GetConnectionString("TestConnection")));
             services.AddDbContext<LibraryContext>(option => option.UseSqlServer(Configuration.GetConnectionString("LibraryContext").Decrypt(secret)));
 
             services.AddAutoMapper(typeof(MapperProfile).Assembly);
@@ -107,6 +108,8 @@ namespace LibraryService
             services.AddScoped<IHandlerDefectRepository, HandlerDefectRepository>();
             services.AddScoped<ITimeDefectRepository, TimeDefectRepository>();
             services.AddScoped<ISiteRepository, SiteRepository>();
+            services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+            services.AddScoped<ICuttingTableRepository, CuttingTableRepository>();
 
             // services.AddGrapQLService(_env);
 

@@ -19,6 +19,7 @@ namespace QCService.Infrastructure.Services
         public Task<QCRequestDetailResDBDTO> GetQCRequestAsync(Guid Id);
         public Task<QCRequestDetailResDBDTO> DeleteQCRequestAsync(Guid Id);
         public Task<QCRequestDetailResDBDTO> AddOrUpdateQCRequestAsync(QCRequestDetailReqDBDTO qCTicket);
+        public Task<List<QCRequestResDBDTO>> SearchQCRequestAsync(FindQCRequestReqDTO filter);
         public Task<QCRequest> CreateAsync(QCRequestCreateResDTO qc);
         public Task<QCRequest> UpdateAsync(QCRequestUpdateReqDTO qc);
         Task<QCRequest> DeleteAsync(Guid id);

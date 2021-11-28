@@ -3,7 +3,7 @@ using SINNIKA.EFCore.Initialize;
 
 namespace LibraryService.Infrastructure.Repositories
 {
-    public interface ITimeDefectRepository:IRepository<TimeDefectLib>
+    public interface ITimeDefectRepository:IRepository<TimelineDefectLib>
     {
     }
 }

@@ -45,8 +45,14 @@ namespace QCService.DTOs.Requests
         public string Name { get; set; }
         public string ProductLine { get; set; }
         public List<InspectionBySizeDTO> InspectionBySizes { get; set; } = null;
-        public List<InspectionBySizesPerOCDTO> InspectionBySizesPerOC { get; set; } = null;
+        public List<InspectionBySizesFinalDTO> InspectionBySizesFinal { get; set; } = null;
         public DefectDetailReqDTO DefectDetail { get; set; }
         public object PrivateDetail { get; set; }
+        public List<SizeBreakDown> SizeBreakDowns { get; set; }
+        public double GRNQty { get; set; }
+        public bool DefectResult { get; set; }
+        public bool FinalResult { get; set; }
+        public double InspectionQty { get; set; }
+        public double MeasurementQty { get; set; }
     }
 }

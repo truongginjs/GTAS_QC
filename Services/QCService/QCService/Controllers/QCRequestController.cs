@@ -45,6 +45,8 @@ namespace QCService.Controllers
             {
                 var data = await _service.FindQCRequestAsync(filter);
                 var result = _mapper.Map<IEnumerable<QCRequestResDTO>>(data);
+                if (result is null)
+                { return NoContent(); }
                 return Ok(result);
             }
             catch (Exception e)
@@ -60,6 +62,8 @@ namespace QCService.Controllers
             {
                 var data = await _service.GetQCRequestAsync(id);
                 var result = _mapper.Map<QCRequestDetailResDTO>(data);
+                if (result is null)
+                { return NoContent(); }
                 return Ok(result);
             }
             catch (Exception e)
@@ -75,6 +79,8 @@ namespace QCService.Controllers
             {
                 var data = await _service.DeleteQCRequestAsync(id);
                 var result = _mapper.Map<QCRequestDetailResDTO>(data);
+                if (result is null)
+                { return NoContent(); }
                 return Ok(result);
             }
             catch (Exception e)
@@ -91,6 +97,42 @@ namespace QCService.Controllers
                 var qCRequestDetailDB = _mapper.Map<QCRequestDetailReqDBDTO>(qCRequestDetail);
                 var data = await _service.AddOrUpdateQCRequestAsync(qCRequestDetailDB);
                 var result = _mapper.Map<QCRequestDetailResDTO>(data);
+                if (result is null)
+                { return NoContent(); }
+                return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e);
+            }
+        }
+
+        //[HttpPut("{id}")]
+        //public async Task<ActionResult<QCRequestDetailResDTO>> ApproveQCRequest(Guid id)
+        //{
+        //    try
+        //    {
+        //        //var data = await _service.DeleteQCRequestAsync(id);
+        //        //var result = _mapper.Map<QCRequestDetailResDTO>(data);
+        //        if (result is null)
+        //        { return NoContent(); }
+        //        return Ok(result);
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return BadRequest(e);
+        //    }
+        //}
+
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<QCRequestResDTO>>> SearchQCRequest([FromQuery] FindQCRequestReqDTO filter)
+        {
+            try
+            {
+                var data = await _service.SearchQCRequestAsync(filter);
+                var result = _mapper.Map<IEnumerable<QCRequestResDTO>>(data);
+                if (result is null)
+                { return NoContent(); }
                 return Ok(result);
             }
             catch (Exception e)

@@ -75,6 +75,24 @@ namespace QCService.Infrastructure.Services.Imps
             return data;
         }
 
+        //public Task<bool> ApproveQCRequestAsync(Guid Id)
+        //{
+        //    var sp = StoreProcedureType.sp_QCDetail;
+        //    var active = ActiveType.Delete;
+        //    var param = JsonSerializer.Serialize(new { id = Id });
+        //    var data = Task.Run(() => _jsonRepo.ExecuteData<QCRequestDetailResDBDTO>(sp, active, out string message, param));
+        //    return data;
+        //}
+
+        public Task<List<QCRequestResDBDTO>> SearchQCRequestAsync(FindQCRequestReqDTO filter)
+        {
+            var sp = StoreProcedureType.sp_WFXQCRequest;
+            var active = ActiveType.Find;
+            var param = JsonSerializer.Serialize(filter);
+            var data = Task.Run(() => _jsonRepo.ExecuteData<List<QCRequestResDBDTO>>(sp, active, out string message, param));
+            return data;
+        }
+
         public Task<List<QCRequest>> FindQCRequestInStorageAsync(QCRequestFilterReqDTO filter) => _qcRepo.FindQCRequestInStorageAsync(filter);
 
         public Task<QCRequest> CreateAsync(QCRequestCreateResDTO qc) => _qcRepo.CreateAsync(qc);

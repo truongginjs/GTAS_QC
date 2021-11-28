@@ -6,6 +6,10 @@ using System.Text.Json;
 using Microsoft.EntityFrameworkCore;
 using QCService.Models.L01;
 
+using DSSType = System.Collections.Generic.Dictionary<string, string>;
+using LDType = System.Collections.Generic.List<System.Collections.Generic.Dictionary<string, string>>;
+using QCService.Helpers.Extensions;
+
 namespace QCService.Models.L01
 {
     [Table("L01_DefectLib")]
@@ -20,72 +24,32 @@ namespace QCService.Models.L01
         [StringLength(500)]
         public string Name { get; set; }
 
-        private List<string> reasons;
+        private LDType reasons;
         [NotMapped]
-        public List<string> Reasons
+        public LDType Reasons
         {
-            get
-            {
-                reasons = string.IsNullOrWhiteSpace(ReasonsJson) ? null : JsonSerializer.Deserialize<List<string>>(ReasonsJson);
-                return reasons;
-            }
-            set
-            {
-                reasons = value;
-                ReasonsJson = reasons == null ? string.Empty : JsonSerializer.Serialize(reasons);
-            }
+            get => ReasonsJson.GetJsonProperty(ref reasons);
+            set => ReasonsJson = reasons.SetJsonProperty(value, out string json);
         }
         public string ReasonsJson { get; set; }
 
-        private List<string> solutions;
+        private LDType solutions;
         [NotMapped]
-        public List<string> Solutions
+        public LDType Solutions
         {
-            get
-            {
-                solutions = string.IsNullOrWhiteSpace(SolutionsJson) ? null : JsonSerializer.Deserialize<List<string>>(SolutionsJson);
-                return solutions;
-            }
-            set
-            {
-                solutions = value;
-                SolutionsJson = solutions == null ? string.Empty : JsonSerializer.Serialize(solutions);
-            }
+            get => SolutionsJson.GetJsonProperty(ref solutions);
+            set => SolutionsJson = solutions.SetJsonProperty(value, out string json);
         }
         public string SolutionsJson { get; set; }
-        //private List<string> handlers;
-        //[NotMapped]
-        //public List<string> Handlers
-        //{
-        //    get
-        //    {
-        //        handlers = string.IsNullOrWhiteSpace(HandlersJson) ? null : JsonSerializer.Deserialize<List<string>>(HandlersJson);
-        //        return handlers;
-        //    }
-        //    set
-        //    {
-        //        handlers = value;
-        //        HandlersJson = handlers == null ? string.Empty : JsonSerializer.Serialize(handlers);
-        //    }
-        //}
-        //public string HandlersJson { get; set; }
 
-        public List<string> defectType;
+        private LDType defectTypes;
         [NotMapped]
-        public List<string> DefectType
+        public LDType DefectTypes
         {
-            get
-            {
-                defectType = string.IsNullOrWhiteSpace(DefectTypeJson) ? null : JsonSerializer.Deserialize<List<string>>(DefectTypeJson);
-                return defectType;
-            }
-            set
-            {
-                defectType = value;
-                DefectTypeJson = defectType == null ? string.Empty : JsonSerializer.Serialize(defectType);
-            }
+            get => DefectTypesJson.GetJsonProperty(ref defectTypes);
+            set => DefectTypesJson = defectTypes.SetJsonProperty(value, out string json);
         }
-        public string DefectTypeJson { get; set; }
+        public string DefectTypesJson { get; set; }
 
         public Guid? ZoneTypeId { get; set; }
         public QCZoneTypeLib ZoneType { get; set; }

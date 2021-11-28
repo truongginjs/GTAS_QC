@@ -35,5 +35,10 @@ namespace QCService.DTOs.Responses
         public string QCType { get; set; }
         public User UserApprove { get; set; }
         public int UserApproveId { get; set; }
+        public string QCNumberRef { get; set; }
+        public List<SizeBreakDown> SizeBreakDowns { get; set; }
+        public double GRNQty { get; set; }
+        public bool DefectResult { get; set; }
+        public bool FinalResult { get; set; }
     }
 }

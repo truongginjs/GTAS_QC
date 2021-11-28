@@ -29,7 +29,11 @@ namespace QCService.Infrastructure
         {
             var n = 200;
             Ids = Enumerable.Range(0, n).Select(x => Guid.NewGuid()).ToArray();
-            var defectLibs = SeedDefectLib();
+            var temp = SeedDefect.SeedFullLib();
+            var defectLibs = temp.Item1;
+            var handlerLibs = temp.Item2;
+            var timelineLibs = temp.Item3;
+            //var defectLibs = SeedDefectLib();
             var zoneType = SeedZoneTypeLib();
             var qcrequests = SeedQCRequest(zoneType, n);
             var qcdetails = SeedQCDetailWithZoneIsFinal(qcrequests, zoneType);
@@ -45,17 +49,23 @@ namespace QCService.Infrastructure
              SeedSiteLib()
          );
 
-            builder.Entity<HandlerDefectLib>().HasData(
-                new HandlerDefectLib { Id = Guid.Parse("736f86d2-1393-4d4f-859e-6aed5a2c36c8"), Description = "Handler 1",CreateDate = DateTime.Now, UpdateDate = DateTime.Now},
-                new HandlerDefectLib { Id = Guid.Parse("f11c0b5d-b4f6-4d6a-9d6f-d5b5d1ba8b14"), Description = "Handler 2",CreateDate = DateTime.Now, UpdateDate = DateTime.Now}
-            );
+            builder.Entity<HandlerDefectLib>().HasData(handlerLibs);
 
-            builder.Entity<TimeDefectLib>().HasData(
-                new TimeDefectLib { Id = Guid.Parse("0aaa07a6-a33d-4e8b-a989-c6fd5cef712c"), Description = "10 minutes",CreateDate = DateTime.Now, UpdateDate = DateTime.Now},
-                new TimeDefectLib { Id = Guid.Parse("87c0fe92-c615-48f4-9113-d30bde1c1cf4"), Description = "2 seconds",CreateDate = DateTime.Now, UpdateDate = DateTime.Now}
-            );
+            builder.Entity<DepartmentLib>().HasData(SeedDepartment());
+            builder.Entity<CuttingTableLib>().HasData(SeedCuttingTable());
+
+            builder.Entity<TimelineDefectLib>().HasData(timelineLibs);
 
             builder.Entity<AQLLib>().HasData(
+                new AQLLib
+                {
+                    Id = Guid.Parse("94d900ec-0757-4a06-815d-096bc27b7fb7"),
+                    Description = "AQL 100%",
+                    RatingMajor = 1,
+                    RatingMinor = 2,
+                    CreateDate = DateTime.Now,
+                    UpdateDate = DateTime.Now,
+                },
                 new AQLLib { Id = Guid.Parse("9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66"), Description = "AQL 1.5 level II", RatingMajor = 1, RatingMinor = 2, CreateDate = DateTime.Now, UpdateDate = DateTime.Now , QCRagesJson = JsonSerializer.Serialize(new List<QCRageDTO> {
                     new QCRageDTO{ AllowMajorDefect=0,OfferedQtyFrom = 2, OfferedQtyTo = 8, SampleSize=2},
                     new QCRageDTO{ AllowMajorDefect=0,OfferedQtyFrom = 9, OfferedQtyTo = 15, SampleSize=3},
@@ -105,16 +115,27 @@ namespace QCService.Infrastructure
             return builder;
         }
 
-        
+        private static CuttingTableLib[] SeedCuttingTable(int num = 5)
+        {
+            return Enumerable.Range(0, num).Select(i => new CuttingTableLib { Id = Guid.NewGuid(), Code = $"CuttingTable_Code_{i + 1}", Name = $"CuttingTable_Name_{i + 1}" }).ToArray();
+        }
+
+        private static DepartmentLib[] SeedDepartment(int num = 5)
+        {
+            return Enumerable.Range(0, num).Select(i => new DepartmentLib { Id = Guid.NewGuid(), Code = $"Department_Code_{i + 1}", Name = $"Department_Name_{i + 1}" }).ToArray();
+        }
+
         private static SiteLib[] SeedSiteLib(int num = 5)
         {
-            return Enumerable.Range(0, 5).Select(i => new SiteLib { Id = Guid.NewGuid(), Code = $"Code_{i + 1}", Name = $"Name_{i + 1}" }).ToArray();
+            return Enumerable.Range(0, num).Select(i => new SiteLib { Id = Guid.NewGuid(), Code = $"Code_{i + 1}", Name = $"Name_{i + 1}" }).ToArray();
         }
 
         private static QCZoneTypeLib[] SeedZoneTypeLib()
         {
             return new QCZoneTypeLib[] {
-            new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group1, Id = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Code = "MATROLL", Name = "Fabric Storage Has Roll", Description = "kho vải có roll", CreateDate = DateTime.Now, UpdateDate = DateTime.Now   ,
+            new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group1, Id = Guid.Parse("07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"), Code = "M", Name = "Fabric Has Roll (Materials)", Description = "kho vải có roll", CreateDate = DateTime.Now, UpdateDate = DateTime.Now   ,
+                    No=1,
+                    Prefix = "M",
                     FormsJson = JsonSerializer.Serialize(new FormLibDTO
                     {
                         FilterForm = new Dictionary<string, bool> {
@@ -126,7 +147,10 @@ namespace QCService.Infrastructure
                         }
                     })
                 },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group2, Id = Guid.Parse("63892f60-c8cb-40de-b365-e52f66a04ec4"), Code = "MAT0", Name = "Fabric Storage Has no Roll", Description = "kho vải không roll", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group2, Id = Guid.Parse("63892f60-c8cb-40de-b365-e52f66a04ec4"), Code = "N", Name = "Fabric Non Roll (Trims)", Description = "kho vải không roll", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,
+                    No=2,
+                    Prefix = "M",
+                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
                     {
                         FilterForm = new Dictionary<string, bool> {
                             {"QCReqNo",true},
@@ -136,16 +160,23 @@ namespace QCService.Infrastructure
                             {"PONo",    true}
                         }
                     }) },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group2, Id = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"), Code = "TEX", Name = "Material Storage", Description = "kho nguyên phụ liệu", CreateDate = DateTime.Now, UpdateDate = DateTime.Now          ,FormsJson = JsonSerializer.Serialize(new FormLibDTO
+
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group2, Id = Guid.Parse("f34e7928-c4f0-4f84-95f7-335d73196358"), Code = "T", Name = "Trims", Description = "kho nguyên phụ liệu (TRIMS)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now          ,
+                    No=3,
+                    Prefix = "T",
+                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
                     {
                         FilterForm = new Dictionary<string, bool> {
-                        {"QCReqNo",true},
+                            {"QCReqNo",true},
                             {"OCNo",    false},
                             {"Buyer",   false},
                             {"GRNNo",   true},
                             {"PONo",    true}}
                     })    },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("5ea2209a-9782-4cda-a4ba-71a4f5a53964"), Code = "CUT", Name = "Cut Operation", Description = "công đoạn cắt (CUT)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now ,
+
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("5ea2209a-9782-4cda-a4ba-71a4f5a53964"), Code = "C", Name = "Cut Operation", Description = "công đoạn cắt (CUT)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now ,
+                    No=4,
+                    Prefix = "C",
                     FormsJson = JsonSerializer.Serialize(new FormLibDTO
                     {
                         FilterForm = new Dictionary<string, bool> {
@@ -157,7 +188,10 @@ namespace QCService.Infrastructure
                         }
                     })
                 },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("de72a6a9-bd09-48e3-b48e-19494d3ddb43"), Code = "EMB", Name = "Emboidery Operation", Description = "công đoạn thuê (EMBOIDERY)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,
+
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Code = "PRI", Name = "Print Operation", Description = "công đoạn in (WASH)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now ,
+                    No=5,
+                    Prefix = "R",
                     FormsJson = JsonSerializer.Serialize(new FormLibDTO
                     {
                         FilterForm = new Dictionary<string, bool> {
@@ -169,7 +203,27 @@ namespace QCService.Infrastructure
                         }
                     })
                 },
+
+
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("de72a6a9-bd09-48e3-b48e-19494d3ddb43"), Code = "EMB", Name = "Emboidery Operation", Description = "công đoạn thêu (EMBOIDERY)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,
+                    No=6,
+                    Prefix = "E",
+                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
+                    {
+                        FilterForm = new Dictionary<string, bool> {
+                            {"QCReqNo",true},
+                            {"OCNo",    true},
+                            {"Buyer",   true},
+                            {"GRNNo",   true},
+                            {"PONo",    false}
+                        }
+                    })
+                },
+
+                
                 new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("ca691bec-ae50-4884-9e5e-7e6f84b24087"), Code = "SEW", Name = "Sew Operation", Description = "công đoạn may (SEW)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,
+                    No=7,
+                    Prefix = "S",
                     FormsJson = JsonSerializer.Serialize(new FormLibDTO
                     {
                         FilterForm = new Dictionary<string, bool> {
@@ -181,19 +235,10 @@ namespace QCService.Infrastructure
                         }
                     })
                 },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("1bc43632-e605-4489-8030-f7dad305f00c"), Code = "WASH", Name = "Wash Operation", Description = "công đoạn may (WASH)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now ,
-                    FormsJson = JsonSerializer.Serialize(new FormLibDTO
-                    {
-                        FilterForm = new Dictionary<string, bool> {
-                            {"QCReqNo",true},
-                            {"OCNo",    true},
-                            {"Buyer",   true},
-                            {"GRNNo",   true},
-                            {"PONo",    false}
-                        }
-                    })
-                },
-                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"), Code = "FNH", Name = "Finish Operation", Description = "công đoạn wash (SEND TO FINISH)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,
+
+                new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group3, Id = Guid.Parse("cd6aac51-979f-499b-a9bc-55681caf2956"), Code = "WASH", Name = "Wash Operation", Description = "công đoạn wash (SEND TO FINISH)", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,
+                    No=8,
+                    Prefix = "W",
                     FormsJson = JsonSerializer.Serialize(new FormLibDTO
                     {
                         FilterForm = new Dictionary<string, bool> {
@@ -213,8 +258,9 @@ namespace QCService.Infrastructure
                     Name = "Packing Operation",
                     Description = "công đoạn hoàn tất (PACKING)",
                     CreateDate = DateTime.Now,
-                    UpdateDate = DateTime.Now
-                ,
+                    UpdateDate = DateTime.Now,
+                    No=9,
+                    Prefix = "F",
                     FormsJson = JsonSerializer.Serialize(new FormLibDTO
                     {
                         FilterForm = new Dictionary<string, bool> {
@@ -230,11 +276,13 @@ namespace QCService.Infrastructure
                 {
                     GroupType = QCZoneTypeGroupEnum.Group4,
                     Id = Guid.Parse("c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"),
-                    Code = "PREF",
+                    Code = "PRF",
                     Name = "Pre-Final",
                     Description = "Pre-Final",
                     CreateDate = DateTime.Now,
                     UpdateDate = DateTime.Now,
+                    No = 10,
+                    Prefix = "V",
                     FormsJson = JsonSerializer.Serialize(new FormLibDTO
                     {
                         FilterForm = new Dictionary<string, bool> {
@@ -247,6 +295,8 @@ namespace QCService.Infrastructure
                     })
                 },
                 new QCZoneTypeLib { GroupType = QCZoneTypeGroupEnum.Group4, Id = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"), Code = "FINAL", Name = "Final", Description = "Final", CreateDate = DateTime.Now, UpdateDate = DateTime.Now,
+                    No = 11,
+                    Prefix = "P",
                     FormsJson = JsonSerializer.Serialize(new FormLibDTO
                     {
                         FilterForm = new Dictionary<string, bool> {
@@ -471,9 +521,9 @@ new DefectLib { ZoneTypeId = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
                     Description= "Description",
                     TransferStatus = TransferStatusEnum.NotTransfered,
                     DocStatus = DocStatusEnum.Inprogress,
-                    Site = $"Site-{e}",
-                    Buyer = $"Buyer-{e}",
-                    Supplier = $"Supplier-{e}",
+                    Site = $"Site-{(e%5)+1}",
+                    Buyer = $"Buyer-{(e % 20) + 1}",
+                    Supplier = $"Buyer-{(e % 20) + 1}",
                     QCNumber = $"QCNumber-{e}",
                     GRNNumber = $"GRNNumber-{e}",
                     PONo = $"PONo-{e}",
@@ -489,7 +539,10 @@ new DefectLib { ZoneTypeId = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
                     ColorCode = $"ColorCode-{e}",
                     ColorName = $"ColorName-{e}",
                     QCType = $"QCType-{e}",
-                    QCRequestDate= DateTime.Now,
+                    GRNQty =100*(e%5+1),
+                    DefectResult = e % 2 == 0,
+                    FinalResult = e % 2 != 0,
+                    QCRequestDate = DateTime.Now,
                     QCQty = e,
                     SamplePercentage = e*10,
                     SizeBreakDownsJson = JsonSerializer.Serialize(Enumerable.Range(0, sizeNum).Select(j=> {
@@ -521,9 +574,9 @@ new DefectLib { ZoneTypeId = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
                 var d = new QCDetail
                 {
                     Id = id,
-                    Code = "code",
-                    Name = "name",
-                    ProductLine = "ProductLine",
+                    Code = $"code_{count+1}",
+                    Name = $"name_{count+1}",
+                    ProductLine = $"ProductLine_{(count)%5+1}",
                     InspectionBySizesJson = isPreFinal?string.Empty:JsonSerializer.Serialize(
                         x.SizeBreakDowns.Select(sz => new InspectionBySizeDTO {
                             ColorCode = x.ColorCode,
@@ -533,10 +586,10 @@ new DefectLib { ZoneTypeId = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
                             RejectQty = 1,
                             OkQty = sz.QCQty - 1 - 1
                         })),
-                    InspectionBySizesPerOCJson = !isPreFinal?string.Empty: JsonSerializer.Serialize(
-                        x.SizeBreakDowns.Select(sz => new InspectionBySizePerOCDTO
+                    InspectionBySizesFinalJson = !isPreFinal?string.Empty: JsonSerializer.Serialize(
+                        x.SizeBreakDowns.Select(sz => new InspectionBySizeFinalDTO
                         {
-                            Styles = $"{sz.SizeCode}, {x.ColorCode}",
+                            OCNumber = $"OCNumber Sub",
                             Size = sz.SizeCode,
                             Color = x.ColorCode,
                             OrderQty = 2000,
@@ -548,6 +601,8 @@ new DefectLib { ZoneTypeId = Guid.Parse("7ced9b1f-31ad-4452-a625-81f48afe0e24"),
                         new DefectDetailDTO { AQLId = Guid.Parse("9f6f0a5a-900e-44b0-9fb7-dbe1dd1aed66"),
                             Defects = defects.Select(x => new DefectDTO { Code = x.Code,Description=x.Description, Critical = 0, Minor =count%2, Major = count % 2 }).ToList()
                         }),
+                    InspectionQty = 100*(count%childNum),
+                    MeasurementQty= 100 * (count % childNum),
                     PrivateDetailJson = JsonSerializer.Serialize(new { Private1 = "private1", Private2 = "private2" }),
                 };
                 return d;
