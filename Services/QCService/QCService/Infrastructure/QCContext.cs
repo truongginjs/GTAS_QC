@@ -9,14 +9,18 @@ namespace QCService.Infrastructure
 {
     public class QCContext : DbContext
     {
-        public virtual DbSet<QCDetail> QCDetail { get; set; }
-        public virtual DbSet<QCRequest> QCRequest { get; set; }
+        public virtual DbSet<QCZoneTypeLib> QCZoneTypeLib { get; set; }
         public virtual DbSet<AQLLib> AQLLib { get; set; }
         public virtual DbSet<DefectLib> DefectLib { get; set; }
-        public virtual DbSet<QCZoneTypeLib> QCZoneTypeLib { get; set; }
         public virtual DbSet<HandlerDefectLib> HandlerDefectLib { get; set; }
-        public virtual DbSet<TimeDefectLib> TimeDefectLib { get; set; }
+        public virtual DbSet<TimelineDefectLib> TimelineDefectLib { get; set; }
+        public virtual DbSet<SiteLib> SiteLib { get; set; }
+        public virtual DbSet<CuttingTableLib> CuttingTableLib { get; set; }
+        public virtual DbSet<DepartmentLib> DepartmentLib { get; set; }
 
+
+        public virtual DbSet<QCDetail> QCDetail { get; set; }
+        public virtual DbSet<QCRequest> QCRequest { get; set; }
 
         public virtual DbSet<JsonResponse> JsonResponse { get; set; }
         public virtual DbSet<JsonBinaryResponse> JsonBinaryResponse { get; set; }
@@ -37,6 +41,7 @@ namespace QCService.Infrastructure
             //            v => v.ToString(),
             //            v => v.ToEnum(DocStatusEnum.Inprogress))
             //;
+            //modelBuilder.Entity<DefectLib>().HasData(SeedDefect.SeedFullLib());
             modelBuilder.SeedFakeData();
         }
     }

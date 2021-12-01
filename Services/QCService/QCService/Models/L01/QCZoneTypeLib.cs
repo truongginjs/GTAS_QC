@@ -9,7 +9,7 @@ using QCService.Models.Enums;
 namespace QCService.Models.L01
 {
     [Table("L01_QCZoneTypeLib")]
-    [Index(nameof(Code), nameof(Name))]
+    [Index(nameof(Code), nameof(Name), nameof(No), nameof(Prefix))]
     public class QCZoneTypeLib : BaseModel
     {
         [Required]
@@ -18,6 +18,14 @@ namespace QCService.Models.L01
         [Required]
         [StringLength(255)]
         public string Name { get; set; }
+
+        [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int No { get; set; }
+
+        [Required]
+        [StringLength(3)]
+        public string Prefix { get; set; }
         public QCZoneTypeGroupEnum GroupType { get; set; }
 
         private FormLibDTO forms;

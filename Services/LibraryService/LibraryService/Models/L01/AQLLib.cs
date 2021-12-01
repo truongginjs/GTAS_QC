@@ -1,9 +1,9 @@
+using LibraryService.Models.DTOs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json;
-using LibraryService.Models.DTOs;
 
 namespace LibraryService.Models.L01
 {
@@ -11,7 +11,7 @@ namespace LibraryService.Models.L01
     public class AQLLib : BaseModel
     {
         [Required]
-        public int RatingMajor { get; set; }=1;
+        public int RatingMajor { get; set; } = 1;
         [Required]
         public int RatingMinor { get; set; } = 1;
         public Guid? ZoneTypeId { get; set; }

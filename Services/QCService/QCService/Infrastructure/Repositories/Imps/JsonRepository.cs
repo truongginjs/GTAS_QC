@@ -9,6 +9,7 @@ using QCService.Helpers.Enums;
 using QCService.Helpers.Extensions;
 using QCService.Infrastructure;
 using System.Text.Json;
+using Newtonsoft.Json;
 
 namespace IED.Server.Repositories
 {
@@ -50,8 +51,9 @@ namespace IED.Server.Repositories
                     Message_out = (string)(outParam.Value ?? "can't find");
                     return null;
                 }
-                var json = rs.jsbData.Decompress();
-                var result = JsonSerializer.Deserialize<T>(json);
+                var json = rs.JsbData.Decompress();
+                var result = JsonConvert.DeserializeObject<T>(json);
+                //var result = JsonSerializer.Deserialize<T>(json);
                 if (outParam.Value == DBNull.Value)
                     Message_out = "success";
                 else
@@ -72,8 +74,8 @@ namespace IED.Server.Repositories
             try
             {
                 var rs = _context.JsonBinaryResponse.FromSqlRaw(script).AsEnumerable().FirstOrDefault();
-                var json = rs.jsbData.Decompress();
-                var result = JsonSerializer.Deserialize<T>(json);
+                var json = rs.JsbData.Decompress();
+                var result = System.Text.Json.JsonSerializer.Deserialize<T>(json);
                 Message_out = json;
                 return result;
             }
@@ -108,7 +110,7 @@ namespace IED.Server.Repositories
                 else
                     Message_out = (string)outParam.Value ?? "success";
 
-                var json = rs.jsbData.Decompress();
+                var json = rs.JsbData.Decompress();
                 return json;
             }
             catch (Exception e)

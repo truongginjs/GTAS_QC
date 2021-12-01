@@ -16,6 +16,7 @@ namespace QCService.Models.D01
     {
         [Required]
         public Guid ZoneTypeId { get; set; }
+        [NotMapped]
         public QCZoneTypeLib ZoneType { get; set; }
         [NotMapped]
         public QCDetail QCDetail { get; set; }
@@ -50,6 +51,11 @@ namespace QCService.Models.D01
         [StringLength(255)]
         public string SamplePlan { get; set; }
         public int QCQty { get; set; }
+
+        public int GRNQty { get; set; }
+        public bool DefectResult { get; set; } = false;
+        public bool FinalResult {get;set; } = false;
+
         [StringLength(255)]
         public string DeliveryBuyerOrderRef { get; set; }
 
@@ -87,6 +93,8 @@ namespace QCService.Models.D01
             }
         }
         public string SizeBreakDownsJson { get; set; }
+
+        public string QCNumberRef { get; set; }
         [NotMapped]
         public User UserApprove { get; set; }
         public int UserApproveId { get; set; }

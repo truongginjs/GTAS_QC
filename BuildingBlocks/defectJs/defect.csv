@@ -1,0 +1,547 @@
+Code,DefectTypes,Reasons,Solutions,Handler,Timeline
+M01,Đứt sợi dọc/ Broken end             ,,,,
+M02,Đứt sợi ngang/ Broken pick,,,,
+M03,Sợi thô dọc/ Coarse end      ,,,,
+M04,Sợi thô ngang/ Coarse Pick,,,,
+M05,Sợi tạp/ Foreign fiber,,,,
+M06,Biến màu @ Dơ/ Stain @ Dirty ,,,,
+M07,Đốm màu/ Color @ white spot,,,,
+M08,"Nối sợi, Bông tạp/ Knot @ Nap",,,,
+M09,Lỏng sợi dọc/ Loose Warp,,,,
+M10,Mất sợi ngang/ Mispick,,,,
+M11,Dừng máy/ Stop machine,,,,
+M12,Gãy mặt vải/ Crease mark,,,,
+M13,Thủng/ Hole,,,,
+M14,In lệch khuôn/ Print off layout,,,,
+M15,In lem màu/ Print color smear,,,,
+T01,"Sai mã, từ ngữ, ký hiệu, Logo, lộn size.. / Code,words, sign, logo, wrong size.",,,,
+T02,"Hình dạng, quy cách, màu sắc/ Shape, size, color",,,,
+T03,"Trầy xước, chất liệu, lủng rách/ Scratch, material, torn.",,,,
+T04,"Độ mềm, cứng/ Soft, hardness",,,,
+T05,"Rõ nét, độ dày mỏng/ logo, thickness",,,,
+T06,"Quy cách, màu/răng, đầu dây kéo/ Size, color, zipper",,,,
+T07,"Tưa đầu khi kéo, độ cứng đầu kéo, tape dệt/ Furry, hardness, tape.",,,,
+T08,Kéo thử ít nhất 20 lần per sợi (10 sợi per loại)/ Test at least 20 time per  zipper (10 zipper per  type),,,,
+T09,Rà kim loại (hàng ép cao tầng)/ Metal detector,,,,
+T10,"Nứt, vỡ, trầy, biến dạng, sót ba vớ/ Fragile, broken, scratch, change shape, unsmooth",,,,
+T11,"Chi tiết, logo rõ nét, độ dày mỏng, oxy hóa, cài thử/ Detail, logo, thickness, oxylyzation, fitting.",,,,
+T12,"Độ cao, rộng/ High/ width",,,,
+T13,Đồng màu trong lô/ Matched color,,,,
+T14,Sai mã chỉ/ Wrong Code,,,,
+T15,"Sai Tex chỉ/ Tex, size",,,,
+T16,Ẩm mốc/ Mold,,,,
+T17,"Thun có bị vặn, cong?/ Twisted, Curved?",,,,
+T18,SL chỗ nối trong cuộn (1 nối @  100m)/ (No of knot/ roll (1 knot @ 100m),,,,
+T19,"In chữ, trọng lượng, chất liệu/ Printing, weight, material",,,,
+T20,"Mối dán ép/ Tight applying
+Bao nylon dính bột phấn/ Polybag with chalk",,,,
+C01,"Lỗi sơ đồ cắt/  cutting marker errors
+Lỗi rập cắt/ Cutting pattern defects","- Sơ đồ sai chiều dài/  wrong marker length.
+- Thiếu chi tiết, sai mặt chi tiết, sai canh sợi Rập/ Missing pattern pieces, wrong side of pattern piece, wrong grain line
+- Sơ đồ đi bị nhầm giàng, nhầm size/ Marker is wrong  for inseam and  size
+- Khổ vải không đúng/ In correct Fabric width   
+- QC kiểm sơ đồ không phát hiện ra lỗi/ QC checking the marker did not find any errors","- Test máy in và hiệu chỉnh máy cho đúng yêu cầu/ Test the printer and calibrate to the correct requirements
+- Nhân viên Rập phải làm Rập đúng theo mẫu đã được duyệt/ Pattern designer to do pattern following the approved sample
+- Kiểm tra thống kê chi tiết, khổ vải trước và sau khi in/ Checking marker for pattern peices, fabric width before and after printing marker.
+- QC Sơ đồ phải kiểm tra đúng Rập, giàng ,size và đầy đủ chi tiết, dấu bấm/ QC must check pattern pieces placement and number of pattern pieces applicable,  inseam, correct correct size and pattern pieces, notches required.","- Nhân viên rập, sơ đồ/ Pattern, marker staff
+- QC kiểm sơ đồ/ QC check marker
+",-Từ khi phát hiện đến 01 giờ sau/ Detection time of 1 hour
+C02,Bán thành phẩm cắt lớn hoặc nhỏ hơn rập/  cut Panel cut bigger or smaller than pattern,"- Trải vải quá căng, hoặc chùn/ Spreading fabric is too stretched or sperading very tight 
+- Thiếu kẹp vải/ Missing/ Missing fabric clips
+- Trải vải quá dày/ Spreading fabric is too thick/ too many layers
+- Chất liệu vải quá mỏng, hoặc xiên/ fabric material is too thin or awry/slanted grain.
+- Do thao tác Công nhân cắt không đúng đường chì của sơ đồ/ Due to the hnadling of the cutting worker, does not follow the outline of the pattern/marker 
+- Công nhân không cẩn thận/ Worker is not careful","- Xem lại thao tác công nhân trải vải/ Review handling of fabric spreading  of  worker
+- Sử dụng kẹp khi cắt/ Using clamps/clips when  cutting
+- Trải các lớp vải đúng quy định/ Spread the layers of fabric according to regulations
+- Xem lại thao tác công nhân Cắt/ Review operation/handling of cutting worker","Công nhân cắt/ cutter
+Công nhân trải vải/ spreader","30 phút / 30 minutes"
+C03,"Cắt sai hình dáng, 
+Sai canh sợi, 
+Sai bề mặt vải/ keo,…
+Cutting wrong marker/style, grain line, fabric face, interlining,...","- Sử dụng Sơ đồ sai mã hàng cần Cắt/ Using  wrong marker, wrong style for the style needed to cut
+- Dùng sai bảng màu/ Using wrong trim card
+- Trải vải sai bề mặt Vải/ Spreading mistake using wrong fabric face
+- QC kiểm BTP không không phát hiện ra lỗi/ QC check panel did not find any errors
+- Chỉnh Rập sai YCKT, sai canh sợi chi tiết/ Adjusting pattern is wrong technical requirement, wrong grain for pattern parts
+- Trải vải không chuẩn canh vải/ Spreading fabric with incorrect grain line","- Kiểm tra tên mã hàng trong sơ đồ đúng với kế hoạch/ Checking style name in marker tomatch with plan
+- Kiểm tra tên mã hàng trong bảng màu đúng với kế hoạch/ Checking style name in trim card is correct with plan
+- Kiểm tra mặt vải khớp với bảng màu trước khi cắt/ Checking face of fabric is matching with trim card before cutting
+- Nhân viên Rập kiểm tra canh sợi của Rập đúng với mẫu được duyệt/ Pattern staff check grain line of pattern matching with the approval trim card
+- Thao tác trải vải phải chuẩn canh sợi/ Operation of spreading fabric must correct grain line","Tổ trưởng tổ cắt/ Leader of cutting room
+Công nhân cắt/ cutting worker
+Công nhân trải vải/ spreading fabric worker
+Nhân viên rập/ pattern staff","10 Phút/10 minutes"
+C04,"Thiếu dấu bấm, Dấu bấm lớn hoặc biến dạng/ missing noteches or distorted cut marks","- Cài đặt in sơ đồ thiếu phần in dấu bấm/ printed marker with missing notches
+- Không cắt bấm dấu/ not cut notches
+- Dấu bấm quá sâu/ notes very deep","- Kiểm tra loại dấu bấm trong phần mềm thiết kế Rập/ check for notches in gerber
+- Kiểm tra phần định dạng In dấu bấm/ make sure to print notch marks in marker
+- QC tổ cắt Kiểm tra Bán thành phẩm sau khi cắt có sót dấu bấm hay không/ QC  must check the for the notch markes and cutting quality","Công nhân cắt, Rập, sơ đồ/  cutting worker
+QC cắt/ patterner, marker maker QC
+","10 Phút/10 minutes"
+C05,"Loang màu chi tiết/ stains
+Dơ, Ố/ dirty stains ","- Do khâu kiểm vải không phát hiện lỗi/ Fabric inspection does not detect defects
+- Kiểm tra Bán thành phẩm sau khi cắt không phát hiện lỗi, chưa kỹ/ Checking panels after cutting, no errors are detected, not yet thoroughly
+- Vệ sinh công nghiệp khu cắt chưa kỹ, còn dơ/ The industrial cleaning of the cutting area is not thorough, it is still dirty
+- Dầu mỡ máy cắt lâu ngày không thay thế bảo dưỡng/ Cutting machine grease for a long time does not replace maintenance
+- Băng tải máy ép keo dơ/ Conveyor belt presses dirty glue stains.","- Kiểm vải, xử lý vải trước khi cắt & QC Kiểm bán thành phẩm sau khi cắt/ Fabric inspection, fabric treatment before cutting & QC Check panels after cutting
+- Vệ sinh công nghiệp trước khi sử dụng máy/ machine cleaning before using the machine","Tổ cắt/ Cutting Department
+Cơ điện/ Mechnic.","15 phút /
+15 minutes"
+C06,Bám dính ép keo không đạt/ Adhesion is not achieved.,Không kiểm tra nhiệt độ máy ép keo trước khi ép vào chi tiết/ Does not check the temperature of the fusing machine before fusing  the cut parts,Bộ phận ép keo test  2 lần / ngày trước khi sản xuất / fusing  department must test 2 times / before processing bulk,Cơ điện/ Mechnic,"10 Phút/10 minutes"
+C07,"Màu in không giống mẫu/Print color is not the same as sample",QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt/ QC check printing panels does not check print details compared to approved sample carefully,Kiểm tra kỹ bán thành phẩm in trước khi vào chuyền/ check printed panels before entering sewing line,QC,"10 Phút/10 minutes"
+C08,Vị trí in và hình in không giống mẫu/ print position and printing does not match sample,"Nhân viên Rập định vị sai vị trí In/ pattern makers position is wrong on pattern
+QC kiểm Bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt/ QC check panel does not find error in the printing out put","Kiểm tra định vị Rập kỹ càng hơn/ check pattern carefully.
+Kiểm tra kỹ Bán thành phẩm trước khi may/ check panel and pattern details carefully","QC
+Nhân viên Rập/ Pattern staff","10 Phút/10 minutes"
+C09,"Thiếu nét/ Missing sharpness
+Chữ in không đạt/ printing not ok",QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt/ QC check  printing panel does not check print details compared to approved sample carefully,Kiểm tra định vị Rập kỹ càng hơn/ check pattern carefullyfor postion,QC,"10 Phút/10 minutes"
+C10,"Sai vị trí thêu và hình thêu/ Wrong embroidery position & picture
+Thêu không giống mẫu/  embroider does not match sample","Nhân viên Rập định vị sai vị trí Thêu/ Pattern staff make to error  position of embroidery
+Công nhân thêu đặt vị trí Thêu sai so với yêu cầu kỹ thuật/ embroidery worker makes mistake for placement requested by tech pack","- Nhân viên rập kiểm tra kỹ vị trí Thêu trên Rập/ pattern designer check embroidery positin carefully to mnatch sample
+- Công nhân thêu xem kỹ tài liệu, vị trí Thêu trên Rập trước khi Thêu/ embroidery worker check carefully placement details in tech pack before starting embroidery.","NV Rập/ pattern maker
+Công nhân thêu/ embroidery worker","10 Phút/10 minutes"
+C11,"Sai màu chỉ/ error in therad colour
+Sai chi số chỉ thêu/  thread embroider code number","Công nhân không kiểm tra màu chỉ thêu so với bảng màu được duyệt/ worker makes mistake to compare embroidery thread code with approved trim card
+Công nhân không kiểm tra tài liệu Thêu trước khi thêu/ does not check teck pack before embroidering
+Công nhân  sử dụng chỉ sai code chỉ, nhà cung cấp, loại chỉ../ Worker use  wrong thread code, supplyer, thread kind,...
+Công nhân vận hành máy lập trình sai bước kim thêu / The worker operating the embroidery automatic contourseamer  wrong step of the embroidery needle 
+Nhân viên thiết kế cung cấp tài liệu sai code chỉ thêu  / recv wrong thread code","- Công nhân cần kiểm tra bảng màu, tài liệu trước khi thêu/  Worker check approved trim card and tech pack before embroidery
+- Nhân viên thiết kế thêu kiểm tra tài liệu kỹ trước khi cung cấp cho bộ phận sản xuất/ Embroidery staff check carefully tech before recv thread and issue to embroidery worke for the job.","Công nhân/ worker
+Nhân viên thiết kế thêu/ embroidery staff","10 Phút/10 minutes"
+C12,"Thiếu nét/ Missing sharpness
+Nét chữ thêu không đạt/ Embroidery handwriting is not ok",Nhân viên Thêu không kiểm tra lại kích thước thông số Artwork thêu so với mẫu được duyệt/ Embroidery staff does not check the size of the artwork against the approved sample,Kiểm tra kích thước Artwork đúng với mẫu được duyệt/ check artwork size with approved sample,NV thiết kế thêu/ embroidery design staff,"10 Phút/10 minutes"
+C13,"Thêu bỏ mũi/ embroidery with skip
+Đứt chỉ/ broken thread
+Không khóa mũi/  unlocked emb.thread.","Máy thêu chưa được kiểm tra/ embroidery machine has not yet checked
+Tex chỉ sử dụng chưa đúng dẫn đến đứt chỉ/ Thread tex is not correct
+Lập trình thêu chưa được kiểm tra có khóa mủi / Embroidery automatic not asked to lock the thread function.","- Kiểm tra máy móc thiết bị kỹ càng/ check all machine attachments carefully
+- Kiểm tra tài liệu kỹ thuật, Artwork thêu/ check carfully artwork for embroidery","NV thiết kế thêu/ embroidery design staff
+Công nhân/ worker","10 Phút/10 minutes"
+C14,Lủng rách bán thành phẩm vải @ keo/ Torn semi-finished fabric @ glue,"Kim sựt mủi/ needle point damage
+Không kiểm tra keo trước khi ép/ Not check before application of interlining","- Kiểm tra Kim trước khi thêu/ check needle before embroidering
+- Test keo 2 ngày 1 lần/ check the interlining machine once every two days",Công nhân/ worker,"10 Phút/10 minutes"
+C15,Lỗi khác/ different defects,,,,
+S01,"Đứt chỉ/ broken stitches
+Nối chỉ không trùng/ joining stitches mis match
+Chỉ thừa/  Remain thread
+Lộ chỉ lược/ mistakes of attaching thread","- Công Nhân thao tác sai, cắt chỉ không đúng theo hướng dẫn, cắt chỉ quá sát/ sewing worker handling mistake, cut thread not follow up sample and cut very close to the garment- result in damge/ issues
+- QC Indline - Endline Không phát hiện và báo cáo kịp thời/ QC enline does not detect this defect and report
+- Thiết bị may quá chặt chỉ / machine adjusment is very tight for thread","- Hướng dẫn thao tác may và cắt chỉ cho công nhân/ train worker and improve handling
+- Người cắt chỉ không nên cắt chỉ quá sát, và kiểm tra thường xuyên Người cắt chỉ (cắt chỉ tại công đoạn) - không để chỉ thừa tất cả công đoạn/ take care to cut correctly and not damage.
+- Chỉnh lại thiết bị may để không bị chặt chỉ/ adjust machine properly for avoiding tight thread tension","- QC Inline
+- Kỹ thuật/ technical
+- Thợ máy/ mechanic","Từ khi phát hiện đến 10 phút sau/ 
+10 mins after"
+S02,"Bỏ mũi, bung chỉ/ skip stitching
+Căng/ lỏng chỉ/ broken thread,tight thread,loose thread.","- Do máy móc thiết bị Bảo trì không thường xuyên kiểm tra hay nhận thông tin từ QC endline/ mechanic does not check the machine and not inform qc endline
+- Công nhân thao tác sai, không kiểm tra theo hướng dẫn./ worker handling issues  and not follow instructions
+- QC Indline - Endline Không phát hiện và báo cáo kịp thời/ QC enline does not detect errors or report correctly
+- Thiết bị may hỏng , Kim may cong hỏng , suốt chỉ dưới chưa phù hợp/ sewing equiment and needle is damaged and bobbin thread does not match ","- Chỉnh sửa máy & cân chỉnh đường may/ adjust machine and seam allowance
+- Hướng dẫn thao tác may và cắt chỉ cho Công nhân/ instruct for correct handling/ cutting the thread  instruction to workers
+- Kiểm tra kim, thoi suốt / check the needle and bobbin.","Thợ máy/ mechanic
+Công nhân may/ sewing operator
+Kỹ thuật chuyền/ technical line
+","Từ khi phát hiện đến 01 giờ sau/after 1 hr"
+S03,"Nhăn nhíu/ puckering
+Vặn/ twist
+Gợn sóng, bai giãn/ stretched
+Sụp mí/ le mí/ xì mép/ xếp ly/ down stitch, inside stitch/ fabric visible outside, open seam, pleated","- Kỹ thuật hướng dẫn chưa rõ ràng, không giám sát kỹ/ technical not transfer clear and not reduce risk
+- Công Nhân thao tác sai, không làm theo hướng dẫn/ worker handling mistake,and not follow instructions
+- Chỉnh thiết bị máy chưa đạt yêu cầu/ Adjust machine has not yet achieved
+- QC Inline không kiểm soát hằng giờ (In-process)/ QC inline not follow the inline process hourly and properly.","- Kỹ thuật kiểm tra bán thành phẩm - và hướng dẫn lại cho công nhân thao tác đúng kỹ thuật may/ technical must rfeestablish handling to sewing worker to follow isntructions of technical .
+- QC inline liên tục giám sát, báo cáo (In-process)/ QC inline must check continuously and preventg and report
+- Kiểm tra tính chất vải/ check quality of fabric/ properties
+- Điều chỉnh thiết bị máy, sử dụng các thiết bị chân vịt, dán cữ cho phù hợp / adjust all machines of sewing, use correct machineray, presser foot and attachments matching requirement.","QC 
+Kỹ thuật/ technical
+Công nhân/ Worker
+Thợ máy/ Mechanic","Từ khi phát hiện đến 02 giờ sau/after two hours"
+S04,"Cao/ thấp/ High and low
+Không đồng đều đường may/ Uneven seams
+Không đối xứng/ Assymmetrical
+","- Kỹ thuật hướng dẫn cho công nhân chưa rõ ràng, không giám sát kỹ/ Technical instructions for workers are unclear, not carefully supervised
+- Công nhân thao tác sai, không làm theo hướng dẫn/ Workers misbehave and do not follow instructions
+- QC Inline không kiểm soát hằng giờ (In-process)/ QC Inline without hourly control (In-process)
+- Rập chưa chuẩn , các điểm sang dấu ,bấm dấu không chính xác/ The pattern is not standardised, the notch points are changed, and the notches are not correct
+- Mật độ mũi chỉ các công đoạn khác nhau / Density of stitches for different operations are varying.","- Kỹ thuật kiểm tra Rập và hướng dẫn lại cho công nhân/ Pattern inspection techniqcal team  and re-instructing workers
+- QC inline liên tục giám sát, báo cáo (In-process)/ QC inline continuously monitor and report (In-process)
+- Kiểm tra tính chất vải và công đoạn có phù hợp với tay nghề công nhân chưa?/ Check whether the fabric properties and stages are suitable for workers' skills?
+- Kiểm tra rập, vị trí dấu phấn, dấu bấm/ Check pattern, position of chalk mark, press mark. 
+- Mật độ mũi chỉ trên các công đoạn may/ Stitch density on sewing opertions","- Kỹ thuật/ technical
+- Chuyền trưởng/ line leader
+- QC Rập/ QC pattern","Từ khi phát hiện đến 02 giờ sau/after two hours"
+S05,"Lủng, rách, 
+Lỗ kim,
+Máy gỉ-sét/Leaky, torn,
+Needle hole,
+Rusty machine","- Kiểm tra Bán thành phẩm thiếu sót , Kim may quá to không phù hợp chất liệu vải,  kim bị sụt mũi/ The BTP check is flawed, the sewing needle is too big to match the fabric, the needle isdamaged at needle point
+- Máy để lâu không sử dụng/ The machine has not been used for a long time
+'- Bảo dưỡng máy không đúng định kỳ, không tìm ra lỗi/ Incorrect maintenance of the machine periodically, no fault found.
+- Không xử lý triệt để việc báo cáo đặt giấy lót chân vịt/ Failure to thoroughly handle the reporting of placing presser foot.
+- Vệ sinh công nghiệp không được duy trì thường xuyên 
+Kết quả dịch/ Industrial machine cleaning and maintenence  is not maintained regularly ","- Kiểm tra kỹ Bán thành phẩm trước khi đưa vào chuyền , Vệ sinh công nghiệp thiết bị hàng ngày, bảo trì thiết bị định kỳ/ Thoroughly check panel before putting it into production, Daily industrial cleaning of equipment, periodic equipment maintenance.
+- Sử dụng kim cho phù hợp/ Use the needle accordingly.
+- Làm vệ sinh máy mỗi ngày 2-3 lần/ Clean the machine 2-3 times a day
+- Kiểm tra lịch bảo trì máy, báo cáo lót giấy mỗi ngày/ Check machine maintenance schedule, daily paper  report
+- Tìm nguyên nhân gây lỗi để khắc phục (Bảo trì + Tổ trưởng)/ Find the cause of the error to fix (Maintenance + Team Leader)","- Bảo trì/ mechnaic
+- Công nhân/ worker
+- Chuyền trưởng/ line leader","Từ khi phát hiện đến 01 ngày/after 1 day"
+S06,"Dính dầu/ Oily
+Ố/ greasy
+Dơ/ Dirty
+Dấu phấn, mực/ Chalk and ink marks","-Không mang găng tay đối với sản phẩm màu sáng/ Do not wear gloves for light colored products
+- Vệ sinh máy móc bẩn , thiết bị máy hỏng ra dầu , máy để lâu không sử dụng/ Workers and machinery are dirty, equipment is damaged, oil is released, and the machine is left unused for a long time
+- Sắp xếp hàng hóa dưới nền gạch hay gầm bàn mà không có vải đậy/ Arrange the goods under the tile floor or under the table without a cloth
+- Sử dụng phấn, mực không đúng tiêu chuẩn / Using chalk, ink not up to standard","- Sắp xếp hàng hóa gọn gàng ngăn nắp, túi đựng hàng, đậy hàng…/ Arrange goods neatly, store bags, cover goods...
+- Đeo găng tay và Vệ Sinh Công Nghiệp cuối tuần/ Wear gloves and Industrial Hygiene at the weekend
+- Làm vệ sinh máy mỗi ngày 2 lần/ Clean the machine 2 times a day","- Công nhân/ worker
+- Chuyền trưởng/ line leader","Từ khi phát hiện đến 01 ngày/after 1 day"
+S07,"Khác màu chi tiết/ Differences in color details 
+Ráp lộn số/ Mixed numbers/wrong pattern","-Kho không phân LOT, báo cáo và cung cấp thông tin đầy đủ/ Warehouse does not distribute LOT, reports and provides complete information.
+-Bàn cắt không theo LOT, Phối bộ sai/ Cutting table not according to LOT, Wrong combination
+-Công nhân may ráp sai bàn, Số/ The sewing worker assembled the wrong table, No.
+-Đánh số sai, nhảy lớp/ Incorrect numbering, during numbering on layers (skip number)
+-Thay thân không đúng Roll vải/ Replace the body incorrectlyusing wrong  Roll  fabric
+-Thay đổi công nhân may công đoạn. Thiếu sót khi hướng dẫn công nhân may/ Change of sewing workers at thesewing operations. Shortcomings when instructing sewing workers","- Kiểm tra vải & đánh giá % cao hơn hoặc kiểm 100%/ Fabric testing & higher % rating or 100% testing
+- Xem kiểm tra báo cáo QC kiểm vải/ View fabric inspection QC report
+- Kiểm tra Đánh số, phối bộ tách hàng/ Check Numbering, coordinate bundling/issues.
+- Kiểm tra chi tiết lắp ráp theo số & thay thân tại bàn cắt/ 
+ Check assembly details by number & replace body at the cutting table for cut panels with issues correctly.
+","- Công nhân đánh số, phối bộ/ Number and bundling worker
+- Công nhân cắt/ cutting worker
+- QA LAB
+- Công nhân may/ sewing worker
+- Phòng Kỹ thuật/ Technical department","Từ khi phát hiện đến 01 ngày/after 1 day"
+S08,"Sử dụng sai phụ liệu/ Using the wrong ingredients/ material
+Bán thành phẩm In, thêu/ semi-finished products Print, embroidery","- QC kho và QC inline không kiểm tra nguyên phụ liệu trước khi sản xuất/ Warehouse QC and inline QC do not check raw materials before production
+- Tổ phó cấp phát không hướng dẫn rõ ràng/ The distribution deputy team does not give clear instructions
+- Không đối chiếu bảng màu, mẫu duyệt/ Do not compare color palettes, approval samples","- Xem kiểm tra báo cáo QC kiểm phụ liệu và kiểm Bán thành phẩm/ View inspection report QC material inspection and panel inspection
+- Hướng dẫn ghi chú theo từng loại có kiểm soát/ Guided notes by each controlled type for defects
+- QC giám sát kỹ hơn/ QC monitors more closely","- Bộ phận Cắt/ cutting department
+- Kho phụ liệu/ warehouse
+- Phòng Kỹ thuật/ Technical department","Từ khi phát hiện đến 02 giờ sau/after 2 hours"
+S09,"Thông số ngoài dung sai/Parameters out of tolerance","- Tính % rập sai/ Calculating % wrong pattern
+- Hao hụt may không chuẩn/  Non-standard sewing loss
+- Bán thành phẩm sau khi cắt không khớp với râp sơ đồ Phòng kỹ thuật ban hành/ Panel after cutting does not match the issued pattern from tech dept.
+- Không tuân thủ các bước qui trình chuẩn bị sản xuất/  Non-compliance with manufacturing process steps.
+- Không kiểm tra kỹ bán thành phẩm khi may Size set / Do not double check panel when sewing Size set","- Nhân viên Rập phân tích và tính toán kỹ trước khi ban hành Rập cắt/ Pattern staff analyze and calculate carefully before issuing pattern for  cutting
+- Tổ cắt kiểm tra kỹ sơ đồ và vải trước khi cắt/ The cutting team carefully checks the pattern and fabric before cutting
+- Kiểm tra Bán thành phẩm so với Rập/ Check bán thành phẩm vs pattern
+- Tuân thủ quy trình chuẩn bị sản xuất/ Comply with  production preperation  process.","- Công nhân may, Râp/ Worker, pattern staff
+Kỹ thuật/ Technical 
+Tổ cắt/ Cutting ","60 phút/60 minutes"
+S10,"Lỗi ủi/ may không đúng dấu @ rập/ Ironing/ sewing error with incorrect marking @ pattern,
+Sai form/ Wrong form","Thao tác May, Ủi chưa đúng kỹ thuật/ Sewing and Ironing are not technically correct
+Ủi không theo Form rập/ Ironing does not follow the pattern
+","Hướng dẫn cho Công nhân cách may, Ủi/ Instructions for Workers how to sew, Iron","Kỹ thuật/ Technical
+Công nhân may/ Sewing worker
+Công nhân Ủi/ Ironing worker","15 phút/15 minutes"
+S11,"Kỹ thuật may và vị trí may/ Tech and position of sewing
+Phụ liệu không đúng/ position of accessories are not correct","- Không nghiên cứu TLKT, sản phẩm mẫu trước khi may/ Does not study the techpak, sample products before sewing
+- Không kiểm tra bảng màu trong quá trình may/ Does not check the color palette during sewing","Nâng cao kỹ thuật , nghiên cứu kỹ TLKT , sản phẩm mẫu/ Improve technique, carefully study technical package, samples","Kỹ thuật/ Technical
+T.trưởng/ Line leader
+Công nhân may/ Sewing worker","5 phút/5 minutes"
+S12,Những lỗi khác/ Other defects,,,,
+W01,Ánh màu không đạt/ Unsatisfactory color,"- Màu nền  không đạt/ color / shade not ok
+- Bông, cấn không đạt/ lustor not ok
+- Cấn sườn không đạt/ hi low on side seam not ok","- Thời gian công đoạn enzyme dài hoặc chưa đủ/ The enzyme processing time is long or not enough.
+- Thời gian tẩy dài hoặc chưa đủ/  The bleaching time is long or not enough.
+- Nồng độ tẩy cao hoặc thấp/ High or low bleach concentration
+- Nhiệt độ thực hiện công đoạn enzyme, tấy chưa phù hợp/ The temperature at which the enzyme step is performed is not suitable.","- Trưởng bộ phận Wash/ Wash leader
+- Trưởng bộ phận kỹ thuật/ Technical leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W02,"Hiệu ứng wash không đồng đều, thiếu/ The wash effect is uneven, lacking","- Thao tác công nhân chưa đúng/ Incorrect worker handling.
+- Quy trình công nghệ chưa đúng/ The technological process is not correct (recipe)
+- Thiết bị có sự cố/ The machine has a problem.
+","- Hướng dẫn công nhân về quy trình và các bước trong hành trình sản xuất, đảm bảo mẫu công đoạn được treo ở vị trí so mẫu/ Instruct workers on the process and steps in the production journey, ensuring that the stage sample is hung at the position of the sample.
+- Kiểm tra quy trình công nghệ với bộ phận kỹ thuật trước khi thực hiện quy trình/ Check the technological process with the technical department before implementing the process.
+- Kiểm tra thiết bị trong quá trình thực hiện/ Check equipment during implementation.","- Trưởng bộ phận Wash/ Wash leader
+- Trưởng bộ phận bảo trì/ Maintenance leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W03,"Hiệu ứng nhuộm không đồng đều, thiếu/ Uneven dyeing effect, lacking","- Vải trước nhuộm không đều màu/ The pre-dyed fabric is uneven in color.
+- Thao tác công nhân chưa đúng/ The worker'shandling is not correct.
+- Nồng độ màu chưa đúng/ Color concentration is not correct.
+- Máy nhuộm bị sự cố/ Dyeing machine malfunction.
+","- Thông tin cho nhà máy may thực hiện ráp chi tiết đúng theo yêu cầu/ Information for the garment factory to assemble the details as required.
+- Hướng dẫn cho công nhân thực hiện theo đúng quy trình từ thời trang đến wash/ Instruct workers to follow the correct process from fashion to washing.
+- Kiểm tra nồng độ thuốc nhuộm và hóa chất đảm bảo đúng theo quy trình/ Check the concentration of dyes and chemicals to ensure the correct procedure.
+- Kiểm tra máy nhuộm thường xuyên/ Check the dyeing machine regularly.","- Trưởng bộ phận Wash/ Wash leader.
+- Trưởng bộ phận thời trang/ Fashion leader
+- Trưởng bộ phận bảo trì/ Maintenance leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W04,"Loang màu/ color stain
+Lem màu chi tiết/ Detail blemish/ color spots due to chemical","- Thao tác công nhân chưa đúng/ Incorrect worker handling.
+- Quy trình thiếu hóa chất/ The process lacks chemicals.
+- Máy wash nhuộm bị sự cố/ Dyeing washing machine has a problem. 
+","- Hướng dẫn cho công nhân thực hiện đúng theo quy trình sản xuất/ Instruct workers to strictly follow the production process.
+- Kiểm tra quy trình công nghệ đảm bảo đúng và đủ hóa chất; sấy đúng theo yêu cầu của quy trình sản xuất/ Check the technological process to ensure the correct and sufficient chemicals; drying according to the requirements of the production process
+- Kiểm tra máy wash, nhuộm thường xuyên/ Check washing machine, dye regularly.","- Trưởng bộ phận Wash/ Wash leader
+- Trưởng bộ phận bảo trì/ Maintenance leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W05,Độ mềm không đạt/ Softness is not reached,"- Quy trình thiếu hóa chất làm mềm/ The process lacks chemical softeners.
+- Thao tác công nhân chưa đúng/ The worker's handlingr is not correct.","- Kiểm tra quy trình công nghệ đảm bảo đúng và đủ hóa chất làm mềm/ Check the technological process to ensure correct and sufficient softening chemicals.
+- Hướng dẫn cho công nhân thực hiện đúng theo quy trình sản xuất/ Instruct workers to follow the correct production process.","- Trưởng bộ phận Wash/ Wash leader
+- Trưởng bộ phận kỹ thuật/ Technical leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W06,Lủng rách do wash/ Torn from washing,"- Thao tác công nhân chưa đúng/ Incorrect worker handling.
+- Các thiết bị phụ trợ bị sự cố/ Ancillary equipment malfunction.","- Hướng dẫn cho công nhân các yếu tố ảnh hưởng đến việc gây ra lủng rách tại công đoạn mình thực hiện/ Instruct workers on the factors affecting the tearing at the stage they perform washing.
+- Thông tin cho bộ phận bảo trì khắc phục các thiết bị wash, vắt, sấy có sự cố gây ra lủng, rách/ Information for the maintenance department to fix washing, extracting and drying equipment that has problems causing holes or tears","- Trưởng bộ phận Wash/ Wash leader
+- Trưởng bộ phận kỹ thuật/ Technical leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W07,"Hiệu ứng acid wash mạnh, yếu hoặc không đều/ Strong, weak or irregular acid wash effect","- Thao tác công nhân chưa đúng/ The worker's handling  is not correct
+- Thông số cài đặt chưa đúng/ The settings are not correct.","- Hướng dẫn cho công nhân quy trình : pha hóa chất, ngâm, vắt vật dụng... trước khi thực hiện sản xuất, đảm bảo mẫu công đoạn được để ở vị trí so mẫu/ Instructing workers in the process: mixing chemicals, soaking, squeezing items... before production, make sure that the stage sample is kept at the position of the sample for correct color.
+- Đảm bảo các thông số cài đặt được ghi rõ trong phiếu theo dõi công nghệ. Kiểm tra máy thường xuyên/ Make sure the installation parameters are clearly stated in the technology monitoring sheet. Check the machine regularly.","- Trưởng bộ phận Wash/ Wash leader
+- Trưởng bộ phận kỹ thuật/ Technical leader
+- Trưởng bộ phận bảo trì/ Maintenance leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W08,"Cường độ Râu mèo mạnh, yếu, sai vị trí hoặc thiếu/ strong whiskers/ less intensity, position wrong or missing","- Thao tác công nhân chưa đúng/ workers handling is not right
+- Rập mẫu chưa đúng/ sample pattern not correct","- Hướng dẫn cho công nhân trước khi thực hiện sản xuất, đảm bảo mỗi người thực hiện một mẫu công đoạn được đánh giá ĐẠT treo tại vị trí mình thực hiện/ Instruct workers before starting production, make sure each person performs a sample of the stage that is evaluated as ok and  hanging sample approved at the position they perform.
+- Kiểm tra rập trước khi thực hiện sản xuất/ Check the pattern before making production.","- Trưởng bộ phận Thời Trang/ Fashion leader
+- Trưởng bộ phận kỹ thuật/ Technical leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W09,"Cường độ Hansand mạnh, yếu hoặc thiếu/ Hansand intensity is strong, weak or lacking","- Thao tác công nhân chưa đúng/ workers handling is not right 
+- Phun PP mạnh hoặc yếu/ spray pp color  not ok","- Hướng dẫn cho công nhân trước khi thực hiện sản xuất, đảm bảo mỗi người thực hiện một mẫu công đoạn được đánh giá ĐẠT treo tại vị trí mình thực hiện/ Instruct workers before starting production, make sure each person performs a sample of the stage that is evaluated as ok and  hanging sample approved at the position they perform.
+- Kiểm tra quy trình đảm bảo thực hiện theo đúng lưu đồ sản xuất/ Check the process before making production.","- Trưởng bộ phận Thời Trang/ Fashion leader
+- Trưởng bộ phận kỹ thuật/ Technical leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W10,"Hiệu ứng tacking mạnh, yếu hoặc thiếu/ Strong, weak, or missing tacking effects","- Thao tác công nhân chưa đúng/ incorrect handling by worker
+- Không mở hoặc mở khi thực hiện phun PP/ not spary pp correctly.","- Hướng dẫn cho công nhân trước khi thực hiện sản xuất, đảm bảo mỗi người thực hiện một mẫu công đoạn được đánh giá ĐẠT treo tại vị trí mình thực hiện/ Instruct workers before starting production, make sure each person performs a sample of the stage that is evaluated as ok and  hanging sample approved at the position they perform.
+- Kiểm tra quy trình đảm bảo thực hiện theo đúng lưu đồ sản xuất/ Check the process before making production.","- Trưởng bộ phận Thời Trang/ Fashion leader
+- Trưởng bộ phận kỹ thuật/ Technical leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W11,"Hiệu ứng cột mạnh, yếu, sai hoặc thiếu/ Strong, weak, false or missing 3D/ tacking  effect ","- Thao tác công nhân chưa đúng / incorrect handling by worker
+- Nhiệt độ wash chưa đúng/ wash temperature not ok","- Hướng dẫn cho công nhân trước khi thực hiện sản xuất, đảm bảo mỗi người thực hiện một mẫu công đoạn được đánh giá ĐẠT treo tại vị trí mình thực hiện/ Instruct workers before starting production, make sure each person performs a sample of the stage that is evaluated as ok and  hanging sample approved at the position they perform.
+- Kiểm tra quy trình đảm bảo thực hiện theo đúng quy trình công nghệ/ Check the process before making production.","- Trưởng bộ phận Thời Trang/ Fashion leader
+- Trưởng bộ phận kỹ thuật/ Technical leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W12,"Cường độ PP, đốm PP/PP strength, PP spot ","- Thao tác công nhân chưa đúng/ Incorrect worker handling.
+- Nồng độ hóa chất chưa đúng/ Chemical concentration is not correct.
+- Áp lực gió nén không đúng/ Air pressure is not correct.
+- Súng phun bị hỏng/ Spray gun is damaged.","- Hướng dẫn cho công nhân trước khi thực hiện sản xuất, đảm bảo mỗi người thực hiện một mẫu công đoạn được đánh giá ĐẠT treo tại vị trí mình thực hiện / Instruct workers before starting production, make sure each person performs a sample of the stage that is evaluated as ok, hanging sample at the position they perform.
+- Kiểm tra lại nồng độ hóa chất trong phiếu theo dõi quy trình công nghệ/ Check the chemical concentration in the technological process monitoring sheet.
+- Kiểm tra áp lực gió nén thường xuyên/ Check air pressure regularly.
+- Kiểm tra và sửa chữa súng phun/ Check and repair the spray gun","- Trưởng bộ phận Thời Trang/ Fashion leader
+- Trưởng bộ phận kỹ thuật/ Technical leader
+- Trưởng bộ phận bảo trì/ Maintenance leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W13,"Destroys không đạt màu, hình dáng, kích thước,…/ Destroys do not reach the color, shape, size, …","- Thao tác công nhân chưa đúng/ Incorrect worker behavior.
+- Rập mẫu chưa đúng/ The pattern is not correct.","- Hướng dẫn cho công nhân trước khi thực hiện sản xuất, đảm bảo mỗi người thực hiện một mẫu công đoạn được đánh giá ĐẠT treo tại vị trí mình thực hiện/ Instruct workers before starting production, make sure each person performs a sample of the stage that is evaluated as ok and  hanging sample approved at the position they perform.
+- Kiểm tra rập trước khi thực hiện sản xuất/ Check the pattern before making production.","- Trưởng bộ phận Thời Trang/ Fashion leader
+- Trưởng bộ phận kỹ thuật/ Technical leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W14,"Hiệu ứng grinding  mạnh, yếu hoặc thiếu/ Strong, weak or lacking grinding effect","- Thao tác công nhân chưa đúng / worker handling not correct.
+- Mẫu chưa đúng/ sample not ok","- Hướng dẫn cho công nhân trước khi thực hiện sản xuất, đảm bảo mỗi người thực hiện một mẫu công đoạn được đánh giá ĐẠT treo tại vị trí mình thực hiện/ Instruct workers before starting production, make sure each person performs a sample of the stage that is evaluated as ok and  hanging sample approved at the position they perform.
+- Kiểm tra mẫu trước khi thực hiện sản xuất/ Check the pattern before making production.","- Trưởng bộ phận Thời Trang/ Fashion leader
+- Trưởng bộ phận kỹ thuật/ Technical leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W15,"Hiệu ứng nicking  mạnh, yếu hoặc thiếu/ Strong, weak or lacking nicking effect","- Thao tác công nhân chưa đúng/ The worker'shandling is not correct.
+- Mẫu chưa đúng/ The sample is not correct.
+- Đá mài bị lỗi/ The grinding wheel is defective.
+","- Hướng dẫn cho công nhân trước khi thực hiện sản xuất, đảm bảo mỗi người thực hiện một mẫu công đoạn được đánh giá ĐẠT treo tại vị trí mình thực hiện/ Instruct workers before starting production, make sure each person performs a sample of the stage that is evaluated as ok and  hanging sample approved at the position they perform
+- Kiểm tra mẫu và đá mài trước khi thực hiện sản xuất/ Check the pattern before making production.","- Trưởng bộ phận Thời Trang/ Fashion leader
+- Trưởng bộ phận kỹ thuật/ Technical leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W16,"Hiệu ứng vẩy màu, PP nhiều, ít hoặc thiếu/ Color splash effect, PP more, less or less","- Thao tác công nhân chưa đúng/ The worker'shandling is not correct.
+- Mẫu chưa đúng/ The sample is not correct.
+","- Hướng dẫn cho công nhân trước khi thực hiện sản xuất, đảm bảo mỗi người thực hiện một mẫu công đoạn được đánh giá ĐẠT treo tại vị trí mình thực hiện/ Instruct workers before starting production, make sure each person performs a sample of the stage that is evaluated as ok and  hanging sample approved at the position they perform.
+- Kiểm tra mẫu trước khi thực hiện sản xuất/ Check the pattern before making production.","- Trưởng bộ phận Thời Trang/ Fashion leader
+- Trưởng bộ phận kỹ thuật/ Technical leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W17,"Hiệu ứng dán vải sai hoặc thiếu/ Wrong or missing fabric washing @ fusing effect
+- 3D thiếu hoặc mạnh @ yếu/ 3D is strong @ weak","- Thao tác công nhân chưa đúng/ The worker's handling is not correct.
+- Mẫu chưa đúng/ The sample is not correct.
+- Nhiệt độ máy ép chưa đúng/ The temperature of the fusing machine is not correct.","- Hướng dẫn cho công nhân trước khi thực hiện sản xuất, đảm bảo mỗi người thực hiện một mẫu công đoạn được đánh giá ĐẠT treo tại vị trí mình thực hiện/ Instruct workers before starting production, make sure each person performs a sample of the stage that is evaluated as ok and  hanging sample approved at the position they perform.
+- Kiểm tra mẫu và máy ép trước khi thực hiện sản xuất/ Check the pattern before making production.","- Trưởng bộ phận Thời Trang/ Fashion leader
+- Trưởng bộ phận kỹ thuật/ Technical leader
+- Trưởng bộ phận bảo trì/ Maintenance leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W18,Hiệu ứng lai sai hoặc thiếu/ wash effect at bottom wrong/ missing,"- Thao tác công nhân chưa đúng/ The worker's handling is not correct.
+- Mẫu chưa đúng/ The sample is not correct.","- Hướng dẫn cho công nhân trước khi thực hiện sản xuất, đảm bảo mỗi người thực hiện một mẫu công đoạn được đánh giá ĐẠT treo tại vị trí mình thực hiện/ Instruct workers before starting production, make sure each person performs a sample of the stage that is evaluated as ok and  hanging sample approved at the position they perform.
+- Kiểm tra mẫu trước khi thực hiện sản xuất/ Check the pattern before making production.","- Trưởng bộ phận Thời Trang/ Fashion leader
+- Trưởng bộ phận kỹ thuật/ Technical leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W20,"Lủng, rách do thời trang/ Loose, torn due to fashion items","- Thao tác công nhân chưa đúng/ The worker's handling is not correct.
+- Các thiết bị phụ trợ bị sự cố/ Auxiliary equipment is malfunctioning.","- Hướng dẫn cho công nhân các yếu tố ảnh hưởng đến việc gây ra lủng rách tại công đoạn mình thực hiện/ Instruct workers on the factors affecting the tearing at the stage they perform.
+- Thông tin cho bộ phận bảo trì khắc phục các thiết bị có sự cố gây ra lủng, rách/ Information for the maintenance department to fix the equipment with problems that cause holes or tears.","- Trưởng bộ phận thời trang/ Fashion leader
+- Trưởng bộ phận bảo trì/ Maintenance leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W21,"Hiệu ứng laser mạnh, yếu, sai hoặc thiếu/ The laser effect is strong, weak, wrong or missing.","- Thao tác công nhân chưa đúng/ Incorrect worker 
+- Máy laser có sự cố/  The laser machine has a problem.
+- Thao tác phun PP/ handling for PP. 
+","- Hướng dẫn cho công nhân trước khi thực hiện sản xuất, đảm bảo mỗi người thực hiện một mẫu công đoạn được đánh giá ĐẠT treo tại vị trí mình thực hiện/ Instruct workers before starting production, make sure each person performs a sample of the stage that is evaluated as ok, hanging sample  at the position they perform.
+- Kiểm tra máy laser trước khi thực hiện, đảm bảo  theo đúng thông số cài đặt của quy trình công nghệ/ Check the laser machine before implementation, make sure to follow the installation parameters of the technological process.
+- Kiểm tra quy trình công nghệ đảm bảo việc thực hiện theo đúng yêu cầu/  Checking the technological process to ensure compliance with requirements.","- Trưởng bộ phận laser/ Laser leader
+- Trưởng bộ phận thời trang/ Fashion leader
+- Trưởng bộ phận bảo trì/ Maintenance leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W22,Lủng rách do laser/ Laser tearing/ damage,"- Thao tác công nhân chưa đúng/ The worker's operation is not correct.
+- Các thiết bị phụ trợ bị sự cố/ Ancillary equipment malfunctions.","- Hướng dẫn cho công nhân các yếu tố ảnh hưởng đến việc gây ra lủng rách tại công đoạn mình thực hiện/ Instruct workers on factors affecting the breakdown at the stage they perform.
+- Thông tin cho bộ phận bảo trì khắc phục các thiết bị laser bị sự cố gây ra lủng, rách/ Information for the maintenance department to fix broken laser equipment causing holes and tears.","- Trưởng bộ phận laser/ Laser leader
+- Trưởng bộ phận bảo trì/ Maintenance leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W23,Khác màu trong cùng sản phẩm/ Different color in the same product,"- Thao tác công nhân chưa đúng/ The worker's operation is not correct.
+- Ráp nhầm chi tiết trong quá trình may/ Assembling the wrong details during sewing.","- Hướng dẫn công nhân đối chiếu số khi thực hiện ráp chi tiết trong quá trình cắt, may/ Instruct workers to compare numbers when assembling details during cutting and sewing.
+- Hướng dẫn công nhân thực hiện đúng thao tác trong quá trình thực hiện thời trang và wash/ Instruct workers to perform the correct operation in the process of fashion and washing.
+- Thông tin cho nhà máy may biết để thực hiện ráp đúng theo yêu cầu/ Inform the garment factory to make the correct assembly as required.","- Trưởng bộ phận cắt, may/ Cutting, sewing leaders
+- Trưởng bộ phận thời trang/ Fashion leader
+- Trưởng bộ phận wash/ Wash leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W24,"Cấn wash, đốm/ wash wrinkles/ spot","- Sản phẩm trước wash  bị nhàu/ The product before wash is wrinkled.
+- Thao tác công nhân chưa đúng/ The worker's handling is not correct."" ","- Kiểm tra sản phẩm trước khi wash đảm bảo không bị nhàu/ Check the product before washing to make sure it is not creased. 
+- Kiểm soát thao tác trong suốt quá trình sản xuất từ công đoạn thời trang đến wash đảm bảo sản phẩm không bị gấp nếp, cấn/ Controlling operations throughout the production process from fashion  sewing to washing to ensure that the product is not folded, wrinkled.","- Trưởng bộ phận thời trang/ Fashion leader
+- Trưởng bộ phận wash/ Wash leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W25,Thông số không đạt/ measurement not ok,"- Nhiệt độ sấy chưa đúng/ The drying temperature is not correct.
+- Thao tác công nhân chưa đúng/ The worker's behavior is not correct.
+- Thông số rập chưa đúung/ Pattern parameters are not correct","- Kiểm tra quy trình trước khi thực hiện công đoạn sấy/ Check the process before starting the drying process.
+- Hướng dẫn cho công nhân trước khi thực hiện qua các công đoạn có ảnh hưởng đến thông số trong suốt quá trình sản xuất/ Guide workers before performing through the stages that affect parameters during the production process.
+- Thông tin cho bộ phận kỹ thuật may về thông số rập trước wash/ nhuộm/ Inform the sewing technician about the pattern parameters before washing/ dyeing.","- Trưởng bộ phận wash.
+- Trưởng bộ phận may.","Từ khi phát hiện đến 01 ngày/After 1 day"
+W26,Không đạt độ bền cơ lý/ Failure to achieve mechanical strength,"- Quy trình sản xuất chưa đúng/ The production process is not correct.
+- Thao tác công nhân chưa đúng/ Incorrect workerhandling.","- Kiểm tra quy trình sản xuất đảm bảo các hóa chất sử dụng đúng, đủ theo yêu cầu và không ảnh hưởng đến độ bền cơ lý sau wash/ Check the production process to ensure that the chemicals used are correct and sufficient as required and do not affect the mechanical and mechanical strength after washing.
+- Hướng dẫn cho công nhân biết công dụng của hóa chất ảnh hưởng đến độ cơ lý; các thao tác trong quá trình vào hóa chất, vận hành máy sẽ ảnh hưởng đến độ bền cơ lý/ Instruct workers to know the effects of chemicals on physical and mechanical properties; manipulations in the process of administering the chemicals, operating the machine will affect the mechanical strength.","- Trưởng bộ phận thời trang/ Fashion leader
+- Trưởng bộ phận wash/ Wash leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W27,"Mùi hôi, ẩm mốc/ Bad smell, wet","- Hóa chất còn thừa trên sản phẩm/ Chemical residue left on the product.
+- Sản phẩm còn ẩm ướt/ The product is still wet.","- Nhà máy wash phải khử sạch các hóa chất thừa trong quá trình wash, thời trang trước khi chuyển sang hoàn tất/ The wash factory must remove excess chemicals during the washing and  process before moving to completion.
+- Sản phẩm phải được sấy không trước khi chuyển sang hoàn tất/ The product must be air-dried before moving to complete.","- Trưởng bộ phận thời trang/ Fashion leader
+- Trưởng bộ phận wash/ Wash leader","Từ khi phát hiện đến 01 ngày/After 1 day"
+W28,Những lỗi khác/ other defects,,,,
+F01,"Vệ sinh công nghiệp/ Industrial machine hygiene
+Chỉ thừa không sạch/ 
+Only excess is not cleaned","-Thao tác công nhân không đúng quy trình/ Workers handling is not correct as the process
+-Trong giờ làm không tập trung/ During off-hours.","-triển khai lại quy trình cho công nhân/ redeploy/instruct the process for workers
+-Thường xuyên nhắc nhỡ công nhân tập trung công việc/ Regularly remind workers to focus on their jobs","-Công nhân/ Worker
+-Quản lý cắt chỉ/ thread cutting leader
+-QC random","- Từ khi phát hiện 5 phút/After 5 minutes"
+F02,"Sai nhãn, thẻ bài, phụ liệu hoàn tất/ Wrong label, tag, finishing accesories
+Sai ví trí và quy cách gắn vào sản phẩm/ Wrong position and specification attached to the product.","- Quản lý không kiểm tra phụ liệu trước khi giao cho công nhân/ team leaders did not check the materials before delivering to workers
+- Không dò tài liệu trước khi làm/ Do not scan/ check documents before doing
+- Không làm đúng quy trình duyệt mẫu/ Not following the sample approval process correctly","- kiểm tra phụ liệu từng PO trước khi giao cho công nhân/ check each PO's materials before delivering to workers
+- Dò phụ liệu thực nhận với bãng màu trim car từng PO/ Detect real materials received with the trim card/ color palette for each PO
+- Làm đúng quy trình và có ký duyệt của khách hàng và QA/ Follow the correct process and have the approval of customers and QA","-Quản lý/ Leader
+-Kỹ thuật triển khai/ Deploying technical
+-Công Nhân/ Worker
+- QA","- Từ khi phát hiện 15 phút/After 15 minutes"
+F03,Bộ bền chắc và an toàn khi sử dụng/ The  die set is durable and safe to use,"- Do chỉnh máy không đúng tiêu chuẫn lực nén/ Due to improper adjustment of the compression force of machine
+- Do Phụ liệu không đạt chất lượng/ Due to substandard materials
+- Do thao tác công nhân chưa đúng quy trình/ Due to improper operation of workers","- Cho chỉnh lại máy đúng yêu cầu lực nén từng mã hàng/ Adjust the machine to the correct compression requirements for each product code
+- Làm việc với Nhà Cung Cấp về chất lượng phụ liệu/ Working with Suppliers on quality of materials
+- triển khai lại thao tác công nhận / Reinstruct  the workers  to  acknowledge to perform  operation correctly ","- Bảo trì/ Maintenance
+- Mer theo hàng/ Merch
+- Quản lý/ Leader","- Từ khi phát hiện 30 phút
+After 30 minutes"
+F04,"Ủi (là) xấu/ Iron is bad
+Bị bóng/ shining marks
+Cháy nám/ Burnt / hot,
+Biến dạng dáng (form)/ Deformation/ damaged (form)","- Thao tác công nhân chưa đúng quy trình/ Manipulation of workers  handling is not correct as the process
+- Do xữ lý thông số out ngoài dung size/ Due to handling parameters out of  size.","- Quản lý thường xuyên kiểm tra công nhân và hợp triển khai lại thao tác ủi/ Management regularly checks workers and redeploys ironing operations
+- Làm việc với các bộ phận liên quan,để khắc phục thông số out ngoài dung size/ Work with related departments to fix out parameters outside of size.","- Quản lý ủi/ Ironing leader
+- QA nhà máy/ Factory's QA
+- Công nhân ủi/ Ironing worker","- Từ khi phát hiện 15 phút/After 15 minutes"
+F05,"Bung đường may/  open seam
+Lủng, rách/ holes, tear
+Lỗ kim/ needle holes.","- Do may hư tháo ra sửa/ Due to bad sewing, remove/ rework
+- Do các mã hàng wash mạnh và làm các thời trang/ Due to strong wash codes, and do fashions items.","- Làm việc với bộ phận may để khắc phục/ Work with sewing to fix
+- Làm việc với NM wash ,và xem lại quy trình wash/ Work with NM wash, and review the wash process.","- QA
+- Kỹ thuật may/ Sewing Technical
+- Kỹ thuật wash/ Wash technical","- Từ khi phát hiện 2 tiếng/After 2 hours"
+F06,"Đứt chỉ/ broken
+Bỏ mũi/ skip
+Căng/lỏng chỉ/ tight/ loose
+Nối chỉ không trùng/ por joint/ uneven stitching","- Do các mã hàng có công đoạn wash mài và trà miệng túi/ due to styles having grinding at pocket mouth is damaged
+- Do máy hư trên chuyền may/ due to machines in sewing line
+- Do thao tác công nhân may / workers handling the garment","- Làm việc với NM wash để triển khai thao tác công nhân wash/ Working with laundry to deploy for the wash worker operation
+- Làm việc với nhà máy may để khắc phục/ Work with the garment factory to fix it.","- QA 
+- Kỹ thuật may, wash/ Sewing, washing technical
+- Công nhân may, wash
+Sewing, washing worker","- Từ khi phát hiện 2 tiếng/After 2 hours"
+F07,"Nhăn nhíu/ puckering
+Xếp ly/ pleats
+Sụp mí/ down stitches 
+Gợn sóng/ uneven
+Vặn đường may/ twisted seam
+Bai giãn/ stretched back rise
+Vặn canh vải/ wrinkeld fabric","- Do chỉnh máy chưa đạt/ incorrect machine adjustment.
+- Do thao tác công nhân chưa đúng/ workers handling - not ok.","- Làm việc với NM may để triển khai lại thao tác công nhân,và bảo trì/ Work with garment factory to redeploy worker operations, and maintenance","- QA
+- Bảo trì/ Maintenance
+- Kỹ thuật may/ Sewing technical
+- Công Nhân may/ Sewing worker","- Từ khi phát hiện 2 tiếng/After 2 hours"
+F08,"Dính dầu/ oily
+Ố, Dơ/ dirty, damaged
+Dấu phấn @ mực/ stained, gresy marks of oil","- Do bảo quản hàng từ các khâu ( may,wash,hoàn tất ) chưa tốt/ Due to poor preservation of goods from stages (sewing, washing, finishing.
+- Bảo trì không thường xuyên kiểm tra cách máy khi xữ dụng/  Regular maintenance check how the machine is in use","- Nhắc nhở các bộ phận bảo quản hàng cẩn thận khi chuyễn giao cho nhau,và vệ sinh nơi làm việc/ Reminding departments to carefully store goods when transferring them to each other, and to clean the workplace
+- Thường xuyên cho bảo trì kiểm tra các máy để bảo dưỡng định kỳ/ Regularly for maintenance check the machines for periodic maintenance.","- Quản lý/ Leader
+- Bảo trì/ Maintenance","- Từ khi phát hiện 1 tiếng
+After 1 hour"
+F09,Gấp xếp sai/ fold thegarment mistake,"- Không dò tài liệu kỹ thuật/ Do not scan technical documents
+- Thao tác công nhân sai/ Wrong worker manipulation
+- Bỏ qua quy trình duyệt mẫu của Qa và khách hàng/ Bypass the sample approval process of QA and customers
+","- Dò tài liệu trước khi làm/ Scan documents before doing
+- triển khai thao tác cho công nhân/ deploy operations for workers
+- Làm đúng quy trình duyệt mẫu/ Follow the correct sample approval process
+","- Quản lý gấp xếp/ Folding leader
+- Công nhân/ Worker
+- Kỹ Thuật triển khai/ Deploying technical","- Từ khi phát hiện 15 phút/After 15 minutes"
+F10,Sai tỷ lệ và số lượng trong thùng/ Wrong proportion and quantity in the bin,- Công nhân không tập trung khi làm / Workers are not focused when working,- Thường xuyên kiểm tra và nhắc nhở công nhân/ Regularly check and remind workers,"- Công Nhân/ Worker
+- Quản lý/ Leader","- Từ khi phát hiện 5 phút/After 5 minutes"
+F11,Dò kim loại không đạt/ Metal Detector Failed,"- Do các bộ phận chưa làm tốt quãn lý vật sắt nhọn ( từ may tới wash và hoàn tất )
+- Do phụ liệu bị nhiễm từ/ Due to poor handling of sharp objects by parts (from sewing to washing and finishing)
+- Due to the material being contaminated ","- triển khai các bộ phận hiễu rõ về quãn lý vật sắt nhọn/ deploy the parts that understand the management of sharp objects
+- Làm việc với nhà cung cấp về phụ liệu/ Working with suppliers on accessories.","- Quản lý các khu vực/ stages leaders
+- Mer theo hàng/ Merch
+- QA hệ thống/ QA system","- Từ khi phát hiện 1 ngày/After 1 day"
+F12,"Nấm mốc/ Mold,
+Vật lạ/ Objects
+Côn trùng, sâu trên  sản phẩm/ Insects, worms on the product.","- Do bảo quản hàng không che đậy/ Due to preservation, do not cover up
+- Không xịt thuốc phòng chống côn trùng theo định kỳ/ Do not periodically spray insect repellent.","- Hàng cần được bảo quản trong bao vãi ,có che đậy/ Goods should be stored in a covered, covered bag
+- Thường xuyên kiểm tra và xịt thuốc chống côn trùng theo định kỳ/ Regularly check and spray insect repellent periodically","- Quản lý các khu vực/ stages leaders
+- Đội phòng chống côn trùng/ Prevent insects team","- Từ khi phát hiện 1 ngày/After 1 day"
+F13,Độ ẩm và mùi không đạt/ Humidity and odor do not meet standard,"- Do chế độ wash các loại hóa chất có mùi nặng/ Due to the washing mode, chemicals have a strong smell
+- Do không kiểm tra độ ẫm để sấy/ Due to not testing moisture for drying.","- Cần kiểm tra các quy trình wash khi có mã hàng mới/ Need to check washing procedures when new product codes are available
+- triển khai QC random test độ ẫm từng mã hàng khi lên hoàn tất/ Implement QC random test the moisture content of each product code when finished.","- Kỹ thuật wash/ Wash technical
+- QC random","- Từ khi phát hiện 1 tiếng
+After 1 hour"
+F14,Dán hoặc đai thùng sai/ Wrong gluing or belting,-  Do Thao tác công nhân sai / handling of workers is mistake.,- triển khai lại thao tác công nhân khi làm / redeploy/ instruct worker action when working,"- Quản lý/ Leader
+- Công nhân/ worker
+- Kỹ thuật triển khai/ Deploying technical","- Từ khi phát hiện 15 phút/After 15 minutes"
+F15,In nhãn dán thùng không đạt/ attaching wrong pirnted sticker,"- Do phền mềm hệ thống sai/ Due to wrong system software
+- Do Mer và kế hoạch in lộn/ Due to Mer and the plan printed upside down
+- Máy in bị hư (hết mực)/ Printer is damaged (out of ink)","- Làm việc với khách hàng khi có sự cố/ Working with customers when there is a problem
+- Cần kiểm tra kỹ trước khi giao cho bộ phận đóng thùng/ Need to check carefully before delivering to the box packing department
+- Thường xuyên kêu IT kiểm tra máy in và thay mực định kỳ/  Regularly ask IT to check the printer and change the ink periodically.","- Mer theo hàng/ Merch
+- Kế hoạch Nhà máy/ Planning of factory
+- IT","- Từ khi phát hiện 1 ngày/After 1 day"
+F16,Thông tin trên thùng sai hoặc không đọc được/ The information on the box is incorrect or illegible.,"- Thao tác công nhân khi ghi thùng/ workers handling  when printing numbers on  boxes.
+- Nhà cung cấp in thùng sai / The supplier printed the wrong box","- kiểm tra và nhắc nhở công nhân khi ghi thùng/ check and remind workers when recording the box.
+- Làm việc với nhà cung cấp / Working with suppliers.","- Công nhân/ Worker
+- Quản lý/ Leader
+- Kế hoạch theo hàng và Mer / Planning & Merch","- Từ khi phát hiện 1 ngày/After 1 day"
+F17,"Thùng rách/ The box is torn,
+Ẩm ướt/ Wet,
+Biến dạng/ Deformed","- Do thao tác công nhân khi chất hàng lên pallet/ Due to worker manipulation when loading goods on the pallet
+- Do quản lý không sắp xếp hàng đúng nơi lưu trử/ Due to the management not arranging the goods in the right storage place.","- Thường xuyên nhắc nhở và triển khai thao tác cho công nhân làm/ Regularly reminding and deploying actions for workers to do.
+- Hàng khi đóng thùng cần để đúng nới quy định và chất trên balet/ Goods need to be put in the right place when packing and loaded on the pallet.","- Quản lý
+- Công nhân","- Từ khi phát hiện 1 tiếng
+After 1 hour"
+F18,Thông số ngoài dung sai/ Parameter out of tolerance,"- Do thao tác QC đo không đúng/  Due to incorrect measurement QC operation,
+- Do wash có vấn đề/ Due to the problem of washing,
+- Do may chỉnh rập có vấn đề/ There is a problem with the pattern adjustment.","- triển khai thao tác cho QC/ implement operations for QC
+- Làm việc với kỷ thuật wash/ Working with washing technical
+- Làm việc với kỹ thuật may/ Working with sewing technical.","- Quản lý/ Leader
+- Công nhân/ Worker
+- Kỹ thuật wash/ Wash technical
+- Kỹ thuật may/ Sewing technical","- Từ khi phát hiện 1 ngày/After 1 day"
+F19,Những lỗi khác/ Other defects,,,,
+P01,"Vệ sinh công nghiệp/ Industrial machine hygiene
+Chỉ thừa không sạch/ 
+Only excess is not cleaned",,,,
+P02,"Dính dầu/ oily
+Ố, Dơ/ dirty, damaged
+Dấu phấn/ mực/ stained, gresy marks of oil",,,,
+P03,"Ủi (là) xấu/ Iron is bad
+Bị bóng/ shining marks
+Cháy nám/ Burnt / hot,
+Biến dạng dáng (form)/ Deformation/ damaged (form)",,,,
+P04,"Đóng (đính) nút, rivet, phụ liệu,… không đạt bền chắc, không an toàn khi sử dụng/To nail button, rivet, accessory, … are not meet stable, not safety when using",,,,
+P05,"Đóng (đính) nút, rivet,  ủi, gắn nhãn, gấp xếp,... sai quy cách; thiếu @ dư phụ liệu/To nail button, rivet, iron, stick label, fold, … are wrong spec, lack or more accessory",,,,
+P06,"Sử dụng sai phụ liệu/Using wrong accessory",,,,
+P07,"Lủng, rách, lỗ kim/Hole, tear, needle hole",,,,
+P08,"Bung chỉ, bung đường may/ Open thread, seam
+Đứt chỉ/ broken
+Bỏ mũi/ skip
+Căng/ lỏng chỉ/ tight/ loose
+Nối chỉ không đạt/ por joint/ uneven stitching",,,,
+P09,"Nhăn nhíu/ puckering
+Xếp ly/ pleats
+Sụp mí/ down stitches 
+Gợn sóng/ uneven
+Vặn đường may/ twisted seam
+Bai giãn/ stretched back rise",,,,
+P10,"Ánh màu không đạt/Colour is not meet",,,,
+P11,"Cấn wash, đốm wash/Wash wrinkle @ spot",,,,
+P12,"Hiệu ứng wash, nhuộm không đồng đều/Wash effect, uneven dyeing effect",,,,
+P13,"Hình dáng, kích thước, vị trí thời trang wash không đúng/Wash fashion, sharp, dimension, position are not correct",,,,
+P14,"Sai số lượng và tỷ lệ trong thùng/Wrong quantity and rate in box",,,,
+P15,"Mùi hôi, ẩm mốc, mục vải, vật lạ trên sản phẩm/Bad smell, wet, fabric decayed, object on garment",,,,
+P16,"Mặc thử không đạt/Fit test is not meet",,,,
+P17,"Kỹ thuật may xấu, không phù hợp/Bad sewing, not suitable",,,,
+P18,"Chất lượng phụ liệu không đạt/Quality of accessory is not meet",,,,
+P19,"Lỗi Thông số/Measurement defect",,,,
+P20,"Những lỗi khác/Other defects",,,,

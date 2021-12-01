@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LibraryService.Models.DTOs;
+using System;
+using System.Collections.Generic;
 
 namespace LibraryService.DTOs.Responses
 {
@@ -6,9 +8,10 @@ namespace LibraryService.DTOs.Responses
     {
         public Guid Id { get; set; }
         public string Description { get; set; }
-        public string Category { get; set; }
-        public int SeqNo { get; set; }
-        public string LotSize { get; set; }
+        public int RatingMajor { get; set; }
+        public int RatingMinor { get; set; }
         public Guid? ZoneTypeId { get; set; }
+
+        public List<QCRageDTO> QCRages { get; set; }
     }
 }

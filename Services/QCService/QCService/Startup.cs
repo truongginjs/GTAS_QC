@@ -68,6 +68,7 @@ namespace QCService
         {
             var secret = Assembly.GetExecutingAssembly().FullName.Split(',')[0];
             // services.AddDbContext<QCContext>(option => option.UseInMemoryDatabase("InMemory"));
+            //services.AddDbContext<QCContext>(option => option.UseSqlServer(Configuration.GetConnectionString("TestConnection")));
             services.AddDbContext<QCContext>(option => option.UseSqlServer(Configuration.GetConnectionString("QCContext").Decrypt(secret)));
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();

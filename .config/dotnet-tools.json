@@ -3,7 +3,7 @@
   "isRoot": true,
   "tools": {
     "sinnika.cipher.tool": {
-      "version": "1.0.0.4",
+      "version": "1.0.0.11",
       "commands": [
         "sinnika.cipher"
       ]

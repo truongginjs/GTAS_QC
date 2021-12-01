@@ -1,8 +1,5 @@
 ﻿using QCService.Models;
-using QCService.Models.D01;
 using QCService.Models.DTOs;
-using QCService.Models.Enums;
-using QCService.Models.L01;
 using System;
 using System.Collections.Generic;
 
@@ -36,5 +33,10 @@ namespace QCService.DTOs.Responses
         public string QCType { get; set; }
         public User UserApprove { get; set; }
         public int UserApproveId { get; set; }
+        public string QCNumberRef { get; set; }
+        public List<SizeBreakDownDTO> SizeBreakDowns { get; set; }
+        public double GRNQty { get; set; }
+        public bool DefectResult { get; set; }
+        public bool FinalResult { get; set; }
     }
 }

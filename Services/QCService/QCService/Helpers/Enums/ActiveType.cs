@@ -13,6 +13,8 @@ namespace QCService.Helpers.Enums
         Get,
         AddOrUpdate,
         Delete,
-        Save
+        Save,
+        Approve,
+        Transfer
     }
 }

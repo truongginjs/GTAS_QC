@@ -5,6 +5,10 @@ using LibraryService.Heplers.Extensions;
 using LibraryService.Models.L01;
 using LibraryService.Models.DTOs;
 using LibraryService.Models.Enums;
+using System.Linq;
+
+using Lan = LibraryService.Heplers.Constants.MyConstants.LanguageConstants;
+using DSSType = System.Collections.Generic.Dictionary<string, string>;
 
 namespace LibraryService
 {
@@ -37,22 +41,56 @@ namespace LibraryService
 
             #region Defect
             CreateMap<DefectLib, DefectResDTO>();
+            //.ForMember(des => des.DefectTypes,
+            //       act => act.MapFrom(src => src.DefectTypes.Select(x=>x[Lan.En]).ToList()))
+            //.ForMember(des => des.Reasons,
+            //       act => act.MapFrom(src => src.Reasons.Select(x=>x[Lan.En]).ToList()))
+            //.ForMember(des => des.Solutions,
+            //       act => act.MapFrom(src => src.Solutions.Select(x => x[Lan.En]).ToList()));
+
+            CreateMap<DefectLib, DefectsInfoResDTO>();
+            //.ForMember(des => des.DefectTypes,
+            //       act => act.MapFrom(src => src.DefectTypes.Select(x => x[Lan.En]).ToList()))
+            //.ForMember(des => des.Reasons,
+            //       act => act.MapFrom(src => src.Reasons.Select(x => x[Lan.En]).ToList()))
+            //.ForMember(des => des.Solutions,
+            //       act => act.MapFrom(src => src.Solutions.Select(x => x[Lan.En]).ToList()));
+
             CreateMap<DefectReqDTO, DefectLib>();
+                //.ForMember(des => des.DefectTypes,
+                //        act => act.MapFrom(src => src.DefectTypes.Select(x => new DSSType { { Lan.Vi ,string.Empty},{ Lan.En,x} }).ToList()))
+                // .ForMember(des => des.Reasons,
+                //        act => act.MapFrom(src => src.Reasons.Select(x => new DSSType { { Lan.Vi, string.Empty }, { Lan.En, x } }).ToList()))
+                // .ForMember(des => des.Solutions,
+                //        act => act.MapFrom(src => src.Solutions.Select(x => new DSSType { { Lan.Vi, string.Empty }, { Lan.En, x } }).ToList()));
             #endregion
 
             #region Handler
             CreateMap<HandlerDefectLib, HandlerDefectResDTO>();
+            CreateMap<HandlerDefectLib, HandlerDefectInfoResDTO>();
             CreateMap<HandlerDefectReqDTO, HandlerDefectLib>();
             #endregion
 
             #region Time
-            CreateMap<TimeDefectLib, TimeDefectResDTO>();
-            CreateMap<TimeDefectReqDTO, TimeDefectLib>();
+            CreateMap<TimelineDefectLib, TimelineDefectResDTO>();
+            CreateMap<TimelineDefectLib, TimelineDefectInfoResDTO>();
+            CreateMap<TimelineDefectReqDTO, TimelineDefectLib>();
             #endregion
 
             #region Site
             CreateMap<SiteLib, SiteResDTO>();
             CreateMap<SiteReqDTO, SiteLib>();
+            #endregion
+
+
+            #region Department
+            CreateMap<DepartmentLib, DepartmentResDTO>();
+            CreateMap<DepartmentReqDTO, DepartmentLib>();
+            #endregion
+
+            #region Cutting table
+            CreateMap<CuttingTableLib, CuttingTableResDTO>();
+            CreateMap<CuttingTableReqDTO, CuttingTableLib>();
             #endregion
         }
 

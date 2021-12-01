@@ -44,9 +44,27 @@ namespace QCService.Models.D01
             }
         }
         public string InspectionBySizesJson { get; set; }
+
+        private List<InspectionBySizeFinalDTO> inspectionBySizesFinal;
+        [NotMapped]
+        public List<InspectionBySizeFinalDTO> InspectionBySizesFinal
+        {
+            get
+            {
+                inspectionBySizesFinal ??= string.IsNullOrWhiteSpace(InspectionBySizesFinalJson) ? null : JsonSerializer.Deserialize<List<InspectionBySizeFinalDTO>>(InspectionBySizesFinalJson);
+                return inspectionBySizesFinal;
+            }
+            set
+            {
+                inspectionBySizesFinal = value;
+                InspectionBySizesFinalJson = inspectionBySizes == null ? string.Empty : JsonSerializer.Serialize(inspectionBySizesFinal);
+            }
+        }
+        public string InspectionBySizesFinalJson { get; set; }
+
         private DefectDetailDTO defectDetail;
         [NotMapped]
-        public DefectDetailDTO DefectDetail 
+        public DefectDetailDTO DefectDetail
         {
             get => DefectDetailJson.GetJsonProperty(ref defectDetail);
             set => DefectDetailJson = defectDetail.SetJsonProperty(value, out string json);
@@ -106,6 +124,9 @@ namespace QCService.Models.D01
             }
         }
         public string PrivateDetailJson { get; set; }
+
+        public int InspectionQty { get; set; }
+        public int MeasurementQty { get; set; }
         public bool IsDeleted { get; set; }
     }
 }

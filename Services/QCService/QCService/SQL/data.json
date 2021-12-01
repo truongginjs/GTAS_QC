@@ -1,0 +1,7163 @@
+[
+  {
+    "Code": "M01",
+    "DefectTypes": [
+      {
+        "vi": "Đứt sợi dọc",
+        "en": "Broken end"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M02",
+    "DefectTypes": [
+      {
+        "vi": "Đứt sợi ngang",
+        "en": "Broken pick"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M03",
+    "DefectTypes": [
+      {
+        "vi": "Sợi thô dọc",
+        "en": "Coarse end"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M04",
+    "DefectTypes": [
+      {
+        "vi": "Sợi thô ngang",
+        "en": "Coarse Pick"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M05",
+    "DefectTypes": [
+      {
+        "vi": "Sợi tạp",
+        "en": "Foreign fiber"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M06",
+    "DefectTypes": [
+      {
+        "vi": "Biến màu @ Dơ",
+        "en": "Stain @ Dirty"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M07",
+    "DefectTypes": [
+      {
+        "vi": "Đốm màu",
+        "en": "Color @ white spot"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M08",
+    "DefectTypes": [
+      {
+        "vi": "Nối sợi, Bông tạp",
+        "en": "Knot @ Nap"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M09",
+    "DefectTypes": [
+      {
+        "vi": "Lỏng sợi dọc",
+        "en": "Loose Warp"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M10",
+    "DefectTypes": [
+      {
+        "vi": "Mất sợi ngang",
+        "en": "Mispick"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M11",
+    "DefectTypes": [
+      {
+        "vi": "Dừng máy",
+        "en": "Stop machine"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M12",
+    "DefectTypes": [
+      {
+        "vi": "Gãy mặt vải",
+        "en": "Crease mark"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M13",
+    "DefectTypes": [
+      {
+        "vi": "Thủng",
+        "en": "Hole"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M14",
+    "DefectTypes": [
+      {
+        "vi": "In lệch khuôn",
+        "en": "Print off layout"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "M15",
+    "DefectTypes": [
+      {
+        "vi": "In lem màu",
+        "en": "Print color smear"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "07f7d8a4-3ea3-44eb-bf5e-dd04dc064da3"
+  },
+  {
+    "Code": "T01",
+    "DefectTypes": [
+      {
+        "vi": "Sai mã, từ ngữ, ký hiệu, Logo, lộn size..",
+        "en": "Code,words, sign, logo, wrong size."
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T02",
+    "DefectTypes": [
+      {
+        "vi": "Hình dạng, quy cách, màu sắc",
+        "en": "Shape, size, color"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T03",
+    "DefectTypes": [
+      {
+        "vi": "Trầy xước, chất liệu, lủng rách",
+        "en": "Scratch, material, torn."
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T04",
+    "DefectTypes": [
+      {
+        "vi": "Độ mềm, cứng",
+        "en": "Soft, hardness"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T05",
+    "DefectTypes": [
+      {
+        "vi": "Rõ nét, độ dày mỏng",
+        "en": "logo, thickness"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T06",
+    "DefectTypes": [
+      {
+        "vi": "Quy cách, màu",
+        "en": "răng, đầu dây kéo"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T07",
+    "DefectTypes": [
+      {
+        "vi": "Tưa đầu khi kéo, độ cứng đầu kéo, tape dệt",
+        "en": "Furry, hardness, tape."
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T08",
+    "DefectTypes": [
+      {
+        "vi": "Kéo thử ít nhất 20 lần per sợi (10 sợi per loại)",
+        "en": "Test at least 20 time per  zipper (10 zipper per  type)"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T09",
+    "DefectTypes": [
+      {
+        "vi": "Rà kim loại (hàng ép cao tầng)",
+        "en": "Metal detector"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T10",
+    "DefectTypes": [
+      {
+        "vi": "Nứt, vỡ, trầy, biến dạng, sót ba vớ",
+        "en": "Fragile, broken, scratch, change shape, unsmooth"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T11",
+    "DefectTypes": [
+      {
+        "vi": "Chi tiết, logo rõ nét, độ dày mỏng, oxy hóa, cài thử",
+        "en": "Detail, logo, thickness, oxylyzation, fitting."
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T12",
+    "DefectTypes": [
+      {
+        "vi": "Độ cao, rộng",
+        "en": "High"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T13",
+    "DefectTypes": [
+      {
+        "vi": "Đồng màu trong lô",
+        "en": "Matched color"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T14",
+    "DefectTypes": [
+      {
+        "vi": "Sai mã chỉ",
+        "en": "Wrong Code"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T15",
+    "DefectTypes": [
+      {
+        "vi": "Sai Tex chỉ",
+        "en": "Tex, size"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T16",
+    "DefectTypes": [
+      {
+        "vi": "Ẩm mốc",
+        "en": "Mold"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T17",
+    "DefectTypes": [
+      {
+        "vi": "Thun có bị vặn, cong?",
+        "en": "Twisted, Curved?"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T18",
+    "DefectTypes": [
+      {
+        "vi": "SL chỗ nối trong cuộn (1 nối @  100m)",
+        "en": "(No of knot"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T19",
+    "DefectTypes": [
+      {
+        "vi": "In chữ, trọng lượng, chất liệu",
+        "en": "Printing, weight, material"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "T20",
+    "DefectTypes": [
+      {
+        "vi": "Mối dán ép",
+        "en": "Tight applying"
+      },
+      {
+        "vi": "Bao nylon dính bột phấn",
+        "en": "Polybag with chalk"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "f34e7928-c4f0-4f84-95f7-335d73196358"
+  },
+  {
+    "Code": "C01",
+    "DefectTypes": [
+      {
+        "vi": "Lỗi sơ đồ cắt",
+        "en": "cutting marker errors"
+      },
+      {
+        "vi": "Lỗi rập cắt",
+        "en": "Cutting pattern defects"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Sơ đồ sai chiều dài",
+        "en": "wrong marker length."
+      },
+      {
+        "vi": "Thiếu chi tiết, sai mặt chi tiết, sai canh sợi Rập",
+        "en": "Missing pattern pieces, wrong side of pattern piece, wrong grain line"
+      },
+      {
+        "vi": "Sơ đồ đi bị nhầm giàng, nhầm size",
+        "en": "Marker is wrong  for inseam and  size"
+      },
+      {
+        "vi": "Khổ vải không đúng",
+        "en": "In correct Fabric width"
+      },
+      {
+        "vi": "QC kiểm sơ đồ không phát hiện ra lỗi",
+        "en": "QC checking the marker did not find any errors"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Sơ đồ sai chiều dài",
+        "en": "wrong marker length."
+      },
+      {
+        "vi": "Thiếu chi tiết, sai mặt chi tiết, sai canh sợi Rập",
+        "en": "Missing pattern pieces, wrong side of pattern piece, wrong grain line"
+      },
+      {
+        "vi": "Sơ đồ đi bị nhầm giàng, nhầm size",
+        "en": "Marker is wrong  for inseam and  size"
+      },
+      {
+        "vi": "Khổ vải không đúng",
+        "en": "In correct Fabric width"
+      },
+      {
+        "vi": "QC kiểm sơ đồ không phát hiện ra lỗi",
+        "en": "QC checking the marker did not find any errors"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Nhân viên rập, sơ đồ",
+        "en": "Pattern, marker staff"
+      },
+      {
+        "vi": "QC kiểm sơ đồ",
+        "en": "QC check marker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 giờ sau",
+        "en": "Detection time of 1 hour"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C02",
+    "DefectTypes": [
+      {
+        "vi": "Bán thành phẩm cắt lớn hoặc nhỏ hơn rập",
+        "en": "cut Panel cut bigger or smaller than pattern"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Trải vải quá căng, hoặc chùn",
+        "en": "Spreading fabric is too stretched or sperading very tight"
+      },
+      {
+        "vi": "Thiếu kẹp vải",
+        "en": "Missing"
+      },
+      {
+        "vi": "Trải vải quá dày",
+        "en": "Spreading fabric is too thick"
+      },
+      {
+        "vi": "Chất liệu vải quá mỏng, hoặc xiên",
+        "en": "fabric material is too thin or awry"
+      },
+      {
+        "vi": "Do thao tác Công nhân cắt không đúng đường chì của sơ đồ",
+        "en": "Due to the hnadling of the cutting worker, does not follow the outline of the pattern"
+      },
+      {
+        "vi": "Công nhân không cẩn thận",
+        "en": "Worker is not careful"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Trải vải quá căng, hoặc chùn",
+        "en": "Spreading fabric is too stretched or sperading very tight"
+      },
+      {
+        "vi": "Thiếu kẹp vải",
+        "en": "Missing"
+      },
+      {
+        "vi": "Trải vải quá dày",
+        "en": "Spreading fabric is too thick"
+      },
+      {
+        "vi": "Chất liệu vải quá mỏng, hoặc xiên",
+        "en": "fabric material is too thin or awry"
+      },
+      {
+        "vi": "Do thao tác Công nhân cắt không đúng đường chì của sơ đồ",
+        "en": "Due to the hnadling of the cutting worker, does not follow the outline of the pattern"
+      },
+      {
+        "vi": "Công nhân không cẩn thận",
+        "en": "Worker is not careful"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân cắt",
+        "en": "cutter"
+      },
+      {
+        "vi": "Công nhân trải vải",
+        "en": "spreader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "30 phút",
+        "en": "30 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C03",
+    "DefectTypes": [
+      {
+        "vi": "Cắt sai hình dáng,"
+      },
+      {
+        "vi": "Sai canh sợi,"
+      },
+      {
+        "vi": "Sai bề mặt vải",
+        "en": "keo,…"
+      },
+      {
+        "vi": "Cutting wrong marker",
+        "en": "style, grain line, fabric face, interlining,..."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Sử dụng Sơ đồ sai mã hàng cần Cắt",
+        "en": "Using  wrong marker, wrong style for the style needed to cut"
+      },
+      {
+        "vi": "Dùng sai bảng màu",
+        "en": "Using wrong trim card"
+      },
+      {
+        "vi": "Trải vải sai bề mặt Vải",
+        "en": "Spreading mistake using wrong fabric face"
+      },
+      {
+        "vi": "QC kiểm BTP không không phát hiện ra lỗi",
+        "en": "QC check panel did not find any errors"
+      },
+      {
+        "vi": "Chỉnh Rập sai YCKT, sai canh sợi chi tiết",
+        "en": "Adjusting pattern is wrong technical requirement, wrong grain for pattern parts"
+      },
+      {
+        "vi": "Trải vải không chuẩn canh vải",
+        "en": "Spreading fabric with incorrect grain line"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Sử dụng Sơ đồ sai mã hàng cần Cắt",
+        "en": "Using  wrong marker, wrong style for the style needed to cut"
+      },
+      {
+        "vi": "Dùng sai bảng màu",
+        "en": "Using wrong trim card"
+      },
+      {
+        "vi": "Trải vải sai bề mặt Vải",
+        "en": "Spreading mistake using wrong fabric face"
+      },
+      {
+        "vi": "QC kiểm BTP không không phát hiện ra lỗi",
+        "en": "QC check panel did not find any errors"
+      },
+      {
+        "vi": "Chỉnh Rập sai YCKT, sai canh sợi chi tiết",
+        "en": "Adjusting pattern is wrong technical requirement, wrong grain for pattern parts"
+      },
+      {
+        "vi": "Trải vải không chuẩn canh vải",
+        "en": "Spreading fabric with incorrect grain line"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Tổ trưởng tổ cắt",
+        "en": "Leader of cutting room"
+      },
+      {
+        "vi": "Công nhân cắt",
+        "en": "cutting worker"
+      },
+      {
+        "vi": "Công nhân trải vải",
+        "en": "spreading fabric worker"
+      },
+      {
+        "vi": "Nhân viên rập",
+        "en": "pattern staff"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C04",
+    "DefectTypes": [
+      {
+        "vi": "Thiếu dấu bấm, Dấu bấm lớn hoặc biến dạng",
+        "en": "missing noteches or distorted cut marks"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Cài đặt in sơ đồ thiếu phần in dấu bấm",
+        "en": "printed marker with missing notches"
+      },
+      {
+        "vi": "Không cắt bấm dấu",
+        "en": "not cut notches"
+      },
+      {
+        "vi": "Dấu bấm quá sâu",
+        "en": "notes very deep"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Cài đặt in sơ đồ thiếu phần in dấu bấm",
+        "en": "printed marker with missing notches"
+      },
+      {
+        "vi": "Không cắt bấm dấu",
+        "en": "not cut notches"
+      },
+      {
+        "vi": "Dấu bấm quá sâu",
+        "en": "notes very deep"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân cắt, Rập, sơ đồ",
+        "en": "cutting worker"
+      },
+      {
+        "vi": "QC cắt",
+        "en": "patterner, marker maker QC"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C05",
+    "DefectTypes": [
+      {
+        "vi": "Loang màu chi tiết",
+        "en": "stains"
+      },
+      {
+        "vi": "Dơ, Ố",
+        "en": "dirty stains"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do khâu kiểm vải không phát hiện lỗi",
+        "en": "Fabric inspection does not detect defects"
+      },
+      {
+        "vi": "Kiểm tra Bán thành phẩm sau khi cắt không phát hiện lỗi, chưa kỹ",
+        "en": "Checking panels after cutting, no errors are detected, not yet thoroughly"
+      },
+      {
+        "vi": "Vệ sinh công nghiệp khu cắt chưa kỹ, còn dơ",
+        "en": "The industrial cleaning of the cutting area is not thorough, it is still dirty"
+      },
+      {
+        "vi": "Dầu mỡ máy cắt lâu ngày không thay thế bảo dưỡng",
+        "en": "Cutting machine grease for a long time does not replace maintenance"
+      },
+      {
+        "vi": "Băng tải máy ép keo dơ",
+        "en": "Conveyor belt presses dirty glue stains."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do khâu kiểm vải không phát hiện lỗi",
+        "en": "Fabric inspection does not detect defects"
+      },
+      {
+        "vi": "Kiểm tra Bán thành phẩm sau khi cắt không phát hiện lỗi, chưa kỹ",
+        "en": "Checking panels after cutting, no errors are detected, not yet thoroughly"
+      },
+      {
+        "vi": "Vệ sinh công nghiệp khu cắt chưa kỹ, còn dơ",
+        "en": "The industrial cleaning of the cutting area is not thorough, it is still dirty"
+      },
+      {
+        "vi": "Dầu mỡ máy cắt lâu ngày không thay thế bảo dưỡng",
+        "en": "Cutting machine grease for a long time does not replace maintenance"
+      },
+      {
+        "vi": "Băng tải máy ép keo dơ",
+        "en": "Conveyor belt presses dirty glue stains."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Tổ cắt",
+        "en": "Cutting Department"
+      },
+      {
+        "vi": "Cơ điện",
+        "en": "Mechnic."
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "15 phút",
+        "en": ""
+      },
+      {
+        "vi": "15 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C06",
+    "DefectTypes": [
+      {
+        "vi": "Bám dính ép keo không đạt",
+        "en": "Adhesion is not achieved."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Không kiểm tra nhiệt độ máy ép keo trước khi ép vào chi tiết",
+        "en": "Does not check the temperature of the fusing machine before fusing  the cut parts"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Không kiểm tra nhiệt độ máy ép keo trước khi ép vào chi tiết",
+        "en": "Does not check the temperature of the fusing machine before fusing  the cut parts"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Cơ điện",
+        "en": "Mechnic"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C07",
+    "DefectTypes": [
+      {
+        "vi": "Màu in không giống mẫu",
+        "en": "Print color is not the same as sample"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check printing panels does not check print details compared to approved sample carefully"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check printing panels does not check print details compared to approved sample carefully"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QC"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C08",
+    "DefectTypes": [
+      {
+        "vi": "Vị trí in và hình in không giống mẫu",
+        "en": "print position and printing does not match sample"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Nhân viên Rập định vị sai vị trí In",
+        "en": "pattern makers position is wrong on pattern"
+      },
+      {
+        "vi": "QC kiểm Bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check panel does not find error in the printing out put"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Nhân viên Rập định vị sai vị trí In",
+        "en": "pattern makers position is wrong on pattern"
+      },
+      {
+        "vi": "QC kiểm Bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check panel does not find error in the printing out put"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QC"
+      },
+      {
+        "vi": "Nhân viên Rập",
+        "en": "Pattern staff"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C09",
+    "DefectTypes": [
+      {
+        "vi": "Thiếu nét",
+        "en": "Missing sharpness"
+      },
+      {
+        "vi": "Chữ in không đạt",
+        "en": "printing not ok"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check  printing panel does not check print details compared to approved sample carefully"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check  printing panel does not check print details compared to approved sample carefully"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QC"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C10",
+    "DefectTypes": [
+      {
+        "vi": "Sai vị trí thêu và hình thêu",
+        "en": "Wrong embroidery position & picture"
+      },
+      {
+        "vi": "Thêu không giống mẫu",
+        "en": "embroider does not match sample"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Nhân viên Rập định vị sai vị trí Thêu",
+        "en": "Pattern staff make to error  position of embroidery"
+      },
+      {
+        "vi": "Công nhân thêu đặt vị trí Thêu sai so với yêu cầu kỹ thuật",
+        "en": "embroidery worker makes mistake for placement requested by tech pack"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Nhân viên Rập định vị sai vị trí Thêu",
+        "en": "Pattern staff make to error  position of embroidery"
+      },
+      {
+        "vi": "Công nhân thêu đặt vị trí Thêu sai so với yêu cầu kỹ thuật",
+        "en": "embroidery worker makes mistake for placement requested by tech pack"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "NV Rập",
+        "en": "pattern maker"
+      },
+      {
+        "vi": "Công nhân thêu",
+        "en": "embroidery worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C11",
+    "DefectTypes": [
+      {
+        "vi": "Sai màu chỉ",
+        "en": "error in therad colour"
+      },
+      {
+        "vi": "Sai chi số chỉ thêu",
+        "en": "thread embroider code number"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Công nhân không kiểm tra màu chỉ thêu so với bảng màu được duyệt",
+        "en": "worker makes mistake to compare embroidery thread code with approved trim card"
+      },
+      {
+        "vi": "Công nhân không kiểm tra tài liệu Thêu trước khi thêu",
+        "en": "does not check teck pack before embroidering"
+      },
+      {
+        "vi": "Công nhân  sử dụng chỉ sai code chỉ, nhà cung cấp, loại chỉ..",
+        "en": "Worker use  wrong thread code, supplyer, thread kind,..."
+      },
+      {
+        "vi": "Công nhân vận hành máy lập trình sai bước kim thêu",
+        "en": "The worker operating the embroidery automatic contourseamer  wrong step of the embroidery needle"
+      },
+      {
+        "vi": "Nhân viên thiết kế cung cấp tài liệu sai code chỉ thêu",
+        "en": "recv wrong thread code"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Công nhân không kiểm tra màu chỉ thêu so với bảng màu được duyệt",
+        "en": "worker makes mistake to compare embroidery thread code with approved trim card"
+      },
+      {
+        "vi": "Công nhân không kiểm tra tài liệu Thêu trước khi thêu",
+        "en": "does not check teck pack before embroidering"
+      },
+      {
+        "vi": "Công nhân  sử dụng chỉ sai code chỉ, nhà cung cấp, loại chỉ..",
+        "en": "Worker use  wrong thread code, supplyer, thread kind,..."
+      },
+      {
+        "vi": "Công nhân vận hành máy lập trình sai bước kim thêu",
+        "en": "The worker operating the embroidery automatic contourseamer  wrong step of the embroidery needle"
+      },
+      {
+        "vi": "Nhân viên thiết kế cung cấp tài liệu sai code chỉ thêu",
+        "en": "recv wrong thread code"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân",
+        "en": "worker"
+      },
+      {
+        "vi": "Nhân viên thiết kế thêu",
+        "en": "embroidery staff"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C12",
+    "DefectTypes": [
+      {
+        "vi": "Thiếu nét",
+        "en": "Missing sharpness"
+      },
+      {
+        "vi": "Nét chữ thêu không đạt",
+        "en": "Embroidery handwriting is not ok"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Nhân viên Thêu không kiểm tra lại kích thước thông số Artwork thêu so với mẫu được duyệt",
+        "en": "Embroidery staff does not check the size of the artwork against the approved sample"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Nhân viên Thêu không kiểm tra lại kích thước thông số Artwork thêu so với mẫu được duyệt",
+        "en": "Embroidery staff does not check the size of the artwork against the approved sample"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "NV thiết kế thêu",
+        "en": "embroidery design staff"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C13",
+    "DefectTypes": [
+      {
+        "vi": "Thêu bỏ mũi",
+        "en": "embroidery with skip"
+      },
+      {
+        "vi": "Đứt chỉ",
+        "en": "broken thread"
+      },
+      {
+        "vi": "Không khóa mũi",
+        "en": "unlocked emb.thread."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Máy thêu chưa được kiểm tra",
+        "en": "embroidery machine has not yet checked"
+      },
+      {
+        "vi": "Tex chỉ sử dụng chưa đúng dẫn đến đứt chỉ",
+        "en": "Thread tex is not correct"
+      },
+      {
+        "vi": "Lập trình thêu chưa được kiểm tra có khóa mủi",
+        "en": "Embroidery automatic not asked to lock the thread function."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Máy thêu chưa được kiểm tra",
+        "en": "embroidery machine has not yet checked"
+      },
+      {
+        "vi": "Tex chỉ sử dụng chưa đúng dẫn đến đứt chỉ",
+        "en": "Thread tex is not correct"
+      },
+      {
+        "vi": "Lập trình thêu chưa được kiểm tra có khóa mủi",
+        "en": "Embroidery automatic not asked to lock the thread function."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "NV thiết kế thêu",
+        "en": "embroidery design staff"
+      },
+      {
+        "vi": "Công nhân",
+        "en": "worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C14",
+    "DefectTypes": [
+      {
+        "vi": "Lủng rách bán thành phẩm vải @ keo",
+        "en": "Torn semi"
+      },
+      {
+        "vi": "finished fabric @ glue"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Kim sựt mủi",
+        "en": "needle point damage"
+      },
+      {
+        "vi": "Không kiểm tra keo trước khi ép",
+        "en": "Not check before application of interlining"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Kim sựt mủi",
+        "en": "needle point damage"
+      },
+      {
+        "vi": "Không kiểm tra keo trước khi ép",
+        "en": "Not check before application of interlining"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân",
+        "en": "worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "C15",
+    "DefectTypes": [
+      {
+        "vi": "Lỗi khác",
+        "en": "different defects"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "5ea2209a-9782-4cda-a4ba-71a4f5a53964"
+  },
+  {
+    "Code": "S01",
+    "DefectTypes": [
+      {
+        "vi": "Đứt chỉ",
+        "en": "broken stitches"
+      },
+      {
+        "vi": "Nối chỉ không trùng",
+        "en": "joining stitches mis match"
+      },
+      {
+        "vi": "Chỉ thừa",
+        "en": "Remain thread"
+      },
+      {
+        "vi": "Lộ chỉ lược",
+        "en": "mistakes of attaching thread"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Công Nhân thao tác sai, cắt chỉ không đúng theo hướng dẫn, cắt chỉ quá sát",
+        "en": "sewing worker handling mistake, cut thread not follow up sample and cut very close to the garment"
+      },
+      {
+        "vi": "result in damge",
+        "en": "issues"
+      },
+      {
+        "vi": "QC Indline"
+      },
+      {
+        "vi": "Endline Không phát hiện và báo cáo kịp thời",
+        "en": "QC enline does not detect this defect and report"
+      },
+      {
+        "vi": "Thiết bị may quá chặt chỉ",
+        "en": "machine adjusment is very tight for thread"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Công Nhân thao tác sai, cắt chỉ không đúng theo hướng dẫn, cắt chỉ quá sát",
+        "en": "sewing worker handling mistake, cut thread not follow up sample and cut very close to the garment"
+      },
+      {
+        "vi": "result in damge",
+        "en": "issues"
+      },
+      {
+        "vi": "QC Indline"
+      },
+      {
+        "vi": "Endline Không phát hiện và báo cáo kịp thời",
+        "en": "QC enline does not detect this defect and report"
+      },
+      {
+        "vi": "Thiết bị may quá chặt chỉ",
+        "en": "machine adjusment is very tight for thread"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QC Inline"
+      },
+      {
+        "vi": "Kỹ thuật",
+        "en": "technical"
+      },
+      {
+        "vi": "Thợ máy",
+        "en": "mechanic"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 10 phút sau",
+        "en": ""
+      },
+      {
+        "vi": "10 mins after"
+      }
+    ],
+    "ZoneTypeId": "ca691bec-ae50-4884-9e5e-7e6f84b24087"
+  },
+  {
+    "Code": "S02",
+    "DefectTypes": [
+      {
+        "vi": "Bỏ mũi, bung chỉ",
+        "en": "skip stitching"
+      },
+      {
+        "vi": "Căng",
+        "en": "lỏng chỉ"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do máy móc thiết bị Bảo trì không thường xuyên kiểm tra hay nhận thông tin từ QC endline",
+        "en": "mechanic does not check the machine and not inform qc endline"
+      },
+      {
+        "vi": "Công nhân thao tác sai, không kiểm tra theo hướng dẫn.",
+        "en": "worker handling issues  and not follow instructions"
+      },
+      {
+        "vi": "QC Indline"
+      },
+      {
+        "vi": "Endline Không phát hiện và báo cáo kịp thời",
+        "en": "QC enline does not detect errors or report correctly"
+      },
+      {
+        "vi": "Thiết bị may hỏng , Kim may cong hỏng , suốt chỉ dưới chưa phù hợp",
+        "en": "sewing equiment and needle is damaged and bobbin thread does not match"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do máy móc thiết bị Bảo trì không thường xuyên kiểm tra hay nhận thông tin từ QC endline",
+        "en": "mechanic does not check the machine and not inform qc endline"
+      },
+      {
+        "vi": "Công nhân thao tác sai, không kiểm tra theo hướng dẫn.",
+        "en": "worker handling issues  and not follow instructions"
+      },
+      {
+        "vi": "QC Indline"
+      },
+      {
+        "vi": "Endline Không phát hiện và báo cáo kịp thời",
+        "en": "QC enline does not detect errors or report correctly"
+      },
+      {
+        "vi": "Thiết bị may hỏng , Kim may cong hỏng , suốt chỉ dưới chưa phù hợp",
+        "en": "sewing equiment and needle is damaged and bobbin thread does not match"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Thợ máy",
+        "en": "mechanic"
+      },
+      {
+        "vi": "Công nhân may",
+        "en": "sewing operator"
+      },
+      {
+        "vi": "Kỹ thuật chuyền",
+        "en": "technical line"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 giờ sau",
+        "en": "after 1 hr"
+      }
+    ],
+    "ZoneTypeId": "ca691bec-ae50-4884-9e5e-7e6f84b24087"
+  },
+  {
+    "Code": "S03",
+    "DefectTypes": [
+      {
+        "vi": "Nhăn nhíu",
+        "en": "puckering"
+      },
+      {
+        "vi": "Vặn",
+        "en": "twist"
+      },
+      {
+        "vi": "Gợn sóng, bai giãn",
+        "en": "stretched"
+      },
+      {
+        "vi": "Sụp mí",
+        "en": "le mí"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Kỹ thuật hướng dẫn chưa rõ ràng, không giám sát kỹ",
+        "en": "technical not transfer clear and not reduce risk"
+      },
+      {
+        "vi": "Công Nhân thao tác sai, không làm theo hướng dẫn",
+        "en": "worker handling mistake,and not follow instructions"
+      },
+      {
+        "vi": "Chỉnh thiết bị máy chưa đạt yêu cầu",
+        "en": "Adjust machine has not yet achieved"
+      },
+      {
+        "vi": "QC Inline không kiểm soát hằng giờ (In"
+      },
+      {
+        "vi": "process)",
+        "en": "QC inline not follow the inline process hourly and properly."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Kỹ thuật hướng dẫn chưa rõ ràng, không giám sát kỹ",
+        "en": "technical not transfer clear and not reduce risk"
+      },
+      {
+        "vi": "Công Nhân thao tác sai, không làm theo hướng dẫn",
+        "en": "worker handling mistake,and not follow instructions"
+      },
+      {
+        "vi": "Chỉnh thiết bị máy chưa đạt yêu cầu",
+        "en": "Adjust machine has not yet achieved"
+      },
+      {
+        "vi": "QC Inline không kiểm soát hằng giờ (In"
+      },
+      {
+        "vi": "process)",
+        "en": "QC inline not follow the inline process hourly and properly."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QC"
+      },
+      {
+        "vi": "Kỹ thuật",
+        "en": "technical"
+      },
+      {
+        "vi": "Công nhân",
+        "en": "Worker"
+      },
+      {
+        "vi": "Thợ máy",
+        "en": "Mechanic"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 02 giờ sau",
+        "en": "after two hours"
+      }
+    ],
+    "ZoneTypeId": "ca691bec-ae50-4884-9e5e-7e6f84b24087"
+  },
+  {
+    "Code": "S04",
+    "DefectTypes": [
+      {
+        "vi": "Cao",
+        "en": "thấp"
+      },
+      {
+        "vi": "Không đồng đều đường may",
+        "en": "Uneven seams"
+      },
+      {
+        "vi": "Không đối xứng",
+        "en": "Assymmetrical"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Kỹ thuật hướng dẫn cho công nhân chưa rõ ràng, không giám sát kỹ",
+        "en": "Technical instructions for workers are unclear, not carefully supervised"
+      },
+      {
+        "vi": "Công nhân thao tác sai, không làm theo hướng dẫn",
+        "en": "Workers misbehave and do not follow instructions"
+      },
+      {
+        "vi": "QC Inline không kiểm soát hằng giờ (In"
+      },
+      {
+        "vi": "process)",
+        "en": "QC Inline without hourly control (In"
+      },
+      {
+        "vi": "process)"
+      },
+      {
+        "vi": "Rập chưa chuẩn , các điểm sang dấu ,bấm dấu không chính xác",
+        "en": "The pattern is not standardised, the notch points are changed, and the notches are not correct"
+      },
+      {
+        "vi": "Mật độ mũi chỉ các công đoạn khác nhau",
+        "en": "Density of stitches for different operations are varying."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Kỹ thuật hướng dẫn cho công nhân chưa rõ ràng, không giám sát kỹ",
+        "en": "Technical instructions for workers are unclear, not carefully supervised"
+      },
+      {
+        "vi": "Công nhân thao tác sai, không làm theo hướng dẫn",
+        "en": "Workers misbehave and do not follow instructions"
+      },
+      {
+        "vi": "QC Inline không kiểm soát hằng giờ (In"
+      },
+      {
+        "vi": "process)",
+        "en": "QC Inline without hourly control (In"
+      },
+      {
+        "vi": "process)"
+      },
+      {
+        "vi": "Rập chưa chuẩn , các điểm sang dấu ,bấm dấu không chính xác",
+        "en": "The pattern is not standardised, the notch points are changed, and the notches are not correct"
+      },
+      {
+        "vi": "Mật độ mũi chỉ các công đoạn khác nhau",
+        "en": "Density of stitches for different operations are varying."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Kỹ thuật",
+        "en": "technical"
+      },
+      {
+        "vi": "Chuyền trưởng",
+        "en": "line leader"
+      },
+      {
+        "vi": "QC Rập",
+        "en": "QC pattern"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 02 giờ sau",
+        "en": "after two hours"
+      }
+    ],
+    "ZoneTypeId": "ca691bec-ae50-4884-9e5e-7e6f84b24087"
+  },
+  {
+    "Code": "S05",
+    "DefectTypes": [
+      {
+        "vi": "Lủng, rách,"
+      },
+      {
+        "vi": "Lỗ kim,"
+      },
+      {
+        "vi": "Máy gỉ"
+      },
+      {
+        "vi": "sét",
+        "en": "Leaky, torn,"
+      },
+      {
+        "vi": "Needle hole,"
+      },
+      {
+        "vi": "Rusty machine"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Kiểm tra Bán thành phẩm thiếu sót , Kim may quá to không phù hợp chất liệu vải,  kim bị sụt mũi",
+        "en": "The BTP check is flawed, the sewing needle is too big to match the fabric, the needle isdamaged at needle point"
+      },
+      {
+        "vi": "Máy để lâu không sử dụng",
+        "en": "The machine has not been used for a long time"
+      },
+      {
+        "vi": "'"
+      },
+      {
+        "vi": "Bảo dưỡng máy không đúng định kỳ, không tìm ra lỗi",
+        "en": "Incorrect maintenance of the machine periodically, no fault found."
+      },
+      {
+        "vi": "Không xử lý triệt để việc báo cáo đặt giấy lót chân vịt",
+        "en": "Failure to thoroughly handle the reporting of placing presser foot."
+      },
+      {
+        "vi": "Vệ sinh công nghiệp không được duy trì thường xuyên"
+      },
+      {
+        "vi": "Kết quả dịch",
+        "en": "Industrial machine cleaning and maintenence  is not maintained regularly"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Kiểm tra Bán thành phẩm thiếu sót , Kim may quá to không phù hợp chất liệu vải,  kim bị sụt mũi",
+        "en": "The BTP check is flawed, the sewing needle is too big to match the fabric, the needle isdamaged at needle point"
+      },
+      {
+        "vi": "Máy để lâu không sử dụng",
+        "en": "The machine has not been used for a long time"
+      },
+      {
+        "vi": "'"
+      },
+      {
+        "vi": "Bảo dưỡng máy không đúng định kỳ, không tìm ra lỗi",
+        "en": "Incorrect maintenance of the machine periodically, no fault found."
+      },
+      {
+        "vi": "Không xử lý triệt để việc báo cáo đặt giấy lót chân vịt",
+        "en": "Failure to thoroughly handle the reporting of placing presser foot."
+      },
+      {
+        "vi": "Vệ sinh công nghiệp không được duy trì thường xuyên"
+      },
+      {
+        "vi": "Kết quả dịch",
+        "en": "Industrial machine cleaning and maintenence  is not maintained regularly"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Bảo trì",
+        "en": "mechnaic"
+      },
+      {
+        "vi": "Công nhân",
+        "en": "worker"
+      },
+      {
+        "vi": "Chuyền trưởng",
+        "en": "line leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "after 1 day"
+      }
+    ],
+    "ZoneTypeId": "ca691bec-ae50-4884-9e5e-7e6f84b24087"
+  },
+  {
+    "Code": "S06",
+    "DefectTypes": [
+      {
+        "vi": "Dính dầu",
+        "en": "Oily"
+      },
+      {
+        "vi": "Ố",
+        "en": "greasy"
+      },
+      {
+        "vi": "Dơ",
+        "en": "Dirty"
+      },
+      {
+        "vi": "Dấu phấn, mực",
+        "en": "Chalk and ink marks"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Không mang găng tay đối với sản phẩm màu sáng",
+        "en": "Do not wear gloves for light colored products"
+      },
+      {
+        "vi": "Vệ sinh máy móc bẩn , thiết bị máy hỏng ra dầu , máy để lâu không sử dụng",
+        "en": "Workers and machinery are dirty, equipment is damaged, oil is released, and the machine is left unused for a long time"
+      },
+      {
+        "vi": "Sắp xếp hàng hóa dưới nền gạch hay gầm bàn mà không có vải đậy",
+        "en": "Arrange the goods under the tile floor or under the table without a cloth"
+      },
+      {
+        "vi": "Sử dụng phấn, mực không đúng tiêu chuẩn",
+        "en": "Using chalk, ink not up to standard"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Không mang găng tay đối với sản phẩm màu sáng",
+        "en": "Do not wear gloves for light colored products"
+      },
+      {
+        "vi": "Vệ sinh máy móc bẩn , thiết bị máy hỏng ra dầu , máy để lâu không sử dụng",
+        "en": "Workers and machinery are dirty, equipment is damaged, oil is released, and the machine is left unused for a long time"
+      },
+      {
+        "vi": "Sắp xếp hàng hóa dưới nền gạch hay gầm bàn mà không có vải đậy",
+        "en": "Arrange the goods under the tile floor or under the table without a cloth"
+      },
+      {
+        "vi": "Sử dụng phấn, mực không đúng tiêu chuẩn",
+        "en": "Using chalk, ink not up to standard"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân",
+        "en": "worker"
+      },
+      {
+        "vi": "Chuyền trưởng",
+        "en": "line leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "after 1 day"
+      }
+    ],
+    "ZoneTypeId": "ca691bec-ae50-4884-9e5e-7e6f84b24087"
+  },
+  {
+    "Code": "S07",
+    "DefectTypes": [
+      {
+        "vi": "Khác màu chi tiết",
+        "en": "Differences in color details"
+      },
+      {
+        "vi": "Ráp lộn số",
+        "en": "Mixed numbers"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Kho không phân LOT, báo cáo và cung cấp thông tin đầy đủ",
+        "en": "Warehouse does not distribute LOT, reports and provides complete information."
+      },
+      {
+        "vi": "Bàn cắt không theo LOT, Phối bộ sai",
+        "en": "Cutting table not according to LOT, Wrong combination"
+      },
+      {
+        "vi": "Công nhân may ráp sai bàn, Số",
+        "en": "The sewing worker assembled the wrong table, No."
+      },
+      {
+        "vi": "Đánh số sai, nhảy lớp",
+        "en": "Incorrect numbering, during numbering on layers (skip number)"
+      },
+      {
+        "vi": "Thay thân không đúng Roll vải",
+        "en": "Replace the body incorrectlyusing wrong  Roll  fabric"
+      },
+      {
+        "vi": "Thay đổi công nhân may công đoạn. Thiếu sót khi hướng dẫn công nhân may",
+        "en": "Change of sewing workers at thesewing operations. Shortcomings when instructing sewing workers"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Kho không phân LOT, báo cáo và cung cấp thông tin đầy đủ",
+        "en": "Warehouse does not distribute LOT, reports and provides complete information."
+      },
+      {
+        "vi": "Bàn cắt không theo LOT, Phối bộ sai",
+        "en": "Cutting table not according to LOT, Wrong combination"
+      },
+      {
+        "vi": "Công nhân may ráp sai bàn, Số",
+        "en": "The sewing worker assembled the wrong table, No."
+      },
+      {
+        "vi": "Đánh số sai, nhảy lớp",
+        "en": "Incorrect numbering, during numbering on layers (skip number)"
+      },
+      {
+        "vi": "Thay thân không đúng Roll vải",
+        "en": "Replace the body incorrectlyusing wrong  Roll  fabric"
+      },
+      {
+        "vi": "Thay đổi công nhân may công đoạn. Thiếu sót khi hướng dẫn công nhân may",
+        "en": "Change of sewing workers at thesewing operations. Shortcomings when instructing sewing workers"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân đánh số, phối bộ",
+        "en": "Number and bundling worker"
+      },
+      {
+        "vi": "Công nhân cắt",
+        "en": "cutting worker"
+      },
+      {
+        "vi": "QA LAB"
+      },
+      {
+        "vi": "Công nhân may",
+        "en": "sewing worker"
+      },
+      {
+        "vi": "Phòng Kỹ thuật",
+        "en": "Technical department"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "after 1 day"
+      }
+    ],
+    "ZoneTypeId": "ca691bec-ae50-4884-9e5e-7e6f84b24087"
+  },
+  {
+    "Code": "S08",
+    "DefectTypes": [
+      {
+        "vi": "Sử dụng sai phụ liệu",
+        "en": "Using the wrong ingredients"
+      },
+      {
+        "vi": "Bán thành phẩm In, thêu",
+        "en": "semi"
+      },
+      {
+        "vi": "finished products Print, embroidery"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "QC kho và QC inline không kiểm tra nguyên phụ liệu trước khi sản xuất",
+        "en": "Warehouse QC and inline QC do not check raw materials before production"
+      },
+      {
+        "vi": "Tổ phó cấp phát không hướng dẫn rõ ràng",
+        "en": "The distribution deputy team does not give clear instructions"
+      },
+      {
+        "vi": "Không đối chiếu bảng màu, mẫu duyệt",
+        "en": "Do not compare color palettes, approval samples"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "QC kho và QC inline không kiểm tra nguyên phụ liệu trước khi sản xuất",
+        "en": "Warehouse QC and inline QC do not check raw materials before production"
+      },
+      {
+        "vi": "Tổ phó cấp phát không hướng dẫn rõ ràng",
+        "en": "The distribution deputy team does not give clear instructions"
+      },
+      {
+        "vi": "Không đối chiếu bảng màu, mẫu duyệt",
+        "en": "Do not compare color palettes, approval samples"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Bộ phận Cắt",
+        "en": "cutting department"
+      },
+      {
+        "vi": "Kho phụ liệu",
+        "en": "warehouse"
+      },
+      {
+        "vi": "Phòng Kỹ thuật",
+        "en": "Technical department"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 02 giờ sau",
+        "en": "after 2 hours"
+      }
+    ],
+    "ZoneTypeId": "ca691bec-ae50-4884-9e5e-7e6f84b24087"
+  },
+  {
+    "Code": "S09",
+    "DefectTypes": [
+      {
+        "vi": "Thông số ngoài dung sai",
+        "en": "Parameters out of tolerance"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Tính % rập sai",
+        "en": "Calculating % wrong pattern"
+      },
+      {
+        "vi": "Hao hụt may không chuẩn",
+        "en": "Non"
+      },
+      {
+        "vi": "standard sewing loss"
+      },
+      {
+        "vi": "Bán thành phẩm sau khi cắt không khớp với râp sơ đồ Phòng kỹ thuật ban hành",
+        "en": "Panel after cutting does not match the issued pattern from tech dept."
+      },
+      {
+        "vi": "Không tuân thủ các bước qui trình chuẩn bị sản xuất",
+        "en": "Non"
+      },
+      {
+        "vi": "compliance with manufacturing process steps."
+      },
+      {
+        "vi": "Không kiểm tra kỹ bán thành phẩm khi may Size set",
+        "en": "Do not double check panel when sewing Size set"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Tính % rập sai",
+        "en": "Calculating % wrong pattern"
+      },
+      {
+        "vi": "Hao hụt may không chuẩn",
+        "en": "Non"
+      },
+      {
+        "vi": "standard sewing loss"
+      },
+      {
+        "vi": "Bán thành phẩm sau khi cắt không khớp với râp sơ đồ Phòng kỹ thuật ban hành",
+        "en": "Panel after cutting does not match the issued pattern from tech dept."
+      },
+      {
+        "vi": "Không tuân thủ các bước qui trình chuẩn bị sản xuất",
+        "en": "Non"
+      },
+      {
+        "vi": "compliance with manufacturing process steps."
+      },
+      {
+        "vi": "Không kiểm tra kỹ bán thành phẩm khi may Size set",
+        "en": "Do not double check panel when sewing Size set"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân may, Râp",
+        "en": "Worker, pattern staff"
+      },
+      {
+        "vi": "Kỹ thuật",
+        "en": "Technical"
+      },
+      {
+        "vi": "Tổ cắt",
+        "en": "Cutting"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "60 phút",
+        "en": "60 minutes"
+      }
+    ],
+    "ZoneTypeId": "ca691bec-ae50-4884-9e5e-7e6f84b24087"
+  },
+  {
+    "Code": "S10",
+    "DefectTypes": [
+      {
+        "vi": "Lỗi ủi",
+        "en": "may không đúng dấu @ rập"
+      },
+      {
+        "vi": "Sai form",
+        "en": "Wrong form"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác May, Ủi chưa đúng kỹ thuật",
+        "en": "Sewing and Ironing are not technically correct"
+      },
+      {
+        "vi": "Ủi không theo Form rập",
+        "en": "Ironing does not follow the pattern"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác May, Ủi chưa đúng kỹ thuật",
+        "en": "Sewing and Ironing are not technically correct"
+      },
+      {
+        "vi": "Ủi không theo Form rập",
+        "en": "Ironing does not follow the pattern"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Kỹ thuật",
+        "en": "Technical"
+      },
+      {
+        "vi": "Công nhân may",
+        "en": "Sewing worker"
+      },
+      {
+        "vi": "Công nhân Ủi",
+        "en": "Ironing worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "15 phút",
+        "en": "15 minutes"
+      }
+    ],
+    "ZoneTypeId": "ca691bec-ae50-4884-9e5e-7e6f84b24087"
+  },
+  {
+    "Code": "S11",
+    "DefectTypes": [
+      {
+        "vi": "Kỹ thuật may và vị trí may",
+        "en": "Tech and position of sewing"
+      },
+      {
+        "vi": "Phụ liệu không đúng",
+        "en": "position of accessories are not correct"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Không nghiên cứu TLKT, sản phẩm mẫu trước khi may",
+        "en": "Does not study the techpak, sample products before sewing"
+      },
+      {
+        "vi": "Không kiểm tra bảng màu trong quá trình may",
+        "en": "Does not check the color palette during sewing"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Không nghiên cứu TLKT, sản phẩm mẫu trước khi may",
+        "en": "Does not study the techpak, sample products before sewing"
+      },
+      {
+        "vi": "Không kiểm tra bảng màu trong quá trình may",
+        "en": "Does not check the color palette during sewing"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Kỹ thuật",
+        "en": "Technical"
+      },
+      {
+        "vi": "T.trưởng",
+        "en": "Line leader"
+      },
+      {
+        "vi": "Công nhân may",
+        "en": "Sewing worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "5 phút",
+        "en": "5 minutes"
+      }
+    ],
+    "ZoneTypeId": "ca691bec-ae50-4884-9e5e-7e6f84b24087"
+  },
+  {
+    "Code": "S12",
+    "DefectTypes": [
+      {
+        "vi": "Những lỗi khác",
+        "en": "Other defects"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "ca691bec-ae50-4884-9e5e-7e6f84b24087"
+  },
+  {
+    "Code": "W01",
+    "DefectTypes": [
+      {
+        "vi": "Ánh màu không đạt",
+        "en": "Unsatisfactory color"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Màu nền  không đạt",
+        "en": "color"
+      },
+      {
+        "vi": "Bông, cấn không đạt",
+        "en": "lustor not ok"
+      },
+      {
+        "vi": "Cấn sườn không đạt",
+        "en": "hi low on side seam not ok"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Màu nền  không đạt",
+        "en": "color"
+      },
+      {
+        "vi": "Bông, cấn không đạt",
+        "en": "lustor not ok"
+      },
+      {
+        "vi": "Cấn sườn không đạt",
+        "en": "hi low on side seam not ok"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Wash",
+        "en": "Wash leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W02",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng wash không đồng đều, thiếu",
+        "en": "The wash effect is uneven, lacking"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect worker handling."
+      },
+      {
+        "vi": "Quy trình công nghệ chưa đúng",
+        "en": "The technological process is not correct (recipe)"
+      },
+      {
+        "vi": "Thiết bị có sự cố",
+        "en": "The machine has a problem."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect worker handling."
+      },
+      {
+        "vi": "Quy trình công nghệ chưa đúng",
+        "en": "The technological process is not correct (recipe)"
+      },
+      {
+        "vi": "Thiết bị có sự cố",
+        "en": "The machine has a problem."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Wash",
+        "en": "Wash leader"
+      },
+      {
+        "vi": "Trưởng bộ phận bảo trì",
+        "en": "Maintenance leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W03",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng nhuộm không đồng đều, thiếu",
+        "en": "Uneven dyeing effect, lacking"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Vải trước nhuộm không đều màu",
+        "en": "The pre"
+      },
+      {
+        "vi": "dyed fabric is uneven in color."
+      },
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker'shandling is not correct."
+      },
+      {
+        "vi": "Nồng độ màu chưa đúng",
+        "en": "Color concentration is not correct."
+      },
+      {
+        "vi": "Máy nhuộm bị sự cố",
+        "en": "Dyeing machine malfunction."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Vải trước nhuộm không đều màu",
+        "en": "The pre"
+      },
+      {
+        "vi": "dyed fabric is uneven in color."
+      },
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker'shandling is not correct."
+      },
+      {
+        "vi": "Nồng độ màu chưa đúng",
+        "en": "Color concentration is not correct."
+      },
+      {
+        "vi": "Máy nhuộm bị sự cố",
+        "en": "Dyeing machine malfunction."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Wash",
+        "en": "Wash leader."
+      },
+      {
+        "vi": "Trưởng bộ phận thời trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận bảo trì",
+        "en": "Maintenance leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W04",
+    "DefectTypes": [
+      {
+        "vi": "Loang màu",
+        "en": "color stain"
+      },
+      {
+        "vi": "Lem màu chi tiết",
+        "en": "Detail blemish"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect worker handling."
+      },
+      {
+        "vi": "Quy trình thiếu hóa chất",
+        "en": "The process lacks chemicals."
+      },
+      {
+        "vi": "Máy wash nhuộm bị sự cố",
+        "en": "Dyeing washing machine has a problem."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect worker handling."
+      },
+      {
+        "vi": "Quy trình thiếu hóa chất",
+        "en": "The process lacks chemicals."
+      },
+      {
+        "vi": "Máy wash nhuộm bị sự cố",
+        "en": "Dyeing washing machine has a problem."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Wash",
+        "en": "Wash leader"
+      },
+      {
+        "vi": "Trưởng bộ phận bảo trì",
+        "en": "Maintenance leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W05",
+    "DefectTypes": [
+      {
+        "vi": "Độ mềm không đạt",
+        "en": "Softness is not reached"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Quy trình thiếu hóa chất làm mềm",
+        "en": "The process lacks chemical softeners."
+      },
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's handlingr is not correct."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Quy trình thiếu hóa chất làm mềm",
+        "en": "The process lacks chemical softeners."
+      },
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's handlingr is not correct."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Wash",
+        "en": "Wash leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W06",
+    "DefectTypes": [
+      {
+        "vi": "Lủng rách do wash",
+        "en": "Torn from washing"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect worker handling."
+      },
+      {
+        "vi": "Các thiết bị phụ trợ bị sự cố",
+        "en": "Ancillary equipment malfunction."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect worker handling."
+      },
+      {
+        "vi": "Các thiết bị phụ trợ bị sự cố",
+        "en": "Ancillary equipment malfunction."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Wash",
+        "en": "Wash leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W07",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng acid wash mạnh, yếu hoặc không đều",
+        "en": "Strong, weak or irregular acid wash effect"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's handling  is not correct"
+      },
+      {
+        "vi": "Thông số cài đặt chưa đúng",
+        "en": "The settings are not correct."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's handling  is not correct"
+      },
+      {
+        "vi": "Thông số cài đặt chưa đúng",
+        "en": "The settings are not correct."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Wash",
+        "en": "Wash leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      },
+      {
+        "vi": "Trưởng bộ phận bảo trì",
+        "en": "Maintenance leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W08",
+    "DefectTypes": [
+      {
+        "vi": "Cường độ Râu mèo mạnh, yếu, sai vị trí hoặc thiếu",
+        "en": "strong whiskers"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "workers handling is not right"
+      },
+      {
+        "vi": "Rập mẫu chưa đúng",
+        "en": "sample pattern not correct"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "workers handling is not right"
+      },
+      {
+        "vi": "Rập mẫu chưa đúng",
+        "en": "sample pattern not correct"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Thời Trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W09",
+    "DefectTypes": [
+      {
+        "vi": "Cường độ Hansand mạnh, yếu hoặc thiếu",
+        "en": "Hansand intensity is strong, weak or lacking"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "workers handling is not right"
+      },
+      {
+        "vi": "Phun PP mạnh hoặc yếu",
+        "en": "spray pp color  not ok"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "workers handling is not right"
+      },
+      {
+        "vi": "Phun PP mạnh hoặc yếu",
+        "en": "spray pp color  not ok"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Thời Trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W10",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng tacking mạnh, yếu hoặc thiếu",
+        "en": "Strong, weak, or missing tacking effects"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "incorrect handling by worker"
+      },
+      {
+        "vi": "Không mở hoặc mở khi thực hiện phun PP",
+        "en": "not spary pp correctly."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "incorrect handling by worker"
+      },
+      {
+        "vi": "Không mở hoặc mở khi thực hiện phun PP",
+        "en": "not spary pp correctly."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Thời Trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W11",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng cột mạnh, yếu, sai hoặc thiếu",
+        "en": "Strong, weak, false or missing 3D"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "incorrect handling by worker"
+      },
+      {
+        "vi": "Nhiệt độ wash chưa đúng",
+        "en": "wash temperature not ok"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "incorrect handling by worker"
+      },
+      {
+        "vi": "Nhiệt độ wash chưa đúng",
+        "en": "wash temperature not ok"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Thời Trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W12",
+    "DefectTypes": [
+      {
+        "vi": "Cường độ PP, đốm PP",
+        "en": "PP strength, PP spot"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect worker handling."
+      },
+      {
+        "vi": "Nồng độ hóa chất chưa đúng",
+        "en": "Chemical concentration is not correct."
+      },
+      {
+        "vi": "Áp lực gió nén không đúng",
+        "en": "Air pressure is not correct."
+      },
+      {
+        "vi": "Súng phun bị hỏng",
+        "en": "Spray gun is damaged."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect worker handling."
+      },
+      {
+        "vi": "Nồng độ hóa chất chưa đúng",
+        "en": "Chemical concentration is not correct."
+      },
+      {
+        "vi": "Áp lực gió nén không đúng",
+        "en": "Air pressure is not correct."
+      },
+      {
+        "vi": "Súng phun bị hỏng",
+        "en": "Spray gun is damaged."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Thời Trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      },
+      {
+        "vi": "Trưởng bộ phận bảo trì",
+        "en": "Maintenance leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W13",
+    "DefectTypes": [
+      {
+        "vi": "Destroys không đạt màu, hình dáng, kích thước,…",
+        "en": "Destroys do not reach the color, shape, size, …"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect worker behavior."
+      },
+      {
+        "vi": "Rập mẫu chưa đúng",
+        "en": "The pattern is not correct."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect worker behavior."
+      },
+      {
+        "vi": "Rập mẫu chưa đúng",
+        "en": "The pattern is not correct."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Thời Trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W14",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng grinding  mạnh, yếu hoặc thiếu",
+        "en": "Strong, weak or lacking grinding effect"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "worker handling not correct."
+      },
+      {
+        "vi": "Mẫu chưa đúng",
+        "en": "sample not ok"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "worker handling not correct."
+      },
+      {
+        "vi": "Mẫu chưa đúng",
+        "en": "sample not ok"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Thời Trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W15",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng nicking  mạnh, yếu hoặc thiếu",
+        "en": "Strong, weak or lacking nicking effect"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker'shandling is not correct."
+      },
+      {
+        "vi": "Mẫu chưa đúng",
+        "en": "The sample is not correct."
+      },
+      {
+        "vi": "Đá mài bị lỗi",
+        "en": "The grinding wheel is defective."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker'shandling is not correct."
+      },
+      {
+        "vi": "Mẫu chưa đúng",
+        "en": "The sample is not correct."
+      },
+      {
+        "vi": "Đá mài bị lỗi",
+        "en": "The grinding wheel is defective."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Thời Trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W16",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng vẩy màu, PP nhiều, ít hoặc thiếu",
+        "en": "Color splash effect, PP more, less or less"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker'shandling is not correct."
+      },
+      {
+        "vi": "Mẫu chưa đúng",
+        "en": "The sample is not correct."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker'shandling is not correct."
+      },
+      {
+        "vi": "Mẫu chưa đúng",
+        "en": "The sample is not correct."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Thời Trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W17",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng dán vải sai hoặc thiếu",
+        "en": "Wrong or missing fabric washing @ fusing effect"
+      },
+      {
+        "vi": "3D thiếu hoặc mạnh @ yếu",
+        "en": "3D is strong @ weak"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's handling is not correct."
+      },
+      {
+        "vi": "Mẫu chưa đúng",
+        "en": "The sample is not correct."
+      },
+      {
+        "vi": "Nhiệt độ máy ép chưa đúng",
+        "en": "The temperature of the fusing machine is not correct."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's handling is not correct."
+      },
+      {
+        "vi": "Mẫu chưa đúng",
+        "en": "The sample is not correct."
+      },
+      {
+        "vi": "Nhiệt độ máy ép chưa đúng",
+        "en": "The temperature of the fusing machine is not correct."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Thời Trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      },
+      {
+        "vi": "Trưởng bộ phận bảo trì",
+        "en": "Maintenance leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W18",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng lai sai hoặc thiếu",
+        "en": "wash effect at bottom wrong"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's handling is not correct."
+      },
+      {
+        "vi": "Mẫu chưa đúng",
+        "en": "The sample is not correct."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's handling is not correct."
+      },
+      {
+        "vi": "Mẫu chưa đúng",
+        "en": "The sample is not correct."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận Thời Trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận kỹ thuật",
+        "en": "Technical leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W20",
+    "DefectTypes": [
+      {
+        "vi": "Lủng, rách do thời trang",
+        "en": "Loose, torn due to fashion items"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's handling is not correct."
+      },
+      {
+        "vi": "Các thiết bị phụ trợ bị sự cố",
+        "en": "Auxiliary equipment is malfunctioning."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's handling is not correct."
+      },
+      {
+        "vi": "Các thiết bị phụ trợ bị sự cố",
+        "en": "Auxiliary equipment is malfunctioning."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận thời trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận bảo trì",
+        "en": "Maintenance leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W21",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng laser mạnh, yếu, sai hoặc thiếu",
+        "en": "The laser effect is strong, weak, wrong or missing."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect worker"
+      },
+      {
+        "vi": "Máy laser có sự cố",
+        "en": "The laser machine has a problem."
+      },
+      {
+        "vi": "Thao tác phun PP",
+        "en": "handling for PP."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect worker"
+      },
+      {
+        "vi": "Máy laser có sự cố",
+        "en": "The laser machine has a problem."
+      },
+      {
+        "vi": "Thao tác phun PP",
+        "en": "handling for PP."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận laser",
+        "en": "Laser leader"
+      },
+      {
+        "vi": "Trưởng bộ phận thời trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận bảo trì",
+        "en": "Maintenance leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W22",
+    "DefectTypes": [
+      {
+        "vi": "Lủng rách do laser",
+        "en": "Laser tearing"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's operation is not correct."
+      },
+      {
+        "vi": "Các thiết bị phụ trợ bị sự cố",
+        "en": "Ancillary equipment malfunctions."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's operation is not correct."
+      },
+      {
+        "vi": "Các thiết bị phụ trợ bị sự cố",
+        "en": "Ancillary equipment malfunctions."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận laser",
+        "en": "Laser leader"
+      },
+      {
+        "vi": "Trưởng bộ phận bảo trì",
+        "en": "Maintenance leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W23",
+    "DefectTypes": [
+      {
+        "vi": "Khác màu trong cùng sản phẩm",
+        "en": "Different color in the same product"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's operation is not correct."
+      },
+      {
+        "vi": "Ráp nhầm chi tiết trong quá trình may",
+        "en": "Assembling the wrong details during sewing."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's operation is not correct."
+      },
+      {
+        "vi": "Ráp nhầm chi tiết trong quá trình may",
+        "en": "Assembling the wrong details during sewing."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận cắt, may",
+        "en": "Cutting, sewing leaders"
+      },
+      {
+        "vi": "Trưởng bộ phận thời trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận wash",
+        "en": "Wash leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W24",
+    "DefectTypes": [
+      {
+        "vi": "Cấn wash, đốm",
+        "en": "wash wrinkles"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Sản phẩm trước wash  bị nhàu",
+        "en": "The product before wash is wrinkled."
+      },
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's handling is not correct.\""
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Sản phẩm trước wash  bị nhàu",
+        "en": "The product before wash is wrinkled."
+      },
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's handling is not correct.\""
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận thời trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận wash",
+        "en": "Wash leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W25",
+    "DefectTypes": [
+      {
+        "vi": "Thông số không đạt",
+        "en": "measurement not ok"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Nhiệt độ sấy chưa đúng",
+        "en": "The drying temperature is not correct."
+      },
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's behavior is not correct."
+      },
+      {
+        "vi": "Thông số rập chưa đúung",
+        "en": "Pattern parameters are not correct"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Nhiệt độ sấy chưa đúng",
+        "en": "The drying temperature is not correct."
+      },
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "The worker's behavior is not correct."
+      },
+      {
+        "vi": "Thông số rập chưa đúung",
+        "en": "Pattern parameters are not correct"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận wash."
+      },
+      {
+        "vi": "Trưởng bộ phận may."
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W26",
+    "DefectTypes": [
+      {
+        "vi": "Không đạt độ bền cơ lý",
+        "en": "Failure to achieve mechanical strength"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Quy trình sản xuất chưa đúng",
+        "en": "The production process is not correct."
+      },
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect workerhandling."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Quy trình sản xuất chưa đúng",
+        "en": "The production process is not correct."
+      },
+      {
+        "vi": "Thao tác công nhân chưa đúng",
+        "en": "Incorrect workerhandling."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận thời trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận wash",
+        "en": "Wash leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W27",
+    "DefectTypes": [
+      {
+        "vi": "Mùi hôi, ẩm mốc",
+        "en": "Bad smell, wet"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Hóa chất còn thừa trên sản phẩm",
+        "en": "Chemical residue left on the product."
+      },
+      {
+        "vi": "Sản phẩm còn ẩm ướt",
+        "en": "The product is still wet."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Hóa chất còn thừa trên sản phẩm",
+        "en": "Chemical residue left on the product."
+      },
+      {
+        "vi": "Sản phẩm còn ẩm ướt",
+        "en": "The product is still wet."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Trưởng bộ phận thời trang",
+        "en": "Fashion leader"
+      },
+      {
+        "vi": "Trưởng bộ phận wash",
+        "en": "Wash leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "W28",
+    "DefectTypes": [
+      {
+        "vi": "Những lỗi khác",
+        "en": "other defects"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "cd6aac51-979f-499b-a9bc-55681caf2956"
+  },
+  {
+    "Code": "F01",
+    "DefectTypes": [
+      {
+        "vi": "Vệ sinh công nghiệp",
+        "en": "Industrial machine hygiene"
+      },
+      {
+        "vi": "Chỉ thừa không sạch",
+        "en": ""
+      },
+      {
+        "vi": "Only excess is not cleaned"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân không đúng quy trình",
+        "en": "Workers handling is not correct as the process"
+      },
+      {
+        "vi": "Trong giờ làm không tập trung",
+        "en": "During off"
+      },
+      {
+        "vi": "hours."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân không đúng quy trình",
+        "en": "Workers handling is not correct as the process"
+      },
+      {
+        "vi": "Trong giờ làm không tập trung",
+        "en": "During off"
+      },
+      {
+        "vi": "hours."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân",
+        "en": "Worker"
+      },
+      {
+        "vi": "Quản lý cắt chỉ",
+        "en": "thread cutting leader"
+      },
+      {
+        "vi": "QC random"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 5 phút",
+        "en": "After 5 minutes"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F02",
+    "DefectTypes": [
+      {
+        "vi": "Sai nhãn, thẻ bài, phụ liệu hoàn tất",
+        "en": "Wrong label, tag, finishing accesories"
+      },
+      {
+        "vi": "Sai ví trí và quy cách gắn vào sản phẩm",
+        "en": "Wrong position and specification attached to the product."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Quản lý không kiểm tra phụ liệu trước khi giao cho công nhân",
+        "en": "team leaders did not check the materials before delivering to workers"
+      },
+      {
+        "vi": "Không dò tài liệu trước khi làm",
+        "en": "Do not scan"
+      },
+      {
+        "vi": "Không làm đúng quy trình duyệt mẫu",
+        "en": "Not following the sample approval process correctly"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Quản lý không kiểm tra phụ liệu trước khi giao cho công nhân",
+        "en": "team leaders did not check the materials before delivering to workers"
+      },
+      {
+        "vi": "Không dò tài liệu trước khi làm",
+        "en": "Do not scan"
+      },
+      {
+        "vi": "Không làm đúng quy trình duyệt mẫu",
+        "en": "Not following the sample approval process correctly"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Quản lý",
+        "en": "Leader"
+      },
+      {
+        "vi": "Kỹ thuật triển khai",
+        "en": "Deploying technical"
+      },
+      {
+        "vi": "Công Nhân",
+        "en": "Worker"
+      },
+      {
+        "vi": "QA"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 15 phút",
+        "en": "After 15 minutes"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F03",
+    "DefectTypes": [
+      {
+        "vi": "Bộ bền chắc và an toàn khi sử dụng",
+        "en": "The  die set is durable and safe to use"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do chỉnh máy không đúng tiêu chuẫn lực nén",
+        "en": "Due to improper adjustment of the compression force of machine"
+      },
+      {
+        "vi": "Do Phụ liệu không đạt chất lượng",
+        "en": "Due to substandard materials"
+      },
+      {
+        "vi": "Do thao tác công nhân chưa đúng quy trình",
+        "en": "Due to improper operation of workers"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do chỉnh máy không đúng tiêu chuẫn lực nén",
+        "en": "Due to improper adjustment of the compression force of machine"
+      },
+      {
+        "vi": "Do Phụ liệu không đạt chất lượng",
+        "en": "Due to substandard materials"
+      },
+      {
+        "vi": "Do thao tác công nhân chưa đúng quy trình",
+        "en": "Due to improper operation of workers"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Bảo trì",
+        "en": "Maintenance"
+      },
+      {
+        "vi": "Mer theo hàng",
+        "en": "Merch"
+      },
+      {
+        "vi": "Quản lý",
+        "en": "Leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 30 phút"
+      },
+      {
+        "vi": "After 30 minutes"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F04",
+    "DefectTypes": [
+      {
+        "vi": "Ủi (là) xấu",
+        "en": "Iron is bad"
+      },
+      {
+        "vi": "Bị bóng",
+        "en": "shining marks"
+      },
+      {
+        "vi": "Cháy nám",
+        "en": "Burnt"
+      },
+      {
+        "vi": "Biến dạng dáng (form)",
+        "en": "Deformation"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân chưa đúng quy trình",
+        "en": "Manipulation of workers  handling is not correct as the process"
+      },
+      {
+        "vi": "Do xữ lý thông số out ngoài dung size",
+        "en": "Due to handling parameters out of  size."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân chưa đúng quy trình",
+        "en": "Manipulation of workers  handling is not correct as the process"
+      },
+      {
+        "vi": "Do xữ lý thông số out ngoài dung size",
+        "en": "Due to handling parameters out of  size."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Quản lý ủi",
+        "en": "Ironing leader"
+      },
+      {
+        "vi": "QA nhà máy",
+        "en": "Factory's QA"
+      },
+      {
+        "vi": "Công nhân ủi",
+        "en": "Ironing worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 15 phút",
+        "en": "After 15 minutes"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F05",
+    "DefectTypes": [
+      {
+        "vi": "Bung đường may",
+        "en": "open seam"
+      },
+      {
+        "vi": "Lủng, rách",
+        "en": "holes, tear"
+      },
+      {
+        "vi": "Lỗ kim",
+        "en": "needle holes."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do may hư tháo ra sửa",
+        "en": "Due to bad sewing, remove"
+      },
+      {
+        "vi": "Do các mã hàng wash mạnh và làm các thời trang",
+        "en": "Due to strong wash codes, and do fashions items."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do may hư tháo ra sửa",
+        "en": "Due to bad sewing, remove"
+      },
+      {
+        "vi": "Do các mã hàng wash mạnh và làm các thời trang",
+        "en": "Due to strong wash codes, and do fashions items."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QA"
+      },
+      {
+        "vi": "Kỹ thuật may",
+        "en": "Sewing Technical"
+      },
+      {
+        "vi": "Kỹ thuật wash",
+        "en": "Wash technical"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 2 tiếng",
+        "en": "After 2 hours"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F06",
+    "DefectTypes": [
+      {
+        "vi": "Đứt chỉ",
+        "en": "broken"
+      },
+      {
+        "vi": "Bỏ mũi",
+        "en": "skip"
+      },
+      {
+        "vi": "Căng",
+        "en": "lỏng chỉ"
+      },
+      {
+        "vi": "Nối chỉ không trùng",
+        "en": "por joint"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do các mã hàng có công đoạn wash mài và trà miệng túi",
+        "en": "due to styles having grinding at pocket mouth is damaged"
+      },
+      {
+        "vi": "Do máy hư trên chuyền may",
+        "en": "due to machines in sewing line"
+      },
+      {
+        "vi": "Do thao tác công nhân may",
+        "en": "workers handling the garment"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do các mã hàng có công đoạn wash mài và trà miệng túi",
+        "en": "due to styles having grinding at pocket mouth is damaged"
+      },
+      {
+        "vi": "Do máy hư trên chuyền may",
+        "en": "due to machines in sewing line"
+      },
+      {
+        "vi": "Do thao tác công nhân may",
+        "en": "workers handling the garment"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QA"
+      },
+      {
+        "vi": "Kỹ thuật may, wash",
+        "en": "Sewing, washing technical"
+      },
+      {
+        "vi": "Công nhân may, wash"
+      },
+      {
+        "vi": "Sewing, washing worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 2 tiếng",
+        "en": "After 2 hours"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F07",
+    "DefectTypes": [
+      {
+        "vi": "Nhăn nhíu",
+        "en": "puckering"
+      },
+      {
+        "vi": "Xếp ly",
+        "en": "pleats"
+      },
+      {
+        "vi": "Sụp mí",
+        "en": "down stitches"
+      },
+      {
+        "vi": "Gợn sóng",
+        "en": "uneven"
+      },
+      {
+        "vi": "Vặn đường may",
+        "en": "twisted seam"
+      },
+      {
+        "vi": "Bai giãn",
+        "en": "stretched back rise"
+      },
+      {
+        "vi": "Vặn canh vải",
+        "en": "wrinkeld fabric"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do chỉnh máy chưa đạt",
+        "en": "incorrect machine adjustment."
+      },
+      {
+        "vi": "Do thao tác công nhân chưa đúng",
+        "en": "workers handling"
+      },
+      {
+        "vi": "not ok."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do chỉnh máy chưa đạt",
+        "en": "incorrect machine adjustment."
+      },
+      {
+        "vi": "Do thao tác công nhân chưa đúng",
+        "en": "workers handling"
+      },
+      {
+        "vi": "not ok."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QA"
+      },
+      {
+        "vi": "Bảo trì",
+        "en": "Maintenance"
+      },
+      {
+        "vi": "Kỹ thuật may",
+        "en": "Sewing technical"
+      },
+      {
+        "vi": "Công Nhân may",
+        "en": "Sewing worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 2 tiếng",
+        "en": "After 2 hours"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F08",
+    "DefectTypes": [
+      {
+        "vi": "Dính dầu",
+        "en": "oily"
+      },
+      {
+        "vi": "Ố, Dơ",
+        "en": "dirty, damaged"
+      },
+      {
+        "vi": "Dấu phấn @ mực",
+        "en": "stained, gresy marks of oil"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do bảo quản hàng từ các khâu ( may,wash,hoàn tất ) chưa tốt",
+        "en": "Due to poor preservation of goods from stages (sewing, washing, finishing."
+      },
+      {
+        "vi": "Bảo trì không thường xuyên kiểm tra cách máy khi xữ dụng",
+        "en": "Regular maintenance check how the machine is in use"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do bảo quản hàng từ các khâu ( may,wash,hoàn tất ) chưa tốt",
+        "en": "Due to poor preservation of goods from stages (sewing, washing, finishing."
+      },
+      {
+        "vi": "Bảo trì không thường xuyên kiểm tra cách máy khi xữ dụng",
+        "en": "Regular maintenance check how the machine is in use"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Quản lý",
+        "en": "Leader"
+      },
+      {
+        "vi": "Bảo trì",
+        "en": "Maintenance"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 1 tiếng"
+      },
+      {
+        "vi": "After 1 hour"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F09",
+    "DefectTypes": [
+      {
+        "vi": "Gấp xếp sai",
+        "en": "fold thegarment mistake"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Không dò tài liệu kỹ thuật",
+        "en": "Do not scan technical documents"
+      },
+      {
+        "vi": "Thao tác công nhân sai",
+        "en": "Wrong worker manipulation"
+      },
+      {
+        "vi": "Bỏ qua quy trình duyệt mẫu của Qa và khách hàng",
+        "en": "Bypass the sample approval process of QA and customers"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Không dò tài liệu kỹ thuật",
+        "en": "Do not scan technical documents"
+      },
+      {
+        "vi": "Thao tác công nhân sai",
+        "en": "Wrong worker manipulation"
+      },
+      {
+        "vi": "Bỏ qua quy trình duyệt mẫu của Qa và khách hàng",
+        "en": "Bypass the sample approval process of QA and customers"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Quản lý gấp xếp",
+        "en": "Folding leader"
+      },
+      {
+        "vi": "Công nhân",
+        "en": "Worker"
+      },
+      {
+        "vi": "Kỹ Thuật triển khai",
+        "en": "Deploying technical"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 15 phút",
+        "en": "After 15 minutes"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F10",
+    "DefectTypes": [
+      {
+        "vi": "Sai tỷ lệ và số lượng trong thùng",
+        "en": "Wrong proportion and quantity in the bin"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Công nhân không tập trung khi làm",
+        "en": "Workers are not focused when working"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Công nhân không tập trung khi làm",
+        "en": "Workers are not focused when working"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công Nhân",
+        "en": "Worker"
+      },
+      {
+        "vi": "Quản lý",
+        "en": "Leader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 5 phút",
+        "en": "After 5 minutes"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F11",
+    "DefectTypes": [
+      {
+        "vi": "Dò kim loại không đạt",
+        "en": "Metal Detector Failed"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do các bộ phận chưa làm tốt quãn lý vật sắt nhọn ( từ may tới wash và hoàn tất )"
+      },
+      {
+        "vi": "Do phụ liệu bị nhiễm từ",
+        "en": "Due to poor handling of sharp objects by parts (from sewing to washing and finishing)"
+      },
+      {
+        "vi": "Due to the material being contaminated"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do các bộ phận chưa làm tốt quãn lý vật sắt nhọn ( từ may tới wash và hoàn tất )"
+      },
+      {
+        "vi": "Do phụ liệu bị nhiễm từ",
+        "en": "Due to poor handling of sharp objects by parts (from sewing to washing and finishing)"
+      },
+      {
+        "vi": "Due to the material being contaminated"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Quản lý các khu vực",
+        "en": "stages leaders"
+      },
+      {
+        "vi": "Mer theo hàng",
+        "en": "Merch"
+      },
+      {
+        "vi": "QA hệ thống",
+        "en": "QA system"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 1 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F12",
+    "DefectTypes": [
+      {
+        "vi": "Nấm mốc",
+        "en": "Mold,"
+      },
+      {
+        "vi": "Vật lạ",
+        "en": "Objects"
+      },
+      {
+        "vi": "Côn trùng, sâu trên  sản phẩm",
+        "en": "Insects, worms on the product."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do bảo quản hàng không che đậy",
+        "en": "Due to preservation, do not cover up"
+      },
+      {
+        "vi": "Không xịt thuốc phòng chống côn trùng theo định kỳ",
+        "en": "Do not periodically spray insect repellent."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do bảo quản hàng không che đậy",
+        "en": "Due to preservation, do not cover up"
+      },
+      {
+        "vi": "Không xịt thuốc phòng chống côn trùng theo định kỳ",
+        "en": "Do not periodically spray insect repellent."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Quản lý các khu vực",
+        "en": "stages leaders"
+      },
+      {
+        "vi": "Đội phòng chống côn trùng",
+        "en": "Prevent insects team"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 1 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F13",
+    "DefectTypes": [
+      {
+        "vi": "Độ ẩm và mùi không đạt",
+        "en": "Humidity and odor do not meet standard"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do chế độ wash các loại hóa chất có mùi nặng",
+        "en": "Due to the washing mode, chemicals have a strong smell"
+      },
+      {
+        "vi": "Do không kiểm tra độ ẫm để sấy",
+        "en": "Due to not testing moisture for drying."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do chế độ wash các loại hóa chất có mùi nặng",
+        "en": "Due to the washing mode, chemicals have a strong smell"
+      },
+      {
+        "vi": "Do không kiểm tra độ ẫm để sấy",
+        "en": "Due to not testing moisture for drying."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Kỹ thuật wash",
+        "en": "Wash technical"
+      },
+      {
+        "vi": "QC random"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 1 tiếng"
+      },
+      {
+        "vi": "After 1 hour"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F14",
+    "DefectTypes": [
+      {
+        "vi": "Dán hoặc đai thùng sai",
+        "en": "Wrong gluing or belting"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do Thao tác công nhân sai",
+        "en": "handling of workers is mistake."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do Thao tác công nhân sai",
+        "en": "handling of workers is mistake."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Quản lý",
+        "en": "Leader"
+      },
+      {
+        "vi": "Công nhân",
+        "en": "worker"
+      },
+      {
+        "vi": "Kỹ thuật triển khai",
+        "en": "Deploying technical"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 15 phút",
+        "en": "After 15 minutes"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F15",
+    "DefectTypes": [
+      {
+        "vi": "In nhãn dán thùng không đạt",
+        "en": "attaching wrong pirnted sticker"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do phền mềm hệ thống sai",
+        "en": "Due to wrong system software"
+      },
+      {
+        "vi": "Do Mer và kế hoạch in lộn",
+        "en": "Due to Mer and the plan printed upside down"
+      },
+      {
+        "vi": "Máy in bị hư (hết mực)",
+        "en": "Printer is damaged (out of ink)"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do phền mềm hệ thống sai",
+        "en": "Due to wrong system software"
+      },
+      {
+        "vi": "Do Mer và kế hoạch in lộn",
+        "en": "Due to Mer and the plan printed upside down"
+      },
+      {
+        "vi": "Máy in bị hư (hết mực)",
+        "en": "Printer is damaged (out of ink)"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Mer theo hàng",
+        "en": "Merch"
+      },
+      {
+        "vi": "Kế hoạch Nhà máy",
+        "en": "Planning of factory"
+      },
+      {
+        "vi": "IT"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 1 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F16",
+    "DefectTypes": [
+      {
+        "vi": "Thông tin trên thùng sai hoặc không đọc được",
+        "en": "The information on the box is incorrect or illegible."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Thao tác công nhân khi ghi thùng",
+        "en": "workers handling  when printing numbers on  boxes."
+      },
+      {
+        "vi": "Nhà cung cấp in thùng sai",
+        "en": "The supplier printed the wrong box"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Thao tác công nhân khi ghi thùng",
+        "en": "workers handling  when printing numbers on  boxes."
+      },
+      {
+        "vi": "Nhà cung cấp in thùng sai",
+        "en": "The supplier printed the wrong box"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân",
+        "en": "Worker"
+      },
+      {
+        "vi": "Quản lý",
+        "en": "Leader"
+      },
+      {
+        "vi": "Kế hoạch theo hàng và Mer",
+        "en": "Planning & Merch"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 1 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F17",
+    "DefectTypes": [
+      {
+        "vi": "Thùng rách",
+        "en": "The box is torn,"
+      },
+      {
+        "vi": "Ẩm ướt",
+        "en": "Wet,"
+      },
+      {
+        "vi": "Biến dạng",
+        "en": "Deformed"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do thao tác công nhân khi chất hàng lên pallet",
+        "en": "Due to worker manipulation when loading goods on the pallet"
+      },
+      {
+        "vi": "Do quản lý không sắp xếp hàng đúng nơi lưu trử",
+        "en": "Due to the management not arranging the goods in the right storage place."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do thao tác công nhân khi chất hàng lên pallet",
+        "en": "Due to worker manipulation when loading goods on the pallet"
+      },
+      {
+        "vi": "Do quản lý không sắp xếp hàng đúng nơi lưu trử",
+        "en": "Due to the management not arranging the goods in the right storage place."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Quản lý"
+      },
+      {
+        "vi": "Công nhân"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 1 tiếng"
+      },
+      {
+        "vi": "After 1 hour"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F18",
+    "DefectTypes": [
+      {
+        "vi": "Thông số ngoài dung sai",
+        "en": "Parameter out of tolerance"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do thao tác QC đo không đúng",
+        "en": "Due to incorrect measurement QC operation,"
+      },
+      {
+        "vi": "Do wash có vấn đề",
+        "en": "Due to the problem of washing,"
+      },
+      {
+        "vi": "Do may chỉnh rập có vấn đề",
+        "en": "There is a problem with the pattern adjustment."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do thao tác QC đo không đúng",
+        "en": "Due to incorrect measurement QC operation,"
+      },
+      {
+        "vi": "Do wash có vấn đề",
+        "en": "Due to the problem of washing,"
+      },
+      {
+        "vi": "Do may chỉnh rập có vấn đề",
+        "en": "There is a problem with the pattern adjustment."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Quản lý",
+        "en": "Leader"
+      },
+      {
+        "vi": "Công nhân",
+        "en": "Worker"
+      },
+      {
+        "vi": "Kỹ thuật wash",
+        "en": "Wash technical"
+      },
+      {
+        "vi": "Kỹ thuật may",
+        "en": "Sewing technical"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện 1 ngày",
+        "en": "After 1 day"
+      }
+    ],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "F19",
+    "DefectTypes": [
+      {
+        "vi": "Những lỗi khác",
+        "en": "Other defects"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "3fe931f7-728b-48e6-b37c-828f683f9229"
+  },
+  {
+    "Code": "P01",
+    "DefectTypes": [
+      {
+        "vi": "Vệ sinh công nghiệp",
+        "en": "Industrial machine hygiene"
+      },
+      {
+        "vi": "Chỉ thừa không sạch",
+        "en": ""
+      },
+      {
+        "vi": "Only excess is not cleaned"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P02",
+    "DefectTypes": [
+      {
+        "vi": "Dính dầu",
+        "en": "oily"
+      },
+      {
+        "vi": "Ố, Dơ",
+        "en": "dirty, damaged"
+      },
+      {
+        "vi": "Dấu phấn",
+        "en": "mực"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P03",
+    "DefectTypes": [
+      {
+        "vi": "Ủi (là) xấu",
+        "en": "Iron is bad"
+      },
+      {
+        "vi": "Bị bóng",
+        "en": "shining marks"
+      },
+      {
+        "vi": "Cháy nám",
+        "en": "Burnt"
+      },
+      {
+        "vi": "Biến dạng dáng (form)",
+        "en": "Deformation"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P04",
+    "DefectTypes": [
+      {
+        "vi": "Đóng (đính) nút, rivet, phụ liệu,… không đạt bền chắc, không an toàn khi sử dụng",
+        "en": "To nail button, rivet, accessory, … are not meet stable, not safety when using"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P05",
+    "DefectTypes": [
+      {
+        "vi": "Đóng (đính) nút, rivet,  ủi, gắn nhãn, gấp xếp,... sai quy cách; thiếu @ dư phụ liệu",
+        "en": "To nail button, rivet, iron, stick label, fold, … are wrong spec, lack or more accessory"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P06",
+    "DefectTypes": [
+      {
+        "vi": "Sử dụng sai phụ liệu",
+        "en": "Using wrong accessory"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P07",
+    "DefectTypes": [
+      {
+        "vi": "Lủng, rách, lỗ kim",
+        "en": "Hole, tear, needle hole"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P08",
+    "DefectTypes": [
+      {
+        "vi": "Bung chỉ, bung đường may",
+        "en": "Open thread, seam"
+      },
+      {
+        "vi": "Đứt chỉ",
+        "en": "broken"
+      },
+      {
+        "vi": "Bỏ mũi",
+        "en": "skip"
+      },
+      {
+        "vi": "Căng",
+        "en": "lỏng chỉ"
+      },
+      {
+        "vi": "Nối chỉ không đạt",
+        "en": "por joint"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P09",
+    "DefectTypes": [
+      {
+        "vi": "Nhăn nhíu",
+        "en": "puckering"
+      },
+      {
+        "vi": "Xếp ly",
+        "en": "pleats"
+      },
+      {
+        "vi": "Sụp mí",
+        "en": "down stitches"
+      },
+      {
+        "vi": "Gợn sóng",
+        "en": "uneven"
+      },
+      {
+        "vi": "Vặn đường may",
+        "en": "twisted seam"
+      },
+      {
+        "vi": "Bai giãn",
+        "en": "stretched back rise"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P10",
+    "DefectTypes": [
+      {
+        "vi": "Ánh màu không đạt",
+        "en": "Colour is not meet"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P11",
+    "DefectTypes": [
+      {
+        "vi": "Cấn wash, đốm wash",
+        "en": "Wash wrinkle @ spot"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P12",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng wash, nhuộm không đồng đều",
+        "en": "Wash effect, uneven dyeing effect"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P13",
+    "DefectTypes": [
+      {
+        "vi": "Hình dáng, kích thước, vị trí thời trang wash không đúng",
+        "en": "Wash fashion, sharp, dimension, position are not correct"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P14",
+    "DefectTypes": [
+      {
+        "vi": "Sai số lượng và tỷ lệ trong thùng",
+        "en": "Wrong quantity and rate in box"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P15",
+    "DefectTypes": [
+      {
+        "vi": "Mùi hôi, ẩm mốc, mục vải, vật lạ trên sản phẩm",
+        "en": "Bad smell, wet, fabric decayed, object on garment"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P16",
+    "DefectTypes": [
+      {
+        "vi": "Mặc thử không đạt",
+        "en": "Fit test is not meet"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P17",
+    "DefectTypes": [
+      {
+        "vi": "Kỹ thuật may xấu, không phù hợp",
+        "en": "Bad sewing, not suitable"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P18",
+    "DefectTypes": [
+      {
+        "vi": "Chất lượng phụ liệu không đạt",
+        "en": "Quality of accessory is not meet"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P19",
+    "DefectTypes": [
+      {
+        "vi": "Lỗi Thông số",
+        "en": "Measurement defect"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "P20",
+    "DefectTypes": [
+      {
+        "vi": "Những lỗi khác",
+        "en": "Other defects"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "7ced9b1f-31ad-4452-a625-81f48afe0e24"
+  },
+  {
+    "Code": "N01",
+    "DefectTypes": [
+      {
+        "vi": "Sai mã, từ ngữ, ký hiệu, Logo, lộn size..",
+        "en": "Code,words, sign, logo, wrong size."
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N02",
+    "DefectTypes": [
+      {
+        "vi": "Hình dạng, quy cách, màu sắc",
+        "en": "Shape, size, color"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N03",
+    "DefectTypes": [
+      {
+        "vi": "Trầy xước, chất liệu, lủng rách",
+        "en": "Scratch, material, torn."
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N04",
+    "DefectTypes": [
+      {
+        "vi": "Độ mềm, cứng",
+        "en": "Soft, hardness"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N05",
+    "DefectTypes": [
+      {
+        "vi": "Rõ nét, độ dày mỏng",
+        "en": "logo, thickness"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N06",
+    "DefectTypes": [
+      {
+        "vi": "Quy cách, màu",
+        "en": "răng, đầu dây kéo"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N07",
+    "DefectTypes": [
+      {
+        "vi": "Tưa đầu khi kéo, độ cứng đầu kéo, tape dệt",
+        "en": "Furry, hardness, tape."
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N08",
+    "DefectTypes": [
+      {
+        "vi": "Kéo thử ít nhất 20 lần per sợi (10 sợi per loại)",
+        "en": "Test at least 20 time per  zipper (10 zipper per  type)"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N09",
+    "DefectTypes": [
+      {
+        "vi": "Rà kim loại (hàng ép cao tầng)",
+        "en": "Metal detector"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N10",
+    "DefectTypes": [
+      {
+        "vi": "Nứt, vỡ, trầy, biến dạng, sót ba vớ",
+        "en": "Fragile, broken, scratch, change shape, unsmooth"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N11",
+    "DefectTypes": [
+      {
+        "vi": "Chi tiết, logo rõ nét, độ dày mỏng, oxy hóa, cài thử",
+        "en": "Detail, logo, thickness, oxylyzation, fitting."
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N12",
+    "DefectTypes": [
+      {
+        "vi": "Độ cao, rộng",
+        "en": "High"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N13",
+    "DefectTypes": [
+      {
+        "vi": "Đồng màu trong lô",
+        "en": "Matched color"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N14",
+    "DefectTypes": [
+      {
+        "vi": "Sai mã chỉ",
+        "en": "Wrong Code"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N15",
+    "DefectTypes": [
+      {
+        "vi": "Sai Tex chỉ",
+        "en": "Tex, size"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N16",
+    "DefectTypes": [
+      {
+        "vi": "Ẩm mốc",
+        "en": "Mold"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N17",
+    "DefectTypes": [
+      {
+        "vi": "Thun có bị vặn, cong?",
+        "en": "Twisted, Curved?"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N18",
+    "DefectTypes": [
+      {
+        "vi": "SL chỗ nối trong cuộn (1 nối @  100m)",
+        "en": "(No of knot"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N19",
+    "DefectTypes": [
+      {
+        "vi": "In chữ, trọng lượng, chất liệu",
+        "en": "Printing, weight, material"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "N20",
+    "DefectTypes": [
+      {
+        "vi": "Mối dán ép",
+        "en": "Tight applying"
+      },
+      {
+        "vi": "Bao nylon dính bột phấn",
+        "en": "Polybag with chalk"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "63892f60-c8cb-40de-b365-e52f66a04ec4"
+  },
+  {
+    "Code": "E01",
+    "DefectTypes": [
+      {
+        "vi": "Lỗi sơ đồ cắt",
+        "en": "cutting marker errors"
+      },
+      {
+        "vi": "Lỗi rập cắt",
+        "en": "Cutting pattern defects"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Sơ đồ sai chiều dài",
+        "en": "wrong marker length."
+      },
+      {
+        "vi": "Thiếu chi tiết, sai mặt chi tiết, sai canh sợi Rập",
+        "en": "Missing pattern pieces, wrong side of pattern piece, wrong grain line"
+      },
+      {
+        "vi": "Sơ đồ đi bị nhầm giàng, nhầm size",
+        "en": "Marker is wrong  for inseam and  size"
+      },
+      {
+        "vi": "Khổ vải không đúng",
+        "en": "In correct Fabric width"
+      },
+      {
+        "vi": "QC kiểm sơ đồ không phát hiện ra lỗi",
+        "en": "QC checking the marker did not find any errors"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Sơ đồ sai chiều dài",
+        "en": "wrong marker length."
+      },
+      {
+        "vi": "Thiếu chi tiết, sai mặt chi tiết, sai canh sợi Rập",
+        "en": "Missing pattern pieces, wrong side of pattern piece, wrong grain line"
+      },
+      {
+        "vi": "Sơ đồ đi bị nhầm giàng, nhầm size",
+        "en": "Marker is wrong  for inseam and  size"
+      },
+      {
+        "vi": "Khổ vải không đúng",
+        "en": "In correct Fabric width"
+      },
+      {
+        "vi": "QC kiểm sơ đồ không phát hiện ra lỗi",
+        "en": "QC checking the marker did not find any errors"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Nhân viên rập, sơ đồ",
+        "en": "Pattern, marker staff"
+      },
+      {
+        "vi": "QC kiểm sơ đồ",
+        "en": "QC check marker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 giờ sau",
+        "en": "Detection time of 1 hour"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R01",
+    "DefectTypes": [
+      {
+        "vi": "Lỗi sơ đồ cắt",
+        "en": "cutting marker errors"
+      },
+      {
+        "vi": "Lỗi rập cắt",
+        "en": "Cutting pattern defects"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Sơ đồ sai chiều dài",
+        "en": "wrong marker length."
+      },
+      {
+        "vi": "Thiếu chi tiết, sai mặt chi tiết, sai canh sợi Rập",
+        "en": "Missing pattern pieces, wrong side of pattern piece, wrong grain line"
+      },
+      {
+        "vi": "Sơ đồ đi bị nhầm giàng, nhầm size",
+        "en": "Marker is wrong  for inseam and  size"
+      },
+      {
+        "vi": "Khổ vải không đúng",
+        "en": "In correct Fabric width"
+      },
+      {
+        "vi": "QC kiểm sơ đồ không phát hiện ra lỗi",
+        "en": "QC checking the marker did not find any errors"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Sơ đồ sai chiều dài",
+        "en": "wrong marker length."
+      },
+      {
+        "vi": "Thiếu chi tiết, sai mặt chi tiết, sai canh sợi Rập",
+        "en": "Missing pattern pieces, wrong side of pattern piece, wrong grain line"
+      },
+      {
+        "vi": "Sơ đồ đi bị nhầm giàng, nhầm size",
+        "en": "Marker is wrong  for inseam and  size"
+      },
+      {
+        "vi": "Khổ vải không đúng",
+        "en": "In correct Fabric width"
+      },
+      {
+        "vi": "QC kiểm sơ đồ không phát hiện ra lỗi",
+        "en": "QC checking the marker did not find any errors"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Nhân viên rập, sơ đồ",
+        "en": "Pattern, marker staff"
+      },
+      {
+        "vi": "QC kiểm sơ đồ",
+        "en": "QC check marker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "Từ khi phát hiện đến 01 giờ sau",
+        "en": "Detection time of 1 hour"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E02",
+    "DefectTypes": [
+      {
+        "vi": "Bán thành phẩm cắt lớn hoặc nhỏ hơn rập",
+        "en": "cut Panel cut bigger or smaller than pattern"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Trải vải quá căng, hoặc chùn",
+        "en": "Spreading fabric is too stretched or sperading very tight"
+      },
+      {
+        "vi": "Thiếu kẹp vải",
+        "en": "Missing"
+      },
+      {
+        "vi": "Trải vải quá dày",
+        "en": "Spreading fabric is too thick"
+      },
+      {
+        "vi": "Chất liệu vải quá mỏng, hoặc xiên",
+        "en": "fabric material is too thin or awry"
+      },
+      {
+        "vi": "Do thao tác Công nhân cắt không đúng đường chì của sơ đồ",
+        "en": "Due to the hnadling of the cutting worker, does not follow the outline of the pattern"
+      },
+      {
+        "vi": "Công nhân không cẩn thận",
+        "en": "Worker is not careful"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Trải vải quá căng, hoặc chùn",
+        "en": "Spreading fabric is too stretched or sperading very tight"
+      },
+      {
+        "vi": "Thiếu kẹp vải",
+        "en": "Missing"
+      },
+      {
+        "vi": "Trải vải quá dày",
+        "en": "Spreading fabric is too thick"
+      },
+      {
+        "vi": "Chất liệu vải quá mỏng, hoặc xiên",
+        "en": "fabric material is too thin or awry"
+      },
+      {
+        "vi": "Do thao tác Công nhân cắt không đúng đường chì của sơ đồ",
+        "en": "Due to the hnadling of the cutting worker, does not follow the outline of the pattern"
+      },
+      {
+        "vi": "Công nhân không cẩn thận",
+        "en": "Worker is not careful"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân cắt",
+        "en": "cutter"
+      },
+      {
+        "vi": "Công nhân trải vải",
+        "en": "spreader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "30 phút",
+        "en": "30 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R02",
+    "DefectTypes": [
+      {
+        "vi": "Bán thành phẩm cắt lớn hoặc nhỏ hơn rập",
+        "en": "cut Panel cut bigger or smaller than pattern"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Trải vải quá căng, hoặc chùn",
+        "en": "Spreading fabric is too stretched or sperading very tight"
+      },
+      {
+        "vi": "Thiếu kẹp vải",
+        "en": "Missing"
+      },
+      {
+        "vi": "Trải vải quá dày",
+        "en": "Spreading fabric is too thick"
+      },
+      {
+        "vi": "Chất liệu vải quá mỏng, hoặc xiên",
+        "en": "fabric material is too thin or awry"
+      },
+      {
+        "vi": "Do thao tác Công nhân cắt không đúng đường chì của sơ đồ",
+        "en": "Due to the hnadling of the cutting worker, does not follow the outline of the pattern"
+      },
+      {
+        "vi": "Công nhân không cẩn thận",
+        "en": "Worker is not careful"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Trải vải quá căng, hoặc chùn",
+        "en": "Spreading fabric is too stretched or sperading very tight"
+      },
+      {
+        "vi": "Thiếu kẹp vải",
+        "en": "Missing"
+      },
+      {
+        "vi": "Trải vải quá dày",
+        "en": "Spreading fabric is too thick"
+      },
+      {
+        "vi": "Chất liệu vải quá mỏng, hoặc xiên",
+        "en": "fabric material is too thin or awry"
+      },
+      {
+        "vi": "Do thao tác Công nhân cắt không đúng đường chì của sơ đồ",
+        "en": "Due to the hnadling of the cutting worker, does not follow the outline of the pattern"
+      },
+      {
+        "vi": "Công nhân không cẩn thận",
+        "en": "Worker is not careful"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân cắt",
+        "en": "cutter"
+      },
+      {
+        "vi": "Công nhân trải vải",
+        "en": "spreader"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "30 phút",
+        "en": "30 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E03",
+    "DefectTypes": [
+      {
+        "vi": "Cắt sai hình dáng,"
+      },
+      {
+        "vi": "Sai canh sợi,"
+      },
+      {
+        "vi": "Sai bề mặt vải",
+        "en": "keo,…"
+      },
+      {
+        "vi": "Cutting wrong marker",
+        "en": "style, grain line, fabric face, interlining,..."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Sử dụng Sơ đồ sai mã hàng cần Cắt",
+        "en": "Using  wrong marker, wrong style for the style needed to cut"
+      },
+      {
+        "vi": "Dùng sai bảng màu",
+        "en": "Using wrong trim card"
+      },
+      {
+        "vi": "Trải vải sai bề mặt Vải",
+        "en": "Spreading mistake using wrong fabric face"
+      },
+      {
+        "vi": "QC kiểm BTP không không phát hiện ra lỗi",
+        "en": "QC check panel did not find any errors"
+      },
+      {
+        "vi": "Chỉnh Rập sai YCKT, sai canh sợi chi tiết",
+        "en": "Adjusting pattern is wrong technical requirement, wrong grain for pattern parts"
+      },
+      {
+        "vi": "Trải vải không chuẩn canh vải",
+        "en": "Spreading fabric with incorrect grain line"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Sử dụng Sơ đồ sai mã hàng cần Cắt",
+        "en": "Using  wrong marker, wrong style for the style needed to cut"
+      },
+      {
+        "vi": "Dùng sai bảng màu",
+        "en": "Using wrong trim card"
+      },
+      {
+        "vi": "Trải vải sai bề mặt Vải",
+        "en": "Spreading mistake using wrong fabric face"
+      },
+      {
+        "vi": "QC kiểm BTP không không phát hiện ra lỗi",
+        "en": "QC check panel did not find any errors"
+      },
+      {
+        "vi": "Chỉnh Rập sai YCKT, sai canh sợi chi tiết",
+        "en": "Adjusting pattern is wrong technical requirement, wrong grain for pattern parts"
+      },
+      {
+        "vi": "Trải vải không chuẩn canh vải",
+        "en": "Spreading fabric with incorrect grain line"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Tổ trưởng tổ cắt",
+        "en": "Leader of cutting room"
+      },
+      {
+        "vi": "Công nhân cắt",
+        "en": "cutting worker"
+      },
+      {
+        "vi": "Công nhân trải vải",
+        "en": "spreading fabric worker"
+      },
+      {
+        "vi": "Nhân viên rập",
+        "en": "pattern staff"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R03",
+    "DefectTypes": [
+      {
+        "vi": "Cắt sai hình dáng,"
+      },
+      {
+        "vi": "Sai canh sợi,"
+      },
+      {
+        "vi": "Sai bề mặt vải",
+        "en": "keo,…"
+      },
+      {
+        "vi": "Cutting wrong marker",
+        "en": "style, grain line, fabric face, interlining,..."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Sử dụng Sơ đồ sai mã hàng cần Cắt",
+        "en": "Using  wrong marker, wrong style for the style needed to cut"
+      },
+      {
+        "vi": "Dùng sai bảng màu",
+        "en": "Using wrong trim card"
+      },
+      {
+        "vi": "Trải vải sai bề mặt Vải",
+        "en": "Spreading mistake using wrong fabric face"
+      },
+      {
+        "vi": "QC kiểm BTP không không phát hiện ra lỗi",
+        "en": "QC check panel did not find any errors"
+      },
+      {
+        "vi": "Chỉnh Rập sai YCKT, sai canh sợi chi tiết",
+        "en": "Adjusting pattern is wrong technical requirement, wrong grain for pattern parts"
+      },
+      {
+        "vi": "Trải vải không chuẩn canh vải",
+        "en": "Spreading fabric with incorrect grain line"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Sử dụng Sơ đồ sai mã hàng cần Cắt",
+        "en": "Using  wrong marker, wrong style for the style needed to cut"
+      },
+      {
+        "vi": "Dùng sai bảng màu",
+        "en": "Using wrong trim card"
+      },
+      {
+        "vi": "Trải vải sai bề mặt Vải",
+        "en": "Spreading mistake using wrong fabric face"
+      },
+      {
+        "vi": "QC kiểm BTP không không phát hiện ra lỗi",
+        "en": "QC check panel did not find any errors"
+      },
+      {
+        "vi": "Chỉnh Rập sai YCKT, sai canh sợi chi tiết",
+        "en": "Adjusting pattern is wrong technical requirement, wrong grain for pattern parts"
+      },
+      {
+        "vi": "Trải vải không chuẩn canh vải",
+        "en": "Spreading fabric with incorrect grain line"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Tổ trưởng tổ cắt",
+        "en": "Leader of cutting room"
+      },
+      {
+        "vi": "Công nhân cắt",
+        "en": "cutting worker"
+      },
+      {
+        "vi": "Công nhân trải vải",
+        "en": "spreading fabric worker"
+      },
+      {
+        "vi": "Nhân viên rập",
+        "en": "pattern staff"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E04",
+    "DefectTypes": [
+      {
+        "vi": "Thiếu dấu bấm, Dấu bấm lớn hoặc biến dạng",
+        "en": "missing noteches or distorted cut marks"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Cài đặt in sơ đồ thiếu phần in dấu bấm",
+        "en": "printed marker with missing notches"
+      },
+      {
+        "vi": "Không cắt bấm dấu",
+        "en": "not cut notches"
+      },
+      {
+        "vi": "Dấu bấm quá sâu",
+        "en": "notes very deep"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Cài đặt in sơ đồ thiếu phần in dấu bấm",
+        "en": "printed marker with missing notches"
+      },
+      {
+        "vi": "Không cắt bấm dấu",
+        "en": "not cut notches"
+      },
+      {
+        "vi": "Dấu bấm quá sâu",
+        "en": "notes very deep"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân cắt, Rập, sơ đồ",
+        "en": "cutting worker"
+      },
+      {
+        "vi": "QC cắt",
+        "en": "patterner, marker maker QC"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R04",
+    "DefectTypes": [
+      {
+        "vi": "Thiếu dấu bấm, Dấu bấm lớn hoặc biến dạng",
+        "en": "missing noteches or distorted cut marks"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Cài đặt in sơ đồ thiếu phần in dấu bấm",
+        "en": "printed marker with missing notches"
+      },
+      {
+        "vi": "Không cắt bấm dấu",
+        "en": "not cut notches"
+      },
+      {
+        "vi": "Dấu bấm quá sâu",
+        "en": "notes very deep"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Cài đặt in sơ đồ thiếu phần in dấu bấm",
+        "en": "printed marker with missing notches"
+      },
+      {
+        "vi": "Không cắt bấm dấu",
+        "en": "not cut notches"
+      },
+      {
+        "vi": "Dấu bấm quá sâu",
+        "en": "notes very deep"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân cắt, Rập, sơ đồ",
+        "en": "cutting worker"
+      },
+      {
+        "vi": "QC cắt",
+        "en": "patterner, marker maker QC"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E05",
+    "DefectTypes": [
+      {
+        "vi": "Loang màu chi tiết",
+        "en": "stains"
+      },
+      {
+        "vi": "Dơ, Ố",
+        "en": "dirty stains"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do khâu kiểm vải không phát hiện lỗi",
+        "en": "Fabric inspection does not detect defects"
+      },
+      {
+        "vi": "Kiểm tra Bán thành phẩm sau khi cắt không phát hiện lỗi, chưa kỹ",
+        "en": "Checking panels after cutting, no errors are detected, not yet thoroughly"
+      },
+      {
+        "vi": "Vệ sinh công nghiệp khu cắt chưa kỹ, còn dơ",
+        "en": "The industrial cleaning of the cutting area is not thorough, it is still dirty"
+      },
+      {
+        "vi": "Dầu mỡ máy cắt lâu ngày không thay thế bảo dưỡng",
+        "en": "Cutting machine grease for a long time does not replace maintenance"
+      },
+      {
+        "vi": "Băng tải máy ép keo dơ",
+        "en": "Conveyor belt presses dirty glue stains."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do khâu kiểm vải không phát hiện lỗi",
+        "en": "Fabric inspection does not detect defects"
+      },
+      {
+        "vi": "Kiểm tra Bán thành phẩm sau khi cắt không phát hiện lỗi, chưa kỹ",
+        "en": "Checking panels after cutting, no errors are detected, not yet thoroughly"
+      },
+      {
+        "vi": "Vệ sinh công nghiệp khu cắt chưa kỹ, còn dơ",
+        "en": "The industrial cleaning of the cutting area is not thorough, it is still dirty"
+      },
+      {
+        "vi": "Dầu mỡ máy cắt lâu ngày không thay thế bảo dưỡng",
+        "en": "Cutting machine grease for a long time does not replace maintenance"
+      },
+      {
+        "vi": "Băng tải máy ép keo dơ",
+        "en": "Conveyor belt presses dirty glue stains."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Tổ cắt",
+        "en": "Cutting Department"
+      },
+      {
+        "vi": "Cơ điện",
+        "en": "Mechnic."
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "15 phút",
+        "en": ""
+      },
+      {
+        "vi": "15 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R05",
+    "DefectTypes": [
+      {
+        "vi": "Loang màu chi tiết",
+        "en": "stains"
+      },
+      {
+        "vi": "Dơ, Ố",
+        "en": "dirty stains"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Do khâu kiểm vải không phát hiện lỗi",
+        "en": "Fabric inspection does not detect defects"
+      },
+      {
+        "vi": "Kiểm tra Bán thành phẩm sau khi cắt không phát hiện lỗi, chưa kỹ",
+        "en": "Checking panels after cutting, no errors are detected, not yet thoroughly"
+      },
+      {
+        "vi": "Vệ sinh công nghiệp khu cắt chưa kỹ, còn dơ",
+        "en": "The industrial cleaning of the cutting area is not thorough, it is still dirty"
+      },
+      {
+        "vi": "Dầu mỡ máy cắt lâu ngày không thay thế bảo dưỡng",
+        "en": "Cutting machine grease for a long time does not replace maintenance"
+      },
+      {
+        "vi": "Băng tải máy ép keo dơ",
+        "en": "Conveyor belt presses dirty glue stains."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Do khâu kiểm vải không phát hiện lỗi",
+        "en": "Fabric inspection does not detect defects"
+      },
+      {
+        "vi": "Kiểm tra Bán thành phẩm sau khi cắt không phát hiện lỗi, chưa kỹ",
+        "en": "Checking panels after cutting, no errors are detected, not yet thoroughly"
+      },
+      {
+        "vi": "Vệ sinh công nghiệp khu cắt chưa kỹ, còn dơ",
+        "en": "The industrial cleaning of the cutting area is not thorough, it is still dirty"
+      },
+      {
+        "vi": "Dầu mỡ máy cắt lâu ngày không thay thế bảo dưỡng",
+        "en": "Cutting machine grease for a long time does not replace maintenance"
+      },
+      {
+        "vi": "Băng tải máy ép keo dơ",
+        "en": "Conveyor belt presses dirty glue stains."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Tổ cắt",
+        "en": "Cutting Department"
+      },
+      {
+        "vi": "Cơ điện",
+        "en": "Mechnic."
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "15 phút",
+        "en": ""
+      },
+      {
+        "vi": "15 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E06",
+    "DefectTypes": [
+      {
+        "vi": "Bám dính ép keo không đạt",
+        "en": "Adhesion is not achieved."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Không kiểm tra nhiệt độ máy ép keo trước khi ép vào chi tiết",
+        "en": "Does not check the temperature of the fusing machine before fusing  the cut parts"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Không kiểm tra nhiệt độ máy ép keo trước khi ép vào chi tiết",
+        "en": "Does not check the temperature of the fusing machine before fusing  the cut parts"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Cơ điện",
+        "en": "Mechnic"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R06",
+    "DefectTypes": [
+      {
+        "vi": "Bám dính ép keo không đạt",
+        "en": "Adhesion is not achieved."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Không kiểm tra nhiệt độ máy ép keo trước khi ép vào chi tiết",
+        "en": "Does not check the temperature of the fusing machine before fusing  the cut parts"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Không kiểm tra nhiệt độ máy ép keo trước khi ép vào chi tiết",
+        "en": "Does not check the temperature of the fusing machine before fusing  the cut parts"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Cơ điện",
+        "en": "Mechnic"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E07",
+    "DefectTypes": [
+      {
+        "vi": "Màu in không giống mẫu",
+        "en": "Print color is not the same as sample"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check printing panels does not check print details compared to approved sample carefully"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check printing panels does not check print details compared to approved sample carefully"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QC"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R07",
+    "DefectTypes": [
+      {
+        "vi": "Màu in không giống mẫu",
+        "en": "Print color is not the same as sample"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check printing panels does not check print details compared to approved sample carefully"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check printing panels does not check print details compared to approved sample carefully"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QC"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E08",
+    "DefectTypes": [
+      {
+        "vi": "Vị trí in và hình in không giống mẫu",
+        "en": "print position and printing does not match sample"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Nhân viên Rập định vị sai vị trí In",
+        "en": "pattern makers position is wrong on pattern"
+      },
+      {
+        "vi": "QC kiểm Bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check panel does not find error in the printing out put"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Nhân viên Rập định vị sai vị trí In",
+        "en": "pattern makers position is wrong on pattern"
+      },
+      {
+        "vi": "QC kiểm Bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check panel does not find error in the printing out put"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QC"
+      },
+      {
+        "vi": "Nhân viên Rập",
+        "en": "Pattern staff"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R08",
+    "DefectTypes": [
+      {
+        "vi": "Vị trí in và hình in không giống mẫu",
+        "en": "print position and printing does not match sample"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Nhân viên Rập định vị sai vị trí In",
+        "en": "pattern makers position is wrong on pattern"
+      },
+      {
+        "vi": "QC kiểm Bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check panel does not find error in the printing out put"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Nhân viên Rập định vị sai vị trí In",
+        "en": "pattern makers position is wrong on pattern"
+      },
+      {
+        "vi": "QC kiểm Bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check panel does not find error in the printing out put"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QC"
+      },
+      {
+        "vi": "Nhân viên Rập",
+        "en": "Pattern staff"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E09",
+    "DefectTypes": [
+      {
+        "vi": "Thiếu nét",
+        "en": "Missing sharpness"
+      },
+      {
+        "vi": "Chữ in không đạt",
+        "en": "printing not ok"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check  printing panel does not check print details compared to approved sample carefully"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check  printing panel does not check print details compared to approved sample carefully"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QC"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R09",
+    "DefectTypes": [
+      {
+        "vi": "Thiếu nét",
+        "en": "Missing sharpness"
+      },
+      {
+        "vi": "Chữ in không đạt",
+        "en": "printing not ok"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check  printing panel does not check print details compared to approved sample carefully"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "QC kiểm bán thành phẩm in không kiểm tra chi tiết in so với mẫu được duyệt",
+        "en": "QC check  printing panel does not check print details compared to approved sample carefully"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "QC"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E10",
+    "DefectTypes": [
+      {
+        "vi": "Sai vị trí thêu và hình thêu",
+        "en": "Wrong embroidery position & picture"
+      },
+      {
+        "vi": "Thêu không giống mẫu",
+        "en": "embroider does not match sample"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Nhân viên Rập định vị sai vị trí Thêu",
+        "en": "Pattern staff make to error  position of embroidery"
+      },
+      {
+        "vi": "Công nhân thêu đặt vị trí Thêu sai so với yêu cầu kỹ thuật",
+        "en": "embroidery worker makes mistake for placement requested by tech pack"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Nhân viên Rập định vị sai vị trí Thêu",
+        "en": "Pattern staff make to error  position of embroidery"
+      },
+      {
+        "vi": "Công nhân thêu đặt vị trí Thêu sai so với yêu cầu kỹ thuật",
+        "en": "embroidery worker makes mistake for placement requested by tech pack"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "NV Rập",
+        "en": "pattern maker"
+      },
+      {
+        "vi": "Công nhân thêu",
+        "en": "embroidery worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R10",
+    "DefectTypes": [
+      {
+        "vi": "Sai vị trí thêu và hình thêu",
+        "en": "Wrong embroidery position & picture"
+      },
+      {
+        "vi": "Thêu không giống mẫu",
+        "en": "embroider does not match sample"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Nhân viên Rập định vị sai vị trí Thêu",
+        "en": "Pattern staff make to error  position of embroidery"
+      },
+      {
+        "vi": "Công nhân thêu đặt vị trí Thêu sai so với yêu cầu kỹ thuật",
+        "en": "embroidery worker makes mistake for placement requested by tech pack"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Nhân viên Rập định vị sai vị trí Thêu",
+        "en": "Pattern staff make to error  position of embroidery"
+      },
+      {
+        "vi": "Công nhân thêu đặt vị trí Thêu sai so với yêu cầu kỹ thuật",
+        "en": "embroidery worker makes mistake for placement requested by tech pack"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "NV Rập",
+        "en": "pattern maker"
+      },
+      {
+        "vi": "Công nhân thêu",
+        "en": "embroidery worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E11",
+    "DefectTypes": [
+      {
+        "vi": "Sai màu chỉ",
+        "en": "error in therad colour"
+      },
+      {
+        "vi": "Sai chi số chỉ thêu",
+        "en": "thread embroider code number"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Công nhân không kiểm tra màu chỉ thêu so với bảng màu được duyệt",
+        "en": "worker makes mistake to compare embroidery thread code with approved trim card"
+      },
+      {
+        "vi": "Công nhân không kiểm tra tài liệu Thêu trước khi thêu",
+        "en": "does not check teck pack before embroidering"
+      },
+      {
+        "vi": "Công nhân  sử dụng chỉ sai code chỉ, nhà cung cấp, loại chỉ..",
+        "en": "Worker use  wrong thread code, supplyer, thread kind,..."
+      },
+      {
+        "vi": "Công nhân vận hành máy lập trình sai bước kim thêu",
+        "en": "The worker operating the embroidery automatic contourseamer  wrong step of the embroidery needle"
+      },
+      {
+        "vi": "Nhân viên thiết kế cung cấp tài liệu sai code chỉ thêu",
+        "en": "recv wrong thread code"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Công nhân không kiểm tra màu chỉ thêu so với bảng màu được duyệt",
+        "en": "worker makes mistake to compare embroidery thread code with approved trim card"
+      },
+      {
+        "vi": "Công nhân không kiểm tra tài liệu Thêu trước khi thêu",
+        "en": "does not check teck pack before embroidering"
+      },
+      {
+        "vi": "Công nhân  sử dụng chỉ sai code chỉ, nhà cung cấp, loại chỉ..",
+        "en": "Worker use  wrong thread code, supplyer, thread kind,..."
+      },
+      {
+        "vi": "Công nhân vận hành máy lập trình sai bước kim thêu",
+        "en": "The worker operating the embroidery automatic contourseamer  wrong step of the embroidery needle"
+      },
+      {
+        "vi": "Nhân viên thiết kế cung cấp tài liệu sai code chỉ thêu",
+        "en": "recv wrong thread code"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân",
+        "en": "worker"
+      },
+      {
+        "vi": "Nhân viên thiết kế thêu",
+        "en": "embroidery staff"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R11",
+    "DefectTypes": [
+      {
+        "vi": "Sai màu chỉ",
+        "en": "error in therad colour"
+      },
+      {
+        "vi": "Sai chi số chỉ thêu",
+        "en": "thread embroider code number"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Công nhân không kiểm tra màu chỉ thêu so với bảng màu được duyệt",
+        "en": "worker makes mistake to compare embroidery thread code with approved trim card"
+      },
+      {
+        "vi": "Công nhân không kiểm tra tài liệu Thêu trước khi thêu",
+        "en": "does not check teck pack before embroidering"
+      },
+      {
+        "vi": "Công nhân  sử dụng chỉ sai code chỉ, nhà cung cấp, loại chỉ..",
+        "en": "Worker use  wrong thread code, supplyer, thread kind,..."
+      },
+      {
+        "vi": "Công nhân vận hành máy lập trình sai bước kim thêu",
+        "en": "The worker operating the embroidery automatic contourseamer  wrong step of the embroidery needle"
+      },
+      {
+        "vi": "Nhân viên thiết kế cung cấp tài liệu sai code chỉ thêu",
+        "en": "recv wrong thread code"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Công nhân không kiểm tra màu chỉ thêu so với bảng màu được duyệt",
+        "en": "worker makes mistake to compare embroidery thread code with approved trim card"
+      },
+      {
+        "vi": "Công nhân không kiểm tra tài liệu Thêu trước khi thêu",
+        "en": "does not check teck pack before embroidering"
+      },
+      {
+        "vi": "Công nhân  sử dụng chỉ sai code chỉ, nhà cung cấp, loại chỉ..",
+        "en": "Worker use  wrong thread code, supplyer, thread kind,..."
+      },
+      {
+        "vi": "Công nhân vận hành máy lập trình sai bước kim thêu",
+        "en": "The worker operating the embroidery automatic contourseamer  wrong step of the embroidery needle"
+      },
+      {
+        "vi": "Nhân viên thiết kế cung cấp tài liệu sai code chỉ thêu",
+        "en": "recv wrong thread code"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân",
+        "en": "worker"
+      },
+      {
+        "vi": "Nhân viên thiết kế thêu",
+        "en": "embroidery staff"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E12",
+    "DefectTypes": [
+      {
+        "vi": "Thiếu nét",
+        "en": "Missing sharpness"
+      },
+      {
+        "vi": "Nét chữ thêu không đạt",
+        "en": "Embroidery handwriting is not ok"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Nhân viên Thêu không kiểm tra lại kích thước thông số Artwork thêu so với mẫu được duyệt",
+        "en": "Embroidery staff does not check the size of the artwork against the approved sample"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Nhân viên Thêu không kiểm tra lại kích thước thông số Artwork thêu so với mẫu được duyệt",
+        "en": "Embroidery staff does not check the size of the artwork against the approved sample"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "NV thiết kế thêu",
+        "en": "embroidery design staff"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R12",
+    "DefectTypes": [
+      {
+        "vi": "Thiếu nét",
+        "en": "Missing sharpness"
+      },
+      {
+        "vi": "Nét chữ thêu không đạt",
+        "en": "Embroidery handwriting is not ok"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Nhân viên Thêu không kiểm tra lại kích thước thông số Artwork thêu so với mẫu được duyệt",
+        "en": "Embroidery staff does not check the size of the artwork against the approved sample"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Nhân viên Thêu không kiểm tra lại kích thước thông số Artwork thêu so với mẫu được duyệt",
+        "en": "Embroidery staff does not check the size of the artwork against the approved sample"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "NV thiết kế thêu",
+        "en": "embroidery design staff"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E13",
+    "DefectTypes": [
+      {
+        "vi": "Thêu bỏ mũi",
+        "en": "embroidery with skip"
+      },
+      {
+        "vi": "Đứt chỉ",
+        "en": "broken thread"
+      },
+      {
+        "vi": "Không khóa mũi",
+        "en": "unlocked emb.thread."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Máy thêu chưa được kiểm tra",
+        "en": "embroidery machine has not yet checked"
+      },
+      {
+        "vi": "Tex chỉ sử dụng chưa đúng dẫn đến đứt chỉ",
+        "en": "Thread tex is not correct"
+      },
+      {
+        "vi": "Lập trình thêu chưa được kiểm tra có khóa mủi",
+        "en": "Embroidery automatic not asked to lock the thread function."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Máy thêu chưa được kiểm tra",
+        "en": "embroidery machine has not yet checked"
+      },
+      {
+        "vi": "Tex chỉ sử dụng chưa đúng dẫn đến đứt chỉ",
+        "en": "Thread tex is not correct"
+      },
+      {
+        "vi": "Lập trình thêu chưa được kiểm tra có khóa mủi",
+        "en": "Embroidery automatic not asked to lock the thread function."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "NV thiết kế thêu",
+        "en": "embroidery design staff"
+      },
+      {
+        "vi": "Công nhân",
+        "en": "worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R13",
+    "DefectTypes": [
+      {
+        "vi": "Thêu bỏ mũi",
+        "en": "embroidery with skip"
+      },
+      {
+        "vi": "Đứt chỉ",
+        "en": "broken thread"
+      },
+      {
+        "vi": "Không khóa mũi",
+        "en": "unlocked emb.thread."
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Máy thêu chưa được kiểm tra",
+        "en": "embroidery machine has not yet checked"
+      },
+      {
+        "vi": "Tex chỉ sử dụng chưa đúng dẫn đến đứt chỉ",
+        "en": "Thread tex is not correct"
+      },
+      {
+        "vi": "Lập trình thêu chưa được kiểm tra có khóa mủi",
+        "en": "Embroidery automatic not asked to lock the thread function."
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Máy thêu chưa được kiểm tra",
+        "en": "embroidery machine has not yet checked"
+      },
+      {
+        "vi": "Tex chỉ sử dụng chưa đúng dẫn đến đứt chỉ",
+        "en": "Thread tex is not correct"
+      },
+      {
+        "vi": "Lập trình thêu chưa được kiểm tra có khóa mủi",
+        "en": "Embroidery automatic not asked to lock the thread function."
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "NV thiết kế thêu",
+        "en": "embroidery design staff"
+      },
+      {
+        "vi": "Công nhân",
+        "en": "worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E14",
+    "DefectTypes": [
+      {
+        "vi": "Lủng rách bán thành phẩm vải @ keo",
+        "en": "Torn semi"
+      },
+      {
+        "vi": "finished fabric @ glue"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Kim sựt mủi",
+        "en": "needle point damage"
+      },
+      {
+        "vi": "Không kiểm tra keo trước khi ép",
+        "en": "Not check before application of interlining"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Kim sựt mủi",
+        "en": "needle point damage"
+      },
+      {
+        "vi": "Không kiểm tra keo trước khi ép",
+        "en": "Not check before application of interlining"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân",
+        "en": "worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R14",
+    "DefectTypes": [
+      {
+        "vi": "Lủng rách bán thành phẩm vải @ keo",
+        "en": "Torn semi"
+      },
+      {
+        "vi": "finished fabric @ glue"
+      }
+    ],
+    "Reasons": [
+      {
+        "vi": "Kim sựt mủi",
+        "en": "needle point damage"
+      },
+      {
+        "vi": "Không kiểm tra keo trước khi ép",
+        "en": "Not check before application of interlining"
+      }
+    ],
+    "Solutions": [
+      {
+        "vi": "Kim sựt mủi",
+        "en": "needle point damage"
+      },
+      {
+        "vi": "Không kiểm tra keo trước khi ép",
+        "en": "Not check before application of interlining"
+      }
+    ],
+    "Handler": [
+      {
+        "vi": "Công nhân",
+        "en": "worker"
+      }
+    ],
+    "Timeline": [
+      {
+        "vi": "10 Phút",
+        "en": "10 minutes"
+      }
+    ],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "E15",
+    "DefectTypes": [
+      {
+        "vi": "Lỗi khác",
+        "en": "different defects"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "de72a6a9-bd09-48e3-b48e-19494d3ddb43"
+  },
+  {
+    "Code": "R15",
+    "DefectTypes": [
+      {
+        "vi": "Lỗi khác",
+        "en": "different defects"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "1bc43632-e605-4489-8030-f7dad305f00c"
+  },
+  {
+    "Code": "V01",
+    "DefectTypes": [
+      {
+        "vi": "Vệ sinh công nghiệp",
+        "en": "Industrial machine hygiene"
+      },
+      {
+        "vi": "Chỉ thừa không sạch",
+        "en": ""
+      },
+      {
+        "vi": "Only excess is not cleaned"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V02",
+    "DefectTypes": [
+      {
+        "vi": "Dính dầu",
+        "en": "oily"
+      },
+      {
+        "vi": "Ố, Dơ",
+        "en": "dirty, damaged"
+      },
+      {
+        "vi": "Dấu phấn",
+        "en": "mực"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V03",
+    "DefectTypes": [
+      {
+        "vi": "Ủi (là) xấu",
+        "en": "Iron is bad"
+      },
+      {
+        "vi": "Bị bóng",
+        "en": "shining marks"
+      },
+      {
+        "vi": "Cháy nám",
+        "en": "Burnt"
+      },
+      {
+        "vi": "Biến dạng dáng (form)",
+        "en": "Deformation"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V04",
+    "DefectTypes": [
+      {
+        "vi": "Đóng (đính) nút, rivet, phụ liệu,… không đạt bền chắc, không an toàn khi sử dụng",
+        "en": "To nail button, rivet, accessory, … are not meet stable, not safety when using"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V05",
+    "DefectTypes": [
+      {
+        "vi": "Đóng (đính) nút, rivet,  ủi, gắn nhãn, gấp xếp,... sai quy cách; thiếu @ dư phụ liệu",
+        "en": "To nail button, rivet, iron, stick label, fold, … are wrong spec, lack or more accessory"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V06",
+    "DefectTypes": [
+      {
+        "vi": "Sử dụng sai phụ liệu",
+        "en": "Using wrong accessory"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V07",
+    "DefectTypes": [
+      {
+        "vi": "Lủng, rách, lỗ kim",
+        "en": "Hole, tear, needle hole"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V08",
+    "DefectTypes": [
+      {
+        "vi": "Bung chỉ, bung đường may",
+        "en": "Open thread, seam"
+      },
+      {
+        "vi": "Đứt chỉ",
+        "en": "broken"
+      },
+      {
+        "vi": "Bỏ mũi",
+        "en": "skip"
+      },
+      {
+        "vi": "Căng",
+        "en": "lỏng chỉ"
+      },
+      {
+        "vi": "Nối chỉ không đạt",
+        "en": "por joint"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V09",
+    "DefectTypes": [
+      {
+        "vi": "Nhăn nhíu",
+        "en": "puckering"
+      },
+      {
+        "vi": "Xếp ly",
+        "en": "pleats"
+      },
+      {
+        "vi": "Sụp mí",
+        "en": "down stitches"
+      },
+      {
+        "vi": "Gợn sóng",
+        "en": "uneven"
+      },
+      {
+        "vi": "Vặn đường may",
+        "en": "twisted seam"
+      },
+      {
+        "vi": "Bai giãn",
+        "en": "stretched back rise"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V10",
+    "DefectTypes": [
+      {
+        "vi": "Ánh màu không đạt",
+        "en": "Colour is not meet"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V11",
+    "DefectTypes": [
+      {
+        "vi": "Cấn wash, đốm wash",
+        "en": "Wash wrinkle @ spot"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V12",
+    "DefectTypes": [
+      {
+        "vi": "Hiệu ứng wash, nhuộm không đồng đều",
+        "en": "Wash effect, uneven dyeing effect"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V13",
+    "DefectTypes": [
+      {
+        "vi": "Hình dáng, kích thước, vị trí thời trang wash không đúng",
+        "en": "Wash fashion, sharp, dimension, position are not correct"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V14",
+    "DefectTypes": [
+      {
+        "vi": "Sai số lượng và tỷ lệ trong thùng",
+        "en": "Wrong quantity and rate in box"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V15",
+    "DefectTypes": [
+      {
+        "vi": "Mùi hôi, ẩm mốc, mục vải, vật lạ trên sản phẩm",
+        "en": "Bad smell, wet, fabric decayed, object on garment"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V16",
+    "DefectTypes": [
+      {
+        "vi": "Mặc thử không đạt",
+        "en": "Fit test is not meet"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V17",
+    "DefectTypes": [
+      {
+        "vi": "Kỹ thuật may xấu, không phù hợp",
+        "en": "Bad sewing, not suitable"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V18",
+    "DefectTypes": [
+      {
+        "vi": "Chất lượng phụ liệu không đạt",
+        "en": "Quality of accessory is not meet"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V19",
+    "DefectTypes": [
+      {
+        "vi": "Lỗi Thông số",
+        "en": "Measurement defect"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  },
+  {
+    "Code": "V20",
+    "DefectTypes": [
+      {
+        "vi": "Những lỗi khác",
+        "en": "Other defects"
+      }
+    ],
+    "Reasons": [],
+    "Solutions": [],
+    "Handler": [],
+    "Timeline": [],
+    "ZoneTypeId": "c414c4a2-eca1-4cc3-b598-99d7f1c5b1ec"
+  }
+]

@@ -13,7 +13,9 @@ namespace LibraryService.DTOs.Requests
         public string Code { get; set; }
         public string Name { get; set; }
         public List<string> Reasons { get; set; }
-        public List<string> solutions { get; set; }
+        public List<string> Solutions { get; set; }
+        public List<string> DefectTypes { get; set; }
         public Guid? ZoneTypeId { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }

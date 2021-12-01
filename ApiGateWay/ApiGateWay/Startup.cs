@@ -23,6 +23,9 @@ namespace ApiGateWay
         public Startup(IWebHostEnvironment environment, IConfiguration configuration)
         {
             Environment = environment;
+
+            
+
             Configuration = configuration;
         }
 
@@ -47,6 +50,12 @@ namespace ApiGateWay
             //         ValidateAudience = false
             //     };
             // });
+
+            services.AddCors(options => options.AddPolicy("AllowAllOrigins", builder =>
+                 builder.AllowAnyOrigin()
+                  .AllowAnyMethod()
+                  .AllowAnyHeader()));
+
             services.AddMvc();
             services.AddOcelot();
             services.AddSwaggerForOcelot(Configuration);
@@ -61,6 +70,7 @@ namespace ApiGateWay
             }
 
             app.UseRouting();
+            app.UseCors("AllowAllOrigins");
             app.UseSwaggerForOcelotUI();
             //app.UseAuthentication();
 

@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace LibraryService.Models.L01
 {
     [Table("L01_SiteLib")]
-    public class SiteLib : BaseModel
+    public class SiteLib: BaseModel
     {
         [StringLength(50)]
         public string Code { get; set; }
