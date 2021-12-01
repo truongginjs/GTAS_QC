@@ -59,9 +59,12 @@ namespace LibraryService.Controllers
         }
 
         [HttpPut("{id}")]
+        //public async Task<ActionResult<QCZoneTypeResDTO>> UpdateAsync(Guid id)k
         public async Task<ActionResult<QCZoneTypeResDTO>> UpdateAsync(Guid id, [FromBody] QCZoneTypeReqDTO test)
         {
+            //QCZoneTypeReqDTO test = new QCZoneTypeReqDTO();
             var input = _mapper.Map<QCZoneTypeLib>(test);
+            input.Id = id;
             var data = await _repo.UpdateAsync(id, input);
             if (data == null) return BadRequest();
             var result = _mapper.Map<QCZoneTypeResDTO>(data);

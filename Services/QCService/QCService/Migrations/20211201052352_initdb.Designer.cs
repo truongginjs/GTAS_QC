@@ -10,7 +10,7 @@ using QCService.Infrastructure;
 namespace QCService.Migrations
 {
     [DbContext(typeof(QCContext))]
-    [Migration("20211128132607_initdb")]
+    [Migration("20211201052352_initdb")]
     partial class initdb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -580,17 +580,6 @@ namespace QCService.Migrations
                         .IsRequired();
 
                     b.Navigation("QCRequest");
-                });
-
-            modelBuilder.Entity("QCService.Models.D01.QCRequest", b =>
-                {
-                    b.HasOne("QCService.Models.L01.QCZoneTypeLib", "ZoneType")
-                        .WithMany()
-                        .HasForeignKey("ZoneTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("ZoneType");
                 });
 
             modelBuilder.Entity("QCService.Models.L01.AQLLib", b =>

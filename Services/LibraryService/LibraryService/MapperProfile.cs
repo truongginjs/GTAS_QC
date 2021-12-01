@@ -40,30 +40,40 @@ namespace LibraryService
             #endregion
 
             #region Defect
-            CreateMap<DefectLib, DefectResDTO>()
-                 .ForMember(des => des.DefectTypes,
-                        act => act.MapFrom(src => src.DefectTypes.Select(x=>x[Lan.En]).ToList()))
-                 .ForMember(des => des.Reasons,
-                        act => act.MapFrom(src => src.Reasons.Select(x=>x[Lan.En]).ToList()))
-                 .ForMember(des => des.Solutions,
-                        act => act.MapFrom(src => src.Solutions.Select(x => x[Lan.En]).ToList()));
+            CreateMap<DefectLib, DefectResDTO>();
+            //.ForMember(des => des.DefectTypes,
+            //       act => act.MapFrom(src => src.DefectTypes.Select(x=>x[Lan.En]).ToList()))
+            //.ForMember(des => des.Reasons,
+            //       act => act.MapFrom(src => src.Reasons.Select(x=>x[Lan.En]).ToList()))
+            //.ForMember(des => des.Solutions,
+            //       act => act.MapFrom(src => src.Solutions.Select(x => x[Lan.En]).ToList()));
 
-            CreateMap<DefectReqDTO, DefectLib>()
-                .ForMember(des => des.DefectTypes,
-                        act => act.MapFrom(src => src.DefectTypes.Select(x => new DSSType { { Lan.Vi ,string.Empty},{ Lan.En,x} }).ToList()))
-                 .ForMember(des => des.Reasons,
-                        act => act.MapFrom(src => src.Reasons.Select(x => new DSSType { { Lan.Vi, string.Empty }, { Lan.En, x } }).ToList()))
-                 .ForMember(des => des.Solutions,
-                        act => act.MapFrom(src => src.Solutions.Select(x => new DSSType { { Lan.Vi, string.Empty }, { Lan.En, x } }).ToList()));
+            CreateMap<DefectLib, DefectsInfoResDTO>();
+            //.ForMember(des => des.DefectTypes,
+            //       act => act.MapFrom(src => src.DefectTypes.Select(x => x[Lan.En]).ToList()))
+            //.ForMember(des => des.Reasons,
+            //       act => act.MapFrom(src => src.Reasons.Select(x => x[Lan.En]).ToList()))
+            //.ForMember(des => des.Solutions,
+            //       act => act.MapFrom(src => src.Solutions.Select(x => x[Lan.En]).ToList()));
+
+            CreateMap<DefectReqDTO, DefectLib>();
+                //.ForMember(des => des.DefectTypes,
+                //        act => act.MapFrom(src => src.DefectTypes.Select(x => new DSSType { { Lan.Vi ,string.Empty},{ Lan.En,x} }).ToList()))
+                // .ForMember(des => des.Reasons,
+                //        act => act.MapFrom(src => src.Reasons.Select(x => new DSSType { { Lan.Vi, string.Empty }, { Lan.En, x } }).ToList()))
+                // .ForMember(des => des.Solutions,
+                //        act => act.MapFrom(src => src.Solutions.Select(x => new DSSType { { Lan.Vi, string.Empty }, { Lan.En, x } }).ToList()));
             #endregion
 
             #region Handler
             CreateMap<HandlerDefectLib, HandlerDefectResDTO>();
+            CreateMap<HandlerDefectLib, HandlerDefectInfoResDTO>();
             CreateMap<HandlerDefectReqDTO, HandlerDefectLib>();
             #endregion
 
             #region Time
             CreateMap<TimelineDefectLib, TimelineDefectResDTO>();
+            CreateMap<TimelineDefectLib, TimelineDefectInfoResDTO>();
             CreateMap<TimelineDefectReqDTO, TimelineDefectLib>();
             #endregion
 
