@@ -3,6 +3,11 @@
 
 
 using IdentityService.Infrastructure.GTAS_MENU;
+using IdentityService.Infrastructure.GTAS_PERMISSION;
+using IdentityService.Infrastructure.Repositories;
+using IdentityService.Infrastructure.Repositories.Imps;
+using IdentityService.Infrastructure.Services;
+using IdentityService.Infrastructure.Services.Imps;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -47,6 +52,8 @@ namespace IdentityService
 
             #region authentication
 
+            //var a = Configuration["Jwt:Secret"];
+
             services.AddAuthentication(x =>
             {
                 x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -62,9 +69,9 @@ namespace IdentityService
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    ValidIssuer = Configuration["Jwt.ValidIssuer"],
-                    ValidAudience = Configuration["Jwt.ValidAudience"],
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt.JwtSecret"]))
+                    ValidIssuer = Configuration["Jwt:ValidIssuer"],
+                    ValidAudience = Configuration["Jwt:ValidAudience"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["Jwt:Secret"]))
                 };
             });
             #endregion
@@ -98,6 +105,10 @@ namespace IdentityService
         private void AddServices(IServiceCollection services)
         {
             var secret = Assembly.GetExecutingAssembly().FullName.Split(',')[0];
+            services.AddAutoMapper(typeof(MapperProfile).Assembly);
+
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IRefeshTokenRepository, RefreshTokenRepository>();
 
             services.AddDbContext<GTAS_MENUContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("GTAS_MENUContext").Decrypt(secret)), ServiceLifetime.Scoped);

@@ -1,6 +1,7 @@
 ﻿using QCService.DTOs.Responses;
 using QCService.Helpers.Extensions;
 using QCService.Models;
+using QCService.Models.DTOs;
 using QCService.Models.Enums;
 using System;
 using System.Collections.Generic;
@@ -45,10 +46,10 @@ namespace QCService.DTOs.Requests
         public string Name { get; set; }
         public string ProductLine { get; set; }
         public List<InspectionBySizeDTO> InspectionBySizes { get; set; } = null;
-        public List<InspectionBySizesFinalDTO> InspectionBySizesFinal { get; set; } = null;
-        public DefectDetailReqDTO DefectDetail { get; set; }
+        public List<InspectionBySizeFinalDTO> InspectionBySizesFinal { get; set; } = null;
+        public DefectDetailDTO DefectDetail { get; set; }
         public object PrivateDetail { get; set; }
-        public List<SizeBreakDown> SizeBreakDowns { get; set; }
+        public List<SizeBreakDownDTO> SizeBreakDowns { get; set; }
         public double GRNQty { get; set; }
         public bool DefectResult { get; set; }
         public bool FinalResult { get; set; }

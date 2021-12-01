@@ -8,5 +8,6 @@ namespace LibraryService.DTOs.Requests
         public string Description { get; set; }
         public string Name { get; set; }
         public Guid ZoneTypeId { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }

@@ -4,6 +4,7 @@
     {
         Inprogress,
         Confirmed,
-        Approved
+        Approved,
+        Rejected
     }
 }

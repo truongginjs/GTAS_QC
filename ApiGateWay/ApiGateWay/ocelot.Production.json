@@ -1,6 +1,26 @@
 {
   "Routes": [
     {
+      "SwaggerKey": "APICMMS",
+      "DownstreamPathTemplate": "/api/{everything}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "172.16.39.149",
+          "Port": 8099
+        }
+      ],
+      "UpstreamPathTemplate": "/api/APICMMS/{everything}",
+      "UpstreamHttpMethod": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "DangerousAcceptAnyServerCertificateValidator": true
+    },
+    //---------------------------
+    {
       "SwaggerKey": "LibraryService",
       "DownstreamPathTemplate": "/api/{everything}",
       "DownstreamScheme": "http",
@@ -72,6 +92,17 @@
     }
   ],
   "SwaggerEndPoints": [
+    {
+      "Key": "APICMMS",
+      "Config": [
+        {
+          "Name": "CMMS API",
+          "Version": "v1",
+          "Url": "http://172.16.39.149:8099/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    //------------------------
     {
       "Key": "LibraryServiceTest",
       "Config": [

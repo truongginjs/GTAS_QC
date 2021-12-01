@@ -28,24 +28,39 @@ namespace LibraryService.Controllers
         public virtual async Task<ActionResult<IEnumerable<TResponse>>> GetsAsync()
         {
             var data = await _repo.GetsAsync();
-            var result = _mapper.Map<IEnumerable<TResponse>>(data);
-            return Ok(result);
+            try
+            {
+                var result = _mapper.Map<IEnumerable<TResponse>>(data);
+                return Ok(result);
+            }
+            catch(Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
         [HttpGet("{id}")]
         public virtual async Task<ActionResult<TResponse>> GetAsync(Guid id)
         {
             var data = await _repo.GetAsync(id);
             if (data == null) return NotFound();
+            try
+            {
             var result = _mapper.Map<TResponse>(data);
             return Ok(result);
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
         [HttpPost]
-        public virtual async Task<ActionResult<TResponse>> CreateAsync([FromBody] T test)
+        public virtual async Task<ActionResult<TResponse>> CreateAsync([FromBody] TRequest test)
         {
             var input = _mapper.Map<T>(test);
+            input.Id = Guid.NewGuid();
             var data = await _repo.CreateAsync(input);
-            if (data == null) return BadRequest();
+            if (data == null) return BadRequest("Can't create");
             var result = _mapper.Map<TResponse>(data);
             return Ok(result);
         }

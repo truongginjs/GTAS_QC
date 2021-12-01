@@ -16,6 +16,7 @@ namespace QCService.Models.D01
     {
         [Required]
         public Guid ZoneTypeId { get; set; }
+        [NotMapped]
         public QCZoneTypeLib ZoneType { get; set; }
         [NotMapped]
         public QCDetail QCDetail { get; set; }

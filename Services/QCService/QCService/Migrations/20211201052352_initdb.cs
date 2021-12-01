@@ -8,6 +8,53 @@ namespace QCService.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "D01_QCRequest",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ZoneTypeId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    TransferStatus = table.Column<int>(type: "int", nullable: false),
+                    DocStatus = table.Column<int>(type: "int", nullable: false),
+                    Site = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    Buyer = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    Supplier = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    QCNumber = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    GRNNumber = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    PONo = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    OCNumber = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    Category = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    ArticleName = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    QCRequestDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    StyleName = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    QCDefinition = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    SamplePlan = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    QCQty = table.Column<int>(type: "int", nullable: false),
+                    GRNQty = table.Column<int>(type: "int", nullable: false),
+                    DefectResult = table.Column<bool>(type: "bit", nullable: false),
+                    FinalResult = table.Column<bool>(type: "bit", nullable: false),
+                    DeliveryBuyerOrderRef = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    ArticleCode = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    StyleCode = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    SamplePercentage = table.Column<double>(type: "float", nullable: false),
+                    ColorCode = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
+                    ColorName = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: true),
+                    QCType = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: true),
+                    SizeBreakDownsJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    QCNumberRef = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    UserApproveId = table.Column<int>(type: "int", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
+                    CreateUserId = table.Column<int>(type: "int", nullable: false),
+                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    UpdateUserId = table.Column<int>(type: "int", nullable: false),
+                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_D01_QCRequest", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "L01_CuttingTableLib",
                 columns: table => new
                 {
@@ -89,54 +136,28 @@ namespace QCService.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "D01_QCRequest",
+                name: "D01_QCDetail",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ZoneTypeId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    TransferStatus = table.Column<int>(type: "int", nullable: false),
-                    DocStatus = table.Column<int>(type: "int", nullable: false),
-                    Site = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    Buyer = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    Supplier = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    QCNumber = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    GRNNumber = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    PONo = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    OCNumber = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    Category = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    ArticleName = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    QCRequestDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    StyleName = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    QCDefinition = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    SamplePlan = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    QCQty = table.Column<int>(type: "int", nullable: false),
-                    GRNQty = table.Column<int>(type: "int", nullable: false),
-                    DefectResult = table.Column<bool>(type: "bit", nullable: false),
-                    FinalResult = table.Column<bool>(type: "bit", nullable: false),
-                    DeliveryBuyerOrderRef = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    ArticleCode = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    StyleCode = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    SamplePercentage = table.Column<double>(type: "float", nullable: false),
-                    ColorCode = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: true),
-                    ColorName = table.Column<string>(type: "nvarchar(25)", maxLength: 25, nullable: true),
-                    QCType = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: true),
-                    SizeBreakDownsJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    QCNumberRef = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    UserApproveId = table.Column<int>(type: "int", nullable: false),
-                    Description = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
-                    CreateUserId = table.Column<int>(type: "int", nullable: false),
-                    CreateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdateUserId = table.Column<int>(type: "int", nullable: false),
-                    UpdateDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Code = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    ProductLine = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    InspectionBySizesJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    InspectionBySizesFinalJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    DefectDetailJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PrivateDetailJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    InspectionQty = table.Column<int>(type: "int", nullable: false),
+                    MeasurementQty = table.Column<int>(type: "int", nullable: false),
                     IsDeleted = table.Column<bool>(type: "bit", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_D01_QCRequest", x => x.Id);
+                    table.PrimaryKey("PK_D01_QCDetail", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_D01_QCRequest_L01_QCZoneTypeLib_ZoneTypeId",
-                        column: x => x.ZoneTypeId,
-                        principalTable: "L01_QCZoneTypeLib",
+                        name: "FK_D01_QCDetail_D01_QCRequest_Id",
+                        column: x => x.Id,
+                        principalTable: "D01_QCRequest",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -245,33 +266,6 @@ namespace QCService.Migrations
                         principalTable: "L01_QCZoneTypeLib",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "D01_QCDetail",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    Code = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
-                    ProductLine = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    InspectionBySizesJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    InspectionBySizesFinalJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DefectDetailJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    PrivateDetailJson = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    InspectionQty = table.Column<int>(type: "int", nullable: false),
-                    MeasurementQty = table.Column<int>(type: "int", nullable: false),
-                    IsDeleted = table.Column<bool>(type: "bit", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_D01_QCDetail", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_D01_QCDetail_D01_QCRequest_Id",
-                        column: x => x.Id,
-                        principalTable: "D01_QCRequest",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateIndex(

@@ -11,6 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using QCService.Models.Enums;
 
 namespace QCService.Controllers
 {
@@ -107,22 +108,35 @@ namespace QCService.Controllers
             }
         }
 
-        //[HttpPut("{id}")]
-        //public async Task<ActionResult<QCRequestDetailResDTO>> ApproveQCRequest(Guid id)
-        //{
-        //    try
-        //    {
-        //        //var data = await _service.DeleteQCRequestAsync(id);
-        //        //var result = _mapper.Map<QCRequestDetailResDTO>(data);
-        //        if (result is null)
-        //        { return NoContent(); }
-        //        return Ok(result);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return BadRequest(e);
-        //    }
-        //}
+        [HttpPut]
+        public async Task<ActionResult<bool>> ApproveQCRequest(Guid id, string docStatus)
+        {
+            try
+            {
+                DocStatusEnum docStatusEnum = (DocStatusEnum)Enum.Parse(typeof(DocStatusEnum), docStatus);
+                var data = await _service.ApproveQCRequestAsync(id, docStatusEnum);
+                return Ok(data);
+            }
+            catch (Exception e)
+            {
+                return ValidationProblem();
+            }
+        }
+
+        [HttpPut]
+        public async Task<ActionResult<bool>> TransferQCRequest(Guid id, string transferStatus)
+        {
+            try
+            {
+                TransferStatusEnum transferStatusEnum = (TransferStatusEnum)Enum.Parse(typeof(TransferStatusEnum), transferStatus);
+                var data = await _service.TransferQCRequestAsync(id, transferStatusEnum);
+                return Ok(data);
+            }
+            catch (Exception e)
+            {
+                return ValidationProblem();
+            }
+        }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<QCRequestResDTO>>> SearchQCRequest([FromQuery] FindQCRequestReqDTO filter)
